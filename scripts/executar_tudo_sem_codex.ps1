@@ -199,7 +199,7 @@ if ($AlertasSensiveis.Count -eq 0) {
     }
 }
 
-# 10. Testar build do painel sem alterar index se script existir
+# 10. Testar build do painel se script existir
 Escrever-Etapa "Verificando build do painel atual"
 if (Test-Path -LiteralPath "build_dashboard_tos_valor_municipio_layout_crea.py") {
     try {
@@ -221,7 +221,7 @@ $Relatorio = @()
 $Relatorio += "# Relatorio consolidado sem Codex"
 $Relatorio += ""
 $Relatorio += "Gerado em: $Agora"
-$Relatorio += "Repositorio: `$RepoPath`"
+$Relatorio += "Repositorio: $RepoPath"
 $Relatorio += ""
 $Relatorio += "## Acoes executadas"
 $Relatorio += ""
@@ -234,9 +234,9 @@ $Relatorio += "- Build do painel testado, quando script disponivel."
 $Relatorio += ""
 $Relatorio += "## Relatorios gerados"
 $Relatorio += ""
-$Relatorio += "- `relatorios/validacao_json_publico.md`"
-$Relatorio += "- `relatorios/inventario_planilhas.md`"
-$Relatorio += "- `relatorios/inventario_planilhas.csv`"
+$Relatorio += "- relatorios/validacao_json_publico.md"
+$Relatorio += "- relatorios/inventario_planilhas.md"
+$Relatorio += "- relatorios/inventario_planilhas.csv"
 $Relatorio += ""
 $Relatorio += "## Alertas"
 $Relatorio += ""
@@ -248,7 +248,7 @@ if ($AlertasSensiveis.Count -eq 0) {
 $Relatorio += ""
 $Relatorio += "## Proximo passo"
 $Relatorio += ""
-$Relatorio += "Enviar o conteudo de `relatorios/inventario_planilhas.md` para revisao das colunas disponiveis por ano."
+$Relatorio += "Enviar o conteudo de relatorios/inventario_planilhas.md para revisao das colunas disponiveis por ano."
 
 $RelatorioPath = "relatorios\relatorio_consolidado_sem_codex.md"
 $Relatorio -join "`n" | Set-Content -LiteralPath $RelatorioPath -Encoding UTF8
