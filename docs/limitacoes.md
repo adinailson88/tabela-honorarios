@@ -12,17 +12,17 @@ Quando a expansão não puder ser executada ou verificada, registrar:
 
 ## Agregado anual 2015-2022
 
-O agregado público 2015-2022 foi gerado a partir das planilhas semestrais locais em `C:\Users\adina\Meu Drive\ARTS Adinailson` e do CSV consolidado `ARTs 2022 01022024.csv`.
+O agregado público do período 2015-2022 foi gerado a partir de planilhas semestrais de ARTs do CREA-BA e de uma base consolidada de 2022.
 
 As bases anuais brutas usadas nessa agregação não possuem campo `codigo_tos`. Por isso, nos registros anuais agregados, a dimensão TOS é mantida como:
 
 `Informação insuficiente para verificar.`
 
-Os arquivos `.xls` de 2015 (2º semestre) a 2019 (ambos semestres) têm 65.535 linhas de dados lidas em cada semestre, exatamente o limite do formato `.xls`. Isso indica truncamento quase certo na origem: os totais desses anos devem ser tratados como mínimo observado, não como universo necessariamente completo.
+As planilhas semestrais de 2015 (2º semestre) a 2019 (ambos semestres) têm 65.535 linhas de dados lidas em cada semestre, exatamente o limite técnico do formato antigo de planilha eletrônica em que foram exportadas. Isso indica truncamento quase certo na origem: os totais desses anos devem ser tratados como mínimo observado, não como universo necessariamente completo.
 
-As planilhas `.xlsx` de 2015 (1º semestre), 2020 (ambos semestres) e 2021 (ambos semestres) também têm 65.534 linhas de dados por semestre. Esse valor não é limite técnico do formato `.xlsx`, mas é a mesma cifra do teto legado do `.xls` — a hipótese mais provável é que a exportação original (antes de virar `.xlsx`) tenha passado pelo mesmo processo de extração limitado a esse teto. Sem uma fonte oficial de total de ARTs por ano para comparar, essa suspeita não pode ser confirmada nem descartada; os totais desses semestres também devem ser tratados como mínimo observado.
+As planilhas de 2015 (1º semestre), 2020 (ambos semestres) e 2021 (ambos semestres) também têm 65.534 linhas de dados por semestre. Esse valor não é limite técnico do formato em que essas planilhas foram entregues, mas é a mesma cifra do teto do formato mais antigo — a hipótese mais provável é que a exportação original tenha passado pelo mesmo processo de extração limitado a esse teto. Sem uma fonte oficial de total de ARTs por ano para comparar, essa suspeita não pode ser confirmada nem descartada; os totais desses semestres também devem ser tratados como mínimo observado.
 
-O agregado gerado por `scripts/agrega_anos_publico.py` marca essa limitação no manifesto (`docs/modelos/manifesto_bases_anuais_modelo.csv`, coluna `observacao`) usando a contagem real de linhas lidas (65.534-65.536), não a extensão do arquivo — porque o mesmo teto suspeito apareceu em arquivos `.xls` e `.xlsx`. Apenas 2022 (CSV com 726.028 linhas) está fora dessa faixa e pode ser tratado como contagem completa da fonte.
+Apenas a base de 2022 (726.028 linhas) está fora dessa faixa suspeita e pode ser tratada como contagem completa da fonte.
 
 ## Valor declarado em ART
 
@@ -76,6 +76,6 @@ Sem fonte verificável, registrar:
 
 ## Dados não publicados
 
-Bases linha a linha derivadas das ARTs não devem ser publicadas no GitHub Pages por poderem conter identificadores, município, formação e valor por registro.
+Bases linha a linha derivadas das ARTs não são publicadas neste painel por poderem conter identificadores, município, formação e valor por registro individual.
 
 A publicação deve permanecer agregada.

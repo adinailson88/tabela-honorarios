@@ -36,7 +36,7 @@ body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;color:var(--gray800);
 .hmeta{min-width:210px;text-align:right;font-size:12px;opacity:.94;line-height:1.45}.hmeta strong{display:block;font-size:13px;color:#fff}
 .status{margin:0 0 14px;padding:10px 14px;border:1px solid var(--gray200);background:rgba(255,255,255,.86);color:var(--gray700);border-radius:12px;font-size:12.5px;box-shadow:var(--soft)}
 .status.warn{border-color:#f59e0b;background:#fffbeb;color:#92400e}
-.kpis{display:grid;grid-template-columns:repeat(6,minmax(140px,1fr));gap:12px;margin-bottom:12px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:12px}
 .kpi{background:var(--card);border:1px solid rgba(148,163,184,.26);border-radius:var(--radius);padding:13px;min-height:104px;box-shadow:var(--soft);display:grid;grid-template-columns:40px 1fr;gap:10px;align-items:center}
 .kicon{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--b900),var(--b600));color:#fff;font-size:15px;font-weight:900;box-shadow:0 6px 14px rgba(7,87,159,.24)}
 .ktitle{margin:0 0 6px;font-size:11.5px;color:var(--gray700);font-weight:700}.kval{margin:0;font-size:clamp(20px,2vw,28px);color:var(--b950);font-weight:900;letter-spacing:0;line-height:1.05}
@@ -62,6 +62,13 @@ td{border-bottom:1px solid var(--gray200);padding:8px;text-align:center;vertical
 td.txt{text-align:left;font-variant-numeric:normal}.muted{color:var(--gray600)}.small{font-size:12px}
 .tag{display:inline-block;font-size:10px;padding:2px 7px;border-radius:20px;border:1px solid var(--gray300);color:var(--gray600);white-space:nowrap}
 .tag.new{color:#8a5a00;border-color:#f3c969;background:#fff7d6}.tag.low{color:#b5543e;border-color:#f0b09d;background:#fff0e8}
+.tag.ok{color:#0f6b48;border-color:#9cd9bd;background:#e8f8f1}
+.checkrow{display:flex;align-items:flex-start;gap:8px;margin-top:10px;font-size:12px;font-weight:700;line-height:1.35}
+.checkrow input{margin-top:2px}
+.disclaimer{margin:0 0 10px;padding:8px 10px;border-radius:10px;background:#eef2f7;color:var(--gray700);font-size:11.5px;line-height:1.4;border:1px solid var(--gray200)}
+.svcname{background:none;border:none;padding:0;font:inherit;color:var(--b600);font-weight:800;cursor:pointer;text-decoration:underline;text-align:left}
+.boxplot-wrap{overflow-x:auto}
+.boxplot-cap{margin:0 0 8px;font-size:11.5px;color:var(--gray600);line-height:1.4}
 details summary{cursor:pointer;font-weight:800;color:var(--b950)}
 .foot{margin-top:12px;border-radius:12px;background:#eaf2fb;border:1px solid #d8e7f7;color:var(--gray700);padding:10px 12px;font-size:11.5px;line-height:1.4}
 .tabs{display:flex;gap:8px;margin-bottom:14px}
@@ -96,11 +103,13 @@ details summary{cursor:pointer;font-weight:800;color:var(--b950)}
   <div class="fcard"><label for="fClasse">Classe de confiabilidade</label><select id="fClasse" multiple><option value="A">A - base de cálculo</option><option value="B">B - secundária</option><option value="C">C - só diagnóstico</option><option value="D">D - excluída</option></select></div>
   <div class="fcard"><label for="fNat">Natureza do valor</label><select id="fNat" multiple></select></div>
   <div class="fcard"><label for="fGrupo">Grupo SENGE</label><select id="fGrupo" multiple></select></div>
-  <div class="fcard"><label for="fServico">Serviço padronizado</label><select id="fServico" multiple></select></div>
+  <div class="fcard"><label for="fServico">Serviço padronizado</label><select id="fServico" multiple></select>
+    <label class="checkrow" for="fSoConfiavel"><input type="checkbox" id="fSoConfiavel"> Somente serviços com referência confiável de preço</label>
+  </div>
   <div class="fcard"><label for="fGrupoTos">Grupo TOS</label><select id="fGrupoTos" multiple></select></div>
   <div class="fcard"><label for="munSearch">Município</label><input id="munSearch" placeholder="filtrar lista"><select id="fMun" multiple></select></div>
   <button class="btn" id="btnLimpar">Limpar filtros</button>
-  <div class="note"><strong>Sobre os dados</strong>Camada TOS com dados agregados. A ART é evidência auxiliar e indireta; valor declarado não é honorário líquido. Mediana e IQR só aparecem para Classe A + provável honorário técnico. Trocar o ano recarrega só o agregado daquele ano.</div>
+  <div class="note"><strong>Sobre os dados</strong>Camada TOS com dados agregados a partir de ARTs registradas no sistema SITAC do CREA-BA. A ART é evidência auxiliar e indireta; valor declarado não é honorário líquido. Mediana e IQR só aparecem para Classe A + provável honorário técnico + n≥5. Trocar o ano recarrega só o agregado daquele ano.</div>
 </aside>
 <main class="main">
   <div class="tabs">
@@ -110,7 +119,7 @@ details summary{cursor:pointer;font-weight:800;color:var(--b950)}
   <div id="viewPainel" class="tabview active">
   <header class="head">
     <div><h2>Painel TOS · Natureza do Valor · Município</h2><p>Subsídio técnico para análise orientativa da Tabela de Honorários do SENGE/BA.</p></div>
-    <div class="hmeta">Gerado em<strong id="gerado"></strong><span id="fonteCurta">dados locais agregados</span></div>
+    <div class="hmeta">Gerado em<strong id="gerado"></strong><span id="fonteCurta">ARTs agregadas (SITAC/CREA-BA)</span></div>
   </header>
   <div id="status" class="status warn"></div>
   <section class="kpis">
@@ -120,13 +129,18 @@ details summary{cursor:pointer;font-weight:800;color:var(--b950)}
     <div class="kpi green"><div class="kicon">Md</div><div><p class="ktitle">Mediana confiável</p><p class="kval" id="kMed">—</p><p class="ksub">valor em R$ por unidade</p></div></div>
     <div class="kpi"><div class="kicon">IQR</div><div><p class="ktitle">Q1-Q3 confiável</p><p class="kval" id="kIqr" style="font-size:18px">—</p><p class="ksub">faixa interquartil</p></div></div>
     <div class="kpi orange"><div class="kicon">Obr</div><div><p class="ktitle">% obra/contrato</p><p class="kval" id="kObra">—</p><p class="ksub">na seleção atual</p></div></div>
+    <div class="kpi green"><div class="kicon">✓</div><div><p class="ktitle">Serviços com referência confiável</p><p class="kval" id="kConfiaveis">0</p><p class="ksub" id="kConfiaveisSub">de 0 serviços mapeados no ano</p></div></div>
   </section>
   <section class="grid">
     <div class="card s4"><h3>Bucket "Não mapeado"</h3><p class="sub">Mesmo subconjunto TOS: comparação antes/depois.</p><div class="bars" id="barsNaoMapeado"></div></div>
     <div class="card s4"><h3>Natureza do valor declarado</h3><p class="sub">Distribuição da seleção atual.</p><div class="barstack" id="natbar"></div><div class="legend" id="natLegend"></div></div>
     <div class="card s4"><h3>Classes de confiabilidade</h3><p class="sub">Distribuição do subconjunto TOS completo.</p><div class="barstack" id="classbar"></div><div class="legend" id="classLegend"></div></div>
     <div class="card s6"><h3>Top serviços/unidades na base confiável</h3><p class="sub">Classe A + provável honorário técnico; cada unidade de medida forma grupo próprio.</p><div class="bars" id="barsServicos"></div></div>
-    <div class="card s6"><h3>Top grupos TOS na seleção</h3><p class="sub">Frequência agregada, independentemente da natureza monetária.</p><div class="bars" id="barsGrupoTos"></div></div>
+    <div class="card s6"><h3>ARTs por serviço (todas as classes) na seleção</h3><p class="sub">Quantidade de ARTs por serviço, independente de haver ou não referência de preço confiável.</p><div class="bars" id="barsServicoTodasClasses"></div></div>
+    <div class="card s6"><h3>Top grupos TOS na seleção</h3><p class="sub">Ranking por quantidade de ARTs (contagem agregada) na seleção atual; não é ranking por valor monetário.</p><div class="bars" id="barsGrupoTos"></div></div>
+    <div class="card s6"><h3>Municípios do serviço/seleção filtrada</h3><p class="sub">Quantidade de ARTs por município, na seleção atual de filtros.</p><p class="disclaimer">Mapa geográfico indisponível; exibindo lista territorial dos municípios encontrados, ordenada por quantidade de ARTs.</p><div class="bars" id="barsMunicipio"></div></div>
+    <div class="card s12"><h3>Serviços com referência confiável de preço</h3><p class="sub">Lista independente dos filtros de serviço/município: reúne todo serviço que atinge Classe A + provável honorário técnico + n≥5 no ano carregado. Use para escolher diretamente o que filtrar, sem testar opção por opção.</p><div class="tablewrap"><table id="reliableTable"><thead><tr><th>Serviço</th><th>Grupo SENGE</th><th>Grupo TOS</th><th>Unidade</th><th>n</th><th>Mediana</th><th>Q1</th><th>Q3</th><th>Municípios</th></tr></thead><tbody></tbody></table></div><p class="disclaimer">A mediana e o IQR são evidência agregada e auxiliar, derivada do valor declarado em ART. Não constituem honorário definitivo, contrato, nota fiscal ou piso obrigatório.</p></div>
+    <div class="card s12"><h3>Boxplot agregado - serviços com referência confiável</h3><p class="boxplot-cap">Boxplot construído a partir de Q1, mediana e Q3 de cada serviço/unidade (base confiável). Não representa valores mínimos, máximos, pontos individuais ou outliers, pois o agregado publicado não contém essas informações. Mostra os serviços selecionados no filtro; sem seleção, mostra os 10 com maior n.</p><div class="boxplot-wrap" id="boxplotConfiaveis"></div></div>
     <div class="card s12"><h3>Serviços - referência confiável observada</h3><p class="sub">Mediana, Q1, Q3 e IQR em R$ por unidade de medida, apenas para Classe A + provável honorário técnico. n&lt;5 = Informação insuficiente para verificar.</p><div class="tablewrap"><table id="svcTable"><thead><tr><th>Serviço</th><th>Unidade</th><th>Grupo</th><th>n</th><th>Mediana</th><th>Q1</th><th>Q3</th><th>IQR</th><th>Obs.</th></tr></thead><tbody></tbody></table></div></div>
     <div class="card s12"><details open><summary>Metodologia e limitações (resumo)</summary><div class="small muted" style="margin-top:8px">
       <p><b>Premissa central.</b> Os dados de ART são evidência auxiliar, indireta e agregada de escopo, atividade, localidade, responsabilidade técnica e valor declarado, não prova isolada de honorário profissional contratado.</p>
@@ -135,14 +149,16 @@ details summary{cursor:pointer;font-weight:800;color:var(--b950)}
       <p><b>Finalidade.</b> Documento de subsídio técnico, orientativo e agregado; não é preço obrigatório, piso, tabela vinculante nem ranking de pessoas ou empresas.</p>
       <p><button type="button" class="linklike" data-goto-docs>Ver documentação completa (metodologia, limitações, fontes, dicionário de dados, auditoria) →</button></p>
     </div></details></div>
-    <div class="foot s12">Painel institucional derivado da metodologia validada do projeto tabela-honorarios. Esta variante não depende de internet externa, exceto para buscar o JSON do ano selecionado no próprio repositório.</div>
+    <div class="foot s12">Painel de subsídio técnico do SENGE/BA com base em ARTs do CREA-BA. Esta variante não depende de internet externa, exceto para buscar o agregado do ano selecionado dentro do próprio painel.</div>
   </section>
   </div>
   <div id="viewDocs" class="tabview">
     <div class="card s12">
 <p class="docnav"><a href="#doc-metodologia">Metodologia</a> · <a href="#doc-limitacoes">Limitações</a> · <a href="#doc-fontes">Fontes</a> · <a href="#doc-dicionario">Dicionário de dados</a> · <a href="#doc-auditoria">Auditoria</a></p>
 <section class="docsec" id="doc-metodologia"><h2>Metodologia</h2>
-<p>Este documento registra a metodologia atual do projeto <code>tabela-honorarios</code>.</p>
+<p>Este documento explica como o painel de subsídio técnico para a Tabela de Honorários do SENGE/BA foi construído e como ele deve ser lido.</p>
+<h3>Fonte dos dados</h3>
+<p>As informações usadas neste painel têm origem nas Anotações de Responsabilidade Técnica (ART) registradas no sistema SITAC do CREA-BA. Os dados são tratados, classificados e agregados antes da publicação; nenhuma ART individual é exibida.</p>
 <h3>Finalidade</h3>
 <p>O projeto tem finalidade técnica, orientativa e agregada. O painel não define preço obrigatório, piso, tabela vinculante, ranking de profissionais, ranking de empresas ou comprovação individual de honorários.</p>
 <p>Os dados de ARTs do CREA-BA são usados como evidência auxiliar, indireta e agregada de escopo, atividade, localidade, responsabilidade técnica e valor declarado.</p>
@@ -174,7 +190,11 @@ details summary{cursor:pointer;font-weight:800;color:var(--b950)}
 <h3>Serviços novos e lacunas SENGE</h3>
 <p>Serviços com baixa amostra, especialmente <code>n &lt; 5</code>, não devem ser convertidos em referência de honorário sem ressalva explícita.</p>
 <p>Separar:</p>
-<ul><li>referência confiável observada;</li><li>baixa amostra;</li><li>serviço novo;</li><li>lacuna da tabela SENGE;</li><li>diagnóstico de demanda;</li><li>informação insuficiente para verificar.</li></ul></section>
+<ul><li>referência confiável observada;</li><li>baixa amostra;</li><li>serviço novo;</li><li>lacuna da tabela SENGE;</li><li>diagnóstico de demanda;</li><li>informação insuficiente para verificar.</li></ul>
+<h3>Termos estatísticos usados no painel</h3>
+<ul><li>**n**: número de ARTs que compõem o cálculo. Quanto maior, mais estável é a leitura; abaixo de 5, o painel não calcula referência monetária.</li><li>**mediana**: valor central da distribuição de valores declarados — metade dos registros está acima e metade abaixo. É preferida à média porque é menos sensível a valores extremos.</li><li>**Q1 e Q3 (primeiro e terceiro quartis)**: delimitam a faixa onde estão os 50% de valores mais centrais da distribuição (entre 25% e 75%).</li><li>**IQR (intervalo interquartil)**: distância entre Q3 e Q1. Ajuda a visualizar a dispersão dos valores declarados para um mesmo serviço.</li><li>**Classe de confiabilidade (A, B, C, D)**: indica o quanto um registro de ART pode ser associado com segurança a um único serviço e a um único valor. Classe A reúne ART com atividade única e valor associável com baixo risco de mistura entre serviços — por isso é a única classe usada para cálculo monetário. Classes B, C e D servem para análise secundária, diagnóstico de demanda ou apenas registro de volume, nunca para cálculo de honorário.</li><li>**Provável honorário técnico**: uma das classificações possíveis para a natureza do valor declarado em ART, indicando que o valor é compatível com elaboração de projeto, consultoria ou atividade técnica (e não com execução de obra, taxa simbólica ou valor incongruente).</li></ul>
+<h3>Como ler o painel</h3>
+<ul><li>**Serviços com referência confiável de preço**: lista, de forma independente dos demais filtros, todo serviço que atinge Classe A + provável honorário técnico + n≥5 no ano carregado, com mediana, Q1, Q3 e os municípios em que aparece. Use essa lista para escolher diretamente o que investigar, em vez de testar filtro por filtro.</li><li>**Filtro "Somente serviços com referência confiável de preço"**: restringe a lista de serviços do filtro lateral apenas aos que têm preço confiável. Os demais serviços permanecem visíveis nas opções normais, identificados como "sem referência confiável" ou "baixa amostra".</li><li>**Boxplot agregado**: representa graficamente a caixa entre Q1 e Q3, com uma linha na mediana, para os serviços com referência confiável. Por ser construído a partir de quartis já agregados, ele não mostra valores mínimos, máximos, pontos individuais nem outliers — apenas a faixa central da distribuição.</li><li>**Municípios do serviço/seleção filtrada**: mostra, em lista ordenada por quantidade de ARTs, os municípios em que o serviço ou a combinação de filtros escolhida aparece. Como não há geometria territorial (mapa) disponível nos dados agregados publicados, essa informação é exibida como lista/ranking, não como mapa.</li><li>**Top grupos TOS**: ranking por quantidade de ARTs (contagem), não por valor monetário. Quando não há ARTs suficientes para os filtros aplicados, o painel explica isso em vez de exibir uma seção vazia.</li><li>**Tabela "Serviços - referência confiável observada"**: mostra todo serviço/unidade dentro da seleção atual de filtros, indicando explicitamente quando o resultado é <code>Informação insuficiente para verificar.</code> por baixa amostra.</li></ul></section>
 <section class="docsec" id="doc-limitacoes"><h2>Limitações metodológicas</h2>
 <p>Este documento registra limitações conhecidas ou a verificar no projeto.</p>
 <h3>Escopo atual da camada TOS</h3>
@@ -182,12 +202,12 @@ details summary{cursor:pointer;font-weight:800;color:var(--b950)}
 <p>Quando a expansão não puder ser executada ou verificada, registrar:</p>
 <p><code>Informação insuficiente para verificar.</code></p>
 <h3>Agregado anual 2015-2022</h3>
-<p>O agregado público 2015-2022 foi gerado a partir das planilhas semestrais locais em <code>C:\Users\adina\Meu Drive\ARTS Adinailson</code> e do CSV consolidado <code>ARTs 2022 01022024.csv</code>.</p>
+<p>O agregado público do período 2015-2022 foi gerado a partir de planilhas semestrais de ARTs do CREA-BA e de uma base consolidada de 2022.</p>
 <p>As bases anuais brutas usadas nessa agregação não possuem campo <code>codigo_tos</code>. Por isso, nos registros anuais agregados, a dimensão TOS é mantida como:</p>
 <p><code>Informação insuficiente para verificar.</code></p>
-<p>Os arquivos <code>.xls</code> de 2015 (2º semestre) a 2019 (ambos semestres) têm 65.535 linhas de dados lidas em cada semestre, exatamente o limite do formato <code>.xls</code>. Isso indica truncamento quase certo na origem: os totais desses anos devem ser tratados como mínimo observado, não como universo necessariamente completo.</p>
-<p>As planilhas <code>.xlsx</code> de 2015 (1º semestre), 2020 (ambos semestres) e 2021 (ambos semestres) também têm 65.534 linhas de dados por semestre. Esse valor não é limite técnico do formato <code>.xlsx</code>, mas é a mesma cifra do teto legado do <code>.xls</code> — a hipótese mais provável é que a exportação original (antes de virar <code>.xlsx</code>) tenha passado pelo mesmo processo de extração limitado a esse teto. Sem uma fonte oficial de total de ARTs por ano para comparar, essa suspeita não pode ser confirmada nem descartada; os totais desses semestres também devem ser tratados como mínimo observado.</p>
-<p>O agregado gerado por <code>scripts/agrega_anos_publico.py</code> marca essa limitação no manifesto (<code>docs/modelos/manifesto_bases_anuais_modelo.csv</code>, coluna <code>observacao</code>) usando a contagem real de linhas lidas (65.534-65.536), não a extensão do arquivo — porque o mesmo teto suspeito apareceu em arquivos <code>.xls</code> e <code>.xlsx</code>. Apenas 2022 (CSV com 726.028 linhas) está fora dessa faixa e pode ser tratado como contagem completa da fonte.</p>
+<p>As planilhas semestrais de 2015 (2º semestre) a 2019 (ambos semestres) têm 65.535 linhas de dados lidas em cada semestre, exatamente o limite técnico do formato antigo de planilha eletrônica em que foram exportadas. Isso indica truncamento quase certo na origem: os totais desses anos devem ser tratados como mínimo observado, não como universo necessariamente completo.</p>
+<p>As planilhas de 2015 (1º semestre), 2020 (ambos semestres) e 2021 (ambos semestres) também têm 65.534 linhas de dados por semestre. Esse valor não é limite técnico do formato em que essas planilhas foram entregues, mas é a mesma cifra do teto do formato mais antigo — a hipótese mais provável é que a exportação original tenha passado pelo mesmo processo de extração limitado a esse teto. Sem uma fonte oficial de total de ARTs por ano para comparar, essa suspeita não pode ser confirmada nem descartada; os totais desses semestres também devem ser tratados como mínimo observado.</p>
+<p>Apenas a base de 2022 (726.028 linhas) está fora dessa faixa suspeita e pode ser tratada como contagem completa da fonte.</p>
 <h3>Valor declarado em ART</h3>
 <p>O valor declarado em ART não equivale automaticamente a honorário profissional.</p>
 <p>Pode representar, entre outras possibilidades:</p>
@@ -211,24 +231,31 @@ details summary{cursor:pointer;font-weight:800;color:var(--b950)}
 <p>Sem fonte verificável, registrar:</p>
 <p><code>Informação insuficiente para verificar.</code></p>
 <h3>Dados não publicados</h3>
-<p>Bases linha a linha derivadas das ARTs não devem ser publicadas no GitHub Pages por poderem conter identificadores, município, formação e valor por registro.</p>
+<p>Bases linha a linha derivadas das ARTs não são publicadas neste painel por poderem conter identificadores, município, formação e valor por registro individual.</p>
 <p>A publicação deve permanecer agregada.</p></section>
 <section class="docsec" id="doc-fontes"><h2>Fontes</h2>
-<p>Este documento deve registrar as fontes usadas no projeto.</p>
-<h3>Fontes confirmadas no repositório</h3>
-<table class="doctable"><thead><tr><th>Fonte</th><th>Uso</th><th>Situação</th></tr></thead><tbody><tr><td><code>TABELA TOS - 2.xlsx</code>, aba <code>ARTs CREA 2022 (TOS)</code></td><td>Camada TOS atual do painel agregado</td><td>Fonte indicada no JSON publicado</td></tr><tr><td><code>dados_tos_valor_municipio.json</code></td><td>Base agregada usada pelo painel</td><td>Publicada no repositório</td></tr><tr><td><code>index.html</code></td><td>Arquivo publicado pelo GitHub Pages</td><td>Publicado na raiz</td></tr><tr><td><code>scripts/build_dashboard_tos_valor_municipio_layout_crea.py</code></td><td>Script de geração do painel institucional; publica <code>index.html</code> na raiz</td><td>Publicado em <code>scripts/</code></td></tr><tr><td><code>assets/anos/dados_tos_valor_municipio_AAAA.json</code></td><td>Agregado público por ano, carregado sob demanda pelo painel</td><td>Publicado no repositório</td></tr><tr><td><code>C:\Users\adina\Meu Drive\ARTS Adinailson\arts 2015 1 semestre - feito.xlsx</code></td><td>Agregação anual pública de ARTs 2015 (1º semestre)</td><td>Fonte local bruta, não versionada; 65.534 linhas, mesmo teto suspeito do <code>.xls</code> — ver <code>docs/limitacoes.md</code></td></tr><tr><td><code>C:\Users\adina\Meu Drive\ARTS Adinailson\arts 2015 2 semestre.xls</code> a <code>arts 2019 2 semestre.xls</code></td><td>Agregação anual pública de ARTs 2015 (2º semestre) a 2019</td><td>Fonte local bruta, não versionada; <code>.xls</code> no limite do formato (65.535 linhas)</td></tr><tr><td><code>C:\Users\adina\Meu Drive\ARTS Adinailson\arts 2020 1 semestre.xlsx</code> a <code>arts 2021 2 semestre.xlsx</code></td><td>Agregação anual pública de ARTs 2020-2021</td><td>Fonte local bruta, não versionada; 65.534 linhas, mesmo teto suspeito do <code>.xls</code> — ver <code>docs/limitacoes.md</code></td></tr><tr><td><code>C:\Users\adina\Meu Drive\ARTS Adinailson\ARTs 2022 01022024.csv</code></td><td>Agregação anual pública de ARTs 2022</td><td>Fonte local bruta, não versionada; 726.028 linhas, fora da faixa suspeita — única base tratável como contagem completa</td></tr><tr><td><code>C:\Users\adina\Meu Drive\ARTS Adinailson\Análise ARTs.xlsx</code> e <code>Análise ARTs Agronomia.xlsx</code></td><td>Workbooks de análise/limpeza com abas metodológicas e abas 2020-2022</td><td>Inspecionados como material auxiliar; não usados como fonte primária do agregado anual</td></tr></tbody></table>
-<h3>Fontes a verificar antes de uso metodológico</h3>
-<table class="doctable"><thead><tr><th>Fonte necessária</th><th>Finalidade</th><th>Situação padrão</th></tr></thead><tbody><tr><td>Planilhas anuais completas de ARTs</td><td>Inclusão de outros anos</td><td>Processadas localmente em <code>scripts/agrega_anos_publico.py</code>; brutos não versionados</td></tr><tr><td>Base oficial IBGE de municípios</td><td>Padronização municipal e código IBGE</td><td>Informação insuficiente para verificar.</td></tr><tr><td>De-para oficial CREA-BA município/inspetoria/SUREG</td><td>Regionalização institucional</td><td>Informação insuficiente para verificar.</td></tr><tr><td>Tabela atual do SENGE/BA</td><td>Cruzamento de serviços, unidades e lacunas</td><td>Informação insuficiente para verificar.</td></tr><tr><td>Critério documentado de CUB</td><td>Referência de custo quando aplicável</td><td>Informação insuficiente para verificar.</td></tr><tr><td>Critérios técnicos de esforço profissional</td><td>Discussão metodológica de honorários</td><td>Informação insuficiente para verificar.</td></tr></tbody></table>
-<h3>Regra de preenchimento</h3>
-<p>Não registrar fonte por inferência.</p>
-<p>Cada fonte deve conter, quando disponível:</p>
-<ul><li>nome do arquivo ou documento;</li><li>origem institucional;</li><li>versão ou data;</li><li>caminho local ou URL pública, quando permitido;</li><li>campo ou coluna utilizada;</li><li>etapa do pipeline em que foi usada;</li><li>limitação de uso.</li></ul>
-<p>Quando qualquer elemento essencial não puder ser verificado, registrar:</p>
+<p>Este documento descreve, para quem consulta o painel, de onde vêm os dados exibidos e o que ainda não está confirmado por fonte oficial.</p>
+<h3>Fonte primária dos dados</h3>
+<p>Os dados que alimentam o painel têm origem nas Anotações de Responsabilidade Técnica (ART) registradas no sistema SITAC do CREA-BA. A ART é o documento pelo qual um profissional registra, junto ao Conselho, a responsabilidade técnica por uma atividade ou serviço de engenharia, e nela consta um valor declarado.</p>
+<p>Esse valor declarado não é, por si só, comprovante de honorário: pode representar honorário técnico, valor de obra ou contrato, taxa simbólica, ou até um valor inconsistente. Por isso o painel classifica a natureza do valor antes de qualquer uso estatístico — ver a seção Metodologia desta documentação.</p>
+<h3>Cobertura temporal</h3>
+<p>Os agregados publicados cobrem o período de 2015 a 2022. Para os anos de 2015 a 2021, os totais anuais devem ser lidos como mínimo observado, não necessariamente como o total real de ARTs emitidas naquele ano: as planilhas semestrais de origem desses anos apresentam uma quantidade de linhas muito próxima do limite técnico de formatos antigos de planilha eletrônica, o que sugere possível truncamento na extração original. Apenas o ano de 2022 está fora dessa faixa e pode ser tratado como contagem completa. Detalhes na seção Limitações desta documentação.</p>
+<h3>Camada de classificação por tipo de serviço (TOS)</h3>
+<p>Uma parte da base de 2022 foi classificada por tipo de serviço (TOS), permitindo agrupar as ARTs por atividade de forma mais padronizada. Essa classificação ainda não está disponível para todos os anos: quando o campo TOS não existe na base de um ano, o painel exibe <code>Informação insuficiente para verificar.</code> em vez de presumir um agrupamento.</p>
+<h3>Fontes complementares ainda não incorporadas</h3>
+<p>As informações abaixo são relevantes para a metodologia, mas ainda não têm fonte oficial confirmada e incorporada ao painel. Enquanto isso, qualquer leitura que dependeria delas deve ser tratada como <code>Informação insuficiente para verificar.</code></p>
+<table class="doctable"><thead><tr><th>Informação necessária</th><th>Finalidade</th><th>Situação</th></tr></thead><tbody><tr><td>Base oficial do IBGE de municípios</td><td>Padronização de nomes de município e código IBGE</td><td>Informação insuficiente para verificar.</td></tr><tr><td>De-para oficial do CREA-BA entre município, inspetoria e SUREG</td><td>Leitura regional/institucional</td><td>Informação insuficiente para verificar.</td></tr><tr><td>Tabela de honorários vigente do SENGE/BA</td><td>Cruzamento entre serviço, unidade de medida e eventuais lacunas de tabela</td><td>Informação insuficiente para verificar.</td></tr><tr><td>Critério técnico documentado de CUB</td><td>Referência de custo de construção, quando aplicável</td><td>Informação insuficiente para verificar.</td></tr><tr><td>Critérios técnicos de esforço profissional</td><td>Discussão metodológica de honorários</td><td>Informação insuficiente para verificar.</td></tr></tbody></table>
+<h3>Regra de leitura</h3>
+<p>Nenhuma fonte é presumida. Quando uma informação não pode ser confirmada por fonte oficial, o painel e esta documentação registram exatamente:</p>
 <p><code>Informação insuficiente para verificar.</code></p></section>
 <section class="docsec" id="doc-dicionario"><h2>Dicionário de dados</h2>
-<p>Este documento descreve campos esperados ou derivados no pipeline metodológico.</p>
+<p>Este documento explica os campos e classificações usados para transformar registros de ART em dados agregados exibidos no painel.</p>
 <h3>Campos de identificação</h3>
-<table class="doctable"><thead><tr><th>Campo</th><th>Descrição</th><th>Publicar no GitHub Pages?</th></tr></thead><tbody><tr><td><code>id_art</code></td><td>Identificador individual da ART, quando existir.</td><td>Não</td></tr><tr><td><code>ano</code></td><td>Ano de referência da ART ou da base processada.</td><td>Sim, agregado</td></tr><tr><td><code>fonte_arquivo</code></td><td>Nome do arquivo de origem.</td><td>Sim, em relatório</td></tr><tr><td><code>fonte_aba</code></td><td>Aba ou planilha de origem.</td><td>Sim, em relatório</td></tr></tbody></table>
+<table class="doctable"><thead><tr><th>Campo</th><th>Descrição</th><th>Aparece no painel público?</th></tr></thead><tbody><tr><td><code>id_art</code></td><td>Identificador individual da ART, quando existir.</td><td>Não</td></tr><tr><td><code>ano</code></td><td>Ano de referência da ART ou da base processada.</td><td>Sim, agregado</td></tr><tr><td><code>fonte_arquivo</code></td><td>Referência à planilha ou base de origem do registro.</td><td>Não, uso interno de rastreabilidade</td></tr><tr><td><code>fonte_aba</code></td><td>Aba ou período de origem dentro da base.</td><td>Não, uso interno de rastreabilidade</td></tr></tbody></table>
+<h3>Classe de confiabilidade</h3>
+<p>Cada ART recebe uma classe que indica o quanto ela pode ser associada com segurança a um único serviço e a um único valor declarado.</p>
+<table class="doctable"><thead><tr><th>Classe</th><th>Significado</th><th>Uso permitido</th><th>Uso proibido</th></tr></thead><tbody><tr><td><code>A</code></td><td>ART com atividade única e valor associável, com baixo risco de mistura entre serviços.</td><td>Cálculo monetário de referência (mediana, Q1, Q3); base principal do painel.</td><td>Ranking individual de profissional ou empresa.</td></tr><tr><td><code>B</code></td><td>ART com múltiplas linhas homogêneas (mesmo código, valor único replicado).</td><td>Análise secundária ou simulação, sempre com ressalva explícita.</td><td>Base principal de valor sem ressalva.</td></tr><tr><td><code>C</code></td><td>ART com múltiplas atividades ou códigos e valor único não decomponível entre elas.</td><td>Frequência, indicação de demanda e detecção de serviços novos.</td><td>Cálculo monetário por serviço.</td></tr><tr><td><code>D</code></td><td>ART com valor ausente, zerado ou implausível, ou serviço não mapeável.</td><td>Apenas registro de volume e motivo de exclusão.</td><td>Qualquer cálculo monetário.</td></tr></tbody></table>
+<p>Somente a Classe A, combinada com natureza do valor igual a provável honorário técnico e <code>n &gt;= 5</code>, gera referência monetária no painel.</p>
 <h3>Campos territoriais</h3>
 <table class="doctable"><thead><tr><th>Campo</th><th>Descrição</th><th>Observação</th></tr></thead><tbody><tr><td><code>municipio_original</code></td><td>Valor textual como veio da base.</td><td>Preservar em base local.</td></tr><tr><td><code>municipio_padronizado</code></td><td>Nome padronizado após normalização.</td><td>Só preencher com correspondência segura.</td></tr><tr><td><code>codigo_ibge</code></td><td>Código oficial IBGE do município.</td><td>Exige fonte oficial.</td></tr><tr><td><code>inspetoria_crea_ba</code></td><td>Inspetoria CREA-BA associada ao município.</td><td>Exige fonte oficial.</td></tr><tr><td><code>sureg_crea_ba</code></td><td>SUREG CREA-BA associada ao município.</td><td>Exige fonte oficial.</td></tr></tbody></table>
 <p>Sem correspondência segura, usar:</p>
@@ -252,7 +279,7 @@ details summary{cursor:pointer;font-weight:800;color:var(--b950)}
 <section class="docsec" id="doc-auditoria"><h2>Auditoria</h2>
 <p>Este documento define a trilha mínima de auditoria para cada processamento anual de ARTs.</p>
 <h3>Objetivo</h3>
-<p>Garantir rastreabilidade entre arquivos de entrada, regras de tratamento, bases intermediárias, dados agregados e arquivos publicados no GitHub Pages.</p>
+<p>Garantir rastreabilidade entre arquivos de entrada, regras de tratamento, bases intermediárias, dados agregados e o que é publicado no painel público.</p>
 <h3>Registro mínimo por processamento</h3>
 <p>Para cada ano processado, registrar:</p>
 <ul><li>ano de referência;</li><li>arquivo de origem;</li><li>aba ou planilha de origem;</li><li>data de obtenção do arquivo, quando disponível;</li><li>total de linhas lidas;</li><li>total de ARTs únicas;</li><li>duplicidades removidas;</li><li>registros sem município;</li><li>registros sem TOS;</li><li>registros sem valor declarado;</li><li>registros com valor zerado;</li><li>registros com valor extremo;</li><li>registros classificados como provável honorário técnico;</li><li>registros classificados como provável valor de obra ou contrato;</li><li>registros classificados como taxa simbólica ou valor simbólico;</li><li>registros com informação insuficiente para verificar;</li><li>total agregado publicado;</li><li>total não publicado por conter dado individualizado.</li></ul>
@@ -272,11 +299,10 @@ details summary{cursor:pointer;font-weight:800;color:var(--b950)}
 <p>Cada processamento deve produzir, quando aplicável:</p>
 <ul><li>relatório de auditoria anual;</li><li>resumo de qualidade da base;</li><li>dados agregados para publicação;</li><li>lista de limitações;</li><li>log de validação dos arquivos gerados.</li></ul>
 <h3>Publicação</h3>
-<p>Não publicar dados linha a linha de ART no GitHub Pages.</p>
+<p>Não publicar dados linha a linha de ART neste painel.</p>
 <p>A publicação deve conter somente dados agregados suficientes para visualização institucional, sem identificação individual de profissional, empresa, contratante ou ART específica.</p>
 <h3>Processamento anual executado em 2026-07-04</h3>
-<p>O script <code>scripts/agrega_anos_publico.py</code> processou as bases locais de 2015-2022 e gerou:</p>
-<ul><li><code>assets/dados_tos_valor_municipio.json</code>;</li><li><code>assets/anos/dados_tos_valor_municipio_2015.json</code> a <code>assets/anos/dados_tos_valor_municipio_2022.json</code>;</li><li><code>docs/modelos/manifesto_bases_anuais_modelo.csv</code>;</li><li><code>relatorios/auditoria_bases_anuais.md</code>.</li></ul>
+<p>O processamento mais recente consolidou as bases de ART de 2015 a 2022 e atualizou os agregados públicos consumidos pelo painel, incluindo o agregado combinado do período e um agregado individual por ano.</p>
 <p>Totais consolidados observados:</p>
 <ul><li>ARTs únicas agregadas no período 2015-2022: 513384;</li><li>ARTs únicas em 2022 no CSV consolidado: 230928;</li><li>registros Classe A com valor no vetor público do painel: 194051;</li><li>anos publicados no seletor do painel: 2015, 2016, 2017, 2018, 2019, 2020, 2021 e 2022.</li></ul>
 <p>Limitação registrada: as bases anuais não contêm <code>codigo_tos</code>; nesses registros, TOS foi mantido como <code>Informação insuficiente para verificar.</code>. Os <code>.xls</code> de 2015-2019 atingem o limite técnico do formato e têm possível truncamento na origem.</p></section>
@@ -299,12 +325,42 @@ const pct=(x,t)=>t?(100*x/t).toFixed(1)+'%':'—';
 function formatBRL(value){const n=Number(value);if(!Number.isFinite(n))return INSUF;return n.toLocaleString('pt-BR',{style:'currency',currency:'BRL',minimumFractionDigits:2,maximumFractionDigits:2});}
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 let D=null, SERV,GRP,UNID,MUN,NAT,GTOS,CC,A,AGG,TOTAL,HON;
+let RELIABLE=[], SERVICE_REF={};
 const cache=new Map();
 function unidadeLabel(u){if(typeof u==='string')return u;return UNID[u]||INSUF;}
 function brlUnidade(value,u){return formatBRL(value)+' / '+unidadeLabel(u);}
 function bindData(){
   SERV=D.servicos;GRP=D.grupo_de_servico;UNID=D.unidades||[INSUF];MUN=D.municipios;NAT=D.naturezas;GTOS=D.grupos_tos;CC=D.classe_count;
   A=D.classeA;AGG=D.agg;TOTAL=D.total_arts;HON=NAT.indexOf('provavel_honorario_tecnico');
+  computeServiceReference();
+}
+function computeServiceReference(){
+  const groups={};
+  for(let i=0;i<A.v.length;i++){
+    if(A.nat[i]!==HON)continue;
+    const s=A.s[i],u=A.u[i];
+    if(/^Nao mapeado/.test(SERV[s]))continue;
+    const key=s+'|'+u;
+    const g=(groups[key]=groups[key]||{s:s,u:u,vals:[],mun:new Set(),gt:{}});
+    g.vals.push(A.v[i]);g.mun.add(A.m[i]);g.gt[A.gt[i]]=(g.gt[A.gt[i]]||0)+1;
+  }
+  const allGroups=Object.values(groups).map(g=>({...g,q:qtiles(g.vals)}));
+  RELIABLE=allGroups.filter(g=>g.q&&g.q.n>=5).sort((a,b)=>b.q.n-a.q.n);
+  SERVICE_REF={};
+  allGroups.forEach(g=>{
+    const rec=(SERVICE_REF[g.s]=SERVICE_REF[g.s]||{groups:[]});
+    rec.groups.push(g);
+  });
+  Object.values(SERVICE_REF).forEach(rec=>{
+    rec.groups.sort((a,b)=>b.q.n-a.q.n);
+    rec.best=rec.groups[0];
+    rec.reliable=rec.groups.some(g=>g.q.n>=5);
+  });
+}
+function dominantGrupoTos(gtCountObj){
+  let bestK=null,bestV=-1;
+  Object.entries(gtCountObj).forEach(([k,v])=>{if(v>bestV){bestV=v;bestK=k;}});
+  return bestK===null?INSUF:(GTOS[+bestK]||INSUF);
 }
 function fill(sel,items,valIsIdx){const el=$(sel);items.forEach((t,i)=>{const o=document.createElement('option');o.value=valIsIdx?i:t;o.textContent=t;el.appendChild(o);});}
 function selected(id){return new Set([...$(id).selectedOptions].map(o=>isNaN(o.value)?o.value:+o.value));}
@@ -314,9 +370,9 @@ function filterState(){return{cl:selected('fClasse'),nt:selected('fNat'),gr:sele
 function matchesAgg(r,f,groupSvc){
   return (!f.cl.size||f.cl.has(CLASSES[r[0]]))&&(!f.sv.size||f.sv.has(r[1]))&&(!groupSvc||groupSvc.has(r[1]))&&(!f.mu.size||f.mu.has(r[4]))&&(!f.nt.size||f.nt.has(r[5]))&&(!f.gt.size||f.gt.has(r[6]));
 }
-function renderBars(id,items,maxVal){
+function renderBars(id,items,maxVal,emptyMsg){
   const el=$(id);el.innerHTML='';
-  if(!items.length){el.innerHTML='<div class="small muted">Nenhum registro para a seleção.</div>';return;}
+  if(!items.length){el.innerHTML='<div class="small muted">'+(emptyMsg||'Informação insuficiente para verificar com os filtros atuais.')+'</div>';return;}
   items.forEach(item=>{
     const row=document.createElement('div');row.className='hbar';
     const width=maxVal?Math.max(2,100*item.value/maxVal):0;
@@ -347,7 +403,7 @@ function renderNaoMapeado(){
 }
 function renderStatic(){
   $('gerado').textContent=D.gerado_em||INSUF;
-  $('fonteCurta').textContent='ARTs locais agregadas';
+  $('fonteCurta').textContent='ARTs agregadas (SITAC/CREA-BA)';
   $('escopoTos').textContent=fmt(TOTAL);
   const universo=D.universo_total_periodo||D.universo_total_2022;
   $('escopoUniverso').textContent=fmt(universo);
@@ -356,17 +412,71 @@ function renderStatic(){
   const classLabels=CLASSES.map(c=>({key:c,label:c+' - '+(c==='A'?'base de cálculo':c==='B'?'secundária':c==='C'?'só diagnóstico':'excluída')}));
   renderStack('classbar',CC,CC.A+CC.B+CC.C+CC.D,classLabels,CLASS_COLOR);
   renderLegend('classLegend',classLabels,CLASS_COLOR);
+  renderReliableSummary();
+}
+function renderReliableSummary(){
+  const servicosConfiaveis=new Set(RELIABLE.map(g=>g.s)).size;
+  $('kConfiaveis').textContent=fmt(servicosConfiaveis);
+  $('kConfiaveisSub').textContent='de '+fmt(SERV.length)+' serviços mapeados no ano';
+  const tb=document.querySelector('#reliableTable tbody');tb.innerHTML='';
+  if(!RELIABLE.length){
+    tb.innerHTML='<tr><td colspan="9" class="txt muted">Nenhum serviço atingiu Classe A + provável honorário técnico + n≥5 no ano carregado. Informação insuficiente para verificar.</td></tr>';
+    return;
+  }
+  RELIABLE.forEach(g=>{
+    const municipiosNomes=[...g.mun].map(m=>MUN[m]||INSUF).sort((a,b)=>a.localeCompare(b,'pt-BR'));
+    const municipiosTxt=municipiosNomes.length>4?(municipiosNomes.slice(0,4).join(', ')+' e mais '+(municipiosNomes.length-4)):municipiosNomes.join(', ');
+    const tr=document.createElement('tr');
+    tr.innerHTML='<td class="txt"><button type="button" class="svcname" data-svc="'+g.s+'">'+esc(SERV[g.s])+'</button></td>'+
+      '<td class="txt muted">'+esc(GRP[g.s]||INSUF)+'</td>'+
+      '<td class="txt muted">'+esc(dominantGrupoTos(g.gt))+'</td>'+
+      '<td class="txt">'+esc(unidadeLabel(g.u))+'</td>'+
+      '<td>'+fmt(g.q.n)+'</td>'+
+      '<td>'+brlUnidade(g.q.med,g.u)+'</td>'+
+      '<td>'+brlUnidade(g.q.q1,g.u)+'</td>'+
+      '<td>'+brlUnidade(g.q.q3,g.u)+'</td>'+
+      '<td class="txt small" title="'+esc(municipiosNomes.join(', '))+'">'+esc(municipiosTxt)+' ('+municipiosNomes.length+')</td>';
+    tb.appendChild(tr);
+  });
+  tb.querySelectorAll('[data-svc]').forEach(btn=>btn.addEventListener('click',()=>selectServico(+btn.dataset.svc)));
 }
 function resetDynamicFilterOptions(){
   ['fNat','fGrupo','fServico','fGrupoTos','fMun'].forEach(id=>{$(id).innerHTML='';});
   const grupos=[...new Set(GRP)].sort((a,b)=>a.localeCompare(b,'pt-BR'));fill('fGrupo',grupos,false);
   NAT.forEach((t,i)=>{const o=document.createElement('option');o.value=i;o.textContent=NAT_LABEL[t]||t;$('fNat').appendChild(o);});
-  SERV.map((s,i)=>[s,i]).sort((a,b)=>a[0].localeCompare(b[0],'pt-BR')).forEach(([s,i])=>{const o=document.createElement('option');o.value=i;o.textContent=s;$('fServico').appendChild(o);});
+  SERV.map((s,i)=>[s,i]).sort((a,b)=>a[0].localeCompare(b[0],'pt-BR')).forEach(([s,i])=>{
+    const o=document.createElement('option');o.value=i;
+    const ref=SERVICE_REF[i];
+    let label=s,reliable=false;
+    if(ref&&ref.reliable){
+      const g=ref.groups.find(x=>x.q.n>=5)||ref.best;
+      label+=' — referência confiável — n='+fmt(g.q.n)+' — mediana '+brlUnidade(g.q.med,g.u);
+      reliable=true;
+    }else if(ref&&ref.best){
+      label+=' — baixa amostra (n='+fmt(ref.best.q.n)+') — sem referência confiável';
+    }else{
+      label+=' — sem referência confiável';
+    }
+    o.textContent=label;o.dataset.reliable=reliable?'1':'0';
+    $('fServico').appendChild(o);
+  });
   GTOS.map((s,i)=>[s,i]).sort((a,b)=>a[0].localeCompare(b[0],'pt-BR')).forEach(([s,i])=>{const o=document.createElement('option');o.value=i;o.textContent=s;$('fGrupoTos').appendChild(o);});
   MUN.map((s,i)=>[s,i]).sort((a,b)=>a[0].localeCompare(b[0],'pt-BR')).forEach(([s,i])=>{const o=document.createElement('option');o.value=i;o.textContent=s;o.dataset.k=s.toLowerCase();$('fMun').appendChild(o);});
   [...$('fClasse').options].forEach(o=>o.selected=false);
   $('munSearch').value='';
   [...$('fMun').options].forEach(o=>o.hidden=false);
+  applyServicoConfiavelFilter();
+}
+function applyServicoConfiavelFilter(){
+  const only=$('fSoConfiavel').checked;
+  [...$('fServico').options].forEach(o=>{o.hidden=only&&o.dataset.reliable!=='1';});
+}
+function selectServico(idx){
+  [...$('fServico').options].forEach(o=>{o.hidden=false;o.selected=(+o.value===idx);});
+  [...$('fMun').options].forEach(o=>o.selected=false);
+  $('fSoConfiavel').checked=false;
+  recompute();
+  $('barsMunicipio').scrollIntoView({behavior:'smooth',block:'center'});
 }
 function setLoading(isLoading,anoValue){
   const overlay=$('loadingOverlay');
@@ -413,13 +523,14 @@ function initStaticUI(){
   selAno.addEventListener('change',e=>loadAno(e.target.value));
   $('munSearch').addEventListener('input',e=>{const q=e.target.value.toLowerCase();[...$('fMun').options].forEach(o=>{o.hidden=q&&!o.dataset.k.includes(q);});});
   ['fClasse','fNat','fGrupo','fServico','fGrupoTos','fMun'].forEach(id=>$(id).addEventListener('change',recompute));
-  $('btnLimpar').addEventListener('click',()=>{['fClasse','fNat','fGrupo','fServico','fGrupoTos','fMun'].forEach(id=>[...$(id).options].forEach(o=>o.selected=false));$('munSearch').value='';[...$('fMun').options].forEach(o=>o.hidden=false);recompute();});
+  $('fSoConfiavel').addEventListener('change',()=>{applyServicoConfiavelFilter();recompute();});
+  $('btnLimpar').addEventListener('click',()=>{['fClasse','fNat','fGrupo','fServico','fGrupoTos','fMun'].forEach(id=>[...$(id).options].forEach(o=>o.selected=false));$('munSearch').value='';[...$('fMun').options].forEach(o=>o.hidden=false);$('fSoConfiavel').checked=false;applyServicoConfiavelFilter();recompute();});
   initTabs();
 }
 function recompute(){
   const f=filterState(), groupSvc=groupServices(f.gr);
-  let nArts=0,baseA=0;const natCnt={},gtCnt={};
-  for(const r of AGG){if(matchesAgg(r,f,groupSvc)){nArts+=r[7];if(r[0]===0)baseA+=r[7];natCnt[r[5]]=(natCnt[r[5]]||0)+r[7];gtCnt[r[6]]=(gtCnt[r[6]]||0)+r[7];}}
+  let nArts=0,baseA=0;const natCnt={},gtCnt={},munCnt={},svcCnt={};
+  for(const r of AGG){if(matchesAgg(r,f,groupSvc)){nArts+=r[7];if(r[0]===0)baseA+=r[7];natCnt[r[5]]=(natCnt[r[5]]||0)+r[7];gtCnt[r[6]]=(gtCnt[r[6]]||0)+r[7];munCnt[r[4]]=(munCnt[r[4]]||0)+r[7];svcCnt[r[1]]=(svcCnt[r[1]]||0)+r[7];}}
   $('kArts').textContent=fmt(nArts);$('kArtsSub').textContent=fmt(TOTAL)+' no subconjunto TOS';$('kBaseA').textContent=fmt(baseA);
   const aAllowed=!f.cl.size||f.cl.has('A'), honAllowed=!f.nt.size||f.nt.has(HON), blocked=!aAllowed||!honAllowed;
   const bySUnit={};
@@ -444,9 +555,33 @@ function recompute(){
   const natLabels=NAT.map((name,i)=>({key:i,label:NAT_LABEL[name]||name}));
   const natColors=Object.fromEntries(NAT.map((name,i)=>[i,NAT_COLOR[name]]));
   renderStack('natbar',natCnt,nArts,natLabels,natColors);renderLegend('natLegend',natLabels,natColors);
-  const gtItems=Object.entries(gtCnt).map(([k,v])=>({label:GTOS[+k]||INSUF,value:v})).sort((a,b)=>b.value-a.value).slice(0,10);
+  const gtItems=Object.entries(gtCnt).map(([k,v])=>({label:GTOS[+k]||INSUF,value:v,display:fmt(v)+' ARTs'})).sort((a,b)=>b.value-a.value).slice(0,10);
   renderBars('barsGrupoTos',gtItems,gtItems.length?gtItems[0].value:1);
+  const munItems=Object.entries(munCnt).map(([k,v])=>({label:MUN[+k]||INSUF,value:v,display:fmt(v)+' ARTs'})).sort((a,b)=>b.value-a.value).slice(0,20);
+  renderBars('barsMunicipio',munItems,munItems.length?munItems[0].value:1);
+  const svcCntItems=Object.entries(svcCnt).map(([k,v])=>({label:SERV[+k]||INSUF,value:v,display:fmt(v)+' ARTs'})).sort((a,b)=>b.value-a.value).slice(0,15);
+  renderBars('barsServicoTodasClasses',svcCntItems,svcCntItems.length?svcCntItems[0].value:1);
   renderServiceBarsAndTable(bySUnit,blocked);
+  const boxGroups=(f.sv.size?RELIABLE.filter(g=>f.sv.has(g.s)):RELIABLE.slice(0,10)).map(g=>({label:SERV[g.s]+' / '+unidadeLabel(g.u),q1:g.q.q1,med:g.q.med,q3:g.q.q3,n:g.q.n}));
+  renderBoxplot('boxplotConfiaveis',boxGroups);
+}
+function renderBoxplot(id,groups){
+  const el=$(id);el.innerHTML='';
+  if(!groups.length){el.innerHTML='<div class="small muted">Informação insuficiente para verificar com os filtros atuais: nenhum serviço selecionado tem referência confiável de preço.</div>';return;}
+  const maxV=Math.max(...groups.map(g=>g.q3))*1.08||1;
+  const rowH=34,padL=230,padR=90,width=760,height=groups.length*rowH+16;
+  const scale=v=>padL+(v/maxV)*(width-padL-padR);
+  let svg='<svg viewBox="0 0 '+width+' '+height+'" width="100%" height="'+height+'" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif">';
+  groups.forEach((g,idx)=>{
+    const y=idx*rowH+16,x1=scale(g.q1),x3=scale(g.q3),xm=scale(g.med);
+    svg+='<text x="6" y="'+(y+4)+'" font-size="11" fill="#334155">'+esc(g.label.length>34?g.label.slice(0,33)+'…':g.label)+'</text>';
+    svg+='<line x1="'+padL+'" y1="'+y+'" x2="'+(width-padR)+'" y2="'+y+'" stroke="#e2e8f0" stroke-width="1"/>';
+    svg+='<rect x="'+Math.min(x1,x3)+'" y="'+(y-8)+'" width="'+Math.max(2,Math.abs(x3-x1))+'" height="16" fill="rgba(15,138,95,.18)" stroke="#0f8a5f" stroke-width="1.2" rx="3"/>';
+    svg+='<line x1="'+xm+'" y1="'+(y-8)+'" x2="'+xm+'" y2="'+(y+8)+'" stroke="#0f8a5f" stroke-width="2"/>';
+    svg+='<text x="'+(width-padR+8)+'" y="'+(y+4)+'" font-size="10" fill="#475569">n='+fmt(g.n)+'</text>';
+  });
+  svg+='</svg>';
+  el.innerHTML=svg;
 }
 function renderServiceBarsAndTable(bySUnit,blocked){
   const tb=document.querySelector('#svcTable tbody');tb.innerHTML='';
@@ -456,7 +591,7 @@ function renderServiceBarsAndTable(bySUnit,blocked){
   if(!rows.length){tb.innerHTML='<tr><td colspan="9" class="txt muted">Nenhum registro confiável para o filtro.</td></tr>';return;}
   rows.forEach(r=>{
     const n=r.vals.length,grp=GRP[r.s],unidade=unidadeLabel(r.u),isNew=/Servi[cç]o novo/.test(grp),low=n<5;
-    const obs=(low?'<span class="tag low">n&lt;5</span> ':'')+(isNew?'<span class="tag new">novo</span>':'');
+    const obs=(low?'<span class="tag low">n&lt;5</span> ':'<span class="tag ok">confiável</span> ')+(isNew?'<span class="tag new">novo</span>':'');
     const tr=document.createElement('tr');
     if(low){tr.innerHTML='<td class="txt">'+esc(SERV[r.s])+'</td><td class="txt">'+esc(unidade)+'</td><td class="txt muted">'+esc(grp)+'</td><td>'+fmt(n)+'</td><td colspan="4" class="muted">'+INSUF+' / '+esc(unidade)+'</td><td>'+obs+'</td>';}
     else{tr.innerHTML='<td class="txt">'+esc(SERV[r.s])+'</td><td class="txt">'+esc(unidade)+'</td><td class="txt muted">'+esc(grp)+'</td><td>'+fmt(n)+'</td><td>'+brlUnidade(r.q.med,r.u)+'</td><td>'+brlUnidade(r.q.q1,r.u)+'</td><td>'+brlUnidade(r.q.q3,r.u)+'</td><td>'+brlUnidade(r.q.q3-r.q.q1,r.u)+'</td><td>'+obs+'</td>';}

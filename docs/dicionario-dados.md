@@ -1,15 +1,28 @@
 # Dicionário de dados
 
-Este documento descreve campos esperados ou derivados no pipeline metodológico.
+Este documento explica os campos e classificações usados para transformar registros de ART em dados agregados exibidos no painel.
 
 ## Campos de identificação
 
-| Campo | Descrição | Publicar no GitHub Pages? |
+| Campo | Descrição | Aparece no painel público? |
 |---|---|---|
 | `id_art` | Identificador individual da ART, quando existir. | Não |
 | `ano` | Ano de referência da ART ou da base processada. | Sim, agregado |
-| `fonte_arquivo` | Nome do arquivo de origem. | Sim, em relatório |
-| `fonte_aba` | Aba ou planilha de origem. | Sim, em relatório |
+| `fonte_arquivo` | Referência à planilha ou base de origem do registro. | Não, uso interno de rastreabilidade |
+| `fonte_aba` | Aba ou período de origem dentro da base. | Não, uso interno de rastreabilidade |
+
+## Classe de confiabilidade
+
+Cada ART recebe uma classe que indica o quanto ela pode ser associada com segurança a um único serviço e a um único valor declarado.
+
+| Classe | Significado | Uso permitido | Uso proibido |
+|---|---|---|---|
+| `A` | ART com atividade única e valor associável, com baixo risco de mistura entre serviços. | Cálculo monetário de referência (mediana, Q1, Q3); base principal do painel. | Ranking individual de profissional ou empresa. |
+| `B` | ART com múltiplas linhas homogêneas (mesmo código, valor único replicado). | Análise secundária ou simulação, sempre com ressalva explícita. | Base principal de valor sem ressalva. |
+| `C` | ART com múltiplas atividades ou códigos e valor único não decomponível entre elas. | Frequência, indicação de demanda e detecção de serviços novos. | Cálculo monetário por serviço. |
+| `D` | ART com valor ausente, zerado ou implausível, ou serviço não mapeável. | Apenas registro de volume e motivo de exclusão. | Qualquer cálculo monetário. |
+
+Somente a Classe A, combinada com natureza do valor igual a provável honorário técnico e `n >= 5`, gera referência monetária no painel.
 
 ## Campos territoriais
 
