@@ -8,10 +8,12 @@ O arquivo publicado é:
 
 - `index.html`
 
-Ele corresponde ao painel institucional TOS + natureza do valor + município, derivado de:
+O painel é gerado a partir de:
 
-- `dashboard_senge_honorarios_tos_valor_municipio_layout_crea.html`
 - `dados_tos_valor_municipio.json`
+- `build_dashboard_tos_valor_municipio_layout_crea.py`
+
+O HTML intermediário `dashboard_senge_honorarios_tos_valor_municipio_layout_crea.html` é artefato local gerado e não fica mais versionado no `main`.
 
 ## Regra metodológica
 
@@ -27,7 +29,6 @@ A estrutura do `main` foi enxugada para manter no GitHub apenas o que precisa se
 .
 ├── index.html
 ├── dados_tos_valor_municipio.json
-├── dashboard_senge_honorarios_tos_valor_municipio_layout_crea.html
 ├── build_dashboard_tos_valor_municipio_layout_crea.py
 ├── README.md
 ├── AGENTS.md
@@ -52,14 +53,15 @@ A estrutura do `main` foi enxugada para manter no GitHub apenas o que precisa se
 
 ## Pastas locais não versionadas
 
-As pastas abaixo podem existir no computador, mas não devem aparecer no GitHub:
+As pastas e arquivos abaixo podem existir no computador, mas não devem aparecer no GitHub:
 
 - `data/local/`
 - `data/public/`
 - `outputs/`
 - `relatorios/`
+- `dashboard_senge_honorarios_tos_valor_municipio_layout_crea.html`
 
-Elas são criadas pelos scripts quando necessário.
+Eles são criados pelos scripts quando necessário.
 
 ## Publicação
 
