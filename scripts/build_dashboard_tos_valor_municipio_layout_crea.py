@@ -117,7 +117,7 @@ details summary{cursor:pointer;font-weight:800;color:var(--b950)}
     <div class="kpi"><div class="kicon">ART</div><div><p class="ktitle">ARTs filtradas</p><p class="kval" id="kArts">0</p><p class="ksub" id="kArtsSub">subconjunto TOS</p></div></div>
     <div class="kpi"><div class="kicon">A</div><div><p class="ktitle">Classe A</p><p class="kval" id="kBaseA">0</p><p class="ksub">base de cálculo filtrada</p></div></div>
     <div class="kpi green"><div class="kicon">R$</div><div><p class="ktitle">Base confiável</p><p class="kval" id="kHonor">0</p><p class="ksub">A + provável honorário</p></div></div>
-    <div class="kpi green"><div class="kicon">Md</div><div><p class="ktitle">Mediana confiável</p><p class="kval" id="kMed">—</p><p class="ksub">valor em R$</p></div></div>
+    <div class="kpi green"><div class="kicon">Md</div><div><p class="ktitle">Mediana confiável</p><p class="kval" id="kMed">—</p><p class="ksub">valor em R$ por unidade</p></div></div>
     <div class="kpi"><div class="kicon">IQR</div><div><p class="ktitle">Q1-Q3 confiável</p><p class="kval" id="kIqr" style="font-size:18px">—</p><p class="ksub">faixa interquartil</p></div></div>
     <div class="kpi orange"><div class="kicon">Obr</div><div><p class="ktitle">% obra/contrato</p><p class="kval" id="kObra">—</p><p class="ksub">na seleção atual</p></div></div>
   </section>
@@ -125,13 +125,13 @@ details summary{cursor:pointer;font-weight:800;color:var(--b950)}
     <div class="card s4"><h3>Bucket "Não mapeado"</h3><p class="sub">Mesmo subconjunto TOS: comparação antes/depois.</p><div class="bars" id="barsNaoMapeado"></div></div>
     <div class="card s4"><h3>Natureza do valor declarado</h3><p class="sub">Distribuição da seleção atual.</p><div class="barstack" id="natbar"></div><div class="legend" id="natLegend"></div></div>
     <div class="card s4"><h3>Classes de confiabilidade</h3><p class="sub">Distribuição do subconjunto TOS completo.</p><div class="barstack" id="classbar"></div><div class="legend" id="classLegend"></div></div>
-    <div class="card s6"><h3>Top serviços na base confiável</h3><p class="sub">Classe A + provável honorário técnico; candidatos a novo serviço não formam referência.</p><div class="bars" id="barsServicos"></div></div>
+    <div class="card s6"><h3>Top serviços/unidades na base confiável</h3><p class="sub">Classe A + provável honorário técnico; cada unidade de medida forma grupo próprio.</p><div class="bars" id="barsServicos"></div></div>
     <div class="card s6"><h3>Top grupos TOS na seleção</h3><p class="sub">Frequência agregada, independentemente da natureza monetária.</p><div class="bars" id="barsGrupoTos"></div></div>
-    <div class="card s12"><h3>Serviços - referência confiável observada</h3><p class="sub">Mediana, Q1, Q3 e IQR em R$, apenas para Classe A + provável honorário técnico. n&lt;5 = Informação insuficiente para verificar.</p><div class="tablewrap"><table id="svcTable"><thead><tr><th>Serviço</th><th>Grupo</th><th>n</th><th>Mediana</th><th>Q1</th><th>Q3</th><th>IQR</th><th>Obs.</th></tr></thead><tbody></tbody></table></div></div>
+    <div class="card s12"><h3>Serviços - referência confiável observada</h3><p class="sub">Mediana, Q1, Q3 e IQR em R$ por unidade de medida, apenas para Classe A + provável honorário técnico. n&lt;5 = Informação insuficiente para verificar.</p><div class="tablewrap"><table id="svcTable"><thead><tr><th>Serviço</th><th>Unidade</th><th>Grupo</th><th>n</th><th>Mediana</th><th>Q1</th><th>Q3</th><th>IQR</th><th>Obs.</th></tr></thead><tbody></tbody></table></div></div>
     <div class="card s12"><details open><summary>Metodologia e limitações</summary><div class="small muted" style="margin-top:8px">
       <p><b>Premissa central.</b> Os dados de ART são evidência auxiliar, indireta e agregada de escopo, atividade, localidade, responsabilidade técnica e valor declarado, não prova isolada de honorário profissional contratado.</p>
       <p><b>Uso monetário.</b> Mediana e IQR são exibidos apenas para a base confiável: Classe A + provável honorário técnico + n>=5. Classes C/D, valor de obra/contrato, taxa, valor simbólico ou extremo não formam referência de honorário.</p>
-      <p><b>Escopo.</b> A camada TOS contém <span id="escopoTos"></span> ARTs de um universo 2022 de <span id="escopoUniverso"></span>. Para o restante da base, a classificação TOS é Informação insuficiente para verificar.</p>
+      <p><b>Escopo.</b> O agregado público contém <span id="escopoTos"></span> ARTs no período processado, com universo agregado de <span id="escopoUniverso"></span>. Quando o campo TOS não existe na base anual, a classificação TOS é Informação insuficiente para verificar.</p>
       <p><b>Finalidade.</b> Documento de subsídio técnico, orientativo e agregado; não é preço obrigatório, piso, tabela vinculante nem ranking de pessoas ou empresas.</p>
     </div></details></div>
     <div class="foot s12">Dashboard derivado do layout institucional já existente em dashboard/index.html. Esta variante não depende de internet externa e não altera o dashboard TOS validado.</div>
@@ -141,16 +141,19 @@ details summary{cursor:pointer;font-weight:800;color:var(--b950)}
 <script id="DATA" type="application/json">__DATA__</script>
 <script>
 const D=JSON.parse(document.getElementById('DATA').textContent);
-const SERV=D.servicos, GRP=D.grupo_de_servico, MUN=D.municipios, ANO=D.anos, NAT=D.naturezas, GTOS=D.grupos_tos, CC=D.classe_count;
+const SERV=D.servicos, GRP=D.grupo_de_servico, UNID=D.unidades||['Informação insuficiente para verificar.'], MUN=D.municipios, ANO=D.anos, NAT=D.naturezas, GTOS=D.grupos_tos, CC=D.classe_count;
 const A=D.classeA, AGG=D.agg, TOTAL=D.total_arts, HON=NAT.indexOf('provavel_honorario_tecnico');
 const CLASSES=['A','B','C','D'];
+const INSUF='Informação insuficiente para verificar.';
 const NAT_LABEL={provavel_honorario_tecnico:'provável honorário técnico',provavel_valor_obra_contrato:'provável obra/contrato',valor_simbolico_ou_taxa:'simbólico/taxa',valor_inconsistente_ou_extremo:'inconsistente/extremo',informacao_insuficiente:'informação insuficiente'};
 const NAT_COLOR={provavel_honorario_tecnico:'var(--honor)',provavel_valor_obra_contrato:'var(--obra)',valor_simbolico_ou_taxa:'var(--simb)',valor_inconsistente_ou_extremo:'var(--inc)',informacao_insuficiente:'var(--insf)'};
 const CLASS_COLOR={A:'var(--green)',B:'var(--amber)',C:'var(--orange)',D:'var(--gray300)'};
 const $=id=>document.getElementById(id);
 const fmt=n=>Number.isFinite(Number(n))?Number(n).toLocaleString('pt-BR'):'—';
 const pct=(x,t)=>t?(100*x/t).toFixed(1)+'%':'—';
-function formatBRL(value){const n=Number(value);if(!Number.isFinite(n))return 'Informação insuficiente para verificar';return n.toLocaleString('pt-BR',{style:'currency',currency:'BRL',minimumFractionDigits:2,maximumFractionDigits:2});}
+function formatBRL(value){const n=Number(value);if(!Number.isFinite(n))return INSUF;return n.toLocaleString('pt-BR',{style:'currency',currency:'BRL',minimumFractionDigits:2,maximumFractionDigits:2});}
+function unidadeLabel(u){if(typeof u==='string')return u;return UNID[u]||INSUF;}
+function brlUnidade(value,u){return formatBRL(value)+' / '+unidadeLabel(u);}
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 function fill(sel,items,valIsIdx){const el=$(sel);items.forEach((t,i)=>{const o=document.createElement('option');o.value=valIsIdx?i:t;o.textContent=t;el.appendChild(o);});}
 function selected(id){return new Set([...$(id).selectedOptions].map(o=>isNaN(o.value)?o.value:+o.value));}
@@ -158,7 +161,7 @@ function qtiles(arr){if(!arr.length)return null;const a=[...arr].sort((x,y)=>x-y
 function groupServices(groupSet){if(!groupSet.size)return null;const out=new Set();SERV.forEach((_,i)=>{if(groupSet.has(GRP[i]))out.add(i);});return out;}
 function filterState(){return{cl:selected('fClasse'),nt:selected('fNat'),gr:selected('fGrupo'),sv:selected('fServico'),gt:selected('fGrupoTos'),mu:selected('fMun'),an:selected('fAno')};}
 function matchesAgg(r,f,groupSvc){
-  return (!f.cl.size||f.cl.has(CLASSES[r[0]]))&&(!f.sv.size||f.sv.has(r[1]))&&(!groupSvc||groupSvc.has(r[1]))&&(!f.an.size||f.an.has(r[2]))&&(!f.mu.size||f.mu.has(r[3]))&&(!f.nt.size||f.nt.has(r[4]))&&(!f.gt.size||f.gt.has(r[5]));
+  return (!f.cl.size||f.cl.has(CLASSES[r[0]]))&&(!f.sv.size||f.sv.has(r[1]))&&(!groupSvc||groupSvc.has(r[1]))&&(!f.an.size||f.an.has(r[3]))&&(!f.mu.size||f.mu.has(r[4]))&&(!f.nt.size||f.nt.has(r[5]))&&(!f.gt.size||f.gt.has(r[6]));
 }
 function renderBars(id,items,maxVal){
   const el=$(id);el.innerHTML='';
@@ -192,11 +195,12 @@ function renderNaoMapeado(){
   renderBars('barsNaoMapeado',items,Math.max(...items.map(i=>i.value),1));
 }
 function renderStatic(){
-  $('gerado').textContent=D.gerado_em||'Informação insuficiente para verificar';
-  $('fonteCurta').textContent='TOS local agregada';
+  $('gerado').textContent=D.gerado_em||INSUF;
+  $('fonteCurta').textContent='ARTs locais agregadas';
   $('escopoTos').textContent=fmt(TOTAL);
-  $('escopoUniverso').textContent=fmt(D.universo_total_2022);
-  $('status').textContent='Escopo: camada TOS = '+fmt(TOTAL)+' ARTs; universo 2022 = '+fmt(D.universo_total_2022)+' ARTs. Para o restante, Informação insuficiente para verificar.';
+  const universo=D.universo_total_periodo||D.universo_total_2022;
+  $('escopoUniverso').textContent=fmt(universo);
+  $('status').textContent='Escopo: agregado '+(D.periodo||'')+' = '+fmt(TOTAL)+' ARTs; universo agregado = '+fmt(universo)+' ARTs. Onde TOS direto não existe, '+INSUF;
   renderNaoMapeado();
   const classLabels=CLASSES.map(c=>({key:c,label:c+' - '+(c==='A'?'base de cálculo':c==='B'?'secundária':c==='C'?'só diagnóstico':'excluída')}));
   renderStack('classbar',CC,CC.A+CC.B+CC.C+CC.D,classLabels,CLASS_COLOR);
@@ -216,43 +220,47 @@ function initFilters(){
 function recompute(){
   const f=filterState(), groupSvc=groupServices(f.gr);
   let nArts=0,baseA=0;const natCnt={},gtCnt={};
-  for(const r of AGG){if(matchesAgg(r,f,groupSvc)){nArts+=r[6];if(r[0]===0)baseA+=r[6];natCnt[r[4]]=(natCnt[r[4]]||0)+r[6];gtCnt[r[5]]=(gtCnt[r[5]]||0)+r[6];}}
+  for(const r of AGG){if(matchesAgg(r,f,groupSvc)){nArts+=r[7];if(r[0]===0)baseA+=r[7];natCnt[r[5]]=(natCnt[r[5]]||0)+r[7];gtCnt[r[6]]=(gtCnt[r[6]]||0)+r[7];}}
   $('kArts').textContent=fmt(nArts);$('kArtsSub').textContent=fmt(TOTAL)+' no subconjunto TOS';$('kBaseA').textContent=fmt(baseA);
   const aAllowed=!f.cl.size||f.cl.has('A'), honAllowed=!f.nt.size||f.nt.has(HON), blocked=!aAllowed||!honAllowed;
-  const byS={},all=[];
+  const bySUnit={};
   if(!blocked){
     for(let i=0;i<A.v.length;i++){
       if(A.nat[i]!==HON)continue;
-      const s=A.s[i];
+      const s=A.s[i],u=A.u[i];
       if(/^Nao mapeado/.test(SERV[s]))continue;
       if((f.sv.size&&!f.sv.has(s))||(groupSvc&&!groupSvc.has(s))||(f.an.size&&!f.an.has(A.a[i]))||(f.mu.size&&!f.mu.has(A.m[i]))||(f.gt.size&&!f.gt.has(A.gt[i])))continue;
-      (byS[s]=byS[s]||[]).push(A.v[i]);all.push(A.v[i]);
+      const key=s+'|'+u;
+      (bySUnit[key]=bySUnit[key]||{s:s,u:u,vals:[]}).vals.push(A.v[i]);
     }
   }
-  const q=qtiles(all);
-  $('kHonor').textContent=blocked?'—':fmt(all.length);
-  $('kMed').textContent=q?formatBRL(q.med):'—';
-  $('kIqr').textContent=q?(formatBRL(q.q1)+' - '+formatBRL(q.q3)):'—';
+  const grupos=Object.values(bySUnit), totalHonor=grupos.reduce((acc,g)=>acc+g.vals.length,0);
+  const grupoUnico=grupos.length===1?grupos[0]:null;
+  const q=grupoUnico?qtiles(grupoUnico.vals):null;
+  const unidadeKpi=grupoUnico?grupoUnico.u:(grupos.length?'unidades múltiplas':0);
+  $('kHonor').textContent=blocked?'—':fmt(totalHonor);
+  $('kMed').textContent=q?brlUnidade(q.med,unidadeKpi):(INSUF+' / '+unidadeLabel(unidadeKpi));
+  $('kIqr').textContent=q?(brlUnidade(q.q1,unidadeKpi)+' - '+brlUnidade(q.q3,unidadeKpi)):(INSUF+' / '+unidadeLabel(unidadeKpi));
   const obraIdx=NAT.indexOf('provavel_valor_obra_contrato');$('kObra').textContent=pct(natCnt[obraIdx]||0,nArts);
   const natLabels=NAT.map((name,i)=>({key:i,label:NAT_LABEL[name]||name}));
   const natColors=Object.fromEntries(NAT.map((name,i)=>[i,NAT_COLOR[name]]));
   renderStack('natbar',natCnt,nArts,natLabels,natColors);renderLegend('natLegend',natLabels,natColors);
-  const gtItems=Object.entries(gtCnt).map(([k,v])=>({label:GTOS[+k]||'Informação insuficiente para verificar',value:v})).sort((a,b)=>b.value-a.value).slice(0,10);
+  const gtItems=Object.entries(gtCnt).map(([k,v])=>({label:GTOS[+k]||INSUF,value:v})).sort((a,b)=>b.value-a.value).slice(0,10);
   renderBars('barsGrupoTos',gtItems,gtItems.length?gtItems[0].value:1);
-  renderServiceBarsAndTable(byS,blocked);
+  renderServiceBarsAndTable(bySUnit,blocked);
 }
-function renderServiceBarsAndTable(byS,blocked){
+function renderServiceBarsAndTable(bySUnit,blocked){
   const tb=document.querySelector('#svcTable tbody');tb.innerHTML='';
-  if(blocked){tb.innerHTML='<tr><td colspan="8" class="txt muted">Indisponível: a base confiável exige Classe A + natureza provável honorário técnico.</td></tr>';renderBars('barsServicos',[],1);return;}
-  const rows=Object.keys(byS).map(s=>({s:+s,vals:byS[s],q:qtiles(byS[s])})).sort((a,b)=>b.vals.length-a.vals.length);
-  renderBars('barsServicos',rows.slice(0,10).map(r=>({label:SERV[r.s],value:r.vals.length})),rows.length?rows[0].vals.length:1);
-  if(!rows.length){tb.innerHTML='<tr><td colspan="8" class="txt muted">Nenhum registro confiável para o filtro.</td></tr>';return;}
+  if(blocked){tb.innerHTML='<tr><td colspan="9" class="txt muted">Indisponível: a base confiável exige Classe A + natureza provável honorário técnico.</td></tr>';renderBars('barsServicos',[],1);return;}
+  const rows=Object.values(bySUnit).map(g=>({s:g.s,u:g.u,vals:g.vals,q:qtiles(g.vals)})).sort((a,b)=>b.vals.length-a.vals.length||SERV[a.s].localeCompare(SERV[b.s],'pt-BR')||unidadeLabel(a.u).localeCompare(unidadeLabel(b.u),'pt-BR'));
+  renderBars('barsServicos',rows.slice(0,10).map(r=>({label:SERV[r.s]+' / '+unidadeLabel(r.u),value:r.vals.length})),rows.length?rows[0].vals.length:1);
+  if(!rows.length){tb.innerHTML='<tr><td colspan="9" class="txt muted">Nenhum registro confiável para o filtro.</td></tr>';return;}
   rows.forEach(r=>{
-    const n=r.vals.length,grp=GRP[r.s],isNew=/Servi[cç]o novo/.test(grp),low=n<5;
+    const n=r.vals.length,grp=GRP[r.s],unidade=unidadeLabel(r.u),isNew=/Servi[cç]o novo/.test(grp),low=n<5;
     const obs=(low?'<span class="tag low">n&lt;5</span> ':'')+(isNew?'<span class="tag new">novo</span>':'');
     const tr=document.createElement('tr');
-    if(low){tr.innerHTML='<td class="txt">'+esc(SERV[r.s])+'</td><td class="txt muted">'+esc(grp)+'</td><td>'+fmt(n)+'</td><td colspan="4" class="muted">Informação insuficiente para verificar</td><td>'+obs+'</td>';}
-    else{tr.innerHTML='<td class="txt">'+esc(SERV[r.s])+'</td><td class="txt muted">'+esc(grp)+'</td><td>'+fmt(n)+'</td><td>'+formatBRL(r.q.med)+'</td><td>'+formatBRL(r.q.q1)+'</td><td>'+formatBRL(r.q.q3)+'</td><td>'+formatBRL(r.q.q3-r.q.q1)+'</td><td>'+obs+'</td>';}
+    if(low){tr.innerHTML='<td class="txt">'+esc(SERV[r.s])+'</td><td class="txt">'+esc(unidade)+'</td><td class="txt muted">'+esc(grp)+'</td><td>'+fmt(n)+'</td><td colspan="4" class="muted">'+INSUF+' / '+esc(unidade)+'</td><td>'+obs+'</td>';}
+    else{tr.innerHTML='<td class="txt">'+esc(SERV[r.s])+'</td><td class="txt">'+esc(unidade)+'</td><td class="txt muted">'+esc(grp)+'</td><td>'+fmt(n)+'</td><td>'+brlUnidade(r.q.med,r.u)+'</td><td>'+brlUnidade(r.q.q1,r.u)+'</td><td>'+brlUnidade(r.q.q3,r.u)+'</td><td>'+brlUnidade(r.q.q3-r.q.q1,r.u)+'</td><td>'+obs+'</td>';}
     tb.appendChild(tr);
   });
 }

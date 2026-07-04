@@ -1,16 +1,78 @@
-servico_honorarios_padronizado,grupo_servico_honorarios,grupo_tos,subgrupo_tos,servico_tos,n_arts,mediana_valor,q1,q3,iqr,min,max,ano_min,ano_max,municipios_distintos,modalidades_distintas,natureza_valor,confiabilidade,observacao
-Meio Ambiente / Licenciamento,Servico novo - Ambiental,Atividades da Área da Engenharia de Produção; Atividades na Área da Engenharia de Materiais; Construção Civil …,Avaliação de Riscos Ambientais do Trabalho; Condições Ambientais de Conforto; Condições Ambientais nos Locais de Trabalho - LTCAT …,Programa de Prevenção de Riscos Ambientais - PPRA; caracterização do meio antrópico; caracterização do meio físico …,1206,800.0,500.0,1200.0,700.0,20.0,4081.0,2022,2022,240,121,provavel_honorario_tecnico,alta,valor declarado em ART (filtrado p/ provavel honorario); nao e honorario liquido
-Laudo Tecnico,Pericias e Laudos,"Agronomia, Agrícola, Florestal, Pesca e Aquicultura; Atividades da Área Naval e Oceânica; Atividades da Área da Engenharia de Produção …",Arquitetura Naval; Avaliação Pós-Ocupação; Ações de Engenharia em Praias e Costas …,a percussão; alcatrão de petróleo; automóveis …,340,700.0,500.0,1261.44,761.44,100.0,6160.26,2022,2022,100,58,provavel_honorario_tecnico,alta,valor declarado em ART (filtrado p/ provavel honorario); nao e honorario liquido
-Consultoria Tecnica,Consultoria,"Agronomia, Agrícola, Florestal, Pesca e Aquicultura; Atividades da Área Naval e Oceânica; Construção Civil …",Arquitetura Naval; Barragens e Diques; Desenvolvimento …,de Equipamentos e Dispositivos de Proteção; de Programa de Conservação Auditiva – PCA; de Programa de Gerenciamento de Riscos (PGR) …,238,900.0,785.0,1200.0,415.0,50.0,3500.0,2022,2022,81,49,provavel_honorario_tecnico,alta,valor declarado em ART (filtrado p/ provavel honorario); nao e honorario liquido
-Instalacoes Eletricas,Instalacoes Eletricas e de Comunicacao,Eletrotécnica; Eletrônica; Mecânica …,Dispositivos e Componentes; Equipamentos Elétricos; Instalações Elétricas …,abrigada de energia elétrica; aérea urbana de energia elétrica; de aterramento elétrico …,209,1200.0,800.0,4000.0,3200.0,50.0,25050.0,2022,2022,60,33,provavel_honorario_tecnico,alta,valor declarado em ART (filtrado p/ provavel honorario); nao e honorario liquido
-Rede Hidrossanitaria / Saneamento,Saneamento e Instalacoes Hidraulicas,"Agronomia, Agrícola, Florestal, Pesca e Aquicultura; Construção Civil; Hidrogeologia …",Controle e Monitoramento Ambiental; Fontes de água; Instalações Hidrossanitárias …,captação superficial de água; cisternas; controle sanitário do ambiente …,153,1500.0,1000.0,3000.0,2000.0,88.78,8000.0,2022,2022,70,33,provavel_honorario_tecnico,alta,valor declarado em ART (filtrado p/ provavel honorario); nao e honorario liquido
-Estrutura / Calculo Estrutural,Calculo Estrutural,Atividades da Área Naval e Oceânica; Construção Civil; Estruturas …,"Barragens e Diques; Equipamentos, Dispositivos e Componentes de Comunicação e Telecomunicações; Estruturas Metálicas …",asfáltica para vias urbanas; de ancoragem de estruturas; de base e sub-base para rodovias …,135,1000.0,1000.0,2000.0,1000.0,88.78,8050.0,2022,2022,66,18,provavel_honorario_tecnico,alta,valor declarado em ART (filtrado p/ provavel honorario); nao e honorario liquido
-Seguranca do Trabalho,Servico novo - Seguranca,Engenharia Costeira; Gestão da Segurança do Trabalho; Mecânica …,Comunicação e Procedimentos de Segurança do Trabalho; Controle de Acidentes; Diagnósticos e Políticas de Segurança do Trabalho …,de conformidade técnica em segurança do trabalho; de máquinas e equipamentos (NR12) - segurança do trabalho; de projeto de prevenção de acidentes …,126,800.0,500.0,1475.0,975.0,11.11,4900.0,2022,2022,53,31,provavel_honorario_tecnico,alta,valor declarado em ART (filtrado p/ provavel honorario); nao e honorario liquido
-Vistoria / Pericia,Pericias e Laudos,"Agronomia, Agrícola, Florestal, Pesca e Aquicultura; Atividades da Área da Engenharia de Produção; Construção Civil …",Avaliação Pós-Ocupação; Barragens e Diques; Desenvolvimento …,a percussão; da mina; de Análise de Risco (AR) …,108,1746.3,500.0,5390.87,4890.87,52.0,20000.0,2022,2022,48,26,provavel_honorario_tecnico,alta,valor declarado em ART (filtrado p/ provavel honorario); nao e honorario liquido
-Topografia / Agrimensura,Servico novo - Agrimensura,Agrimensura; Cartografia; Geodésia …,"Agrimensura Legal; Cadastro Técnico; Dados e Informações Cartográficas, Cartográficas Estatísticas e Cartográficas Temáticas …",Cadastro Técnico; de aquisição de dados geográficos; de cadastro para sistema de informações geográficas …,75,1200.0,500.0,2000.0,1500.0,100.0,8000.0,2022,2022,50,30,provavel_honorario_tecnico,alta,valor declarado em ART (filtrado p/ provavel honorario); nao e honorario liquido
-Prevencao de Incendio,Instalacoes,Construção Civil; Sistemas de Proteção contra Incêndios e Catástrofes,Emergência e Catástrofes; Equipamentos de Combate a Incêndios; Especificações de Proteção contra Incêndio …,de especificação de sistema de detecção de incêndio; de especificações de proteção e equipamentos contra incêndio; de localização de equipamento de combate a incêndio …,69,1000.0,900.0,1500.0,600.0,60.0,5500.0,2022,2022,30,32,provavel_honorario_tecnico,alta,valor declarado em ART (filtrado p/ provavel honorario); nao e honorario liquido
-Edificacao em Alvenaria,Projetos Civis,Construção Civil,Edificações,de alvenaria; em alvenaria,39,1000.0,750.0,2000.0,1250.0,88.78,4000.0,2022,2022,20,11,provavel_honorario_tecnico,alta,valor declarado em ART (filtrado p/ provavel honorario); nao e honorario liquido
-Pavimentacao / Estradas,Estradas e Ruas,Mecânica; Transportes,Sistemas de Logística; Veículos Automotores,de implementos rodoviários; de transporte coletivo rodoviário; rodoviário,9,3000.0,500.0,8000.0,7500.0,400.0,9000.0,2022,2022,8,4,provavel_honorario_tecnico,media,valor declarado em ART (filtrado p/ provavel honorario); nao e honorario liquido
-Climatizacao / Ventilacao,Instalacoes Mecanicas,Mecânica,Sistemas Térmicos,de refrigeração,2,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,2022,2022,2,1,provavel_honorario_tecnico,insuficiente,n < 5: sem base estatistica para referencia monetaria
-Microgeracao / Fotovoltaica,Servico novo - Energia,Eletrotécnica,Sistemas de Energia Elétrica,solar,1,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,2022,2022,1,1,provavel_honorario_tecnico,insuficiente,n < 5: sem base estatistica para referencia monetaria
-Receituario Agronomico,Servico novo - Agronomia,"Agronomia, Agrícola, Florestal, Pesca e Aquicultura",Prescrição de Receituário Agronômico e Receitas,de receituário agronômico,1,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,2022,2022,1,1,provavel_honorario_tecnico,insuficiente,n < 5: sem base estatistica para referencia monetaria
+﻿servico_honorarios_padronizado,unidade_medida,grupo_servico_honorarios,n_arts,mediana_valor,q1,q3,iqr,confiabilidade
+Nao mapeado (candidato a novo servico),unidade,Informação insuficiente para verificar.,1468,1093.0,699.75,3000.0,2300.25,alta
+Meio Ambiente / Licenciamento,unidade,Servico novo - Ambiental,839,1200.0,1000.0,1500.0,500.0,alta
+Laudo Tecnico,unidade,Pericias e Laudos,783,900.0,300.0,1800.0,1500.0,alta
+Consultoria Tecnica,unidade,Consultoria,678,1200.0,800.0,2000.0,1200.0,alta
+Vistoria / Pericia,unidade,Pericias e Laudos,332,2869.5,1000.0,5313.62,4313.62,alta
+Estrutura / Calculo Estrutural,unidade,Calculo Estrutural,246,1295.0,800.0,3000.0,2200.0,alta
+Instalacoes Eletricas,unidade,Instalacoes Eletricas e de Comunicacao,244,900.0,800.0,1500.0,700.0,alta
+Meio Ambiente / Licenciamento,ano,Servico novo - Ambiental,116,1000.0,500.0,1000.0,500.0,alta
+Nao mapeado (candidato a novo servico),dia,Informação insuficiente para verificar.,94,2000.0,800.0,7765.75,6965.75,alta
+Meio Ambiente / Licenciamento,dia,Servico novo - Ambiental,93,1000.0,500.0,2000.0,1500.0,alta
+Laudo Tecnico,hora,Pericias e Laudos,93,1200.0,600.0,3480.0,2880.0,alta
+Nao mapeado (candidato a novo servico),ano,Informação insuficiente para verificar.,92,600.0,450.0,1000.0,550.0,alta
+Edificacao em Alvenaria,unidade,Projetos Civis,91,1500.0,1000.0,2750.0,1750.0,alta
+Instalacoes Eletricas,dia,Instalacoes Eletricas e de Comunicacao,82,3900.0,1000.0,10725.0,9725.0,alta
+Consultoria Tecnica,ano,Consultoria,75,1000.0,600.0,1000.0,400.0,alta
+Nao mapeado (candidato a novo servico),hora,Informação insuficiente para verificar.,73,3500.0,1300.0,5000.0,3700.0,alta
+Meio Ambiente / Licenciamento,hora,Servico novo - Ambiental,66,1500.0,500.0,2200.0,1700.0,alta
+Rede Hidrossanitaria / Saneamento,unidade,Saneamento e Instalacoes Hidraulicas,66,2000.0,1063.25,3375.0,2311.75,alta
+Consultoria Tecnica,hora,Consultoria,46,2000.0,2000.0,5000.0,3000.0,alta
+Laudo Tecnico,dia,Pericias e Laudos,45,2500.0,1000.0,5000.0,4000.0,alta
+Consultoria Tecnica,dia,Consultoria,41,1500.0,500.0,2400.0,1900.0,alta
+Nao mapeado (candidato a novo servico),mes,Informação insuficiente para verificar.,30,750.0,500.0,2889.67,2389.67,alta
+Seguranca do Trabalho,unidade,Servico novo - Seguranca,29,600.0,500.0,800.0,300.0,media
+Prevencao de Incendio,unidade,Instalacoes,29,1000.0,1000.0,1500.0,500.0,media
+Topografia / Agrimensura,unidade,Servico novo - Agrimensura,27,1000.0,550.0,2000.0,1450.0,media
+Meio Ambiente / Licenciamento,homem hora,Servico novo - Ambiental,27,2100.0,2000.0,3950.0,1950.0,media
+Consultoria Tecnica,homem hora,Consultoria,23,3000.0,2400.0,10000.0,7600.0,media
+Nao mapeado (candidato a novo servico),homem hora,Informação insuficiente para verificar.,23,2730.0,1450.0,4000.62,2550.62,media
+Climatizacao / Ventilacao,unidade,Instalacoes Mecanicas,22,3500.0,1040.0,8847.5,7807.5,media
+Vistoria / Pericia,dia,Pericias e Laudos,20,3568.0,1800.0,7662.5,5862.5,media
+Meio Ambiente / Licenciamento,mes,Servico novo - Ambiental,19,2000.0,1000.0,2850.0,1850.0,media
+Estrutura / Calculo Estrutural,ano,Calculo Estrutural,17,1000.0,1000.0,1000.0,0.0,media
+Pavimentacao / Estradas,unidade,Estradas e Ruas,16,3500.0,1000.0,8000.0,7000.0,media
+Estrutura / Calculo Estrutural,homem hora,Calculo Estrutural,14,12850.0,5251.88,15300.0,10048.12,media
+Instalacoes Eletricas,hora,Instalacoes Eletricas e de Comunicacao,13,800.0,560.0,2000.0,1440.0,media
+Topografia / Agrimensura,dia,Servico novo - Agrimensura,12,358.0,356.0,2125.0,1769.0,media
+Laudo Tecnico,ano,Pericias e Laudos,12,600.0,325.0,797.5,472.5,media
+Consultoria Tecnica,mes,Consultoria,12,3000.0,2750.0,3000.0,250.0,media
+Vistoria / Pericia,hora,Pericias e Laudos,10,2196.0,775.0,8750.0,7975.0,media
+Rede Hidrossanitaria / Saneamento,hora,Saneamento e Instalacoes Hidraulicas,9,2500.0,1800.0,2500.0,700.0,media
+Seguranca do Trabalho,hora,Servico novo - Seguranca,9,500.0,300.0,500.0,200.0,media
+Instalacoes Eletricas,homem hora,Instalacoes Eletricas e de Comunicacao,9,3350.0,400.0,10138.06,9738.06,media
+Laudo Tecnico,mes,Pericias e Laudos,9,1300.0,1200.0,5000.0,3800.0,media
+Vistoria / Pericia,ano,Pericias e Laudos,9,1000.0,1000.0,1000.0,0.0,media
+Desempenho de Cargo / Funcao,unidade,Cargo-Funcao,8,850.0,500.0,6300.0,5800.0,media
+Seguranca do Trabalho,ano,Servico novo - Seguranca,7,680.0,550.0,1850.0,1300.0,media
+Estrutura / Calculo Estrutural,hora,Calculo Estrutural,6,4000.0,2500.0,8155.0,5655.0,media
+Vistoria / Pericia,mes,Pericias e Laudos,6,7375.0,3236.75,39750.0,36513.25,media
+Edificacao em Alvenaria,dia,Projetos Civis,6,2233.2,1188.75,2666.4,1477.65,media
+Vistoria / Pericia,homem hora,Pericias e Laudos,6,4300.0,1225.0,4600.0,3375.0,media
+Laudo Tecnico,homem hora,Pericias e Laudos,6,2126.0,1625.0,2813.0,1188.0,media
+Desempenho de Cargo / Funcao,dia,Cargo-Funcao,6,1300.0,1300.0,1300.0,0.0,media
+Instalacoes Eletricas,mes,Instalacoes Eletricas e de Comunicacao,5,1000.0,1000.0,2250.0,1250.0,media
+Edificacao em Alvenaria,hora,Projetos Civis,4,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,insuficiente
+Microgeracao / Fotovoltaica,unidade,Servico novo - Energia,4,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,insuficiente
+Prevencao de Incendio,dia,Instalacoes,3,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,insuficiente
+Estrutura / Calculo Estrutural,mes,Calculo Estrutural,3,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,insuficiente
+Estrutura / Calculo Estrutural,dia,Calculo Estrutural,3,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,insuficiente
+Instalacoes Eletricas,ano,Instalacoes Eletricas e de Comunicacao,2,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,insuficiente
+Topografia / Agrimensura,hora,Servico novo - Agrimensura,2,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,insuficiente
+Microgeracao / Fotovoltaica,hora,Servico novo - Energia,2,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,insuficiente
+Desempenho de Cargo / Funcao,ano,Cargo-Funcao,2,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,insuficiente
+Edificacao em Alvenaria,homem hora,Projetos Civis,2,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,insuficiente
+Climatizacao / Ventilacao,hora,Instalacoes Mecanicas,2,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,insuficiente
+Prevencao de Incendio,hora,Instalacoes,2,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,insuficiente
+Receituario Agronomico,unidade,Servico novo - Agronomia,2,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,insuficiente
+Desempenho de Cargo / Funcao,mes,Cargo-Funcao,1,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,insuficiente
+Rede Hidrossanitaria / Saneamento,homem hora,Saneamento e Instalacoes Hidraulicas,1,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,insuficiente
+Receituario Agronomico,dia,Servico novo - Agronomia,1,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,insuficiente
+Climatizacao / Ventilacao,ano,Instalacoes Mecanicas,1,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,insuficiente
+Desempenho de Cargo / Funcao,homem hora,Cargo-Funcao,1,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,insuficiente
+Rede Hidrossanitaria / Saneamento,mes,Saneamento e Instalacoes Hidraulicas,1,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,insuficiente
+Climatizacao / Ventilacao,homem hora,Instalacoes Mecanicas,1,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,insuficiente
+Pavimentacao / Estradas,hora,Estradas e Ruas,1,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,insuficiente
+Seguranca do Trabalho,mes,Servico novo - Seguranca,1,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,insuficiente
+Edificacao em Alvenaria,mes,Projetos Civis,1,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,insuficiente
+Pavimentacao / Estradas,dia,Estradas e Ruas,1,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,Informação insuficiente para verificar,insuficiente

@@ -10,12 +10,17 @@ Este documento deve registrar as fontes usadas no projeto.
 | `dados_tos_valor_municipio.json` | Base agregada usada pelo painel | Publicada no repositório |
 | `index.html` | Arquivo publicado pelo GitHub Pages | Publicado na raiz |
 | `build_dashboard_tos_valor_municipio_layout_crea.py` | Script de geração do painel institucional | Publicado na raiz |
+| `C:\Users\adina\Meu Drive\ARTS Adinailson\arts 2015 1 semestre - feito.xlsx` | Agregação anual pública de ARTs 2015 | Fonte local bruta, não versionada |
+| `C:\Users\adina\Meu Drive\ARTS Adinailson\arts 2015 2 semestre.xls` a `arts 2019 2 semestre.xls` | Agregação anual pública de ARTs 2015-2019 | Fonte local bruta, não versionada; `.xls` no limite do formato |
+| `C:\Users\adina\Meu Drive\ARTS Adinailson\arts 2020 1 semestre.xlsx` a `arts 2021 2 semestre.xlsx` | Agregação anual pública de ARTs 2020-2021 | Fonte local bruta, não versionada |
+| `C:\Users\adina\Meu Drive\ARTS Adinailson\ARTs 2022 01022024.csv` | Agregação anual pública de ARTs 2022 | Fonte local bruta, não versionada |
+| `C:\Users\adina\Meu Drive\ARTS Adinailson\Análise ARTs.xlsx` e `Análise ARTs Agronomia.xlsx` | Workbooks de análise/limpeza com abas metodológicas e abas 2020-2022 | Inspecionados como material auxiliar; não usados como fonte primária do agregado anual |
 
 ## Fontes a verificar antes de uso metodológico
 
 | Fonte necessária | Finalidade | Situação padrão |
 |---|---|---|
-| Planilhas anuais completas de ARTs | Inclusão de outros anos | Informação insuficiente para verificar. |
+| Planilhas anuais completas de ARTs | Inclusão de outros anos | Processadas localmente em `scripts/agrega_anos_publico.py`; brutos não versionados |
 | Base oficial IBGE de municípios | Padronização municipal e código IBGE | Informação insuficiente para verificar. |
 | De-para oficial CREA-BA município/inspetoria/SUREG | Regionalização institucional | Informação insuficiente para verificar. |
 | Tabela atual do SENGE/BA | Cruzamento de serviços, unidades e lacunas | Informação insuficiente para verificar. |

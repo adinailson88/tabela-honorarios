@@ -25,6 +25,7 @@ OBRIGATORIAS = [
     "natureza_count",
     "servicos",
     "grupo_de_servico",
+    "unidades",
     "municipios",
     "anos",
     "naturezas",
@@ -94,12 +95,26 @@ def validar(data: Dict[str, Any], texto_json: str) -> List[str]:
 
     linhas.append("## Dimensoes")
     linhas.append("")
-    for key in ["servicos", "grupo_de_servico", "municipios", "anos", "naturezas", "grupos_tos", "agg"]:
+    for key in ["servicos", "grupo_de_servico", "unidades", "municipios", "anos", "naturezas", "grupos_tos", "agg"]:
         value = data.get(key)
         linhas.append(f"- `{key}`: {len(value) if isinstance(value, list) else 'Informacao insuficiente para verificar.'}")
     classe_a = data.get("classeA", {})
     if isinstance(classe_a, dict):
         linhas.append(f"- `classeA` campos: {', '.join(sorted(classe_a.keys()))}")
+        vetores = {k: v for k, v in classe_a.items() if isinstance(v, list)}
+        tamanhos = {k: len(v) for k, v in vetores.items()}
+        if tamanhos:
+            if len(set(tamanhos.values())) == 1:
+                linhas.append(f"- `classeA` vetores alinhados: {next(iter(tamanhos.values()))} registros.")
+            else:
+                linhas.append(f"- ATENCAO: `classeA` vetores com tamanhos divergentes: {tamanhos}.")
+        if "u" not in classe_a:
+            linhas.append("- ATENCAO: `classeA.u` ausente; unidade de medida nao esta preservada por registro.")
+    if isinstance(data.get("agg"), list):
+        tamanhos_linhas = sorted({len(r) for r in data["agg"] if isinstance(r, list)})
+        linhas.append(f"- tamanhos de linhas em `agg`: {tamanhos_linhas}")
+        if tamanhos_linhas and tamanhos_linhas != [9]:
+            linhas.append("- ATENCAO: `agg` deve usar 9 campos: classe, servico, unidade, ano, municipio, natureza, grupo_tos, n, atividades.")
     linhas.append("")
 
     linhas.append("## Sinais de dado individual")

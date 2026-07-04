@@ -10,6 +10,18 @@ Quando a expansão não puder ser executada ou verificada, registrar:
 
 `Informação insuficiente para verificar.`
 
+## Agregado anual 2015-2022
+
+O agregado público 2015-2022 foi gerado a partir das planilhas semestrais locais em `C:\Users\adina\Meu Drive\ARTS Adinailson` e do CSV consolidado `ARTs 2022 01022024.csv`.
+
+As bases anuais brutas usadas nessa agregação não possuem campo `codigo_tos`. Por isso, nos registros anuais agregados, a dimensão TOS é mantida como:
+
+`Informação insuficiente para verificar.`
+
+Os arquivos `.xls` de 2015 a 2019 têm 65.535 linhas de dados lidas em cada semestre, com 65.536 linhas totais incluindo cabeçalho, exatamente o limite do formato `.xls`. Isso indica possível truncamento na origem. Os totais desses anos devem ser tratados como mínimo observado, não como universo necessariamente completo.
+
+As planilhas `.xlsx` de 2020 e 2021 também têm 65.534 linhas de dados por semestre, mas esse valor não é limite técnico do formato `.xlsx`; ainda assim, a completude depende da exportação original.
+
 ## Valor declarado em ART
 
 O valor declarado em ART não equivale automaticamente a honorário profissional.

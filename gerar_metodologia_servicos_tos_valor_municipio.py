@@ -16,6 +16,7 @@ TOS_XLSX = Path(r"C:\Users\adina\Meu Drive\SENGE\NOVO ARQUIVO\TABELA TOS - 2.xls
 CIDADES_XLSX = Path(r"C:\Users\adina\Meu Drive\SENGE\CidadessCalculo atualizado 07.11.2024.xlsx")
 DIM_MUN = BASE / "dim_municipios_bahia.csv"
 INSUF = "Informação insuficiente para verificar"
+INSUF_UNIDADE = "Informação insuficiente para verificar."
 ABSURDO = 1_000_000_000.0  # > R$ 1 bilhao = implausivel
 
 def strip_accents(s):
@@ -27,6 +28,15 @@ def norm_key(s):
     s = re.sub(r"\s+", " ", s)
     s = re.sub(r"\s*[-/]\s*[A-Z]{2}$", "", s)  # remove sufixo UF
     return s.strip()
+
+def unidade_segura(s):
+    txt = str(s or "").strip()
+    if not txt:
+        return INSUF_UNIDADE
+    key = norm_key(txt)
+    if key in {"NAO INFORMADA", "NAO SELECIONADO", "SEM UNIDADE", "(NAO INFORMADA)", "(SEM UNIDADE)"}:
+        return INSUF_UNIDADE
+    return txt
 
 # ---------- dicionario SENGE (mesmo do pipeline original, para comparabilidade) ----------
 SVC_RULES = [
@@ -249,6 +259,7 @@ def main():
         # natureza do valor
         niv_modal = Counter([x for x in a["niv"] if x]).most_common(1)[0][0] if any(a["niv"]) else ""
         uni_modal = Counter([x for x in a["uni"] if x]).most_common(1)[0][0] if any(a["uni"]) else ""
+        unidade_modal = unidade_segura(uni_modal)
         nat, nat_conf, nat_mot = natureza_base(val, niv_modal, uni_modal, a["niv"], a["uni"])
 
         # municipio
@@ -278,7 +289,7 @@ def main():
             "servico_honorarios_padronizado": servico_hon, "grupo_servico_honorarios": grupo_hon,
             "servico_padronizado": servico_hon, "grupo_servico": grupo_hon,
             "nivel_confianca_mapeamento": nivel_conf_map, "fonte_mapeamento": fonte_map,
-            "nivel_atividade": niv_modal, "unidade_medida": uni_modal,
+            "nivel_atividade": niv_modal, "unidade_medida": unidade_modal,
             "modalidade": a["titulo"], "formacao": a["titulo"],
             "valor_art": val if val is not None else "",
             "natureza_valor": nat, "confiabilidade_natureza_valor": nat_conf, "motivo_natureza_valor": nat_mot,
@@ -293,25 +304,25 @@ def main():
     print("Classes:", dict(classe_count))
 
     # ---------- 2-pass: outlier IQR por servico (so candidatos a honorario) ----------
-    vals_by_svc = defaultdict(list)
+    vals_by_svc_unidade = defaultdict(list)
     for r in rows:
         if (r["classe_confiabilidade"] == "A" and r["natureza_valor"] == "provavel_honorario_tecnico"
                 and isinstance(r["valor_art"], (int, float))):
-            vals_by_svc[r["servico_honorarios_padronizado"]].append(r["valor_art"])
+            vals_by_svc_unidade[(r["servico_honorarios_padronizado"], r["unidade_medida"])].append(r["valor_art"])
     iqr_lim = {}
-    for svc, vs in vals_by_svc.items():
+    for svc_unidade, vs in vals_by_svc_unidade.items():
         if len(vs) >= 30:
             med, q1, q3, mn, mx = quantiles(vs)
-            iqr_lim[svc] = q3 + 3 * (q3 - q1)
+            iqr_lim[svc_unidade] = q3 + 3 * (q3 - q1)
     n_out = 0
     for r in rows:
         if (r["natureza_valor"] == "provavel_honorario_tecnico"
                 and isinstance(r["valor_art"], (int, float))):
-            lim = iqr_lim.get(r["servico_honorarios_padronizado"])
+            lim = iqr_lim.get((r["servico_honorarios_padronizado"], r["unidade_medida"]))
             if lim is not None and r["valor_art"] > lim:
                 r["natureza_valor"] = "valor_inconsistente_ou_extremo"
                 r["confiabilidade_natureza_valor"] = "media"
-                r["motivo_natureza_valor"] = "outlier IQR (> Q3 + 3*IQR) no servico"
+                r["motivo_natureza_valor"] = "outlier IQR (> Q3 + 3*IQR) no servico e unidade"
                 n_out += 1
     print("  reclass. outlier IQR:", n_out)
 
@@ -338,7 +349,7 @@ def main():
                 and r["servico_honorarios_padronizado"] not in ("Nao mapeado", "Nao mapeado (candidato a novo servico)")
                 and r["natureza_valor"] in NAT_SEGURA
                 and isinstance(r["valor_art"], (int, float))):
-            k = r["servico_honorarios_padronizado"]
+            k = (r["servico_honorarios_padronizado"], r["unidade_medida"])
             g = agg[k]
             g["vals"].append(r["valor_art"]); g["anos"].add(r["ano"]); g["muns"].add(r["municipio_key"])
             g["mods"].add(r["modalidade"]); g["grupo_tos"].add(r["grupo_tos"]); g["sub_tos"].add(r["subgrupo_tos"])
@@ -346,17 +357,17 @@ def main():
     serv_ok = serv_insuf = 0
     with open(BASE / "agregado_servicos_tos_classe_a_valor_confiavel.csv", "w", encoding="utf-8", newline="") as f:
         w = csv.writer(f)
-        w.writerow(["servico_honorarios_padronizado","grupo_servico_honorarios","grupo_tos","subgrupo_tos",
+        w.writerow(["servico_honorarios_padronizado","unidade_medida","grupo_servico_honorarios","grupo_tos","subgrupo_tos",
                     "servico_tos","n_arts","mediana_valor","q1","q3","iqr","min","max","ano_min","ano_max",
                     "municipios_distintos","modalidades_distintas","natureza_valor","confiabilidade","observacao"])
         def topset(s, k=3):
             vals = sorted(x for x in s if x and x != INSUF)
             return "; ".join(vals[:k]) + (" …" if len(vals) > k else "") if vals else INSUF
-        for svc, g in sorted(agg.items(), key=lambda kv: -len(kv[1]["vals"])):
+        for (svc, unidade), g in sorted(agg.items(), key=lambda kv: -len(kv[1]["vals"])):
             n = len(g["vals"]); anos = sorted(x for x in g["anos"] if x and x[0].isdigit())
             if n < 5:
                 serv_insuf += 1
-                w.writerow([svc, g["grupo_hon"], topset(g["grupo_tos"]), topset(g["sub_tos"]), topset(g["serv_tos"]),
+                w.writerow([svc, unidade, g["grupo_hon"], topset(g["grupo_tos"]), topset(g["sub_tos"]), topset(g["serv_tos"]),
                             n, INSUF, INSUF, INSUF, INSUF, INSUF, INSUF,
                             (anos[0] if anos else ""), (anos[-1] if anos else ""),
                             len(g["muns"]), len(g["mods"]), "provavel_honorario_tecnico", "insuficiente",
@@ -365,7 +376,7 @@ def main():
                 serv_ok += 1
                 med, q1, q3, mn, mx = quantiles(g["vals"])
                 conf = "alta" if n >= 30 else "media"
-                w.writerow([svc, g["grupo_hon"], topset(g["grupo_tos"]), topset(g["sub_tos"]), topset(g["serv_tos"]),
+                w.writerow([svc, unidade, g["grupo_hon"], topset(g["grupo_tos"]), topset(g["sub_tos"]), topset(g["serv_tos"]),
                             n, round(med,2), round(q1,2), round(q3,2), round(q3-q1,2), round(mn,2), round(mx,2),
                             (anos[0] if anos else ""), (anos[-1] if anos else ""),
                             len(g["muns"]), len(g["mods"]), "provavel_honorario_tecnico", conf,
@@ -417,24 +428,25 @@ def main():
     n_mun_baixa = len([1 for k, d in mun_diag.items() if d["conf"] == "baixa"])
 
     # ---------- JSON para dashboard ----------
-    svc_list, svc_idx = [], {}; mun_list, mun_idx = [], {}; ano_list, ano_idx = [], {}
+    svc_list, svc_idx = [], {}; unidade_list, unidade_idx = [], {}; mun_list, mun_idx = [], {}; ano_list, ano_idx = [], {}
     grp_of, nat_list, nat_idx, grptos_list, grptos_idx = {}, [], {}, [], {}
     def gi(lst, idx, key):
         if key not in idx: idx[key] = len(lst); lst.append(key)
         return idx[key]
     CL = {"A":0,"B":1,"C":2,"D":3}
-    cA = {"s": [], "m": [], "a": [], "v": [], "nat": [], "gt": []}
-    agg2 = defaultdict(lambda: [0,0])  # (cl,svc,ano,mun,nat)->[n,ativ]
+    cA = {"s": [], "u": [], "m": [], "a": [], "v": [], "nat": [], "gt": []}
+    agg2 = defaultdict(lambda: [0,0])  # (cl,svc,unidade,ano,mun,nat,gt)->[n,ativ]
     for r in rows:
         s = gi(svc_list, svc_idx, r["servico_honorarios_padronizado"]); grp_of[s] = r["grupo_servico_honorarios"]
+        u = gi(unidade_list, unidade_idx, unidade_segura(r["unidade_medida"]))
         m = gi(mun_list, mun_idx, r["municipio_key"] or "(nao informado)")
         an = gi(ano_list, ano_idx, r["ano"])
         nt = gi(nat_list, nat_idx, r["natureza_valor"])
         gt = gi(grptos_list, grptos_idx, r["grupo_tos"])
         ci = CL[r["classe_confiabilidade"]]
-        cell = agg2[(ci,s,an,m,nt,gt)]; cell[0]+=1; cell[1]+=r["qtd_atividades_art"]
+        cell = agg2[(ci,s,u,an,m,nt,gt)]; cell[0]+=1; cell[1]+=r["qtd_atividades_art"]
         if r["classe_confiabilidade"]=="A" and isinstance(r["valor_art"],(int,float)):
-            cA["s"].append(s); cA["m"].append(m); cA["a"].append(an); cA["v"].append(round(r["valor_art"],2)); cA["nat"].append(nt); cA["gt"].append(gt)
+            cA["s"].append(s); cA["u"].append(u); cA["m"].append(m); cA["a"].append(an); cA["v"].append(round(r["valor_art"],2)); cA["nat"].append(nt); cA["gt"].append(gt)
     data = {
         "gerado_em": datetime.datetime.now().strftime("%Y-%m-%d %H:%M"),
         "fonte": "TABELA TOS - 2.xlsx, aba 'ARTs CREA 2022 (TOS)' (camada TOS = subconjunto da base 2022)",
@@ -447,10 +459,16 @@ def main():
             ["provavel_honorario_tecnico","provavel_valor_obra_contrato","valor_simbolico_ou_taxa",
              "valor_inconsistente_ou_extremo","informacao_insuficiente"]},
         "servicos": svc_list, "grupo_de_servico": [grp_of.get(i,"") for i in range(len(svc_list))],
+        "unidades": unidade_list,
         "municipios": mun_list, "anos": ano_list, "naturezas": nat_list, "grupos_tos": grptos_list,
-        "classeA": cA, "agg": [[k[0],k[1],k[2],k[3],k[4],k[5],v[0],v[1]] for k,v in agg2.items()],
+        "classeA": cA, "agg": [[k[0],k[1],k[2],k[3],k[4],k[5],k[6],v[0],v[1]] for k,v in agg2.items()],
     }
-    (BASE / "dados_tos_valor_municipio.json").write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+    assets_dir = BASE / "assets"
+    assets_dir.mkdir(exist_ok=True)
+    (assets_dir / "dados_tos_valor_municipio.json").write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+    legacy_json = BASE / "dados_tos_valor_municipio.json"
+    if legacy_json.exists():
+        legacy_json.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
 
     # ---------- STATS para relatorios ----------
     stats = {
