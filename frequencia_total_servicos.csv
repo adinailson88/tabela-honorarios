@@ -1,0 +1,19 @@
+servico_padronizado,grupo_servico,freq_total,freq_calculo_monetario_A,freq_secundaria_B,freq_apenas_diagnostico_CD,observacao
+Nao mapeado,Informacao insuficiente para verificar,102554,19975,3413,79166,atividade nao mapeada a servico da tabela
+Microgeracao / Fotovoltaica,Servico novo - Energia,31811,1645,24673,5493,servico novo / lacuna da tabela atual
+Composto (multiplos servicos),Composto,30139,0,388,29751,
+Edificacao em Alvenaria,Projetos Civis,9868,5137,2719,2012,
+Instalacoes Eletricas,Instalacoes Eletricas e de Comunicacao,8601,2929,851,4821,
+Estrutura / Calculo Estrutural,Calculo Estrutural,7536,3168,785,3583,
+Receituario Agronomico,Servico novo - Agronomia,5495,549,2902,2044,servico novo / lacuna da tabela atual
+Topografia / Agrimensura,Servico novo - Agrimensura,5422,3142,286,1994,servico novo / lacuna da tabela atual
+Meio Ambiente / Licenciamento,Servico novo - Ambiental,5003,2746,62,2195,servico novo / lacuna da tabela atual
+Desempenho de Cargo / Funcao,Cargo-Funcao,4194,2597,1,1596,
+Prevencao de Incendio,Instalacoes,4038,1585,875,1578,
+Laudo Tecnico,Pericias e Laudos,4023,2510,897,616,
+Vistoria / Pericia,Pericias e Laudos,3438,2446,345,647,
+Consultoria Tecnica,Consultoria,2932,2199,74,659,
+Rede Hidrossanitaria / Saneamento,Saneamento e Instalacoes Hidraulicas,2407,667,94,1646,
+Pavimentacao / Estradas,Estradas e Ruas,2091,846,129,1116,
+Climatizacao / Ventilacao,Instalacoes Mecanicas,1229,956,129,144,
+Seguranca do Trabalho,Servico novo - Seguranca,147,93,8,46,servico novo / lacuna da tabela atual

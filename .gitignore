@@ -1,0 +1,15 @@
+# Dados linha-a-linha derivados das ARTs.
+# Mantidos localmente, mas nao publicados no GitHub por conterem id_art,
+# municipio, formacao e valor declarado por registro.
+base_servicos_tos_valor_municipio.csv
+base_classe_a_servicos_metodologia.csv
+
+# Backups operacionais locais
+BACKUP_*/
+
+# Arquivos locais/temporarios
+__pycache__/
+*.py[cod]
+desktop.ini
+.DS_Store
+

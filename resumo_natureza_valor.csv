@@ -1,0 +1,6 @@
+natureza_valor,quantidade_ARTs,percentual,mediana,q1,q3,observacao
+provavel_honorario_tecnico,6947,11.6%,1000.0,600.0,2000.0,elaboracao/projeto/consultoria com unidade tecnica
+provavel_valor_obra_contrato,39569,66.2%,2000.0,1000.0,6500.0,execucao/fiscalizacao ou unidade de obra; valor de contrato
+valor_simbolico_ou_taxa,2966,5.0%,1.0,1.0,1.0,valor <= R$ 10
+valor_inconsistente_ou_extremo,1199,2.0%,8000.0,0.0,50000.0,"ausente/zerado, >= R$ 1 bilhao ou outlier IQR"
+informacao_insuficiente,9083,15.2%,1400.0,690.0,5000.0,combinacao nivel/unidade nao conclusiva

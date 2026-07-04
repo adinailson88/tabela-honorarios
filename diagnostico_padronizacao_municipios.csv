@@ -1,0 +1,1205 @@
+municipio_key,municipio_label,codigo_ibge,grafias_distintas,n_arts,uf,confiabilidade_municipio,exemplos_grafias
+SALVADOR,Salvador,Informação insuficiente para verificar,2,8532,AL; BA,media,SALVADOR; Salvador
+FEIRA DE SANTANA,Feira De Santana,Informação insuficiente para verificar,2,2850,AC; BA,media,FEIRA DE SANTANA; Feira de Santana
+CAMACARI,Camacari,Informação insuficiente para verificar,3,2253,BA; MA,media,CAMAÇARI; CAMAçARI; Camaçari
+VITORIA DA CONQUISTA,Vitoria Da Conquista,Informação insuficiente para verificar,6,1874,BA; SP,media,VITORIA DA CONQUISTA; VITÓRIA DA CONQUISTA; VITóRIA DA CONQUISTA; Vitória Da Conquista
+BARREIRAS,Barreiras,Informação insuficiente para verificar,2,1669,BA; CE; ba,media,BARREIRAS; Barreiras
+LAURO DE FREITAS,Lauro De Freitas,Informação insuficiente para verificar,2,1439,BA,media,LAURO DE FREITAS; Lauro de Freitas
+LUIS EDUARDO MAGALHAES,Luis Eduardo Magalhaes,Informação insuficiente para verificar,6,1255,BA,media,LUIS EDUARDO MAGALHAES; LUÍS EDUARDO MAGALHÃES; LUíS EDUARDO MAGALHãES; Luis Eduardo Magalhaes
+JUAZEIRO,Juazeiro,Informação insuficiente para verificar,2,1190,BA,media,JUAZEIRO; Juazeiro
+TEIXEIRA DE FREITAS,Teixeira De Freitas,Informação insuficiente para verificar,3,951,AL; BA; ba,media,TEIXEIRA DE FREITAS; Teixeira de Freitas; teixeira de freitas
+ILHEUS,Ilheus,Informação insuficiente para verificar,4,914,BA,media,ILHEUS; ILHÉUS; ILHéUS; Ilhéus
+PORTO SEGURO,Porto Seguro,Informação insuficiente para verificar,2,807,BA,media,PORTO SEGURO; Porto Seguro
+JEQUIE,Jequie,Informação insuficiente para verificar,4,794,BA,media,JEQUIE; JEQUIÉ; JEQUIé; Jequié
+GUANAMBI,Guanambi,Informação insuficiente para verificar,2,761,BA,media,GUANAMBI; Guanambi
+ALAGOINHAS,Alagoinhas,Informação insuficiente para verificar,3,701,BA; SE,media,ALAGOINHAS; Alagoinhas; alagoinhas
+EUNAPOLIS,Eunapolis,Informação insuficiente para verificar,1,579,BA,media,EUNÁPOLIS
+ITABUNA,Itabuna,Informação insuficiente para verificar,2,574,BA,media,ITABUNA; Itabuna
+BRUMADO,Brumado,Informação insuficiente para verificar,2,540,BA,media,BRUMADO; Brumado
+SIMOES FILHO,Simoes Filho,Informação insuficiente para verificar,2,537,BA,media,SIMÕES FILHO; Simões Filho
+PAULO AFONSO,Paulo Afonso,Informação insuficiente para verificar,1,478,BA,media,PAULO AFONSO
+BOM JESUS DA LAPA,Bom Jesus Da Lapa,Informação insuficiente para verificar,3,459,BA,media,BOM JESUS DA LAPA; Bom Jesus Da Lapa; Bom Jesus da Lapa
+MATA DE SAO JOAO,Mata De Sao Joao,Informação insuficiente para verificar,2,452,BA,media,MATA DE SÃO JOÃO; Mata de São João
+SANTO ANTONIO DE JESUS,Santo Antonio De Jesus,Informação insuficiente para verificar,4,443,BA; Bahia,media,SANTO ANTONIO DE JESUS; SANTO ANTÔNIO DE JESUS; SANTO ANTôNIO DE JESUS; Santo Antônio de Jesus
+IRECE,Irece,Informação insuficiente para verificar,2,442,BA,media,IRECÊ; Irecê
+SAO DESIDERIO,Sao Desiderio,Informação insuficiente para verificar,4,415,BA,media,SAO DESIDERIO; SÃO DESIDÉRIO; SãO DESIDéRIO; São Desidério
+CAETITE,Caetite,Informação insuficiente para verificar,2,379,AL; BA,media,CAETITÉ; Caetité
+JACOBINA,Jacobina,Informação insuficiente para verificar,2,359,BA,media,JACOBINA; Jacobina
+CORRENTINA,Correntina,Informação insuficiente para verificar,2,338,BA,media,CORRENTINA; Correntina
+VALENCA,Valenca,Informação insuficiente para verificar,3,331,BA,media,VALENÇA; VALENçA; Valença
+VERA CRUZ,Vera Cruz,Informação insuficiente para verificar,2,316,BA,media,VERA CRUZ; Vera Cruz
+CANDEIAS,Candeias,Informação insuficiente para verificar,2,308,BA,media,CANDEIAS; Candeias
+FORMOSA DO RIO PRETO,Formosa Do Rio Preto,Informação insuficiente para verificar,2,289,BA,media,FORMOSA DO RIO PRETO; Formosa do Rio Preto
+LIVRAMENTO DE NOSSA SENHORA,Livramento De Nossa Senhora,Informação insuficiente para verificar,2,277,BA,media,LIVRAMENTO DE NOSSA SENHORA; Livramento de Nossa Senhora
+ITAPETINGA,Itapetinga,Informação insuficiente para verificar,2,274,BA,media,ITAPETINGA; Itapetinga
+SERRINHA,Serrinha,Informação insuficiente para verificar,2,257,BA,media,SERRINHA; Serrinha
+SENHOR DO BONFIM,Senhor Do Bonfim,Informação insuficiente para verificar,2,231,BA,media,SENHOR DO BONFIM; Senhor do Bonfim
+EUCLIDES DA CUNHA,Euclides Da Cunha,Informação insuficiente para verificar,2,221,BA,media,EUCLIDES DA CUNHA; Euclides da Cunha
+RIBEIRA DO POMBAL,Ribeira Do Pombal,Informação insuficiente para verificar,2,207,BA,media,RIBEIRA DO POMBAL; Ribeira do Pombal
+MORRO DO CHAPEU,Morro Do Chapeu,Informação insuficiente para verificar,1,204,BA,media,MORRO DO CHAPÉU
+DIAS D AVILA,Dias D Avila,Informação insuficiente para verificar,1,202,BA,media,DIAS D ÁVILA
+PRADO,Prado,Informação insuficiente para verificar,2,201,BA,media,PRADO; Prado
+CATU,Catu,Informação insuficiente para verificar,2,196,BA,media,CATU; Catu
+CRUZ DAS ALMAS,Cruz Das Almas,Informação insuficiente para verificar,2,194,BA,media,CRUZ DAS ALMAS; Cruz das Almas
+CAMPO FORMOSO,Campo Formoso,Informação insuficiente para verificar,2,192,BA,media,CAMPO FORMOSO; Campo Formoso
+XIQUE-XIQUE,Xique-Xique,Informação insuficiente para verificar,1,190,BA,media,XIQUE-XIQUE
+CASA NOVA,Casa Nova,Informação insuficiente para verificar,2,189,BA,media,CASA NOVA; Casa Nova
+ITABERABA,Itaberaba,Informação insuficiente para verificar,2,188,BA,media,ITABERABA; Itaberaba
+IBOTIRAMA,Ibotirama,Informação insuficiente para verificar,2,187,BA,media,IBOTIRAMA; Ibotirama
+BARRA DO CHOCA,Barra Do Choca,Informação insuficiente para verificar,3,184,BA,media,BARRA DO CHOÇA; Barra do Choça; barra do choça
+MEDEIROS NETO,Medeiros Neto,Informação insuficiente para verificar,2,181,BA,media,MEDEIROS NETO; Medeiros Neto
+CONCEICAO DO JACUIPE,Conceicao Do Jacuipe,Informação insuficiente para verificar,2,178,BA,media,CONCEIÇÃO DO JACUÍPE; Conceição do Jacuípe
+SANTO ESTEVAO,Santo Estevao,Informação insuficiente para verificar,4,176,BA,media,SANTO ESTEVAO; SANTO ESTEVÃO; Santo Estevão; Santo Estêvão
+SANTA CRUZ CABRALIA,Santa Cruz Cabralia,Informação insuficiente para verificar,2,176,BA,media,SANTA CRUZ CABRÁLIA; Santa Cruz Cabrália
+JABORANDI,Jaborandi,Informação insuficiente para verificar,2,174,BA,media,JABORANDI; Jaborandi
+SEABRA,Seabra,Informação insuficiente para verificar,2,173,BA,media,SEABRA; Seabra
+CACULE,Cacule,Informação insuficiente para verificar,2,173,BA,media,CACULÉ; Caculé
+SAO FRANCISCO DO CONDE,Sao Francisco Do Conde,Informação insuficiente para verificar,2,170,BA,media,SÃO FRANCISCO DO CONDE; São Francisco do Conde
+SANTA MARIA DA VITORIA,Santa Maria Da Vitoria,Informação insuficiente para verificar,1,170,BA,media,SANTA MARIA DA VITÓRIA
+ARRAIAL D AJUDA - DISTRITO,Arraial D Ajuda - Distrito,Informação insuficiente para verificar,1,165,BA,baixa,ARRAIAL D AJUDA - Distrito
+ITAMARAJU,Itamaraju,Informação insuficiente para verificar,2,159,BA,media,ITAMARAJU; Itamaraju
+BARRA DA ESTIVA,Barra Da Estiva,Informação insuficiente para verificar,2,159,BA,media,BARRA DA ESTIVA; Barra da Estiva
+MACAUBAS,Macaubas,Informação insuficiente para verificar,2,156,BA,media,MACAÚBAS; Macaúbas
+POJUCA,Pojuca,Informação insuficiente para verificar,2,153,BA,media,POJUCA; Pojuca
+SAO GONCALO DOS CAMPOS,Sao Goncalo Dos Campos,Informação insuficiente para verificar,2,150,BA,media,SÃO GONÇALO DOS CAMPOS; São Gonçalo dos Campos
+ENTRE RIOS,Entre Rios,Informação insuficiente para verificar,2,149,BA,media,ENTRE RIOS; Entre Rios
+IPIAU,Ipiau,Informação insuficiente para verificar,3,149,BA,media,IPIAU; IPIAÚ; Ipiaú
+MARAU,Marau,Informação insuficiente para verificar,1,148,BA,media,MARAÚ
+SAO SEBASTIAO DO PASSE,Sao Sebastiao Do Passe,Informação insuficiente para verificar,3,147,BA,media,SÃO SEBASTIÃO DO PASSE; SÃO SEBASTIÃO DO PASSÉ; São Sebastião do Passe
+MUCURI,Mucuri,Informação insuficiente para verificar,2,145,BA,media,MUCURI; Mucuri
+CONCEICAO DO COITE,Conceicao Do Coite,Informação insuficiente para verificar,2,142,BA,media,CONCEIÇÃO DO COITÉ; Conceição do Coité
+RIACHAO DO JACUIPE,Riachao Do Jacuipe,Informação insuficiente para verificar,2,139,BA,media,RIACHÃO DO JACUÍPE; Riachão do Jacuípe
+OUROLANDIA,Ourolandia,Informação insuficiente para verificar,2,139,BA,media,OUROLÂNDIA; Ourolândia
+ALCOBACA,Alcobaca,Informação insuficiente para verificar,2,137,BA,media,ALCOBAÇA; Alcobaça
+POCOES,Pocoes,Informação insuficiente para verificar,2,136,BA,media,POÇÕES; Poções
+OLIVEIRA DOS BREJINHOS,Oliveira Dos Brejinhos,Informação insuficiente para verificar,1,136,BA,media,OLIVEIRA DOS BREJINHOS
+AMARGOSA,Amargosa,Informação insuficiente para verificar,2,135,BA,media,AMARGOSA; Amargosa
+MIGUEL CALMON,Miguel Calmon,Informação insuficiente para verificar,2,129,BA,baixa,MIGUEL CALMON; Miguel Calmon
+TUCANO,Tucano,Informação insuficiente para verificar,2,128,BA,media,TUCANO; Tucano
+CARAVELAS,Caravelas,Informação insuficiente para verificar,2,128,BA,media,CARAVELAS; Caravelas
+JEREMOABO,Jeremoabo,Informação insuficiente para verificar,2,127,BA,media,JEREMOABO; Jeremoabo
+PRAIA DO FORTE (MATA DE SAO JOAO),Praia Do Forte (Mata De Sao Joao),Informação insuficiente para verificar,1,125,BA,baixa,PRAIA DO FORTE (MATA DE SÃO JOÃO)
+RIACHAO DAS NEVES,Riachao Das Neves,Informação insuficiente para verificar,2,124,BA,media,RIACHÃO DAS NEVES; Riachão das Neves
+SENTO SE,Sento Se,Informação insuficiente para verificar,2,123,BA,media,SENTO SÉ; Sento Sé
+UAUA,Uaua,Informação insuficiente para verificar,2,119,BA,baixa,UAUÁ; Uauá
+PARAMIRIM,Paramirim,Informação insuficiente para verificar,2,117,BA,media,PARAMIRIM; Paramirim
+JAGUAQUARA,Jaguaquara,Informação insuficiente para verificar,2,117,BA,media,JAGUAQUARA; Jaguaquara
+SANTO AMARO,Santo Amaro,Informação insuficiente para verificar,1,116,BA,media,SANTO AMARO
+IPIRA,Ipira,Informação insuficiente para verificar,2,115,BA,media,IPIRÁ; Ipirá
+TRANCOSO - DISTRITO,Trancoso - Distrito,Informação insuficiente para verificar,1,114,BA,baixa,TRANCOSO - Distrito
+BAIANOPOLIS,Baianopolis,Informação insuficiente para verificar,2,110,BA,media,BAIANÓPOLIS; Baianópolis
+RAFAEL JAMBEIRO,Rafael Jambeiro,Informação insuficiente para verificar,1,110,BA,baixa,RAFAEL JAMBEIRO
+SANTANA,Santana,Informação insuficiente para verificar,2,107,BA,media,SANTANA; Santana
+RIACHO DE SANTANA,Riacho De Santana,Informação insuficiente para verificar,1,105,BA,media,RIACHO DE SANTANA
+ITACARE,Itacare,Informação insuficiente para verificar,2,104,BA,media,ITACARÉ; Itacaré
+TANHACU,Tanhacu,Informação insuficiente para verificar,2,104,BA,media,TANHAÇU; Tanhaçu
+IRARA,Irara,Informação insuficiente para verificar,1,104,BA,media,IRARÁ
+ARACAJU,Aracaju,Informação insuficiente para verificar,1,103,SE,baixa,ARACAJU
+SAO FELIX DO CORIBE,Sao Felix Do Coribe,Informação insuficiente para verificar,2,103,BA,media,SÃO FÉLIX DO CORIBE; São Félix do Coribe
+REMANSO,Remanso,Informação insuficiente para verificar,1,102,BA,baixa,REMANSO
+SANTA RITA DE CASSIA,Santa Rita De Cassia,Informação insuficiente para verificar,2,102,BA,media,SANTA RITA DE CÁSSIA; Santa Rita de Cássia
+UMBURANAS,Umburanas,Informação insuficiente para verificar,1,102,BA,baixa,UMBURANAS
+PETROLINA,Petrolina,Informação insuficiente para verificar,1,100,PE,baixa,PETROLINA
+COCOS,Cocos,Informação insuficiente para verificar,2,100,BA,media,COCOS; Cocos
+PARIPIRANGA,Paripiranga,Informação insuficiente para verificar,1,99,BA,media,PARIPIRANGA
+DOM BASILIO,Dom Basilio,Informação insuficiente para verificar,2,98,BA,media,DOM BASÍLIO; Dom Basílio
+JAGUARARI,Jaguarari,Informação insuficiente para verificar,2,97,BA,media,JAGUARARI; Jaguarari
+ITABELA,Itabela,Informação insuficiente para verificar,2,95,AC; BA,media,ITABELA; Itabela
+CAPIM GROSSO,Capim Grosso,Informação insuficiente para verificar,2,95,BA,media,CAPIM GROSSO; Capim Grosso
+IBICOARA,Ibicoara,Informação insuficiente para verificar,2,93,BA,media,IBICOARA; Ibicoara
+ESPLANADA,Esplanada,Informação insuficiente para verificar,2,92,BA,media,ESPLANADA; Esplanada
+BARRA,Barra,Informação insuficiente para verificar,2,90,BA,media,BARRA; Barra
+NOVA VICOSA,Nova Vicosa,Informação insuficiente para verificar,2,90,BA,media,NOVA VICOSA; NOVA VIÇOSA
+ITAGIBA,Itagiba,Informação insuficiente para verificar,1,89,BA,media,ITAGIBÁ
+CURACA,Curaca,Informação insuficiente para verificar,2,88,BA,media,CURAÇÁ; Curaçá
+SAO PAULO,Sao Paulo,Informação insuficiente para verificar,2,87,SP,baixa,SÃO PAULO; São Paulo
+ITUACU,Ituacu,Informação insuficiente para verificar,1,85,BA,media,ITUAÇU
+GANDU,Gandu,Informação insuficiente para verificar,2,85,BA,media,GANDU; Gandu
+CANAVIEIRAS,Canavieiras,Informação insuficiente para verificar,2,84,BA,media,CANAVIEIRAS; Canavieiras
+SANTALUZ,Santaluz,Informação insuficiente para verificar,2,84,BA,baixa,SANTALUZ; Santaluz
+JOAO DOURADO,Joao Dourado,Informação insuficiente para verificar,1,83,BA,media,JOÃO DOURADO
+CICERO DANTAS,Cicero Dantas,Informação insuficiente para verificar,2,83,BA,media,CÍCERO DANTAS; Cícero Dantas
+PILAO ARCADO,Pilao Arcado,Informação insuficiente para verificar,2,83,BA,baixa,PILÃO ARCADO; Pilão Arcado
+RIO REAL,Rio Real,Informação insuficiente para verificar,2,82,BA,media,RIO REAL; Rio Real
+ANDORINHA,Andorinha,Informação insuficiente para verificar,2,82,BA,baixa,ANDORINHA; Andorinha
+JACARACI,Jacaraci,Informação insuficiente para verificar,1,82,BA,baixa,JACARACI
+CAIRU,Cairu,Informação insuficiente para verificar,1,81,BA,baixa,CAIRU
+MONTE SANTO,Monte Santo,Informação insuficiente para verificar,2,81,BA,media,MONTE SANTO; Monte Santo
+ITAPARICA,Itaparica,Informação insuficiente para verificar,2,79,BA,baixa,ITAPARICA; Itaparica
+ITABATAN - DISTRITO,Itabatan - Distrito,Informação insuficiente para verificar,1,79,BA,baixa,ITABATAN - Distrito
+INHAMBUPE,Inhambupe,Informação insuficiente para verificar,2,79,BA,media,INHAMBUPE; Inhambupe
+CONDEUBA,Condeuba,Informação insuficiente para verificar,2,79,BA,media,CONDEÚBA; Condeúba
+ITAGUACU DA BAHIA,Itaguacu Da Bahia,Informação insuficiente para verificar,2,79,BA,baixa,ITAGUAÇU DA BAHIA; Itaguaçu da Bahia
+SOBRADINHO,Sobradinho,Informação insuficiente para verificar,1,77,BA,media,SOBRADINHO
+ABRANTES - DISTRITO,Abrantes - Distrito,Informação insuficiente para verificar,1,77,BA,baixa,ABRANTES - Distrito
+SERRA DO RAMALHO,Serra Do Ramalho,Informação insuficiente para verificar,2,76,BA,media,SERRA DO RAMALHO; Serra do Ramalho
+BELMONTE,Belmonte,Informação insuficiente para verificar,2,75,BA,media,BELMONTE; Belmonte
+CANDIBA,Candiba,Informação insuficiente para verificar,1,75,BA,media,CANDIBA
+VITORIA CONQUISTA,Vitoria Conquista,Informação insuficiente para verificar,1,74,BA,media,VITÓRIA CONQUISTA
+CARINHANHA,Carinhanha,Informação insuficiente para verificar,1,74,BA,media,CARINHANHA
+PALMAS DE MONTE ALTO,Palmas De Monte Alto,Informação insuficiente para verificar,2,73,BA,media,PALMAS DE MONTE ALTO; Palmas de Monte Alto
+CACHOEIRA,Cachoeira,Informação insuficiente para verificar,1,73,BA,baixa,CACHOEIRA
+IGAPORA,Igapora,Informação insuficiente para verificar,1,73,BA,media,IGAPORÃ
+IBIRAPUA,Ibirapua,Informação insuficiente para verificar,2,73,BA; MG,media,IBIRAPUÃ; Ibirapuã
+LAPAO,Lapao,Informação insuficiente para verificar,1,73,BA,media,LAPÃO
+LAJE,Laje,Informação insuficiente para verificar,2,73,BA,media,LAJE; Laje
+MARACAS,Maracas,Informação insuficiente para verificar,1,72,BA,media,MARACÁS
+NAZARE,Nazare,Informação insuficiente para verificar,2,70,BA,baixa,NAZARÉ; Nazaré
+BELO CAMPO,Belo Campo,Informação insuficiente para verificar,1,69,BA,baixa,BELO CAMPO
+BARRA DO JACUIPE,Barra Do Jacuipe,Informação insuficiente para verificar,2,69,BA,baixa,BARRA DO JACUÍPE; Barra do Jacuípe
+PLANALTO,Planalto,Informação insuficiente para verificar,2,69,BA,baixa,PLANALTO; Planalto
+ANAGE,Anage,Informação insuficiente para verificar,2,69,BA,media,ANAGÉ; Anagé
+BOQUIRA,Boquira,Informação insuficiente para verificar,1,69,BA,baixa,BOQUIRA
+POSTO DA MATA,Posto Da Mata,Informação insuficiente para verificar,2,68,BA,baixa,POSTO DA MATA; Posto da Mata
+IBITIARA,Ibitiara,Informação insuficiente para verificar,1,67,BA,baixa,IBITIARA
+FORTALEZA,Fortaleza,Informação insuficiente para verificar,1,67,CE,baixa,FORTALEZA
+CAMPO ALEGRE DE LOURDES,Campo Alegre De Lourdes,Informação insuficiente para verificar,2,67,BA,baixa,CAMPO ALEGRE DE LOURDES; Campo Alegre de Lourdes
+LICINIO DE ALMEIDA,Licinio De Almeida,Informação insuficiente para verificar,1,67,BA,baixa,LICÍNIO DE ALMEIDA
+ITAPICURU,Itapicuru,Informação insuficiente para verificar,2,66,BA,media,ITAPICURU; Itapicuru
+RUY BARBOSA,Ruy Barbosa,Informação insuficiente para verificar,2,65,BA,media,RUY BARBOSA; Ruy Barbosa
+AMELIA RODRIGUES,Amelia Rodrigues,Informação insuficiente para verificar,3,64,BA,baixa,AMELIA RODRIGUES; AMÉLIA RODRIGUES; Amélia Rodrigues
+PINDAI,Pindai,Informação insuficiente para verificar,2,64,BA,media,PINDAÍ; Pindaí
+GENTIO DO OURO,Gentio Do Ouro,Informação insuficiente para verificar,1,64,BA,media,GENTIO DO OURO
+CASTRO ALVES,Castro Alves,Informação insuficiente para verificar,1,64,BA,baixa,CASTRO ALVES
+ITANHEM,Itanhem,Informação insuficiente para verificar,2,64,BA,media,ITANHÉM; Itanhém
+LENCOIS,Lencois,Informação insuficiente para verificar,2,63,BA,baixa,LENÇÓIS; Lençóis
+CAMACAN,Camacan,Informação insuficiente para verificar,2,63,BA,baixa,CAMACAN; Camacan
+MUTUIPE,Mutuipe,Informação insuficiente para verificar,1,63,BA,media,MUTUÍPE
+QUEIMADAS,Queimadas,Informação insuficiente para verificar,1,63,BA,baixa,QUEIMADAS
+RIO DO ANTONIO,Rio Do Antonio,Informação insuficiente para verificar,1,63,BA,baixa,RIO DO ANTÔNIO
+MALHADA,Malhada,Informação insuficiente para verificar,1,62,BA,media,MALHADA
+MUCUGE,Mucuge,Informação insuficiente para verificar,2,62,BA,media,MUCUGÊ; Mucugê
+BONITO,Bonito,Informação insuficiente para verificar,2,62,BA; PE,baixa,BONITO; Bonito
+UBAIRA,Ubaira,Informação insuficiente para verificar,1,62,BA,media,UBAÍRA
+ANGICAL,Angical,Informação insuficiente para verificar,1,62,BA,media,ANGICAL
+ITAMBE,Itambe,Informação insuficiente para verificar,2,61,BA,baixa,ITAMBÉ; Itambé
+IRAQUARA,Iraquara,Informação insuficiente para verificar,2,60,BA,media,IRAQUARA; Iraquara
+ARACATU,Aracatu,Informação insuficiente para verificar,1,60,BA,media,ARACATU
+TABOCAS DO BREJO VELHO,Tabocas Do Brejo Velho,Informação insuficiente para verificar,2,60,BA,baixa,TABOCAS DO BREJO VELHO; Tabocas do Brejo Velho
+CIPO,Cipo,Informação insuficiente para verificar,1,60,BA,baixa,CIPÓ
+VALENTE,Valente,Informação insuficiente para verificar,1,60,BA,baixa,VALENTE
+GLORIA,Gloria,Informação insuficiente para verificar,2,59,BA,baixa,GLÓRIA; Glória
+CORACAO DE MARIA,Coracao De Maria,Informação insuficiente para verificar,2,58,BA,media,CORAÇÃO DE MARIA; Coração de Maria
+CORIBE,Coribe,Informação insuficiente para verificar,2,58,BA,baixa,CORIBE; Coribe
+JAGUARIPE,Jaguaripe,Informação insuficiente para verificar,1,57,BA,media,JAGUARIPE
+IBIASSUCE,Ibiassuce,Informação insuficiente para verificar,2,57,BA,baixa,IBIASSUCE; IBIASSUCÊ
+SAO GABRIEL,Sao Gabriel,Informação insuficiente para verificar,1,56,BA,baixa,SÃO GABRIEL
+MUQUEM DE SAO FRANCISCO,Muquem De Sao Francisco,Informação insuficiente para verificar,1,56,BA,baixa,MUQUÉM DE SÃO FRANCISCO
+PARATINGA,Paratinga,Informação insuficiente para verificar,2,56,BA,baixa,PARATINGA; Paratinga
+URANDI,Urandi,Informação insuficiente para verificar,1,56,BA,baixa,URANDI
+WANDERLEY,Wanderley,Informação insuficiente para verificar,2,56,BA,media,WANDERLEY; Wanderley
+UNA,Una,Informação insuficiente para verificar,2,56,BA,media,UNA; Una
+SERRA DOURADA,Serra Dourada,Informação insuficiente para verificar,2,56,BA,baixa,SERRA DOURADA; Serra Dourada
+MADRE DE DEUS,Madre De Deus,Informação insuficiente para verificar,2,55,BA,baixa,MADRE DE DEUS; Madre de Deus
+NUCLEO RESIDENCIAL PILAR,Nucleo Residencial Pilar,Informação insuficiente para verificar,2,55,BA,baixa,NÚCLEO RESIDENCIAL PILAR; Núcleo Residencial Pilar
+MURITIBA,Muritiba,Informação insuficiente para verificar,1,55,BA,baixa,MURITIBA
+COTEGIPE,Cotegipe,Informação insuficiente para verificar,2,55,BA,media,COTEGIPE; Cotegipe
+BROTAS DE MACAUBAS,Brotas De Macaubas,Informação insuficiente para verificar,2,55,BA,baixa,BROTAS DE MACAÚBAS; Brotas de Macaúbas
+PALMEIRAS,Palmeiras,Informação insuficiente para verificar,2,54,BA,baixa,PALMEIRAS; Palmeiras
+CRISTOPOLIS,Cristopolis,Informação insuficiente para verificar,2,53,BA,media,CRISTÓPOLIS; Cristópolis
+CANARANA,Canarana,Informação insuficiente para verificar,2,53,BA,media,CANARANA; Canarana
+PINDOBACU,Pindobacu,Informação insuficiente para verificar,1,52,BA,baixa,PINDOBAÇU
+ENCRUZILHADA,Encruzilhada,Informação insuficiente para verificar,2,52,BA,media,ENCRUZILHADA; Encruzilhada
+MARAGOGIPE,Maragogipe,Informação insuficiente para verificar,2,52,BA,baixa,MARAGOGIPE; Maragogipe
+IBITITA,Ibitita,Informação insuficiente para verificar,1,52,BA,baixa,IBITITÁ
+IBICUI,Ibicui,Informação insuficiente para verificar,2,52,BA,media,IBICUÍ; Ibicuí
+TANQUE NOVO,Tanque Novo,Informação insuficiente para verificar,2,51,BA,baixa,TANQUE NOVO; Tanque Novo
+AMERICA DOURADA,America Dourada,Informação insuficiente para verificar,1,51,BA,media,AMÉRICA DOURADA
+JANDAIRA,Jandaira,Informação insuficiente para verificar,1,51,BA; RN,baixa,JANDAÍRA
+CONDE,Conde,Informação insuficiente para verificar,2,51,BA; PB,baixa,CONDE; Conde
+UTINGA,Utinga,Informação insuficiente para verificar,2,50,BA,baixa,UTINGA; Utinga
+ITORORO,Itororo,Informação insuficiente para verificar,2,50,BA,baixa,ITORORÓ; Itororó
+IBIPEBA,Ibipeba,Informação insuficiente para verificar,1,49,BA,baixa,IBIPEBA
+CAMAMU,Camamu,Informação insuficiente para verificar,2,49,BA,media,CAMAMU; Camamu
+ANDARAI,Andarai,Informação insuficiente para verificar,1,48,BA,baixa,ANDARAÍ
+PIATA,Piata,Informação insuficiente para verificar,1,48,BA,media,PIATÃ
+BARRA DO MENDES,Barra Do Mendes,Informação insuficiente para verificar,1,48,BA,baixa,BARRA DO MENDES
+SANTA BARBARA,Santa Barbara,Informação insuficiente para verificar,1,47,BA; MG,baixa,SANTA BÁRBARA
+PE DE SERRA,Pe De Serra,Informação insuficiente para verificar,1,47,BA,baixa,PÉ DE SERRA
+CANSANCAO,Cansancao,Informação insuficiente para verificar,1,47,BA,media,CANSANÇÃO
+MUNDO NOVO,Mundo Novo,Informação insuficiente para verificar,1,47,BA,baixa,MUNDO NOVO
+MACARANI,Macarani,Informação insuficiente para verificar,2,47,BA,baixa,MACARANI; Macarani
+BARROCAS,Barrocas,Informação insuficiente para verificar,2,47,BA,baixa,BARROCAS; Barrocas
+GOVERNADOR MANGABEIRA,Governador Mangabeira,Informação insuficiente para verificar,2,46,BA,baixa,GOVERNADOR MANGABEIRA; Governador Mangabeira
+ARACI,Araci,Informação insuficiente para verificar,2,46,BA,media,ARACI; Araci
+ITUBERA,Itubera,Informação insuficiente para verificar,2,46,BA,baixa,ITUBERÁ; ITUBERá
+RECIFE,Recife,Informação insuficiente para verificar,1,46,PE,baixa,RECIFE
+ITARANTIM,Itarantim,Informação insuficiente para verificar,1,46,BA,baixa,ITARANTIM
+RIO DE CONTAS,Rio De Contas,Informação insuficiente para verificar,2,46,BA,baixa,RIO DE CONTAS; Rio de Contas
+IGUAI,Iguai,Informação insuficiente para verificar,2,46,BA,media,IGUAÍ; Iguaí
+ITATIM,Itatim,Informação insuficiente para verificar,2,45,BA,baixa,ITATIM; Itatim
+PRESIDENTE TANCREDO NEVES,Presidente Tancredo Neves,Informação insuficiente para verificar,2,45,BA,media,PRESIDENTE TANCREDO NEVES; Presidente Tancredo Neves
+CAPELA DO ALTO ALEGRE,Capela Do Alto Alegre,Informação insuficiente para verificar,1,45,BA,baixa,CAPELA DO ALTO ALEGRE
+TAPIRAMUTA,Tapiramuta,Informação insuficiente para verificar,1,45,BA,baixa,TAPIRAMUTÁ
+OLINDINA,Olindina,Informação insuficiente para verificar,1,44,BA,baixa,OLINDINA
+RIO DE JANEIRO,Rio De Janeiro,Informação insuficiente para verificar,1,44,RJ,baixa,RIO DE JANEIRO
+FRA SANTANA,Fra Santana,Informação insuficiente para verificar,1,44,BA,baixa,FRA SANTANA
+IACU,Iacu,Informação insuficiente para verificar,2,44,BA,media,IAÇU; Iaçu
+MORTUGABA,Mortugaba,Informação insuficiente para verificar,1,44,BA,baixa,MORTUGABA
+SATIRO DIAS,Satiro Dias,Informação insuficiente para verificar,2,44,BA,media,SÁTIRO DIAS; Sátiro Dias
+NOVA SOURE,Nova Soure,Informação insuficiente para verificar,1,43,BA,baixa,NOVA SOURE
+CAFARNAUM,Cafarnaum,Informação insuficiente para verificar,2,43,BA,media,CAFARNAUM; Cafarnaum
+SALINAS DA MARGARIDA,Salinas Da Margarida,Informação insuficiente para verificar,2,42,BA,baixa,SALINAS DA MARGARIDA; Salinas da Margarida
+BOA VISTA DO TUPIM,Boa Vista Do Tupim,Informação insuficiente para verificar,2,42,BA,baixa,BOA VISTA DO TUPIM; Boa Vista do Tupim
+IBIPITANGA,Ibipitanga,Informação insuficiente para verificar,1,42,BA,baixa,IBIPITANGA
+SITIO DO MATO,Sitio Do Mato,Informação insuficiente para verificar,1,41,BA,baixa,SÍTIO DO MATO
+UIBAI,Uibai,Informação insuficiente para verificar,1,41,BA,baixa,UIBAÍ
+URUCUCA,Urucuca,Informação insuficiente para verificar,2,41,BA,baixa,URUÇUCA; Uruçuca
+BOTUPORA,Botupora,Informação insuficiente para verificar,1,41,BA,baixa,BOTUPORÃ
+ADUSTINA,Adustina,Informação insuficiente para verificar,1,41,BA,media,ADUSTINA
+CONCEICAO DA FEIRA,Conceicao Da Feira,Informação insuficiente para verificar,2,40,BA,baixa,CONCEIÇÃO DA FEIRA; Conceição da Feira
+SAO FELIPE,Sao Felipe,Informação insuficiente para verificar,1,40,BA,baixa,SÃO FELIPE
+PONTO NOVO,Ponto Novo,Informação insuficiente para verificar,2,40,BA,baixa,PONTO NOVO; Ponto Novo
+ITACIMIRIM,Itacimirim,Informação insuficiente para verificar,1,40,BA,baixa,ITACIMIRIM
+ITIUBA,Itiuba,Informação insuficiente para verificar,1,40,BA,baixa,ITIÚBA
+MIRANGABA,Mirangaba,Informação insuficiente para verificar,2,40,BA,baixa,MIRANGABA; Mirangaba
+ARACAS,Aracas,Informação insuficiente para verificar,2,39,BA,baixa,ARAÇÁS; Araçás
+JIQUIRICA,Jiquirica,Informação insuficiente para verificar,1,39,BA,baixa,JIQUIRIÇÁ
+IPUPIARA,Ipupiara,Informação insuficiente para verificar,1,39,BA,baixa,IPUPIARA
+GUARAJUBA,Guarajuba,Informação insuficiente para verificar,1,39,BA,baixa,GUARAJUBA
+BRASILIA,Brasilia,Informação insuficiente para verificar,1,38,DF,baixa,BRASÍLIA
+TEOFILANDIA,Teofilandia,Informação insuficiente para verificar,2,38,BA,baixa,TEOFILÂNDIA; Teofilândia
+IBIRATAIA,Ibirataia,Informação insuficiente para verificar,2,37,BA,baixa,IBIRATAIA; Ibirataia
+COARACI,Coaraci,Informação insuficiente para verificar,2,37,BA,baixa,COARACI; Coaraci
+IBICARAI,Ibicarai,Informação insuficiente para verificar,2,36,BA,baixa,IBICARAÍ; Ibicaraí
+MACAJUBA,Macajuba,Informação insuficiente para verificar,1,35,BA,baixa,MACAJUBA
+TREMEDAL,Tremedal,Informação insuficiente para verificar,1,35,BA,baixa,TREMEDAL
+CORDEIROS,Cordeiros,Informação insuficiente para verificar,1,35,BA,baixa,CORDEIROS
+BOA NOVA,Boa Nova,Informação insuficiente para verificar,1,35,BA,baixa,BOA NOVA
+VARZEA NOVA,Varzea Nova,Informação insuficiente para verificar,1,35,BA,baixa,VÁRZEA NOVA
+BREJOLANDIA,Brejolandia,Informação insuficiente para verificar,2,34,BA,baixa,BREJOLÂNDIA; Brejolândia
+BONINAL,Boninal,Informação insuficiente para verificar,1,34,BA,baixa,BONINAL
+IUIU,Iuiu,Informação insuficiente para verificar,2,34,BA,baixa,IUIU; IUIÚ
+JUSSARA,Jussara,Informação insuficiente para verificar,2,34,BA,baixa,JUSSARA; Jussara
+RIO DO PIRES,Rio Do Pires,Informação insuficiente para verificar,2,34,BA,baixa,RIO DO PIRES; Rio do Pires
+PINTADAS,Pintadas,Informação insuficiente para verificar,1,33,BA,baixa,PINTADAS
+ERICO CARDOSO,Erico Cardoso,Informação insuficiente para verificar,1,33,BA,baixa,ÉRICO CARDOSO
+ABARE,Abare,Informação insuficiente para verificar,2,33,BA,baixa,ABARÉ; Abaré
+SAPEACU,Sapeacu,Informação insuficiente para verificar,1,33,BA,baixa,SAPEAÇU
+CANDIDO SALES,Candido Sales,Informação insuficiente para verificar,1,33,BA,baixa,CÂNDIDO SALES
+SANTA INES,Santa Ines,Informação insuficiente para verificar,2,32,BA,baixa,SANTA INÊS; Santa Inês
+HUMILDES - DISTRITO,Humildes - Distrito,Informação insuficiente para verificar,1,32,BA,baixa,HUMILDES - Distrito
+TEIXEIRA FREITAS,Teixeira Freitas,Informação insuficiente para verificar,1,32,BA,media,TEIXEIRA FREITAS
+WAGNER,Wagner,Informação insuficiente para verificar,1,32,BA,baixa,WAGNER
+LAGOA REAL,Lagoa Real,Informação insuficiente para verificar,1,32,BA,baixa,LAGOA REAL
+LAJEDAO,Lajedao,Informação insuficiente para verificar,1,32,BA,baixa,LAJEDÃO
+CORONEL JOAO SA,Coronel Joao Sa,Informação insuficiente para verificar,1,32,BA,baixa,CORONEL JOÃO SÁ
+DOM INOCENCIO,Dom Inocencio,Informação insuficiente para verificar,1,31,PI,baixa,DOM INOCÊNCIO
+NOVA FATIMA,Nova Fatima,Informação insuficiente para verificar,2,31,BA,baixa,NOVA FÁTIMA; Nova Fátima
+ACAJUTIBA,Acajutiba,Informação insuficiente para verificar,2,31,BA,baixa,ACAJUTIBA; Acajutiba
+MORPARA,Morpara,Informação insuficiente para verificar,2,31,BA,baixa,MORPARÁ; Morpará
+SERROLANDIA,Serrolandia,Informação insuficiente para verificar,1,31,BA,baixa,SERROLÂNDIA
+RIBEIRA DO AMPARO,Ribeira Do Amparo,Informação insuficiente para verificar,2,30,BA,baixa,RIBEIRA DO AMPARO; Ribeira do Amparo
+FATIMA,Fatima,Informação insuficiente para verificar,1,30,BA,media,FÁTIMA
+GUARATINGA,Guaratinga,Informação insuficiente para verificar,1,30,BA,baixa,GUARATINGA
+SANTA BRIGIDA,Santa Brigida,Informação insuficiente para verificar,2,30,BA,baixa,SANTA BRÍGIDA; Santa Brígida
+FILADELFIA,Filadelfia,Informação insuficiente para verificar,1,30,BA,baixa,FILADÉLFIA
+NOVA CANAA,Nova Canaa,Informação insuficiente para verificar,2,30,BA,baixa,NOVA CANAA; NOVA CANAÃ
+SAO JOSE DO JACUIPE,Sao Jose Do Jacuipe,Informação insuficiente para verificar,1,30,BA,baixa,SÃO JOSÉ DO JACUÍPE
+SANTA LUZIA,Santa Luzia,Informação insuficiente para verificar,2,30,BA; MG,baixa,SANTA LUZIA; Santa Luzia
+ITAETE,Itaete,Informação insuficiente para verificar,1,29,BA,baixa,ITAETÉ
+TEOLANDIA,Teolandia,Informação insuficiente para verificar,2,29,BA,baixa,TEOLÂNDIA; Teolândia
+SAUDE,Saude,Informação insuficiente para verificar,2,29,BA,baixa,SAÚDE; Saúde
+UBAITABA,Ubaitaba,Informação insuficiente para verificar,1,29,BA,baixa,UBAITABA
+MATINA,Matina,Informação insuficiente para verificar,1,29,BA,baixa,MATINA
+MAIQUINIQUE,Maiquinique,Informação insuficiente para verificar,2,29,BA,baixa,MAIQUINIQUE; Maiquinique
+IGRAPIUNA,Igrapiuna,Informação insuficiente para verificar,1,29,BA,baixa,IGRAPIÚNA
+CONCEICAO DO ALMEIDA,Conceicao Do Almeida,Informação insuficiente para verificar,1,29,BA,baixa,CONCEIÇÃO DO ALMEIDA
+JUCURUCU,Jucurucu,Informação insuficiente para verificar,2,28,BA,baixa,JUCURUÇU; Jucuruçu
+ARAMARI,Aramari,Informação insuficiente para verificar,1,28,BA,baixa,ARAMARI
+CENTRAL,Central,Informação insuficiente para verificar,1,28,BA,baixa,CENTRAL
+SAO MIGUEL DAS MATAS,Sao Miguel Das Matas,Informação insuficiente para verificar,1,28,BA,baixa,SÃO MIGUEL DAS MATAS
+CARAIBAS,Caraibas,Informação insuficiente para verificar,1,28,BA,baixa,CARAÍBAS
+CRISOPOLIS,Crisopolis,Informação insuficiente para verificar,3,28,BA,baixa,CRISOPOLIS; CRISÓPOLIS; Crisópolis
+RODELAS,Rodelas,Informação insuficiente para verificar,2,28,BA,baixa,RODELAS; Rodelas
+ITAPEBI,Itapebi,Informação insuficiente para verificar,1,27,BA,baixa,ITAPEBI
+BELO HORIZONTE,Belo Horizonte,Informação insuficiente para verificar,1,27,MG,baixa,BELO HORIZONTE
+VEREDA,Vereda,Informação insuficiente para verificar,2,27,BA,baixa,VEREDA; Vereda
+PRESIDENTE JANIO QUADROS,Presidente Janio Quadros,Informação insuficiente para verificar,1,27,BA,baixa,PRESIDENTE JÂNIO QUADROS
+SITIO DO QUINTO,Sitio Do Quinto,Informação insuficiente para verificar,1,27,BA,baixa,SÍTIO DO QUINTO
+RODA VELHA - DISTRITO,Roda Velha - Distrito,Informação insuficiente para verificar,1,27,BA,baixa,RODA VELHA - Distrito
+VARZEA DA ROCA,Varzea Da Roca,Informação insuficiente para verificar,1,27,BA,baixa,VÁRZEA DA ROÇA
+ANTONIO GONCALVES,Antonio Goncalves,Informação insuficiente para verificar,1,27,BA,baixa,ANTÔNIO GONÇALVES
+NORDESTINA,Nordestina,Informação insuficiente para verificar,2,26,BA,baixa,NORDESTINA; Nordestina
+ITAJUIPE,Itajuipe,Informação insuficiente para verificar,1,26,BA,baixa,ITAJUÍPE
+CANUDOS,Canudos,Informação insuficiente para verificar,1,26,BA,baixa,CANUDOS
+ANGUERA,Anguera,Informação insuficiente para verificar,2,26,BA,baixa,ANGUERA; Anguera
+SEBASTIAO LARANJEIRAS,Sebastiao Laranjeiras,Informação insuficiente para verificar,2,26,BA,baixa,SEBASTIÃO LARANJEIRAS; Sebastião Laranjeiras
+CABACEIRAS DO PARAGUACU,Cabaceiras Do Paraguacu,Informação insuficiente para verificar,1,26,BA,baixa,CABACEIRAS DO PARAGUAÇU
+MAIRI,Mairi,Informação insuficiente para verificar,1,26,BA,baixa,MAIRI
+FLORESTA AZUL,Floresta Azul,Informação insuficiente para verificar,1,26,BA,baixa,FLORESTA AZUL
+UBATA,Ubata,Informação insuficiente para verificar,1,26,BA,baixa,UBATÃ
+NOVO HORIZONTE,Novo Horizonte,Informação insuficiente para verificar,1,26,BA,baixa,NOVO HORIZONTE
+PIRITIBA,Piritiba,Informação insuficiente para verificar,2,25,BA,baixa,PIRITIBA; Piritiba
+SAUBARA,Saubara,Informação insuficiente para verificar,1,25,BA,baixa,SAUBARA
+AREMBEPE,Arembepe,Informação insuficiente para verificar,1,25,BA,baixa,AREMBEPE
+JUSSIAPE,Jussiape,Informação insuficiente para verificar,1,25,BA,baixa,JUSSIAPE
+MULUNGU DO MORRO,Mulungu Do Morro,Informação insuficiente para verificar,2,24,BA,media,MULUNGU DO MORRO; Mulungu do Morro
+IBIRAPITANGA,Ibirapitanga,Informação insuficiente para verificar,2,24,BA,baixa,IBIRAPITANGA; Ibirapitanga
+MORRO DE SAO PAULO - DISTRITO,Morro De Sao Paulo - Distrito,Informação insuficiente para verificar,1,24,BA,baixa,MORRO DE SÃO PAULO - Distrito
+IMBASSAI (MATA DE SAO JOAO),Imbassai (Mata De Sao Joao),Informação insuficiente para verificar,1,23,BA,baixa,IMBASSAÍ (MATA DE SÃO JOÃO)
+SERRA PRETA,Serra Preta,Informação insuficiente para verificar,2,23,BA,baixa,SERRA PRETA; Serra Preta
+RETIROLANDIA,Retirolandia,Informação insuficiente para verificar,1,23,BA,baixa,RETIROLÂNDIA
+SANTA TEREZINHA,Santa Terezinha,Informação insuficiente para verificar,2,23,BA,baixa,SANTA TEREZINHA; Santa Terezinha
+ELISIO MEDRADO,Elisio Medrado,Informação insuficiente para verificar,2,23,BA,baixa,ELÍSIO MEDRADO; Elísio Medrado
+TAPEROA,Taperoa,Informação insuficiente para verificar,1,23,BA,baixa,TAPEROÁ
+BIRITINGA,Biritinga,Informação insuficiente para verificar,1,23,BA,baixa,BIRITINGA
+DOM MACEDO COSTA,Dom Macedo Costa,Informação insuficiente para verificar,1,23,BA,baixa,DOM MACEDO COSTA
+NOVA IBIA,Nova Ibia,Informação insuficiente para verificar,1,23,BA,baixa,NOVA IBIÁ
+PRESIDENTE DUTRA,Presidente Dutra,Informação insuficiente para verificar,1,23,BA; MA,baixa,PRESIDENTE DUTRA
+ANTAS,Antas,Informação insuficiente para verificar,2,22,BA,baixa,ANTAS; Antas
+CALDAS DO JORRO,Caldas Do Jorro,Informação insuficiente para verificar,1,22,BA,baixa,CALDAS DO JORRO
+CONTENDAS DO SINCORA,Contendas Do Sincora,Informação insuficiente para verificar,1,22,BA,baixa,CONTENDAS DO SINCORÁ
+CAETANOS,Caetanos,Informação insuficiente para verificar,1,22,BA,baixa,CAETANOS
+QUIJINGUE,Quijingue,Informação insuficiente para verificar,1,22,BA,baixa,QUIJINGUE
+MACURURE,Macurure,Informação insuficiente para verificar,2,22,BA,baixa,MACURURÉ; Macururé
+HELIOPOLIS,Heliopolis,Informação insuficiente para verificar,1,22,BA,baixa,HELIÓPOLIS
+MAETINGA,Maetinga,Informação insuficiente para verificar,1,22,BA,baixa,MAETINGA
+BAIXA GRANDE,Baixa Grande,Informação insuficiente para verificar,1,22,BA,baixa,BAIXA GRANDE
+CALDEIRAO GRANDE,Caldeirao Grande,Informação insuficiente para verificar,1,22,BA,baixa,CALDEIRÃO GRANDE
+MONTE GORDO - DISTRITO,Monte Gordo - Distrito,Informação insuficiente para verificar,1,22,BA,baixa,MONTE GORDO - Distrito
+ANTONIO CARDOSO,Antonio Cardoso,Informação insuficiente para verificar,2,22,BA,baixa,ANTÔNIO CARDOSO; ANTôNIO CARDOSO
+CAEM,Caem,Informação insuficiente para verificar,1,21,BA,baixa,CAÉM
+SANTANOPOLIS,Santanopolis,Informação insuficiente para verificar,2,21,BA,baixa,SANTANOPOLIS; SANTANÓPOLIS
+SAO DOMINGOS,Sao Domingos,Informação insuficiente para verificar,2,21,BA; GO,baixa,SÃO DOMINGOS; São Domingos
+MACEIO,Maceio,Informação insuficiente para verificar,1,21,AL,baixa,MACEIÓ
+MALHADA DE PEDRAS,Malhada De Pedras,Informação insuficiente para verificar,1,21,BA,baixa,MALHADA DE PEDRAS
+BUERAREMA,Buerarema,Informação insuficiente para verificar,2,21,BA,baixa,BUERAREMA; Buerarema
+MANSIDAO,Mansidao,Informação insuficiente para verificar,1,21,BA,baixa,MANSIDÃO
+PEDRO ALEXANDRE,Pedro Alexandre,Informação insuficiente para verificar,1,21,BA,baixa,PEDRO ALEXANDRE
+CATURAMA,Caturama,Informação insuficiente para verificar,1,20,BA,baixa,CATURAMA
+ITAPE,Itape,Informação insuficiente para verificar,1,20,BA,baixa,ITAPÉ
+PORTO SAUIPE,Porto Sauipe,Informação insuficiente para verificar,1,20,BA,baixa,PORTO SAUÍPE
+VARZEDO,Varzedo,Informação insuficiente para verificar,1,20,BA,baixa,VARZEDO
+AGUA FRIA,Agua Fria,Informação insuficiente para verificar,2,20,BA,baixa,ÁGUA FRIA; Água Fria
+FIRMINO ALVES,Firmino Alves,Informação insuficiente para verificar,2,20,BA,baixa,FIRMINO ALVES; Firmino Alves
+MIRANTE,Mirante,Informação insuficiente para verificar,1,20,BA,baixa,MIRANTE
+ITANAGRA,Itanagra,Informação insuficiente para verificar,2,20,BA,baixa,ITANAGRA; Itanagra
+PIRIPA,Piripa,Informação insuficiente para verificar,1,20,BA,baixa,PIRIPÁ
+MUNIZ FERREIRA,Muniz Ferreira,Informação insuficiente para verificar,1,20,BA,baixa,MUNIZ FERREIRA
+FEIRA DA MATA,Feira Da Mata,Informação insuficiente para verificar,2,19,BA,baixa,FEIRA DA MATA; Feira da Mata
+RIBEIRAO DO LARGO,Ribeirao Do Largo,Informação insuficiente para verificar,2,19,BA,baixa,RIBEIRÃO DO LARGO; Ribeirão do Largo
+MARIA QUITERIA - DISTRITO,Maria Quiteria - Distrito,Informação insuficiente para verificar,1,19,BA,baixa,MARIA QUITÉRIA - Distrito
+WENCESLAU GUIMARAES,Wenceslau Guimaraes,Informação insuficiente para verificar,2,19,BA,baixa,WENCESLAU GUIMARÃES; Wenceslau Guimarães
+NOVA REDENCAO,Nova Redencao,Informação insuficiente para verificar,1,19,BA,baixa,NOVA REDENÇÃO
+TANQUINHO,Tanquinho,Informação insuficiente para verificar,2,18,BA,baixa,TANQUINHO; Tanquinho
+BELEM,Belem,Informação insuficiente para verificar,1,18,PA,baixa,BELÉM
+IRAMAIA,Iramaia,Informação insuficiente para verificar,1,18,BA,baixa,IRAMAIA
+PLANALTINO,Planaltino,Informação insuficiente para verificar,2,18,BA,baixa,PLANALTINO; Planaltino
+MILAGRES,Milagres,Informação insuficiente para verificar,2,18,BA,baixa,MILAGRES; Milagres
+CATOLANDIA,Catolandia,Informação insuficiente para verificar,2,18,BA,baixa,CATOLÂNDIA; Catolândia
+GUAJERU,Guajeru,Informação insuficiente para verificar,1,18,BA,baixa,GUAJERU
+ARATACA,Arataca,Informação insuficiente para verificar,1,18,BA,baixa,ARATACA
+ROSARIO (CORRENTINA),Rosario (Correntina),Informação insuficiente para verificar,1,17,BA,baixa,ROSÁRIO (CORRENTINA)
+POTIRAGUA,Potiragua,Informação insuficiente para verificar,1,17,BA,baixa,POTIRAGUÁ
+BARRO ALTO,Barro Alto,Informação insuficiente para verificar,1,17,BA,baixa,BARRO ALTO
+JAUA,Jaua,Informação insuficiente para verificar,1,17,BA,baixa,JAUÁ
+JITAUNA,Jitauna,Informação insuficiente para verificar,2,17,BA,baixa,JITAÚNA; Jitaúna
+SOUTO SOARES,Souto Soares,Informação insuficiente para verificar,1,17,BA,baixa,SOUTO SOARES
+S PAULO,S Paulo,Informação insuficiente para verificar,1,17,SP,baixa,S PAULO
+ITAGIMIRIM,Itagimirim,Informação insuficiente para verificar,1,17,BA,baixa,ITAGIMIRIM
+CAMPO GRANDE,Campo Grande,Informação insuficiente para verificar,1,17,MS; RN,baixa,CAMPO GRANDE
+IRAJUBA,Irajuba,Informação insuficiente para verificar,2,17,BA,baixa,IRAJUBA; Irajuba
+VARZEA DO POCO,Varzea Do Poco,Informação insuficiente para verificar,1,17,BA,baixa,VÁRZEA DO POÇO
+JAIBA - DISTRITO,Jaiba - Distrito,Informação insuficiente para verificar,1,17,BA,baixa,JAÍBA - Distrito
+TIQUARUCU - DISTRITO,Tiquarucu - Distrito,Informação insuficiente para verificar,1,16,BA,baixa,TIQUARUÇU - Distrito
+BURITIRAMA,Buritirama,Informação insuficiente para verificar,1,16,BA,baixa,BURITIRAMA
+CARDEAL DA SILVA,Cardeal Da Silva,Informação insuficiente para verificar,1,16,BA,baixa,CARDEAL DA SILVA
+APUAREMA,Apuarema,Informação insuficiente para verificar,1,16,BA,baixa,APUAREMA
+SAO MATEUS,Sao Mateus,Informação insuficiente para verificar,1,16,ES,baixa,SÃO MATEUS
+CAATIBA,Caatiba,Informação insuficiente para verificar,1,16,BA,baixa,CAATIBA
+ITAJU DO COLONIA,Itaju Do Colonia,Informação insuficiente para verificar,1,16,BA,baixa,ITAJU DO COLÔNIA
+APORA,Apora,Informação insuficiente para verificar,2,16,BA,baixa,APORÁ; Aporá
+ARATUIPE,Aratuipe,Informação insuficiente para verificar,1,16,BA,baixa,ARATUÍPE
+CARAIVA - DISTRITO,Caraiva - Distrito,Informação insuficiente para verificar,1,16,BA,baixa,CARAIVA - Distrito
+BANZAE,Banzae,Informação insuficiente para verificar,2,16,BA,baixa,BANZAÊ; Banzaê
+LAJEDINHO,Lajedinho,Informação insuficiente para verificar,1,16,BA,baixa,LAJEDINHO
+PARAFUSO,Parafuso,Informação insuficiente para verificar,1,16,BA,baixa,PARAFUSO
+CANAPOLIS,Canapolis,Informação insuficiente para verificar,1,15,BA,baixa,CANÁPOLIS
+MATARIPE (SAO FRANCISCO DO CONDE),Mataripe (Sao Francisco Do Conde),Informação insuficiente para verificar,2,15,BA,baixa,MATARIPE (SÃO FRANCISCO DO CONDE); Mataripe (São Francisco do Conde)
+ITAQUARA,Itaquara,Informação insuficiente para verificar,1,15,BA,baixa,ITAQUARA
+MANICOBA (JUAZEIRO),Manicoba (Juazeiro),Informação insuficiente para verificar,1,15,BA,baixa,MANIÇOBA (JUAZEIRO)
+JOSE GONCALVES - DISTRITO,Jose Goncalves - Distrito,Informação insuficiente para verificar,1,15,BA,baixa,JOSÉ GONÇALVES - Distrito
+LAJEDO DO TABOCAL,Lajedo Do Tabocal,Informação insuficiente para verificar,1,15,BA,baixa,LAJEDO DO TABOCAL
+CUMURUXATIBA - DISTRITO,Cumuruxatiba - Distrito,Informação insuficiente para verificar,1,15,BA,baixa,CUMURUXATIBA - Distrito
+MANOEL VITORINO,Manoel Vitorino,Informação insuficiente para verificar,1,14,BA,baixa,MANOEL VITORINO
+CHORROCHO,Chorrocho,Informação insuficiente para verificar,1,14,BA,baixa,CHORROCHÓ
+ITAGI,Itagi,Informação insuficiente para verificar,2,14,BA,baixa,ITAGI; Itagi
+NILO PECANHA,Nilo Pecanha,Informação insuficiente para verificar,2,14,BA,baixa,NILO PEÇANHA; Nilo Peçanha
+ALMADINA,Almadina,Informação insuficiente para verificar,1,14,BA,baixa,ALMADINA
+BARRA DO ROCHA,Barra Do Rocha,Informação insuficiente para verificar,1,14,BA,baixa,BARRA DO ROCHA
+TEODORO SAMPAIO,Teodoro Sampaio,Informação insuficiente para verificar,2,14,BA,baixa,TEODORO SAMPAIO; Teodoro Sampaio
+ITIRUCU,Itirucu,Informação insuficiente para verificar,1,14,BA,baixa,ITIRUÇU
+LAGOA DO BARRO DO PIAUI,Lagoa Do Barro Do Piaui,Informação insuficiente para verificar,1,13,PI,baixa,LAGOA DO BARRO DO PIAUÍ
+OURICANGAS,Ouricangas,Informação insuficiente para verificar,1,13,BA,baixa,OURIÇANGAS
+MASCOTE,Mascote,Informação insuficiente para verificar,1,13,BA,baixa,MASCOTE
+SANTA CRUZ DA VITORIA,Santa Cruz Da Vitoria,Informação insuficiente para verificar,2,13,BA,baixa,SANTA CRUZ DA VITÓRIA; Santa Cruz da Vitória
+SANTA CRUZ,Santa Cruz,Informação insuficiente para verificar,1,13,RN,baixa,SANTA CRUZ
+ABAIRA,Abaira,Informação insuficiente para verificar,1,12,BA,baixa,ABAÍRA
+ICHU,Ichu,Informação insuficiente para verificar,1,12,BA,baixa,ICHU
+DELMIRO GOUVEIA,Delmiro Gouveia,Informação insuficiente para verificar,1,12,AL,baixa,DELMIRO GOUVEIA
+IPECAETA,Ipecaeta,Informação insuficiente para verificar,1,12,BA,baixa,IPECAETÁ
+LINHARES,Linhares,Informação insuficiente para verificar,1,12,ES,baixa,LINHARES
+NOVA ITARANA,Nova Itarana,Informação insuficiente para verificar,1,12,BA,baixa,NOVA ITARANA
+ITAPITANGA,Itapitanga,Informação insuficiente para verificar,2,12,BA,baixa,ITAPITANGA; Itapitanga
+CURITIBA,Curitiba,Informação insuficiente para verificar,1,11,PR,baixa,CURITIBA
+CRAVOLANDIA,Cravolandia,Informação insuficiente para verificar,1,11,AC; BA,baixa,CRAVOLÂNDIA
+SAO FELIX,Sao Felix,Informação insuficiente para verificar,1,11,BA,baixa,SÃO FÉLIX
+LARANJEIRAS,Laranjeiras,Informação insuficiente para verificar,1,11,SE,baixa,LARANJEIRAS
+PIRAI DO NORTE,Pirai Do Norte,Informação insuficiente para verificar,2,11,BA,baixa,PIRAI DO NORTE; PIRAÍ DO NORTE
+BOM JESUS DA SERRA,Bom Jesus Da Serra,Informação insuficiente para verificar,2,11,BA,baixa,BOM JESUS DA SERRA; Bom Jesus da Serra
+GAVIAO,Gaviao,Informação insuficiente para verificar,2,11,BA,baixa,GAVIÃO; Gavião
+BREJOES,Brejoes,Informação insuficiente para verificar,1,11,BA,baixa,BREJÕES
+DARIO MEIRA,Dario Meira,Informação insuficiente para verificar,1,11,BA,baixa,DÁRIO MEIRA
+MANAUS,Manaus,Informação insuficiente para verificar,1,11,AM,baixa,MANAUS
+BARRO PRETO,Barro Preto,Informação insuficiente para verificar,1,11,BA,baixa,BARRO PRETO
+ALTO DO RODRIGUES,Alto Do Rodrigues,Informação insuficiente para verificar,1,11,RN,baixa,ALTO DO RODRIGUES
+JABOATAO DOS GUARARAPES,Jaboatao Dos Guararapes,Informação insuficiente para verificar,1,10,PE,baixa,JABOATÃO DOS GUARARAPES
+CERAIMA - DISTRITO,Ceraima - Distrito,Informação insuficiente para verificar,1,10,BA,baixa,CERAIMA - Distrito
+ARARAQUARA,Araraquara,Informação insuficiente para verificar,1,10,SP,baixa,ARARAQUARA
+QUIXABEIRA,Quixabeira,Informação insuficiente para verificar,1,10,BA,baixa,QUIXABEIRA
+ABRANTES (CAMACARI),Abrantes (Camacari),Informação insuficiente para verificar,1,10,BA,baixa,ABRANTES (CAMAÇARI)
+JANAUBA,Janauba,Informação insuficiente para verificar,1,10,MG,baixa,JANAÚBA
+OLINDA,Olinda,Informação insuficiente para verificar,1,10,PE,baixa,OLINDA
+QUEIMADA NOVA,Queimada Nova,Informação insuficiente para verificar,1,10,PI,baixa,QUEIMADA NOVA
+IBIQUERA,Ibiquera,Informação insuficiente para verificar,1,10,BA,baixa,IBIQUERA
+AIQUARA,Aiquara,Informação insuficiente para verificar,1,10,AC; BA,baixa,AIQUARA
+LAFAIETE COUTINHO,Lafaiete Coutinho,Informação insuficiente para verificar,1,10,BA,baixa,LAFAIETE COUTINHO
+TRANCOSO,Trancoso,Informação insuficiente para verificar,1,9,BA,baixa,Trancoso
+CAETE-ACU - DISTRITO,Caete-Acu - Distrito,Informação insuficiente para verificar,1,9,BA,baixa,CAETÉ-AÇU - Distrito
+TERRA NOVA,Terra Nova,Informação insuficiente para verificar,2,9,BA,baixa,TERRA NOVA; Terra Nova
+PAU BRASIL,Pau Brasil,Informação insuficiente para verificar,2,9,BA,baixa,PAU BRASIL; Pau Brasil
+POSTO DA MATA (NOVA VICOSA),Posto Da Mata (Nova Vicosa),Informação insuficiente para verificar,1,9,BA,baixa,POSTO DA MATA (NOVA VIÇOSA)
+PEDRAO,Pedrao,Informação insuficiente para verificar,1,9,BA,baixa,PEDRÃO
+SOBRAL,Sobral,Informação insuficiente para verificar,1,9,CE,baixa,SOBRAL
+GONGOGI,Gongogi,Informação insuficiente para verificar,1,9,AC; BA,baixa,GONGOGI
+SUBAUMA - DISTRITO,Subauma - Distrito,Informação insuficiente para verificar,1,9,BA,baixa,SUBAÚMA - Distrito
+SAO FRANCISCO DE ASSIS DO PIAUI,Sao Francisco De Assis Do Piaui,Informação insuficiente para verificar,1,9,PI,baixa,SÃO FRANCISCO DE ASSIS DO PIAUÍ
+MARCIONILIO SOUZA,Marcionilio Souza,Informação insuficiente para verificar,1,9,BA,baixa,MARCIONÍLIO SOUZA
+PILAR,Pilar,Informação insuficiente para verificar,1,9,AL; PB,baixa,PILAR
+SAO LUIS,Sao Luis,Informação insuficiente para verificar,1,8,MA,baixa,SÃO LUÍS
+VILA VELHA,Vila Velha,Informação insuficiente para verificar,1,8,ES,baixa,VILA VELHA
+ITAMOTINGA (JUAZEIRO),Itamotinga (Juazeiro),Informação insuficiente para verificar,1,8,BA,baixa,ITAMOTINGA (JUAZEIRO)
+CANDEAL,Candeal,Informação insuficiente para verificar,1,8,BA,baixa,CANDEAL
+SAO JOSE DO BELMONTE,Sao Jose Do Belmonte,Informação insuficiente para verificar,1,8,PE,baixa,SÃO JOSÉ DO BELMONTE
+CARUARU,Caruaru,Informação insuficiente para verificar,1,8,PE,baixa,CARUARU
+PINDAMONHANGABA,Pindamonhangaba,Informação insuficiente para verificar,1,8,SP,baixa,PINDAMONHANGABA
+TRINDADE,Trindade,Informação insuficiente para verificar,1,8,PE,baixa,TRINDADE
+JUSSARI,Jussari,Informação insuficiente para verificar,1,8,BA,baixa,JUSSARI
+ITAMOTINGA - DISTRITO,Itamotinga - Distrito,Informação insuficiente para verificar,1,8,BA,baixa,ITAMOTINGA - Distrito
+MIMOSO DE GOIAS,Mimoso De Goias,Informação insuficiente para verificar,1,8,GO,baixa,MIMOSO DE GOIÁS
+LAMARAO,Lamarao,Informação insuficiente para verificar,1,7,BA,baixa,LAMARÃO
+AURELINO LEAL,Aurelino Leal,Informação insuficiente para verificar,1,7,BA,baixa,AURELINO LEAL
+PASSA TRES - DISTRITO,Passa Tres - Distrito,Informação insuficiente para verificar,1,7,RJ,baixa,PASSA TRÊS - Distrito
+ASSIS BRASIL,Assis Brasil,Informação insuficiente para verificar,1,7,AC; BA,baixa,ASSIS BRASIL
+LAGARTO,Lagarto,Informação insuficiente para verificar,2,7,SE,baixa,LAGARTO; Lagarto
+CARNAIBA DO SERTAO - DISTRITO,Carnaiba Do Sertao - Distrito,Informação insuficiente para verificar,1,7,BA,baixa,CARNAÍBA DO SERTÃO - Distrito
+BARRA DOS COQUEIROS,Barra Dos Coqueiros,Informação insuficiente para verificar,1,7,SE,baixa,BARRA DOS COQUEIROS
+SERRA,Serra,Informação insuficiente para verificar,1,7,ES,baixa,SERRA
+TERESINA,Teresina,Informação insuficiente para verificar,1,7,PI,baixa,TERESINA
+CABO DE SANTO AGOSTINHO,Cabo De Santo Agostinho,Informação insuficiente para verificar,1,7,PE,baixa,CABO DE SANTO AGOSTINHO
+PEDRO AVELINO,Pedro Avelino,Informação insuficiente para verificar,1,7,RN,baixa,PEDRO AVELINO
+NATAL,Natal,Informação insuficiente para verificar,1,7,RN,baixa,NATAL
+AREMBEPE (CAMACARI),Arembepe (Camacari),Informação insuficiente para verificar,1,7,BA,baixa,AREMBEPE (CAMAÇARI)
+SAO JOSE DA VITORIA,Sao Jose Da Vitoria,Informação insuficiente para verificar,1,7,BA,baixa,SÃO JOSÉ DA VITÓRIA
+IGUA - DISTRITO,Igua - Distrito,Informação insuficiente para verificar,1,7,BA,baixa,IGUÁ - Distrito
+IPATINGA,Ipatinga,Informação insuficiente para verificar,1,7,MG,baixa,IPATINGA
+PARNAGUA,Parnagua,Informação insuficiente para verificar,1,7,PI,baixa,PARNAGUÁ
+ACARI,Acari,Informação insuficiente para verificar,1,7,RN,baixa,ACARI
+JATOBA,Jatoba,Informação insuficiente para verificar,1,6,PE,baixa,JATOBÁ
+VITORIA,Vitoria,Informação insuficiente para verificar,1,6,ES,baixa,VITÓRIA
+PEDRA GRANDE,Pedra Grande,Informação insuficiente para verificar,1,6,RN,baixa,PEDRA GRANDE
+MARACANAU,Maracanau,Informação insuficiente para verificar,1,6,CE,baixa,MARACANAÚ
+CONTAGEM,Contagem,Informação insuficiente para verificar,1,6,MG,baixa,CONTAGEM
+BAIXA GRANDE DO RIBEIRO,Baixa Grande Do Ribeiro,Informação insuficiente para verificar,1,6,PI,baixa,BAIXA GRANDE DO RIBEIRO
+POCO REDONDO,Poco Redondo,Informação insuficiente para verificar,1,6,SE,baixa,POÇO REDONDO
+LAGOA PRETA - DISTRITO,Lagoa Preta - Distrito,Informação insuficiente para verificar,1,6,BA,baixa,LAGOA PRETA - Distrito
+BETIM,Betim,Informação insuficiente para verificar,1,6,MG,baixa,BETIM
+ITAMARI,Itamari,Informação insuficiente para verificar,1,6,BA,baixa,ITAMARI
+SALINOPOLIS,Salinopolis,Informação insuficiente para verificar,1,6,BA; PA,baixa,SALINÓPOLIS
+IPOJUCA,Ipojuca,Informação insuficiente para verificar,2,6,PE,baixa,IPOJUCA; Ipojuca
+BOM CONSELHO,Bom Conselho,Informação insuficiente para verificar,1,6,PE,baixa,BOM CONSELHO
+PETROLANDIA,Petrolandia,Informação insuficiente para verificar,1,6,PE,baixa,PETROLÂNDIA
+SAO GONCALO DO AMARANTE,Sao Goncalo Do Amarante,Informação insuficiente para verificar,1,5,CE; RN,baixa,SÃO GONÇALO DO AMARANTE
+NOSSA SENHORA DO SOCORRO,Nossa Senhora Do Socorro,Informação insuficiente para verificar,1,5,SE,baixa,NOSSA SENHORA DO SOCORRO
+SAO SEBASTIAO - DISTRITO,Sao Sebastiao - Distrito,Informação insuficiente para verificar,1,5,BA,baixa,SÃO SEBASTIÃO - Distrito
+DOM ELISEU,Dom Eliseu,Informação insuficiente para verificar,1,5,PA,baixa,DOM ELISEU
+DIAS D,Dias D,Informação insuficiente para verificar,3,5,BA,baixa,DIAS D; Dias D; Dias d
+BARRA DO POJUCA,Barra Do Pojuca,Informação insuficiente para verificar,1,5,BA,baixa,BARRA DO POJUCA
+AGUAS LINDAS DE GOIAS,Aguas Lindas De Goias,Informação insuficiente para verificar,1,5,GO,baixa,ÁGUAS LINDAS DE GOIÁS
+LAGOA GRANDE - DISTRITO,Lagoa Grande - Distrito,Informação insuficiente para verificar,1,5,BA,baixa,LAGOA GRANDE - Distrito
+ULIANOPOLIS,Ulianopolis,Informação insuficiente para verificar,1,5,PA,baixa,ULIANÓPOLIS
+GOVERNADOR VALADARES,Governador Valadares,Informação insuficiente para verificar,1,5,MG,baixa,GOVERNADOR VALADARES
+CATU DE ABRANTES,Catu De Abrantes,Informação insuficiente para verificar,1,5,BA,baixa,CATU DE ABRANTES
+QUARACU - DISTRITO,Quaracu - Distrito,Informação insuficiente para verificar,1,5,BA,baixa,QUARAÇU - Distrito
+ESTANCIA,Estancia,Informação insuficiente para verificar,1,5,SE,baixa,ESTÂNCIA
+BOM JESUS,Bom Jesus,Informação insuficiente para verificar,1,5,PI,baixa,BOM JESUS
+JUNCO - DISTRITO,Junco - Distrito,Informação insuficiente para verificar,1,5,BA,baixa,JUNCO - Distrito
+SANTO ANTONIO DE BARCELONA - DISTRITO,Santo Antonio De Barcelona - Distrito,Informação insuficiente para verificar,1,5,BA,baixa,SANTO ANTÔNIO DE BARCELONA - Distrito
+SAO JOAO DO PIAUI,Sao Joao Do Piaui,Informação insuficiente para verificar,1,5,PI,baixa,SÃO JOÃO DO PIAUÍ
+CAROBA - DISTRITO,Caroba - Distrito,Informação insuficiente para verificar,1,5,BA,baixa,CAROBA - Distrito
+JUAZEIRO DO NORTE,Juazeiro Do Norte,Informação insuficiente para verificar,1,5,CE,baixa,JUAZEIRO DO NORTE
+ITABORAI,Itaborai,Informação insuficiente para verificar,1,5,RJ,baixa,ITABORAÍ
+CANINDE DE SAO FRANCISCO,Caninde De Sao Francisco,Informação insuficiente para verificar,1,5,SE,baixa,CANINDÉ DE SÃO FRANCISCO
+BALSAS,Balsas,Informação insuficiente para verificar,1,5,MA,baixa,BALSAS
+CURRAIS NOVOS,Currais Novos,Informação insuficiente para verificar,1,5,RN,baixa,CURRAIS NOVOS
+ANTONIO MARTINS,Antonio Martins,Informação insuficiente para verificar,1,5,RN,baixa,ANTÔNIO MARTINS
+CATINGA DO MOURA - DISTRITO,Catinga Do Moura - Distrito,Informação insuficiente para verificar,1,5,BA,baixa,CATINGA DO MOURA - Distrito
+AGRESTINA,Agrestina,Informação insuficiente para verificar,1,5,PE,baixa,AGRESTINA
+JARDIM DO SERIDO,Jardim Do Serido,Informação insuficiente para verificar,1,5,RN,baixa,JARDIM DO SERIDÓ
+PALMEIROPOLIS,Palmeiropolis,Informação insuficiente para verificar,1,5,TO,baixa,PALMEIRÓPOLIS
+AGUA CLARA,Agua Clara,Informação insuficiente para verificar,1,5,MS,baixa,ÁGUA CLARA
+BONFIM DA FEIRA - DISTRITO,Bonfim Da Feira - Distrito,Informação insuficiente para verificar,1,5,BA,baixa,BONFIM DA FEIRA - Distrito
+SOORETAMA,Sooretama,Informação insuficiente para verificar,1,5,ES,baixa,SOORETAMA
+ITANAGE - DISTRITO,Itanage - Distrito,Informação insuficiente para verificar,1,5,BA,baixa,ITANAGÉ - Distrito
+JUCURUTU,Jucurutu,Informação insuficiente para verificar,1,5,RN,baixa,JUCURUTU
+PORTO ALEGRE,Porto Alegre,Informação insuficiente para verificar,1,5,RS,baixa,PORTO ALEGRE
+SANTO ANTONIO,Santo Antonio,Informação insuficiente para verificar,1,5,BA,baixa,SANTO ANTÔNIO
+SAO TOME,Sao Tome,Informação insuficiente para verificar,1,5,RN,baixa,SÃO TOMÉ
+CIDADE OCIDENTAL,Cidade Ocidental,Informação insuficiente para verificar,1,5,BA; GO,baixa,CIDADE OCIDENTAL
+AMONTADA,Amontada,Informação insuficiente para verificar,1,5,CE,baixa,AMONTADA
+PIRACICABA,Piracicaba,Informação insuficiente para verificar,1,5,SP,baixa,PIRACICABA
+JOAO PESSOA,Joao Pessoa,Informação insuficiente para verificar,1,5,PB,baixa,JOÃO PESSOA
+ARACATI,Aracati,Informação insuficiente para verificar,1,5,CE,baixa,ARACATI
+CAJAZEIRAS,Cajazeiras,Informação insuficiente para verificar,1,4,PB,baixa,CAJAZEIRAS
+INDIAROBA,Indiaroba,Informação insuficiente para verificar,1,4,SE,baixa,INDIAROBA
+NITEROI,Niteroi,Informação insuficiente para verificar,1,4,RJ,baixa,NITERÓI
+SITIO GRANDE - DISTRITO,Sitio Grande - Distrito,Informação insuficiente para verificar,1,4,BA,baixa,SÍTIO GRANDE - Distrito
+NOVO TRIUNFO,Novo Triunfo,Informação insuficiente para verificar,2,4,BA,baixa,NOVO TRIUNFO; Novo Triunfo
+VITORIA DE SANTO ANTAO,Vitoria De Santo Antao,Informação insuficiente para verificar,1,4,PE,baixa,VITÓRIA DE SANTO ANTÃO
+INHOBIM - DISTRITO,Inhobim - Distrito,Informação insuficiente para verificar,1,4,BA,baixa,INHOBIM - Distrito
+GOVERNADOR DIX-SEPT ROSADO,Governador Dix-Sept Rosado,Informação insuficiente para verificar,1,4,RN,baixa,GOVERNADOR DIX-SEPT ROSADO
+SAO MIGUEL DO GOSTOSO,Sao Miguel Do Gostoso,Informação insuficiente para verificar,1,4,RN,baixa,SÃO MIGUEL DO GOSTOSO
+CAMPINAS,Campinas,Informação insuficiente para verificar,1,4,SP,baixa,CAMPINAS
+HUMILDES (FEIRA DE SANTANA),Humildes (Feira De Santana),Informação insuficiente para verificar,1,4,BA,baixa,HUMILDES (FEIRA DE SANTANA)
+PINHOES - DISTRITO,Pinhoes - Distrito,Informação insuficiente para verificar,1,4,BA,baixa,PINHÕES - Distrito
+SAO VICENTE,Sao Vicente,Informação insuficiente para verificar,1,4,RN,baixa,SÃO VICENTE
+ARRAIAL D,Arraial D,Informação insuficiente para verificar,1,4,BA,baixa,Arraial D
+TRANCOSO (PORTO SEGURO),Trancoso (Porto Seguro),Informação insuficiente para verificar,1,4,BA,baixa,TRANCOSO (PORTO SEGURO)
+PILOES,Piloes,Informação insuficiente para verificar,1,4,RN,baixa,PILÕES
+CAICO,Caico,Informação insuficiente para verificar,1,4,RN,baixa,CAICÓ
+QUIXERAMOBIM,Quixeramobim,Informação insuficiente para verificar,1,4,CE,baixa,QUIXERAMOBIM
+MARINGA,Maringa,Informação insuficiente para verificar,1,4,PR,baixa,MARINGÁ
+MACAE,Macae,Informação insuficiente para verificar,1,4,RJ,baixa,MACAÉ
+TOUROS,Touros,Informação insuficiente para verificar,1,4,RN,baixa,TOUROS
+ARITAGUA - DISTRITO,Aritagua - Distrito,Informação insuficiente para verificar,1,4,BA,baixa,ARITAGUÁ - Distrito
+NOVA ALEGRIA - DISTRITO,Nova Alegria - Distrito,Informação insuficiente para verificar,1,4,BA,baixa,NOVA ALEGRIA - Distrito
+NARANDIBA - DISTRITO,Narandiba - Distrito,Informação insuficiente para verificar,1,4,BA,baixa,NARANDIBA - Distrito
+MARABA,Maraba,Informação insuficiente para verificar,1,4,PA,baixa,MARABÁ
+ARACRUZ,Aracruz,Informação insuficiente para verificar,1,4,ES,baixa,ARACRUZ
+SIMAO DIAS,Simao Dias,Informação insuficiente para verificar,1,4,SE,baixa,SIMÃO DIAS
+CAETE,Caete,Informação insuficiente para verificar,1,4,MG,baixa,CAETÉ
+CANOAS,Canoas,Informação insuficiente para verificar,1,4,RS,baixa,CANOAS
+PENDENCIAS,Pendencias,Informação insuficiente para verificar,1,4,RN,baixa,PENDÊNCIAS
+CATINGAL - DISTRITO,Catingal - Distrito,Informação insuficiente para verificar,1,4,BA,baixa,CATINGAL - Distrito
+LAJEADO,Lajeado,Informação insuficiente para verificar,1,4,TO,baixa,LAJEADO
+ANGICO,Angico,Informação insuficiente para verificar,1,4,TO,baixa,ANGICO
+SANTO ANDRE,Santo Andre,Informação insuficiente para verificar,1,3,SP,baixa,SANTO ANDRÉ
+PARNAMIRIM,Parnamirim,Informação insuficiente para verificar,1,3,PE; RN,baixa,PARNAMIRIM
+FERRAZ DE VASCONCELOS,Ferraz De Vasconcelos,Informação insuficiente para verificar,1,3,SP,baixa,FERRAZ DE VASCONCELOS
+BARAUNAS - DISTRITO,Baraunas - Distrito,Informação insuficiente para verificar,1,3,BA,baixa,BARAÚNAS - Distrito
+ITATIAIUCU,Itatiaiucu,Informação insuficiente para verificar,1,3,MG,baixa,ITATIAIUÇU
+NOVA ROMA,Nova Roma,Informação insuficiente para verificar,1,3,GO,baixa,NOVA ROMA
+MATINHA,Matinha,Informação insuficiente para verificar,1,3,BA,baixa,MATINHA
+LUCAIA - DISTRITO,Lucaia - Distrito,Informação insuficiente para verificar,1,3,BA,baixa,LUCAIA - Distrito
+PIRANHAS,Piranhas,Informação insuficiente para verificar,1,3,AL,baixa,PIRANHAS
+PAO DE ACUCAR,Pao De Acucar,Informação insuficiente para verificar,1,3,AL,baixa,PÃO DE AÇÚCAR
+URUCUI,Urucui,Informação insuficiente para verificar,1,3,PI,baixa,URUÇUÍ
+BOA ESPERANCA,Boa Esperanca,Informação insuficiente para verificar,1,3,ES; MG,baixa,BOA ESPERANÇA
+SANTOS,Santos,Informação insuficiente para verificar,1,3,SP,baixa,SANTOS
+LUZIANIA,Luziania,Informação insuficiente para verificar,1,3,GO,baixa,LUZIÂNIA
+CRISTINAPOLIS,Cristinapolis,Informação insuficiente para verificar,1,3,SE,baixa,CRISTINÁPOLIS
+PARARI,Parari,Informação insuficiente para verificar,1,3,PB,baixa,PARARI
+SANTA RITA DO ITUETO,Santa Rita Do Itueto,Informação insuficiente para verificar,1,3,MG,baixa,SANTA RITA DO ITUETO
+COLATINA,Colatina,Informação insuficiente para verificar,1,3,BA; ES,baixa,COLATINA
+TRAIRAO,Trairao,Informação insuficiente para verificar,1,3,PA,baixa,TRAIRÃO
+TRES MARIAS,Tres Marias,Informação insuficiente para verificar,1,3,MG,baixa,TRÊS MARIAS
+JUNDIAI,Jundiai,Informação insuficiente para verificar,1,3,SP,baixa,JUNDIAÍ
+ARAPIRACA,Arapiraca,Informação insuficiente para verificar,1,3,AL,baixa,ARAPIRACA
+S JOSE CAMPOS,S Jose Campos,Informação insuficiente para verificar,1,3,SP,baixa,S JOSÉ CAMPOS
+CORUMBA,Corumba,Informação insuficiente para verificar,1,3,MS,baixa,CORUMBÁ
+COTIA,Cotia,Informação insuficiente para verificar,1,3,SP,baixa,COTIA
+ITAITU - DISTRITO,Itaitu - Distrito,Informação insuficiente para verificar,1,3,BA,baixa,ITAÍTU - Distrito
+GUAMARE,Guamare,Informação insuficiente para verificar,1,3,RN,baixa,GUAMARÉ
+COREAU,Coreau,Informação insuficiente para verificar,1,3,CE,baixa,COREAÚ
+CAMASSANDI - DISTRITO,Camassandi - Distrito,Informação insuficiente para verificar,1,3,BA,baixa,CAMASSANDI - Distrito
+ITUPEVA - DISTRITO,Itupeva - Distrito,Informação insuficiente para verificar,1,3,BA,baixa,ITUPEVA - Distrito
+TOBIAS BARRETO,Tobias Barreto,Informação insuficiente para verificar,1,3,SE,baixa,TOBIAS BARRETO
+GARANHUNS,Garanhuns,Informação insuficiente para verificar,1,3,PE,baixa,GARANHUNS
+JOAO CAMARA,Joao Camara,Informação insuficiente para verificar,1,3,RN,baixa,JOÃO CÂMARA
+LAGOA JOSE LUIS,Lagoa Jose Luis,Informação insuficiente para verificar,1,3,BA,baixa,LAGOA JOSÉ LUÍS
+CARRAPICHEL (SENHOR DO BONFIM),Carrapichel (Senhor Do Bonfim),Informação insuficiente para verificar,1,3,BA,baixa,CARRAPICHEL (SENHOR DO BONFIM)
+MOGI DAS CRUZES,Mogi Das Cruzes,Informação insuficiente para verificar,1,3,SP,baixa,MOGI DAS CRUZES
+CUIABA,Cuiaba,Informação insuficiente para verificar,1,3,MT,baixa,CUIABÁ
+FELIPE GUERRA,Felipe Guerra,Informação insuficiente para verificar,1,3,RN,baixa,FELIPE GUERRA
+BURITI DOS LOPES,Buriti Dos Lopes,Informação insuficiente para verificar,1,3,PI,baixa,BURITI DOS LOPES
+INHANGAPI,Inhangapi,Informação insuficiente para verificar,1,3,BA,baixa,INHANGAPI
+JEQUITINHONHA,Jequitinhonha,Informação insuficiente para verificar,1,3,MG,baixa,JEQUITINHONHA
+NANUQUE,Nanuque,Informação insuficiente para verificar,1,3,MG,baixa,NANUQUE
+BANABUIU,Banabuiu,Informação insuficiente para verificar,1,3,CE,baixa,BANABUIÚ
+SAO CRISTOVAO,Sao Cristovao,Informação insuficiente para verificar,1,3,SE,baixa,SÃO CRISTÓVÃO
+ENGENHEIRO PONTES - DISTRITO,Engenheiro Pontes - Distrito,Informação insuficiente para verificar,1,3,BA,baixa,ENGENHEIRO PONTES - Distrito
+ILHA DOS FRADES,Ilha Dos Frades,Informação insuficiente para verificar,1,3,BA,baixa,ILHA DOS FRADES
+ALCINOPOLIS,Alcinopolis,Informação insuficiente para verificar,1,3,MS,baixa,ALCINÓPOLIS
+ARIPUANA,Aripuana,Informação insuficiente para verificar,1,3,MT,baixa,ARIPUANÃ
+BRUMADINHO,Brumadinho,Informação insuficiente para verificar,1,3,MG,baixa,BRUMADINHO
+GOVERNADOR JOAO DURVAL CARNEIRO - DISTRITO,Governador Joao Durval Carneiro - Distrito,Informação insuficiente para verificar,1,3,BA,baixa,GOVERNADOR JOÃO DURVAL CARNEIRO - Distrito
+TAIPU,Taipu,Informação insuficiente para verificar,1,3,RN,baixa,TAIPU
+CORDEIROPOLIS,Cordeiropolis,Informação insuficiente para verificar,1,3,SP,baixa,CORDEIRÓPOLIS
+MATEIROS,Mateiros,Informação insuficiente para verificar,1,3,BA; TO,baixa,MATEIROS
+JACUNDA,Jacunda,Informação insuficiente para verificar,1,3,PA,baixa,JACUNDÁ
+ABAETETUBA,Abaetetuba,Informação insuficiente para verificar,1,3,PA,baixa,ABAETETUBA
+SAO JOSE DOS CAMPOS,Sao Jose Dos Campos,Informação insuficiente para verificar,1,3,SP,baixa,SÃO JOSÉ DOS CAMPOS
+RODA VELHA,Roda Velha,Informação insuficiente para verificar,1,3,BA,baixa,Roda Velha
+VELHA BOIPEBA - DISTRITO,Velha Boipeba - Distrito,Informação insuficiente para verificar,1,3,BA,baixa,VELHA BOIPEBA - Distrito
+CAUCAIA,Caucaia,Informação insuficiente para verificar,1,3,CE,baixa,CAUCAIA
+BOQUIM,Boquim,Informação insuficiente para verificar,1,3,SE,baixa,BOQUIM
+JATAUBA,Jatauba,Informação insuficiente para verificar,1,3,PE,baixa,JATAÚBA
+SANTO AGOSTINHO - DISTRITO,Santo Agostinho - Distrito,Informação insuficiente para verificar,1,3,PE,baixa,SANTO AGOSTINHO - Distrito
+PAULISTA,Paulista,Informação insuficiente para verificar,1,3,PE,baixa,PAULISTA
+ARRAIAL D AJUDA (PORTO SEGURO),Arraial D Ajuda (Porto Seguro),Informação insuficiente para verificar,1,3,BA,baixa,ARRAIAL D AJUDA (PORTO SEGURO)
+BEBERIBE,Beberibe,Informação insuficiente para verificar,1,3,CE,baixa,BEBERIBE
+ANAPOLIS,Anapolis,Informação insuficiente para verificar,1,3,GO,baixa,ANÁPOLIS
+BOA VISTA,Boa Vista,Informação insuficiente para verificar,1,3,BA; RR,baixa,BOA VISTA
+PORTO SAUIPE (ENTRE RIOS),Porto Sauipe (Entre Rios),Informação insuficiente para verificar,1,3,BA,baixa,PORTO SAUÍPE (ENTRE RIOS)
+NOVA VENECIA,Nova Venecia,Informação insuficiente para verificar,1,3,ES,baixa,NOVA VENÉCIA
+RIACHO DA GUIA - DISTRITO,Riacho Da Guia - Distrito,Informação insuficiente para verificar,1,3,BA,baixa,RIACHO DA GUIA - Distrito
+PRADOSO - DISTRITO,Pradoso - Distrito,Informação insuficiente para verificar,1,3,BA,baixa,PRADOSO - Distrito
+OCARA,Ocara,Informação insuficiente para verificar,1,3,CE,baixa,OCARA
+VEREDINHA - DISTRITO,Veredinha - Distrito,Informação insuficiente para verificar,1,3,BA,baixa,VEREDINHA - Distrito
+COTRIGUACU,Cotriguacu,Informação insuficiente para verificar,1,3,MT,baixa,COTRIGUAÇU
+GAMBOA - DISTRITO,Gamboa - Distrito,Informação insuficiente para verificar,1,3,BA,baixa,GAMBOA - Distrito
+BOTUCATU,Botucatu,Informação insuficiente para verificar,1,3,SP,baixa,BOTUCATU
+MIRASSOL D OESTE,Mirassol D Oeste,Informação insuficiente para verificar,1,3,MT,baixa,MIRASSOL D OESTE
+SENADOR ELOI DE SOUZA,Senador Eloi De Souza,Informação insuficiente para verificar,1,3,RN,baixa,SENADOR ELÓI DE SOUZA
+CARNAUBAIS,Carnaubais,Informação insuficiente para verificar,1,3,RN,baixa,CARNAUBAIS
+ITAJA,Itaja,Informação insuficiente para verificar,1,3,RN,baixa,ITAJÁ
+APARECIDA DO TABOADO,Aparecida Do Taboado,Informação insuficiente para verificar,1,3,MS,baixa,APARECIDA DO TABOADO
+CAMARAGIBE,Camaragibe,Informação insuficiente para verificar,1,2,PE,baixa,CAMARAGIBE
+MARITUBA,Marituba,Informação insuficiente para verificar,1,2,PA,baixa,MARITUBA
+ALUMINIO,Aluminio,Informação insuficiente para verificar,1,2,SP,baixa,ALUMÍNIO
+CARMOPOLIS,Carmopolis,Informação insuficiente para verificar,1,2,SE,baixa,CARMÓPOLIS
+DIVISA ALEGRE,Divisa Alegre,Informação insuficiente para verificar,1,2,MG,baixa,DIVISA ALEGRE
+RIACHO DA GUIA (ALAGOINHAS),Riacho Da Guia (Alagoinhas),Informação insuficiente para verificar,1,2,BA,baixa,RIACHO DA GUIA (ALAGOINHAS)
+ARUJA,Aruja,Informação insuficiente para verificar,1,2,SP,baixa,ARUJÁ
+AFRANIO,Afranio,Informação insuficiente para verificar,1,2,PE,baixa,AFRÂNIO
+LAMARAO DO PASSE,Lamarao Do Passe,Informação insuficiente para verificar,1,2,BA,baixa,Lamarão do Passe
+DUQUE DE CAXIAS,Duque De Caxias,Informação insuficiente para verificar,1,2,RJ,baixa,DUQUE DE CAXIAS
+HUMILDES,Humildes,Informação insuficiente para verificar,2,2,BA,baixa,HUMILDES; Humildes
+CABROBO,Cabrobo,Informação insuficiente para verificar,1,2,PE,baixa,CABROBÓ
+INDAIATUBA,Indaiatuba,Informação insuficiente para verificar,1,2,SP,baixa,INDAIATUBA
+PALMAS,Palmas,Informação insuficiente para verificar,1,2,TO,baixa,PALMAS
+CACHOEIRA DO MATO - DISTRITO,Cachoeira Do Mato - Distrito,Informação insuficiente para verificar,1,2,BA,baixa,CACHOEIRA DO MATO - Distrito
+GUARIBAS,Guaribas,Informação insuficiente para verificar,1,2,PI,baixa,GUARIBAS
+ABRANTES,Abrantes,Informação insuficiente para verificar,1,2,BA,baixa,Abrantes
+PEREIRO,Pereiro,Informação insuficiente para verificar,1,2,CE,baixa,PEREIRO
+SANTAREM,Santarem,Informação insuficiente para verificar,1,2,PA,baixa,SANTARÉM
+MARIA QUITERIA (FEIRA DE SANTANA),Maria Quiteria (Feira De Santana),Informação insuficiente para verificar,1,2,BA,baixa,MARIA QUITÉRIA (FEIRA DE SANTANA)
+GRAMADO,Gramado,Informação insuficiente para verificar,1,2,RS,baixa,GRAMADO
+VARZEA GRANDE,Varzea Grande,Informação insuficiente para verificar,1,2,MT,baixa,VÁRZEA GRANDE
+CUBATAO,Cubatao,Informação insuficiente para verificar,1,2,SP,baixa,CUBATÃO
+PATAIBA - DISTRITO,Pataiba - Distrito,Informação insuficiente para verificar,1,2,BA,baixa,PATAÍBA - Distrito
+ANANINDEUA,Ananindeua,Informação insuficiente para verificar,1,2,PA,baixa,ANANINDEUA
+CURRAIS,Currais,Informação insuficiente para verificar,1,2,PI,baixa,CURRAIS
+SEBASTIAO LEAL,Sebastiao Leal,Informação insuficiente para verificar,1,2,PI,baixa,SEBASTIÃO LEAL
+PORTO NACIONAL,Porto Nacional,Informação insuficiente para verificar,1,2,TO,baixa,PORTO NACIONAL
+SAO LUIS DE MONTES BELOS,Sao Luis De Montes Belos,Informação insuficiente para verificar,1,2,GO,baixa,SÃO LUÍS DE MONTES BELOS
+JARAGUA,Jaragua,Informação insuficiente para verificar,1,2,GO,baixa,JARAGUÁ
+LAJES,Lajes,Informação insuficiente para verificar,1,2,RN,baixa,LAJES
+ATIBAIA,Atibaia,Informação insuficiente para verificar,1,2,SP,baixa,ATIBAIA
+DIVISOPOLIS,Divisopolis,Informação insuficiente para verificar,1,2,MG,baixa,DIVISÓPOLIS
+ROSARIO DO CATETE,Rosario Do Catete,Informação insuficiente para verificar,1,2,SE,baixa,ROSÁRIO DO CATETE
+ITAITUBA,Itaituba,Informação insuficiente para verificar,1,2,PA,baixa,ITAITUBA
+SERRA DO MEL,Serra Do Mel,Informação insuficiente para verificar,1,2,RN,baixa,SERRA DO MEL
+BAYEUX,Bayeux,Informação insuficiente para verificar,1,2,PB,baixa,BAYEUX
+PORTO NOVO - DISTRITO,Porto Novo - Distrito,Informação insuficiente para verificar,1,2,BA,baixa,PORTO NOVO - Distrito
+SERRA DE SAO BENTO,Serra De Sao Bento,Informação insuficiente para verificar,1,2,RN,baixa,SERRA DE SÃO BENTO
+RIO BANANAL,Rio Bananal,Informação insuficiente para verificar,1,2,ES,baixa,RIO BANANAL
+SANTA FILOMENA,Santa Filomena,Informação insuficiente para verificar,1,2,PI,baixa,SANTA FILOMENA
+CASTELO DOS SONHOS - DISTRITO,Castelo Dos Sonhos - Distrito,Informação insuficiente para verificar,1,2,PA,baixa,CASTELO DOS SONHOS - Distrito
+CARAI,Carai,Informação insuficiente para verificar,1,2,MG,baixa,CARAÍ
+BARRINHA,Barrinha,Informação insuficiente para verificar,1,2,SP,baixa,BARRINHA
+JAIBA,Jaiba,Informação insuficiente para verificar,1,2,MG,baixa,JAÍBA
+PREVENIDO - DISTRITO,Prevenido - Distrito,Informação insuficiente para verificar,1,2,BA,baixa,PREVENIDO - Distrito
+CRATEUS,Crateus,Informação insuficiente para verificar,1,2,CE,baixa,CRATEÚS
+SAO JOSE DO RIO GRANDE - DISTRITO,Sao Jose Do Rio Grande - Distrito,Informação insuficiente para verificar,1,2,BA,baixa,SÃO JOSÉ DO RIO GRANDE - Distrito
+CASTANHAL,Castanhal,Informação insuficiente para verificar,1,2,PA,baixa,CASTANHAL
+OURILANDIA DO NORTE,Ourilandia Do Norte,Informação insuficiente para verificar,1,2,PA,baixa,OURILÂNDIA DO NORTE
+SAO GONCALO DO PIAUI,Sao Goncalo Do Piaui,Informação insuficiente para verificar,1,2,PI,baixa,SÃO GONÇALO DO PIAUÍ
+JUNCO DO SERIDO,Junco Do Serido,Informação insuficiente para verificar,1,2,PB,baixa,JUNCO DO SERIDÓ
+MINACU,Minacu,Informação insuficiente para verificar,1,2,GO,baixa,MINAÇU
+ALTOS,Altos,Informação insuficiente para verificar,1,2,PI,baixa,ALTOS
+VENDA NOVA DO IMIGRANTE,Venda Nova Do Imigrante,Informação insuficiente para verificar,1,2,ES,baixa,VENDA NOVA DO IMIGRANTE
+PONTE NOVA,Ponte Nova,Informação insuficiente para verificar,1,2,MG,baixa,PONTE NOVA
+SALGUEIRO,Salgueiro,Informação insuficiente para verificar,1,2,PE,baixa,SALGUEIRO
+RIO PARDO DE MINAS,Rio Pardo De Minas,Informação insuficiente para verificar,1,2,MG,baixa,RIO PARDO DE MINAS
+ARAGUAIANA,Araguaiana,Informação insuficiente para verificar,1,2,MT,baixa,ARAGUAIANA
+ITAPIREMA,Itapirema,Informação insuficiente para verificar,1,2,BA,baixa,ITAPIREMA
+TAIOBEIRAS,Taiobeiras,Informação insuficiente para verificar,1,2,MG,baixa,TAIOBEIRAS
+MONTE ALEGRE,Monte Alegre,Informação insuficiente para verificar,1,2,RN,baixa,MONTE ALEGRE
+PALAME - DISTRITO,Palame - Distrito,Informação insuficiente para verificar,1,2,BA,baixa,PALAME - Distrito
+MARIANA,Mariana,Informação insuficiente para verificar,1,2,MG,baixa,MARIANA
+CATOLES - DISTRITO,Catoles - Distrito,Informação insuficiente para verificar,1,2,BA,baixa,CATOLÉS - Distrito
+ROLANDIA,Rolandia,Informação insuficiente para verificar,1,2,PR,baixa,ROLÂNDIA
+POCINHOS,Pocinhos,Informação insuficiente para verificar,1,2,PB,baixa,POCINHOS
+ALEXANDRIA,Alexandria,Informação insuficiente para verificar,1,2,RN,baixa,ALEXANDRIA
+PARANAIBA,Paranaiba,Informação insuficiente para verificar,1,2,MS,baixa,PARANAÍBA
+JARAGUARI,Jaraguari,Informação insuficiente para verificar,1,2,MS,baixa,JARAGUARI
+SALTO DA DIVISA,Salto Da Divisa,Informação insuficiente para verificar,1,2,MG,baixa,SALTO DA DIVISA
+VENTUROSA,Venturosa,Informação insuficiente para verificar,1,2,PE,baixa,VENTUROSA
+PESQUEIRA,Pesqueira,Informação insuficiente para verificar,1,2,PE,baixa,PESQUEIRA
+CABEDELO,Cabedelo,Informação insuficiente para verificar,1,2,PB,baixa,CABEDELO
+AGUDOS,Agudos,Informação insuficiente para verificar,1,2,SP,baixa,AGUDOS
+GUARUJA,Guaruja,Informação insuficiente para verificar,1,2,SP,baixa,GUARUJÁ
+TIJUACU - DISTRITO,Tijuacu - Distrito,Informação insuficiente para verificar,1,2,BA,baixa,TIJUAÇÚ - Distrito
+PARAUAPEBAS,Parauapebas,Informação insuficiente para verificar,1,2,PA,baixa,PARAUAPEBAS
+CORONEL MURTA,Coronel Murta,Informação insuficiente para verificar,1,2,MG,baixa,CORONEL MURTA
+ITABI,Itabi,Informação insuficiente para verificar,1,2,SE,baixa,ITABI
+CORRENTE,Corrente,Informação insuficiente para verificar,1,2,PI,baixa,CORRENTE
+SILVES,Silves,Informação insuficiente para verificar,1,2,AM,baixa,SILVES
+SERRA TALHADA,Serra Talhada,Informação insuficiente para verificar,1,2,PE,baixa,SERRA TALHADA
+POLO PETROQUIMICO DE TRIUNFO,Polo Petroquimico De Triunfo,Informação insuficiente para verificar,1,2,RS,baixa,PÓLO PETROQUÍMICO DE TRIUNFO
+PARNARAMA,Parnarama,Informação insuficiente para verificar,1,2,MA,baixa,PARNARAMA
+ILHA DE BOM JESUS DOS PASSOS,Ilha De Bom Jesus Dos Passos,Informação insuficiente para verificar,1,2,BA,baixa,ILHA DE BOM JESUS DOS PASSOS
+CACHOEIRO DE ITAPEMIRIM,Cachoeiro De Itapemirim,Informação insuficiente para verificar,1,2,ES,baixa,CACHOEIRO DE ITAPEMIRIM
+IBITIRA - DISTRITO,Ibitira - Distrito,Informação insuficiente para verificar,1,2,BA,baixa,IBITIRA - Distrito
+ITAREMA,Itarema,Informação insuficiente para verificar,1,2,CE,baixa,ITAREMA
+COLONIA DO FORMOSO (CORIBE),Colonia Do Formoso (Coribe),Informação insuficiente para verificar,1,2,BA,baixa,COLÔNIA DO FORMOSO (CORIBE)
+GABIARRA (EUNAPOLIS),Gabiarra (Eunapolis),Informação insuficiente para verificar,1,2,BA,baixa,GABIARRA (EUNÁPOLIS)
+TREMEMBE,Tremembe,Informação insuficiente para verificar,1,2,SP,baixa,TREMEMBÉ
+MEDINA,Medina,Informação insuficiente para verificar,2,2,MG,baixa,MEDINA; Medina
+SAO SALVADOR DO TOCANTINS,Sao Salvador Do Tocantins,Informação insuficiente para verificar,1,2,TO,baixa,SÃO SALVADOR DO TOCANTINS
+ITAJAI,Itajai,Informação insuficiente para verificar,1,2,SC,baixa,ITAJAÍ
+SERRA BRANCA,Serra Branca,Informação insuficiente para verificar,1,2,PB,baixa,SERRA BRANCA
+MARICA,Marica,Informação insuficiente para verificar,1,2,RJ,baixa,MARICÁ
+SABARA,Sabara,Informação insuficiente para verificar,1,2,MG,baixa,SABARÁ
+SANTA RITA DO TRIVELATO,Santa Rita Do Trivelato,Informação insuficiente para verificar,1,2,MT,baixa,SANTA RITA DO TRIVELATO
+DIAS DAVILA,Dias Davila,Informação insuficiente para verificar,1,2,BA,baixa,DIAS DÁVILA
+SAO JOAO DA VITORIA,Sao Joao Da Vitoria,Informação insuficiente para verificar,1,2,BA,baixa,SÃO JOÃO DA VITÓRIA
+JUCAS,Jucas,Informação insuficiente para verificar,1,2,CE,baixa,JUCÁS
+RIACHO FRIO,Riacho Frio,Informação insuficiente para verificar,1,2,PI,baixa,RIACHO FRIO
+HIDROLANDIA,Hidrolandia,Informação insuficiente para verificar,1,2,GO,baixa,HIDROLÂNDIA
+LOUVEIRA,Louveira,Informação insuficiente para verificar,1,2,SP,baixa,LOUVEIRA
+CAMPOS DOS GOYTACAZES,Campos Dos Goytacazes,Informação insuficiente para verificar,1,2,RJ,baixa,CAMPOS DOS GOYTACAZES
+PARAMBU,Parambu,Informação insuficiente para verificar,1,2,CE,baixa,PARAMBU
+POCOS CALDAS,Pocos Caldas,Informação insuficiente para verificar,1,2,BA; MG,baixa,POÇOS CALDAS
+SAO BENTO DO UNA,Sao Bento Do Una,Informação insuficiente para verificar,1,2,PE,baixa,SÃO BENTO DO UNA
+UBERABA,Uberaba,Informação insuficiente para verificar,1,2,MG,baixa,UBERABA
+ALGODOES - DISTRITO,Algodoes - Distrito,Informação insuficiente para verificar,1,2,BA,baixa,ALGODÕES - Distrito
+CAMOCIM DE SAO FELIX,Camocim De Sao Felix,Informação insuficiente para verificar,1,2,PE,baixa,CAMOCIM DE SÃO FÉLIX
+CAICARA,Caicara,Informação insuficiente para verificar,1,2,BA,baixa,CAIÇARA
+FLORIANOPOLIS,Florianopolis,Informação insuficiente para verificar,1,2,SC,baixa,FLORIANÓPOLIS
+COLINAS DO TOCANTINS,Colinas Do Tocantins,Informação insuficiente para verificar,1,2,TO,baixa,COLINAS DO TOCANTINS
+MONTE GORDO (CAMACARI),Monte Gordo (Camacari),Informação insuficiente para verificar,1,2,BA,baixa,MONTE GORDO (CAMAÇARI)
+ITARUMA,Itaruma,Informação insuficiente para verificar,1,2,GO,baixa,ITARUMÃ
+MOSSORO,Mossoro,Informação insuficiente para verificar,1,2,RN,baixa,MOSSORÓ
+NIQUELANDIA,Niquelandia,Informação insuficiente para verificar,1,2,GO,baixa,NIQUELÂNDIA
+BELO JARDIM,Belo Jardim,Informação insuficiente para verificar,1,2,PE,baixa,BELO JARDIM
+LAJEDO ALTO - DISTRITO,Lajedo Alto - Distrito,Informação insuficiente para verificar,1,2,BA,baixa,LAJEDO ALTO - Distrito
+JAGUARETAMA,Jaguaretama,Informação insuficiente para verificar,1,2,CE,baixa,JAGUARETAMA
+CUMURUXATIBA (PRADO),Cumuruxatiba (Prado),Informação insuficiente para verificar,2,2,BA,baixa,CUMURUXATIBA (PRADO); Cumuruxatiba (Prado)
+UBATUBA,Ubatuba,Informação insuficiente para verificar,1,2,SP,baixa,UBATUBA
+ARAUCARIA,Araucaria,Informação insuficiente para verificar,1,2,PR,baixa,ARAUCÁRIA
+JUIZ DE FORA,Juiz De Fora,Informação insuficiente para verificar,1,2,MG,baixa,JUIZ DE FORA
+CAVUNGE - DISTRITO,Cavunge - Distrito,Informação insuficiente para verificar,1,2,BA,baixa,CAVUNGE - Distrito
+PATOS,Patos,Informação insuficiente para verificar,1,2,PB,baixa,PATOS
+MONTE ALEGRE DO PIAUI,Monte Alegre Do Piaui,Informação insuficiente para verificar,1,2,PI,baixa,MONTE ALEGRE DO PIAUÍ
+SAO GONCALO DO GURGUEIA,Sao Goncalo Do Gurgueia,Informação insuficiente para verificar,1,2,PI,baixa,SÃO GONÇALO DO GURGUÉIA
+ALEGRE - DISTRITO,Alegre - Distrito,Informação insuficiente para verificar,1,2,BA,baixa,ALEGRE - Distrito
+DORMENTES,Dormentes,Informação insuficiente para verificar,1,2,PE,baixa,DORMENTES
+OSASCO,Osasco,Informação insuficiente para verificar,1,2,SP,baixa,OSASCO
+CUPIRA,Cupira,Informação insuficiente para verificar,1,2,PE,baixa,CUPIRA
+AGUAS BELAS,Aguas Belas,Informação insuficiente para verificar,1,2,PE,baixa,ÁGUAS BELAS
+SAO MAMEDE,Sao Mamede,Informação insuficiente para verificar,1,2,PB,baixa,SÃO MAMEDE
+TIQUARUCU (FEIRA DE SANTANA),Tiquarucu (Feira De Santana),Informação insuficiente para verificar,1,2,BA,baixa,TIQUARUÇU (FEIRA DE SANTANA)
+TANGARA,Tangara,Informação insuficiente para verificar,1,2,RN,baixa,TANGARÁ
+SAO BENTO DO NORTE,Sao Bento Do Norte,Informação insuficiente para verificar,1,2,RN,baixa,SÃO BENTO DO NORTE
+MACAIBA,Macaiba,Informação insuficiente para verificar,1,2,RN,baixa,MACAÍBA
+JUPAGUA - DISTRITO,Jupagua - Distrito,Informação insuficiente para verificar,1,2,BA,baixa,JUPAGUÁ - Distrito
+POCO VERDE,Poco Verde,Informação insuficiente para verificar,1,2,BA; SE,baixa,POÇO VERDE
+BELA VISTA,Bela Vista,Informação insuficiente para verificar,1,2,MS,baixa,BELA VISTA
+MIRACEMA DO TOCANTINS,Miracema Do Tocantins,Informação insuficiente para verificar,1,2,TO,baixa,MIRACEMA DO TOCANTINS
+BARRA GRANDE - DISTRITO,Barra Grande - Distrito,Informação insuficiente para verificar,1,2,BA,baixa,BARRA GRANDE - Distrito
+GUIRATINGA,Guiratinga,Informação insuficiente para verificar,1,2,MT,baixa,GUIRATINGA
+SAO BERNARDO DO CAMPO,Sao Bernardo Do Campo,Informação insuficiente para verificar,1,2,SP,baixa,SÃO BERNARDO DO CAMPO
+SAO PEDRO DOS CRENTES,Sao Pedro Dos Crentes,Informação insuficiente para verificar,1,2,MA,baixa,SÃO PEDRO DOS CRENTES
+NATIVIDADE,Natividade,Informação insuficiente para verificar,1,2,TO,baixa,NATIVIDADE
+IPUEIRAS,Ipueiras,Informação insuficiente para verificar,1,2,TO,baixa,IPUEIRAS
+IBIRITE,Ibirite,Informação insuficiente para verificar,1,1,BA,baixa,IBIRITÉ
+NOVA IGUACU,Nova Iguacu,Informação insuficiente para verificar,1,1,RJ,baixa,NOVA IGUAÇU
+LONDRINA,Londrina,Informação insuficiente para verificar,1,1,PR,baixa,LONDRINA
+RIBEIRAO PRETO,Ribeirao Preto,Informação insuficiente para verificar,1,1,SP,baixa,RIBEIRÃO PRETO
+JAPU,Japu,Informação insuficiente para verificar,1,1,BA,baixa,JAPU
+ITABAIANINHA,Itabaianinha,Informação insuficiente para verificar,1,1,SE,baixa,ITABAIANINHA
+ITABIRITO,Itabirito,Informação insuficiente para verificar,1,1,MG,baixa,ITABIRITO
+XINGUARA,Xinguara,Informação insuficiente para verificar,1,1,PA,baixa,XINGUARA
+ALTO PARANA,Alto Parana,Informação insuficiente para verificar,1,1,PR,baixa,ALTO PARANÁ
+JAPERI,Japeri,Informação insuficiente para verificar,1,1,RJ,baixa,JAPERI
+TUCURUI,Tucurui,Informação insuficiente para verificar,1,1,PA,baixa,TUCURUÍ
+SERTANIA,Sertania,Informação insuficiente para verificar,1,1,PE,baixa,SERTÂNIA
+UBERLANDIA,Uberlandia,Informação insuficiente para verificar,1,1,MG,baixa,UBERLÂNDIA
+BOM JESUS DAS SELVAS,Bom Jesus Das Selvas,Informação insuficiente para verificar,1,1,MA,baixa,BOM JESUS DAS SELVAS
+SAO JOAO DE MERITI,Sao Joao De Meriti,Informação insuficiente para verificar,1,1,RJ,baixa,SÃO JOÃO DE MERITI
+TACARATU,Tacaratu,Informação insuficiente para verificar,1,1,PE,baixa,TACARATU
+SANTANA DO SOBRADO - DISTRITO,Santana Do Sobrado - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,SANTANA DO SOBRADO - Distrito
+SAO VALERIO DA NATIVIDADE,Sao Valerio Da Natividade,Informação insuficiente para verificar,1,1,TO,baixa,SÃO VALÉRIO DA NATIVIDADE
+COARI,Coari,Informação insuficiente para verificar,1,1,AM,baixa,COARI
+MURUCUPI - DISTRITO,Murucupi - Distrito,Informação insuficiente para verificar,1,1,PA,baixa,MURUCUPI - Distrito
+CONEGO MARINHO,Conego Marinho,Informação insuficiente para verificar,1,1,MG,baixa,CÔNEGO MARINHO
+CASA BRANCA,Casa Branca,Informação insuficiente para verificar,1,1,SP,baixa,CASA BRANCA
+RECIFE - DISTRITO,Recife - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,RECIFE - Distrito
+AMAMBAI,Amambai,Informação insuficiente para verificar,1,1,MS,baixa,AMAMBAÍ
+SUSSUARANA - DISTRITO,Sussuarana - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,SUSSUARANA - Distrito
+ILHA DE MARE,Ilha De Mare,Informação insuficiente para verificar,1,1,BA,baixa,ILHA DE MARÉ
+CINCO RIOS - DISTRITO,Cinco Rios - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,CINCO RIOS - Distrito
+LAGOA GRANDE,Lagoa Grande,Informação insuficiente para verificar,1,1,PE,baixa,LAGOA GRANDE
+SERTAO SANTANA,Sertao Santana,Informação insuficiente para verificar,1,1,RS,baixa,SERTÃO SANTANA
+ITABATAN (MUCURI),Itabatan (Mucuri),Informação insuficiente para verificar,1,1,BA,baixa,ITABATAN (MUCURI)
+MAMANGUAPE,Mamanguape,Informação insuficiente para verificar,1,1,PB,baixa,MAMANGUAPE
+PONTE ALTA DO BOM JESUS,Ponte Alta Do Bom Jesus,Informação insuficiente para verificar,1,1,TO,baixa,PONTE ALTA DO BOM JESUS
+JACUIPE,Jacuipe,Informação insuficiente para verificar,1,1,BA,baixa,JACUÍPE
+MANGARATIBA,Mangaratiba,Informação insuficiente para verificar,1,1,RJ,baixa,MANGARATIBA
+CRATO,Crato,Informação insuficiente para verificar,1,1,CE,baixa,CRATO
+CARAUBAS,Caraubas,Informação insuficiente para verificar,1,1,PB,baixa,CARAÚBAS
+ITINGA,Itinga,Informação insuficiente para verificar,1,1,MG,baixa,ITINGA
+MARUIM,Maruim,Informação insuficiente para verificar,1,1,SE,baixa,MARUIM
+GURUPI,Gurupi,Informação insuficiente para verificar,1,1,TO,baixa,GURUPI
+ALVORADA DE MINAS,Alvorada De Minas,Informação insuficiente para verificar,1,1,MG,baixa,ALVORADA DE MINAS
+AREIAS,Areias,Informação insuficiente para verificar,1,1,BA,baixa,AREIAS
+AFONSO CLAUDIO,Afonso Claudio,Informação insuficiente para verificar,1,1,ES,baixa,AFONSO CLÁUDIO
+BREJETUBA,Brejetuba,Informação insuficiente para verificar,1,1,ES,baixa,BREJETUBA
+MESQUITA,Mesquita,Informação insuficiente para verificar,1,1,RJ,baixa,MESQUITA
+COUTOS - DISTRITO,Coutos - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,COUTOS - Distrito
+S BERNARDO CAMPO,S Bernardo Campo,Informação insuficiente para verificar,1,1,SP,baixa,S BERNARDO CAMPO
+BREJINHO DAS AMETISTAS - DISTRITO,Brejinho Das Ametistas - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,BREJINHO DAS AMETISTAS - Distrito
+BREJO DO PIAUI,Brejo Do Piaui,Informação insuficiente para verificar,1,1,PI,baixa,BREJO DO PIAUÍ
+MARECHAL DEODORO,Marechal Deodoro,Informação insuficiente para verificar,1,1,AL,baixa,MARECHAL DEODORO
+FLORIANO,Floriano,Informação insuficiente para verificar,1,1,PI,baixa,FLORIANO
+VILA NOVA DO SUL,Vila Nova Do Sul,Informação insuficiente para verificar,1,1,RS,baixa,VILA NOVA DO SUL
+SERRANA,Serrana,Informação insuficiente para verificar,1,1,SP,baixa,SERRANA
+SAO SEPE,Sao Sepe,Informação insuficiente para verificar,1,1,RS,baixa,SÃO SEPÉ
+SANTO ANTONIO DE LISBOA,Santo Antonio De Lisboa,Informação insuficiente para verificar,1,1,PI,baixa,SANTO ANTÔNIO DE LISBOA
+ARACATUBA,Aracatuba,Informação insuficiente para verificar,1,1,SP,baixa,ARAÇATUBA
+SAO JOAO DO PARAISO,Sao Joao Do Paraiso,Informação insuficiente para verificar,1,1,MG,baixa,SÃO JOÃO DO PARAÍSO
+PRAIA GRANDE,Praia Grande,Informação insuficiente para verificar,1,1,SP,baixa,PRAIA GRANDE
+SALGADALIA - DISTRITO,Salgadalia - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,SALGADÁLIA - Distrito
+PADRE BERNARDO,Padre Bernardo,Informação insuficiente para verificar,1,1,GO,baixa,PADRE BERNARDO
+NOVO CRUZEIRO,Novo Cruzeiro,Informação insuficiente para verificar,1,1,MG,baixa,NOVO CRUZEIRO
+CONSELHEIRO PENA,Conselheiro Pena,Informação insuficiente para verificar,1,1,MG,baixa,CONSELHEIRO PENA
+PADRE PARAISO,Padre Paraiso,Informação insuficiente para verificar,1,1,MG,baixa,PADRE PARAÍSO
+ABREU LIMA,Abreu Lima,Informação insuficiente para verificar,1,1,PE,baixa,ABREU LIMA
+POMBOS,Pombos,Informação insuficiente para verificar,1,1,PE,baixa,POMBOS
+OURICURI,Ouricuri,Informação insuficiente para verificar,1,1,PE,baixa,OURICURI
+TABOQUINHAS - DISTRITO,Taboquinhas - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,TABOQUINHAS - Distrito
+ITUMBIARA,Itumbiara,Informação insuficiente para verificar,1,1,GO,baixa,ITUMBIARA
+SAO MIGUEL DOS CAMPOS,Sao Miguel Dos Campos,Informação insuficiente para verificar,1,1,AL,baixa,SÃO MIGUEL DOS CAMPOS
+ITATIBA,Itatiba,Informação insuficiente para verificar,1,1,SP,baixa,ITATIBA
+BARRA DO RIBEIRO,Barra Do Ribeiro,Informação insuficiente para verificar,1,1,RS,baixa,BARRA DO RIBEIRO
+REDENCAO,Redencao,Informação insuficiente para verificar,1,1,PA,baixa,REDENÇÃO
+VITORIA STO ANTAO,Vitoria Sto Antao,Informação insuficiente para verificar,1,1,PE,baixa,VITÓRIA STO ANTÃO
+ARAQUARI,Araquari,Informação insuficiente para verificar,1,1,SC,baixa,ARAQUARI
+PIRAJU,Piraju,Informação insuficiente para verificar,1,1,SP,baixa,PIRAJU
+CERQUILHO,Cerquilho,Informação insuficiente para verificar,1,1,SP,baixa,CERQUILHO
+ARRAIAS,Arraias,Informação insuficiente para verificar,1,1,TO,baixa,ARRAIAS
+MAIRIPORA,Mairipora,Informação insuficiente para verificar,1,1,SP,baixa,MAIRIPORÃ
+SANTA LUZIA DO NORTE,Santa Luzia Do Norte,Informação insuficiente para verificar,1,1,AL,baixa,Santa Luzia do Norte
+CERES,Ceres,Informação insuficiente para verificar,1,1,GO,baixa,CERES
+BARRA DO JACUIPE (CAMACARI),Barra Do Jacuipe (Camacari),Informação insuficiente para verificar,1,1,BA,baixa,Barra do Jacuípe (Camaçari)
+S SEBASTIAO DO PASSE,S Sebastiao Do Passe,Informação insuficiente para verificar,1,1,BA,baixa,S SEBASTIAO DO PASSE
+REDENCAO DO GURGUEIA,Redencao Do Gurgueia,Informação insuficiente para verificar,1,1,PI,baixa,REDENÇÃO DO GURGUÉIA
+RIO JANEIRO,Rio Janeiro,Informação insuficiente para verificar,1,1,RJ,baixa,RIO JANEIRO
+FRANCISCO SANTOS,Francisco Santos,Informação insuficiente para verificar,1,1,PI,baixa,FRANCISCO SANTOS
+SALINAS,Salinas,Informação insuficiente para verificar,1,1,MG,baixa,SALINAS
+CEARA-MIRIM,Ceara-Mirim,Informação insuficiente para verificar,1,1,RN,baixa,CEARÁ-MIRIM
+CANATIBA - DISTRITO,Canatiba - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,CANATIBA - Distrito
+VISCONDE DO RIO BRANCO,Visconde Do Rio Branco,Informação insuficiente para verificar,1,1,MG,baixa,VISCONDE DO RIO BRANCO
+BARRA AVENIDA - DISTRITO,Barra Avenida - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,BARRA AVENIDA - Distrito
+MATARIPE - DISTRITO,Mataripe - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,MATARIPE - Distrito
+INDEPENDENCIA,Independencia,Informação insuficiente para verificar,1,1,CE,baixa,INDEPENDÊNCIA
+PTE NOVA,Pte Nova,Informação insuficiente para verificar,1,1,MG,baixa,PTE NOVA
+JULIO BORGES,Julio Borges,Informação insuficiente para verificar,1,1,PI,baixa,JÚLIO BORGES
+ALMENARA,Almenara,Informação insuficiente para verificar,1,1,MG,baixa,ALMENARA
+SAO CAETANO DO SUL,Sao Caetano Do Sul,Informação insuficiente para verificar,1,1,SP,baixa,SÃO CAETANO DO SUL
+NOVA PONTE,Nova Ponte,Informação insuficiente para verificar,1,1,MG,baixa,NOVA PONTE
+ITAPISSUMA,Itapissuma,Informação insuficiente para verificar,1,1,PE,baixa,ITAPISSUMA
+AGUIA BRANCA,Aguia Branca,Informação insuficiente para verificar,1,1,ES,baixa,ÁGUIA BRANCA
+PALHOCA,Palhoca,Informação insuficiente para verificar,1,1,SC,baixa,PALHOÇA
+BONFINOPOLIS DE MINAS,Bonfinopolis De Minas,Informação insuficiente para verificar,1,1,MG,baixa,BONFINÓPOLIS DE MINAS
+PARNAIBA,Parnaiba,Informação insuficiente para verificar,1,1,PI,baixa,PARNAÍBA
+SAO CARLOS,Sao Carlos,Informação insuficiente para verificar,1,1,SP,baixa,SÃO CARLOS
+SAO JOAO DEL REI,Sao Joao Del Rei,Informação insuficiente para verificar,1,1,MG,baixa,SÃO JOÃO DEL REI
+SUSSUARANA (TANHACU),Sussuarana (Tanhacu),Informação insuficiente para verificar,1,1,BA,baixa,SUSSUARANA (TANHAÇU)
+VARZEA,Varzea,Informação insuficiente para verificar,1,1,RN,baixa,VÁRZEA
+MOGI MIRIM,Mogi Mirim,Informação insuficiente para verificar,1,1,SP,baixa,MOGI MIRIM
+OURO PRETO,Ouro Preto,Informação insuficiente para verificar,1,1,MG,baixa,OURO PRETO
+PRIMAVERA,Primavera,Informação insuficiente para verificar,1,1,PA,baixa,PRIMAVERA
+STO ANDRE,Sto Andre,Informação insuficiente para verificar,1,1,SP,baixa,STO ANDRÉ
+AQUIRAZ,Aquiraz,Informação insuficiente para verificar,1,1,CE,baixa,AQUIRAZ
+CAMPO BELO,Campo Belo,Informação insuficiente para verificar,1,1,MG,baixa,CAMPO BELO
+ALTA FLORESTA,Alta Floresta,Informação insuficiente para verificar,1,1,MT,baixa,ALTA FLORESTA
+BAURU,Bauru,Informação insuficiente para verificar,1,1,SP,baixa,BAURU
+ITAPEVA,Itapeva,Informação insuficiente para verificar,1,1,SP,baixa,ITAPEVA
+ROSEIRA,Roseira,Informação insuficiente para verificar,1,1,SP,baixa,ROSEIRA
+PIRATINI,Piratini,Informação insuficiente para verificar,1,1,RS,baixa,PIRATINI
+GOIANIA,Goiania,Informação insuficiente para verificar,1,1,GO,baixa,GOIÂNIA
+VARGINHA,Varginha,Informação insuficiente para verificar,1,1,MG,baixa,VARGINHA
+BARREIROS - DISTRITO,Barreiros - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,BARREIROS - Distrito
+OUTROS,Outros,Informação insuficiente para verificar,1,1,BA,baixa,OUTROS
+SINOP,Sinop,Informação insuficiente para verificar,1,1,MT,baixa,SINOP
+BOA UNIAO - DISTRITO,Boa Uniao - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,BOA UNIÃO - Distrito
+RESERVA DO CABACAL,Reserva Do Cabacal,Informação insuficiente para verificar,1,1,MT,baixa,RESERVA DO CABAÇAL
+JUNQUEIRO,Junqueiro,Informação insuficiente para verificar,1,1,AL,baixa,JUNQUEIRO
+SOLEDADE,Soledade,Informação insuficiente para verificar,1,1,RS,baixa,SOLEDADE
+CACHOEIRA DE PAJEU,Cachoeira De Pajeu,Informação insuficiente para verificar,1,1,MG,baixa,CACHOEIRA DE PAJEÚ
+ACUPE - DISTRITO,Acupe - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,ACUPE - Distrito
+MONTES CLAROS,Montes Claros,Informação insuficiente para verificar,1,1,MG,baixa,MONTES CLAROS
+BATE PE - DISTRITO,Bate Pe - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,BATE PÉ - Distrito
+PARANAGUA,Paranagua,Informação insuficiente para verificar,1,1,PR,baixa,PARANAGUÁ
+IMPERATRIZ,Imperatriz,Informação insuficiente para verificar,1,1,MA,baixa,IMPERATRIZ
+PIRAPORA,Pirapora,Informação insuficiente para verificar,1,1,MG,baixa,PIRAPORA
+MAGE,Mage,Informação insuficiente para verificar,1,1,RJ,baixa,MAGÉ
+HORTOLANDIA,Hortolandia,Informação insuficiente para verificar,1,1,SP,baixa,HORTOLÂNDIA
+ITUIUTABA,Ituiutaba,Informação insuficiente para verificar,1,1,BA,baixa,ITUIUTABA
+SANTA RITA,Santa Rita,Informação insuficiente para verificar,1,1,PB,baixa,SANTA RITA
+AREIA BRANCA,Areia Branca,Informação insuficiente para verificar,1,1,RN,baixa,AREIA BRANCA
+SENA MADUREIRA,Sena Madureira,Informação insuficiente para verificar,1,1,AC,baixa,SENA MADUREIRA
+JAIBA (FEIRA DE SANTANA),Jaiba (Feira De Santana),Informação insuficiente para verificar,1,1,BA,baixa,JAÍBA (FEIRA DE SANTANA)
+JAPOATA,Japoata,Informação insuficiente para verificar,1,1,SE,baixa,JAPOATÃ
+ARARUAMA,Araruama,Informação insuficiente para verificar,1,1,RJ,baixa,ARARUAMA
+RODA VELHA (SAO DESIDERIO),Roda Velha (Sao Desiderio),Informação insuficiente para verificar,1,1,BA,baixa,RODA VELHA (SÃO DESIDÉRIO)
+ENTRE RIOS DE MINAS,Entre Rios De Minas,Informação insuficiente para verificar,1,1,MG,baixa,ENTRE RIOS DE MINAS
+DELTA,Delta,Informação insuficiente para verificar,1,1,MG,baixa,DELTA
+SANTA RITA DO PARDO,Santa Rita Do Pardo,Informação insuficiente para verificar,1,1,MS,baixa,SANTA RITA DO PARDO
+ARAGUARI,Araguari,Informação insuficiente para verificar,1,1,MG,baixa,ARAGUARI
+PORTO,Porto,Informação insuficiente para verificar,1,1,PI,baixa,PORTO
+LIMEIRA,Limeira,Informação insuficiente para verificar,1,1,SP,baixa,LIMEIRA
+ANCHIETA,Anchieta,Informação insuficiente para verificar,1,1,ES,baixa,ANCHIETA
+ARARAS,Araras,Informação insuficiente para verificar,1,1,SP,baixa,ARARAS
+BANDEIRA,Bandeira,Informação insuficiente para verificar,1,1,MG,baixa,BANDEIRA
+NOVO JARDIM,Novo Jardim,Informação insuficiente para verificar,1,1,TO,baixa,NOVO JARDIM
+VIRGEM DA LAPA,Virgem Da Lapa,Informação insuficiente para verificar,1,1,MG,baixa,VIRGEM DA LAPA
+CAROBA,Caroba,Informação insuficiente para verificar,1,1,BA,baixa,CAROBA
+NUCLEO RESIDENCIAL PILAR (JAGUARARI),Nucleo Residencial Pilar (Jaguarari),Informação insuficiente para verificar,1,1,BA,baixa,Núcleo Residencial Pilar (Jaguarari)
+CONCEICAO DO MATO DENTRO,Conceicao Do Mato Dentro,Informação insuficiente para verificar,1,1,MG,baixa,CONCEIÇÃO DO MATO DENTRO
+IBIRAJA - DISTRITO,Ibiraja - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,IBIRAJÁ - Distrito
+TAGUATINGA,Taguatinga,Informação insuficiente para verificar,1,1,TO,baixa,TAGUATINGA
+PALMARES,Palmares,Informação insuficiente para verificar,1,1,PE,baixa,PALMARES
+QUIXABA,Quixaba,Informação insuficiente para verificar,1,1,BA,baixa,QUIXABÁ
+CAMPO ALEGRE DE LOUDES,Campo Alegre De Loudes,Informação insuficiente para verificar,1,1,BA,baixa,CAMPO ALEGRE DE LOUDES
+TIMBAUBA,Timbauba,Informação insuficiente para verificar,1,1,PE,baixa,TIMBAÚBA
+FELIXLANDIA,Felixlandia,Informação insuficiente para verificar,1,1,MG,baixa,FELIXLÂNDIA
+CAIEIRAS,Caieiras,Informação insuficiente para verificar,1,1,SP,baixa,CAIEIRAS
+MACAU,Macau,Informação insuficiente para verificar,1,1,RN,baixa,MACAU
+JAICOS,Jaicos,Informação insuficiente para verificar,1,1,PI,baixa,JAICÓS
+AQUIDABA,Aquidaba,Informação insuficiente para verificar,1,1,SE,baixa,AQUIDABÃ
+VALPARAISO DE GOIAS,Valparaiso De Goias,Informação insuficiente para verificar,1,1,GO,baixa,VALPARAÍSO DE GOIÁS
+SANTANA DO SERIDO,Santana Do Serido,Informação insuficiente para verificar,1,1,RN,baixa,SANTANA DO SERIDÓ
+IBIPETUM - DISTRITO,Ibipetum - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,IBIPETUM - Distrito
+GENERAL SAMPAIO,General Sampaio,Informação insuficiente para verificar,1,1,CE,baixa,GENERAL SAMPAIO
+PILAR DO SUL,Pilar Do Sul,Informação insuficiente para verificar,1,1,SP,baixa,PILAR DO SUL
+ICO,Ico,Informação insuficiente para verificar,1,1,CE,baixa,ICÓ
+JABOTICABAL,Jaboticabal,Informação insuficiente para verificar,1,1,SP,baixa,JABOTICABAL
+BOM PRINCIPIO DO PIAUI,Bom Principio Do Piaui,Informação insuficiente para verificar,1,1,PI,baixa,BOM PRINCÍPIO DO PIAUÍ
+SERRA DO SALITRE,Serra Do Salitre,Informação insuficiente para verificar,1,1,MG,baixa,SERRA DO SALITRE
+FERNANDOPOLIS,Fernandopolis,Informação insuficiente para verificar,1,1,SP,baixa,FERNANDÓPOLIS
+PEDRO LEOPOLDO,Pedro Leopoldo,Informação insuficiente para verificar,1,1,MG,baixa,PEDRO LEOPOLDO
+ALFENAS,Alfenas,Informação insuficiente para verificar,1,1,MG,baixa,ALFENAS
+CAMPO REDONDO,Campo Redondo,Informação insuficiente para verificar,1,1,RN,baixa,CAMPO REDONDO
+ITAOBIM,Itaobim,Informação insuficiente para verificar,1,1,MG,baixa,ITAOBIM
+VILA DE ABRANTES,Vila De Abrantes,Informação insuficiente para verificar,1,1,BA,baixa,VILA DE ABRANTES
+SAO GABRIEL DA PALHA,Sao Gabriel Da Palha,Informação insuficiente para verificar,1,1,ES,baixa,SÃO GABRIEL DA PALHA
+JANUARIA,Januaria,Informação insuficiente para verificar,1,1,MG,baixa,JANUÁRIA
+MORAUJO,Moraujo,Informação insuficiente para verificar,1,1,CE,baixa,MORAÚJO
+TRES LAGOAS,Tres Lagoas,Informação insuficiente para verificar,1,1,MS,baixa,TRÊS LAGOAS
+MACAPA,Macapa,Informação insuficiente para verificar,1,1,AP,baixa,MACAPÁ
+ANISIO DE ABREU,Anisio De Abreu,Informação insuficiente para verificar,1,1,PI,baixa,ANÍSIO DE ABREU
+CABOTO - DISTRITO,Caboto - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,CABÔTO - Distrito
+IRUNDIARA - DISTRITO,Irundiara - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,IRUNDIARA - Distrito
+CARANDAI,Carandai,Informação insuficiente para verificar,1,1,MG,baixa,CARANDAÍ
+IBO - DISTRITO,Ibo - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,IBÓ - Distrito
+ARARUNA,Araruna,Informação insuficiente para verificar,1,1,PR,baixa,ARARUNA
+ARAPONGAS,Arapongas,Informação insuficiente para verificar,1,1,PR,baixa,ARAPONGAS
+LORENA,Lorena,Informação insuficiente para verificar,1,1,SP,baixa,LORENA
+SIRIRI,Siriri,Informação insuficiente para verificar,1,1,SE,baixa,SIRIRI
+CANAPI,Canapi,Informação insuficiente para verificar,1,1,AL,baixa,CANAPI
+MIMOSO (SATIRO DIAS),Mimoso (Satiro Dias),Informação insuficiente para verificar,1,1,BA,baixa,MIMOSO (SÁTIRO DIAS)
+CAJAMAR,Cajamar,Informação insuficiente para verificar,1,1,SP,baixa,CAJAMAR
+GABIARRA - DISTRITO,Gabiarra - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,GABIARRA - Distrito
+BARRA DE SAO FRANCISCO,Barra De Sao Francisco,Informação insuficiente para verificar,1,1,ES,baixa,BARRA DE SÃO FRANCISCO
+CONSELHEIRO MATA - DISTRITO,Conselheiro Mata - Distrito,Informação insuficiente para verificar,1,1,MG,baixa,CONSELHEIRO MATA - Distrito
+PRATAPOLIS,Pratapolis,Informação insuficiente para verificar,1,1,MG,baixa,PRATÁPOLIS
+ITAPORANGA D AJUDA,Itaporanga D Ajuda,Informação insuficiente para verificar,1,1,SE,baixa,ITAPORANGA D AJUDA
+SENADOR CANEDO,Senador Canedo,Informação insuficiente para verificar,1,1,GO,baixa,SENADOR CANEDO
+ARRAIAL DAJUDA (PORTO SEGURO),Arraial Dajuda (Porto Seguro),Informação insuficiente para verificar,1,1,BA,baixa,Arraial DAjuda (Porto Seguro)
+AMERICO DE CAMPOS,Americo De Campos,Informação insuficiente para verificar,1,1,SP,baixa,AMÉRICO DE CAMPOS
+SENADOR ALEXANDRE COSTA,Senador Alexandre Costa,Informação insuficiente para verificar,1,1,MA,baixa,SENADOR ALEXANDRE COSTA
+IBIAJARA - DISTRITO,Ibiajara - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,IBIAJARA - Distrito
+ITUPEVA,Itupeva,Informação insuficiente para verificar,1,1,SP,baixa,ITUPEVA
+NOVO LINO,Novo Lino,Informação insuficiente para verificar,1,1,AL,baixa,NOVO LINO
+STO ANTONIO JESUS,Sto Antonio Jesus,Informação insuficiente para verificar,1,1,BA,baixa,STO ANTÔNIO JESUS
+UIRAUNA,Uirauna,Informação insuficiente para verificar,1,1,PB,baixa,UIRAÚNA
+CRUZEIRO DO SUL,Cruzeiro Do Sul,Informação insuficiente para verificar,1,1,AC,baixa,CRUZEIRO DO SUL
+PARACATU,Paracatu,Informação insuficiente para verificar,1,1,MG,baixa,PARACATU
+ASSU,Assu,Informação insuficiente para verificar,1,1,RN,baixa,ASSU
+BOA VISTA DO SUL,Boa Vista Do Sul,Informação insuficiente para verificar,1,1,RS,baixa,BOA VISTA DO SUL
+CATENDE,Catende,Informação insuficiente para verificar,1,1,PE,baixa,CATENDE
+ANASTACIO,Anastacio,Informação insuficiente para verificar,1,1,MS,baixa,ANASTÁCIO
+SAO JOAO D ALIANCA,Sao Joao D Alianca,Informação insuficiente para verificar,1,1,GO,baixa,SÃO JOÃO D ALIANÇA
+CARIACICA,Cariacica,Informação insuficiente para verificar,1,1,ES,baixa,CARIACICA
+BANDEIRA DO COLONIA - DISTRITO,Bandeira Do Colonia - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,BANDEIRA DO COLÔNIA - Distrito
+IPUCABA - DISTRITO,Ipucaba - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,IPUCABA - Distrito
+PEDRA DO INDAIA,Pedra Do Indaia,Informação insuficiente para verificar,1,1,MG,baixa,PEDRA DO INDAIÁ
+GRANJA,Granja,Informação insuficiente para verificar,1,1,CE,baixa,GRANJA
+PORTO ALEGRE DO TOCANTINS,Porto Alegre Do Tocantins,Informação insuficiente para verificar,1,1,TO,baixa,PORTO ALEGRE DO TOCANTINS
+MARTINOPOLE,Martinopole,Informação insuficiente para verificar,1,1,CE,baixa,MARTINÓPOLE
+PAU D ARCO,Pau D Arco,Informação insuficiente para verificar,1,1,TO,baixa,PAU D ARCO
+IPANGUACU,Ipanguacu,Informação insuficiente para verificar,1,1,RN,baixa,IPANGUAÇU
+ITARANA,Itarana,Informação insuficiente para verificar,1,1,ES,baixa,ITARANA
+SUZANO,Suzano,Informação insuficiente para verificar,1,1,SP,baixa,SUZANO
+PARINTINS,Parintins,Informação insuficiente para verificar,1,1,BA,baixa,PARINTINS
+SANTA MARIA,Santa Maria,Informação insuficiente para verificar,1,1,RS,baixa,SANTA MARIA
+VALE DE SAO DOMINGOS,Vale De Sao Domingos,Informação insuficiente para verificar,1,1,MT,baixa,VALE DE SÃO DOMINGOS
+SANTA TEREZINHA DE GOIAS,Santa Terezinha De Goias,Informação insuficiente para verificar,1,1,GO,baixa,SANTA TEREZINHA DE GOIÁS
+PARAZINHO,Parazinho,Informação insuficiente para verificar,1,1,RN,baixa,PARAZINHO
+PASSAGEM DOS TEIXEIRAS - DISTRITO,Passagem Dos Teixeiras - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,PASSAGEM DOS TEIXEIRAS - Distrito
+VARGEM ALTA,Vargem Alta,Informação insuficiente para verificar,1,1,ES,baixa,VARGEM ALTA
+PR GRANDE,Pr Grande,Informação insuficiente para verificar,1,1,SP,baixa,PR GRANDE
+ITACAMBIRA,Itacambira,Informação insuficiente para verificar,1,1,MG,baixa,ITACAMBIRA
+ARAUA,Araua,Informação insuficiente para verificar,1,1,SE,baixa,ARAUÁ
+CACHOEIRA DOURADA,Cachoeira Dourada,Informação insuficiente para verificar,1,1,MG,baixa,CACHOEIRA DOURADA
+PEDRINHAS,Pedrinhas,Informação insuficiente para verificar,1,1,PE,baixa,PEDRINHAS
+JUNCO (JUAZEIRO),Junco (Juazeiro),Informação insuficiente para verificar,1,1,BA,baixa,JUNCO (JUAZEIRO)
+COLONIA LEOPOLDINA,Colonia Leopoldina,Informação insuficiente para verificar,1,1,AL,baixa,COLÔNIA LEOPOLDINA
+RONDONOPOLIS,Rondonopolis,Informação insuficiente para verificar,1,1,MT,baixa,RONDONÓPOLIS
+FARTURA DO PIAUI,Fartura Do Piaui,Informação insuficiente para verificar,1,1,PI,baixa,FARTURA DO PIAUÍ
+SANTA FE DO ARAGUAIA,Santa Fe Do Araguaia,Informação insuficiente para verificar,1,1,TO,baixa,SANTA FÉ DO ARAGUAIA
+BREJO NOVO - DISTRITO,Brejo Novo - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,BREJO NOVO - Distrito
+ALTO TAQUARI,Alto Taquari,Informação insuficiente para verificar,1,1,MT,baixa,ALTO TAQUARI
+CARAIBUNA - DISTRITO,Caraibuna - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,CARAIBUNA - Distrito
+ALTO PARAISO DE GOIAS,Alto Paraiso De Goias,Informação insuficiente para verificar,1,1,GO,baixa,ALTO PARAÍSO DE GOIÁS
+BERTOLINIA,Bertolinia,Informação insuficiente para verificar,1,1,PI,baixa,BERTOLÍNIA
+CACERES,Caceres,Informação insuficiente para verificar,1,1,MT,baixa,CÁCERES
+ICONHA,Iconha,Informação insuficiente para verificar,1,1,ES,baixa,ICONHA
+JAPARATINGA,Japaratinga,Informação insuficiente para verificar,1,1,AL,baixa,JAPARATINGA
+BIGUACU,Biguacu,Informação insuficiente para verificar,1,1,SC,baixa,BIGUAÇU
+JARAGUA DO SUL,Jaragua Do Sul,Informação insuficiente para verificar,1,1,SC,baixa,JARAGUÁ DO SUL
+CARPINA,Carpina,Informação insuficiente para verificar,1,1,PE,baixa,CARPINA
+PAUDALHO,Paudalho,Informação insuficiente para verificar,1,1,PE,baixa,PAUDALHO
+AUGUSTO DE LIMA,Augusto De Lima,Informação insuficiente para verificar,1,1,MG,baixa,AUGUSTO DE LIMA
+BUENOPOLIS,Buenopolis,Informação insuficiente para verificar,1,1,MG,baixa,BUENÓPOLIS
+MARCOLINO MOURA - DISTRITO,Marcolino Moura - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,MARCOLINO MOURA - Distrito
+JUREMAL - DISTRITO,Juremal - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,JUREMAL - Distrito
+FORTIM,Fortim,Informação insuficiente para verificar,1,1,CE,baixa,FORTIM
+BREJO GRANDE DO ARAGUAIA,Brejo Grande Do Araguaia,Informação insuficiente para verificar,1,1,BA,baixa,BREJO GRANDE DO ARAGUAIA
+SAO JOSE DO NORTE,Sao Jose Do Norte,Informação insuficiente para verificar,1,1,RS,baixa,SÃO JOSÉ DO NORTE
+GUAIBA,Guaiba,Informação insuficiente para verificar,1,1,RS,baixa,GUAÍBA
+CORGUINHO,Corguinho,Informação insuficiente para verificar,1,1,MS,baixa,CORGUINHO
+PIACABUCU,Piacabucu,Informação insuficiente para verificar,1,1,AL,baixa,PIAÇABUÇU
+ITABIRA,Itabira,Informação insuficiente para verificar,1,1,MG,baixa,ITABIRA
+PASSE - DISTRITO,Passe - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,PASSÉ - Distrito
+VERISSIMO,Verissimo,Informação insuficiente para verificar,1,1,MG,baixa,VERÍSSIMO
+SOUSA,Sousa,Informação insuficiente para verificar,1,1,PB,baixa,SOUSA
+PETROPOLIS,Petropolis,Informação insuficiente para verificar,1,1,RJ,baixa,PETRÓPOLIS
+LIMOEIRO,Limoeiro,Informação insuficiente para verificar,1,1,PE,baixa,LIMOEIRO
+BREU BRANCO,Breu Branco,Informação insuficiente para verificar,1,1,PA,baixa,BREU BRANCO
+BELEM DO SAO FRANCISCO,Belem Do Sao Francisco,Informação insuficiente para verificar,1,1,PE,baixa,BELÉM DO SÃO FRANCISCO
+ITUPIRANGA,Itupiranga,Informação insuficiente para verificar,1,1,PA,baixa,ITUPIRANGA
+ALTO PARNAIBA,Alto Parnaiba,Informação insuficiente para verificar,1,1,MA,baixa,ALTO PARNAÍBA
+MANDIROBA - DISTRITO,Mandiroba - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,MANDIROBA - Distrito
+AMERICANA,Americana,Informação insuficiente para verificar,1,1,SP,baixa,AMERICANA
+VILHENA,Vilhena,Informação insuficiente para verificar,1,1,RO,baixa,VILHENA
+IGUARACI,Iguaraci,Informação insuficiente para verificar,1,1,PE,baixa,IGUARACI
+TRIUNFO,Triunfo,Informação insuficiente para verificar,1,1,RS,baixa,TRIUNFO
+MARCOLINO MOURA (RIO DE CONTAS),Marcolino Moura (Rio De Contas),Informação insuficiente para verificar,1,1,BA,baixa,MARCOLINO MOURA (RIO DE CONTAS)
+RESENDE,Resende,Informação insuficiente para verificar,1,1,RJ,baixa,RESENDE
+GUARANTA DO NORTE,Guaranta Do Norte,Informação insuficiente para verificar,1,1,MT,baixa,GUARANTÃ DO NORTE
+CAMETA,Cameta,Informação insuficiente para verificar,1,1,PA,baixa,CAMETÁ
+SAO GONCALO DO ABAETE,Sao Goncalo Do Abaete,Informação insuficiente para verificar,1,1,MG,baixa,SÃO GONÇALO DO ABAETÉ
+SERRANA (BREJOES),Serrana (Brejoes),Informação insuficiente para verificar,1,1,BA,baixa,SERRANA (BREJÕES)
+BETANIA DO PIAUI,Betania Do Piaui,Informação insuficiente para verificar,1,1,PI,baixa,BETÂNIA DO PIAUÍ
+MONTE ALEGRE DE SERGIPE,Monte Alegre De Sergipe,Informação insuficiente para verificar,1,1,SE,baixa,MONTE ALEGRE DE SERGIPE
+IBATIBA,Ibatiba,Informação insuficiente para verificar,1,1,ES,baixa,IBATIBA
+CAMPO ALEGRE DE GOIAS,Campo Alegre De Goias,Informação insuficiente para verificar,1,1,GO,baixa,CAMPO ALEGRE DE GOIÁS
+DUERE,Duere,Informação insuficiente para verificar,1,1,TO,baixa,DUERÊ
+ACAUA,Acaua,Informação insuficiente para verificar,1,1,PI,baixa,ACAUÃ
+CUMBE,Cumbe,Informação insuficiente para verificar,1,1,SE,baixa,CUMBE
+TOMAR DO GERU,Tomar Do Geru,Informação insuficiente para verificar,1,1,SE,baixa,TOMAR DO GERU
+VILA PAVAO,Vila Pavao,Informação insuficiente para verificar,1,1,ES,baixa,VILA PAVÃO
+SANTA QUITERIA,Santa Quiteria,Informação insuficiente para verificar,1,1,CE,baixa,SANTA QUITÉRIA
+SAO JOAO DO SABUGI,Sao Joao Do Sabugi,Informação insuficiente para verificar,1,1,RN,baixa,SÃO JOÃO DO SABUGI
+VALINHOS,Valinhos,Informação insuficiente para verificar,1,1,SP,baixa,VALINHOS
+TIROS,Tiros,Informação insuficiente para verificar,1,1,MG,baixa,TIROS
+GUAPE,Guape,Informação insuficiente para verificar,1,1,MG,baixa,GUAPÉ
+ILICINEA,Ilicinea,Informação insuficiente para verificar,1,1,MG,baixa,ILICÍNEA
+LAGOA NOVA,Lagoa Nova,Informação insuficiente para verificar,1,1,RN,baixa,LAGOA NOVA
+PARELHAS,Parelhas,Informação insuficiente para verificar,1,1,RN,baixa,PARELHAS
+SAQUAREMA,Saquarema,Informação insuficiente para verificar,1,1,BA,baixa,SAQUAREMA
+ACOPIARA,Acopiara,Informação insuficiente para verificar,1,1,CE,baixa,ACOPIARA
+NINHEIRA,Ninheira,Informação insuficiente para verificar,1,1,MG,baixa,NINHEIRA
+BOM JESUS DOS PERDOES,Bom Jesus Dos Perdoes,Informação insuficiente para verificar,1,1,SP,baixa,BOM JESUS DOS PERDÕES
+MASSAPE,Massape,Informação insuficiente para verificar,1,1,CE,baixa,MASSAPÊ
+PITANGUI,Pitangui,Informação insuficiente para verificar,1,1,MG,baixa,PITANGUI
+NOVA BRASILANDIA,Nova Brasilandia,Informação insuficiente para verificar,1,1,MT,baixa,NOVA BRASILÂNDIA
+ARAGUAINA,Araguaina,Informação insuficiente para verificar,1,1,TO,baixa,ARAGUAÍNA
+SAMBAIBA,Sambaiba,Informação insuficiente para verificar,1,1,MA,baixa,SAMBAÍBA
+TIMOTEO,Timoteo,Informação insuficiente para verificar,1,1,MG,baixa,TIMÓTEO
+SAO ROQUE,Sao Roque,Informação insuficiente para verificar,1,1,SP,baixa,SÃO ROQUE
+CAMPO LIMPO PAULISTA,Campo Limpo Paulista,Informação insuficiente para verificar,1,1,SP,baixa,CAMPO LIMPO PAULISTA
+NOVA ODESSA,Nova Odessa,Informação insuficiente para verificar,1,1,SP,baixa,NOVA ODESSA
+CABECEIRA DO JIBOIA - DISTRITO,Cabeceira Do Jiboia - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,CABECEIRA DO JIBÓIA - Distrito
+ITAIPE,Itaipe,Informação insuficiente para verificar,1,1,MG,baixa,ITAIPÉ
+ALVARES MACHADO,Alvares Machado,Informação insuficiente para verificar,1,1,SP,baixa,Álvares Machado
+IRAPORANGA - DISTRITO,Iraporanga - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,IRAPORANGA - Distrito
+ALTAMIRA,Altamira,Informação insuficiente para verificar,1,1,PA,baixa,ALTAMIRA
+ABOBORA,Abobora,Informação insuficiente para verificar,1,1,BA,baixa,ABÓBORA
+VILA DO CAFE - DISTRITO,Vila Do Cafe - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,VILA DO CAFÉ - Distrito
+GUARAITA,Guaraita,Informação insuficiente para verificar,1,1,GO,baixa,GUARAÍTA
+PONTA DA AREIA - DISTRITO,Ponta Da Areia - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,PONTA DA AREIA - Distrito
+SANTO ANTONIO DE BARCELONA - CARAVELAS,Santo Antonio De Barcelona - Caravelas,Informação insuficiente para verificar,1,1,BA,baixa,SANTO ANTÔNIO DE BARCELONA - CARAVELAS
+CADEIAS,Cadeias,Informação insuficiente para verificar,1,1,BA,baixa,Cadeias
+GUARAI,Guarai,Informação insuficiente para verificar,1,1,TO,baixa,GUARAÍ
+SEBASTIAO BARROS,Sebastiao Barros,Informação insuficiente para verificar,1,1,PI,baixa,SEBASTIÃO BARROS
+ARRAIAL D'AJUDA,Arraial D'Ajuda,Informação insuficiente para verificar,1,1,BA,baixa,ARRAIAL D'AJUDA
+MURIBECA,Muribeca,Informação insuficiente para verificar,1,1,SE,baixa,MURIBECA
+ITAMIRA,Itamira,Informação insuficiente para verificar,1,1,BA,baixa,ITAMIRA
+CARAGUATATUBA,Caraguatatuba,Informação insuficiente para verificar,1,1,SP,baixa,CARAGUATATUBA
+PRES PRUDENTE,Pres Prudente,Informação insuficiente para verificar,1,1,SP,baixa,PRES PRUDENTE
+MARICOABO - DISTRITO,Maricoabo - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,MARICOABO - Distrito
+AGUA BOA,Agua Boa,Informação insuficiente para verificar,1,1,MG,baixa,ÁGUA BOA
+MATA VERDE,Mata Verde,Informação insuficiente para verificar,1,1,MG,baixa,MATA VERDE
+FRANCISCO SA,Francisco Sa,Informação insuficiente para verificar,1,1,MG,baixa,Francisco Sá
+ITAQUARAI - DISTRITO,Itaquarai - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,ITAQUARAÍ - Distrito
+MONTE DO CARMO,Monte Do Carmo,Informação insuficiente para verificar,1,1,TO,baixa,MONTE DO CARMO
+RIO DA CONCEICAO,Rio Da Conceicao,Informação insuficiente para verificar,1,1,TO,baixa,RIO DA CONCEIÇÃO
+ARIQUEMES,Ariquemes,Informação insuficiente para verificar,1,1,RO,baixa,ARIQUEMES
+TAPIRANGA - DISTRITO,Tapiranga - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,TAPIRANGA - Distrito
+MANUEL DUARTE - DISTRITO,Manuel Duarte - Distrito,Informação insuficiente para verificar,1,1,RJ,baixa,MANUEL DUARTE - Distrito
+CASCAVEL,Cascavel,Informação insuficiente para verificar,1,1,CE,baixa,CASCAVEL
+SAO FELIX DO ARAGUAIA,Sao Felix Do Araguaia,Informação insuficiente para verificar,1,1,MT,baixa,SÃO FÉLIX DO ARAGUAIA
+ABAIARA,Abaiara,Informação insuficiente para verificar,1,1,CE,baixa,ABAIARA
+ARAPIRANGA - DISTRITO,Arapiranga - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,ARAPIRANGA - Distrito
+TAILANDIA,Tailandia,Informação insuficiente para verificar,1,1,PA,baixa,TAILÂNDIA
+LENCOIS PAULISTA,Lencois Paulista,Informação insuficiente para verificar,1,1,SP,baixa,LENÇÓIS PAULISTA
+BARRA DE SAO MIGUEL,Barra De Sao Miguel,Informação insuficiente para verificar,1,1,AL,baixa,BARRA DE SÃO MIGUEL
+SAO RAIMUNDO NONATO,Sao Raimundo Nonato,Informação insuficiente para verificar,1,1,PI,baixa,SÃO RAIMUNDO NONATO
+GLORIA DO GOITA,Gloria Do Goita,Informação insuficiente para verificar,1,1,PE,baixa,GLÓRIA DO GOITÁ
+EXU,Exu,Informação insuficiente para verificar,1,1,PE,baixa,EXU
+MANIACU - DISTRITO,Maniacu - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,MANIAÇU - Distrito
+PINHEIROS,Pinheiros,Informação insuficiente para verificar,1,1,ES,baixa,PINHEIROS
+CAMPINA GRANDE,Campina Grande,Informação insuficiente para verificar,1,1,PB,baixa,CAMPINA GRANDE
+TAUAPE - DISTRITO,Tauape - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,TAUAPÉ - Distrito
+IRACEMA,Iracema,Informação insuficiente para verificar,1,1,CE,baixa,IRACEMA
+SAO MARCOS,Sao Marcos,Informação insuficiente para verificar,1,1,RS,baixa,SÃO MARCOS
+BARUERI,Barueri,Informação insuficiente para verificar,1,1,SP,baixa,BARUERI
+PIPA - DISTRITO,Pipa - Distrito,Informação insuficiente para verificar,1,1,RN,baixa,PIPA - Distrito
+LAVANDEIRA,Lavandeira,Informação insuficiente para verificar,1,1,TO,baixa,LAVANDEIRA
+MAR GRANDE - DISTRITO,Mar Grande - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,MAR GRANDE - Distrito
+NOVO ORIENTE DE MINAS,Novo Oriente De Minas,Informação insuficiente para verificar,1,1,MG,baixa,NOVO ORIENTE DE MINAS
+CHARQUEADAS,Charqueadas,Informação insuficiente para verificar,1,1,RS,baixa,CHARQUEADAS
+JAGUARA - DISTRITO,Jaguara - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,JAGUARA - Distrito
+ALMAS,Almas,Informação insuficiente para verificar,1,1,TO,baixa,ALMAS
+BRACO DO NORTE,Braco Do Norte,Informação insuficiente para verificar,1,1,SC,baixa,BRAÇO DO NORTE
+CABRALIA - DISTRITO,Cabralia - Distrito,Informação insuficiente para verificar,1,1,BA,baixa,CABRÁLIA - Distrito
+CAMPOS GOYTACAZES,Campos Goytacazes,Informação insuficiente para verificar,1,1,RJ,baixa,CAMPOS GOYTACAZES
+BARROLANDIA (BELMONTE),Barrolandia (Belmonte),Informação insuficiente para verificar,1,1,BA,baixa,BARROLÂNDIA (BELMONTE)
+LIZARDA,Lizarda,Informação insuficiente para verificar,1,1,TO,baixa,LIZARDA
