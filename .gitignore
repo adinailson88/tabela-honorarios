@@ -9,6 +9,9 @@ base_classe_a_servicos_metodologia.csv
 data/local/*
 !data/local/README.md
 
+# Relatorios locais gerados por validacoes e inventarios.
+relatorios/
+
 # Backups operacionais locais
 BACKUP_*/
 
