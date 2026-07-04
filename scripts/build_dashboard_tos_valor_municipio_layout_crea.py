@@ -24,7 +24,10 @@ REPO = Path(__file__).resolve().parents[1]
 ASSETS_DIR = REPO / "assets"
 ANOS_DIR = ASSETS_DIR / "anos"
 DOCS_DIR = REPO / "docs"
+REFERENCIA_DIR = ASSETS_DIR / "referencia"
 DATA_PATH = ASSETS_DIR / "dados_tos_valor_municipio.json"
+CENTROIDES_PATH = REFERENCIA_DIR / "municipios_bahia_ibge_centroides.csv"
+CONTORNO_PATH = REFERENCIA_DIR / "bahia_estado_contorno_ibge.geojson"
 OUT_PATH = REPO / "outputs" / "dashboard_senge_honorarios_tos_valor_municipio_layout_crea.html"
 INDEX_PATH = REPO / "index.html"
 
@@ -32,6 +35,48 @@ OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
 
 if not DATA_PATH.exists():
     raise SystemExit(f"Agregado combinado nao encontrado: {DATA_PATH}")
+
+
+# ---------------------------------------------------------------------------
+# Coordenadas municipais e contorno do estado (fonte: API oficial do IBGE,
+# ver docs/fontes.md). Usadas apenas para o mapa; nao alteram a base de ARTs.
+# ---------------------------------------------------------------------------
+
+def build_mun_coords() -> dict:
+    if not CENTROIDES_PATH.exists():
+        return {}
+    coords = {}
+    linhas = CENTROIDES_PATH.read_text(encoding="utf-8").splitlines()[1:]
+    for linha in linhas:
+        if not linha.strip():
+            continue
+        partes = linha.split(",")
+        if len(partes) < 5:
+            continue
+        _, _, chave, lat, lon = partes[0], partes[1], partes[2], partes[3], partes[4]
+        try:
+            coords[chave] = [float(lat), float(lon)]
+        except ValueError:
+            continue
+    return coords
+
+
+def build_bahia_outline() -> list:
+    if not CONTORNO_PATH.exists():
+        return []
+    geo = json.loads(CONTORNO_PATH.read_text(encoding="utf-8"))
+    geom = geo["features"][0]["geometry"]
+    if geom["type"] == "Polygon":
+        return [geom["coordinates"][0]]
+    if geom["type"] == "MultiPolygon":
+        return [poly[0] for poly in geom["coordinates"]]
+    return []
+
+
+MUN_COORDS = build_mun_coords()
+BAHIA_OUTLINE = build_bahia_outline()
+MUN_COORDS_JSON = json.dumps(MUN_COORDS, ensure_ascii=False, separators=(",", ":"))
+BAHIA_OUTLINE_JSON = json.dumps(BAHIA_OUTLINE, separators=(",", ":"))
 
 
 # ---------------------------------------------------------------------------
@@ -334,7 +379,8 @@ details summary{cursor:pointer;font-weight:800;color:var(--b950)}
     <div class="card s6"><h3>Top serviços/unidades na base confiável</h3><p class="sub">Classe A + provável honorário técnico; cada unidade de medida forma grupo próprio.</p><div class="bars" id="barsServicos"></div></div>
     <div class="card s6"><h3>ARTs por serviço (todas as classes) na seleção</h3><p class="sub">Quantidade de ARTs por serviço, independente de haver ou não referência de preço confiável.</p><div class="bars" id="barsServicoTodasClasses"></div></div>
     <div class="card s6" id="cardGrupoTos"><h3>Top grupos TOS na seleção</h3><p class="sub">Ranking por quantidade de ARTs (contagem agregada) na seleção atual; não é ranking por valor monetário.</p><div class="bars" id="barsGrupoTos"></div></div>
-    <div class="card s6"><h3>Municípios do serviço/seleção filtrada</h3><p class="sub">Quantidade de ARTs por município, na seleção atual de filtros.</p><p class="disclaimer">Mapa geográfico indisponível; exibindo lista territorial dos municípios encontrados, ordenada por quantidade de ARTs.</p><div class="bars" id="barsMunicipio"></div></div>
+    <div class="card s6"><h3>Municípios do serviço/seleção filtrada</h3><p class="sub">Quantidade de ARTs por município, na seleção atual de filtros.</p><p class="disclaimer" id="mapaDisclaimerLista">Lista territorial ordenada por quantidade de ARTs.</p><div class="bars" id="barsMunicipio"></div></div>
+    <div class="card s6"><h3>Mapa dos municípios (Bahia)</h3><p class="sub">Cada círculo é um município com coordenada oficial do IBGE; tamanho e cor indicam a quantidade de ARTs na seleção atual.</p><div class="boxplot-wrap" id="mapaMunicipios"></div><p class="disclaimer" id="mapaDisclaimerFora"></p></div>
     <div class="card s12"><h3>Serviços com referência confiável de preço</h3><p class="sub">Lista independente dos filtros de serviço/município: reúne todo serviço que atinge Classe A + provável honorário técnico + n≥5 no ano carregado. Use para escolher diretamente o que filtrar, sem testar opção por opção.</p><div class="tablewrap" id="reliableTableWrap"><table id="reliableTable"><thead><tr><th>Serviço</th><th>Grupo SENGE</th><th class="colGrupoTos">Grupo TOS</th><th>Unidade</th><th>n</th><th>Mediana</th><th>Q1</th><th>Q3</th><th>Municípios</th></tr></thead><tbody></tbody></table></div><p class="disclaimer">A mediana e o IQR são evidência agregada e auxiliar, derivada do valor declarado em ART. Não constituem honorário definitivo, contrato, nota fiscal ou piso obrigatório.</p></div>
     <div class="card s12"><h3>Boxplot agregado - serviços com referência confiável</h3><p class="boxplot-cap">Boxplot construído a partir de Q1, mediana e Q3 de cada serviço/unidade (base confiável). Não representa valores mínimos, máximos, pontos individuais ou outliers, pois o agregado publicado não contém essas informações. Mostra os serviços selecionados no filtro; sem seleção, mostra os 10 com maior n.</p><div class="boxplot-wrap" id="boxplotConfiaveis"></div></div>
     <div class="card s12"><h3>Serviços - referência confiável observada</h3><p class="sub">Mediana, Q1, Q3 e IQR em R$ por unidade de medida, apenas para Classe A + provável honorário técnico. n&lt;5 = Informação insuficiente para verificar.</p><div class="tablewrap"><table id="svcTable"><thead><tr><th>Serviço</th><th>Unidade</th><th>Grupo</th><th>n</th><th>Mediana</th><th>Q1</th><th>Q3</th><th>IQR</th><th>Obs.</th></tr></thead><tbody></tbody></table></div></div>
@@ -359,6 +405,8 @@ __DOCS_HTML__
 <script>
 const ANOS_MANIFEST = __ANOS_MANIFEST__;
 const DEFAULT_ANO = "__DEFAULT_ANO__";
+const MUN_COORDS = __MUN_COORDS__;
+const BAHIA_OUTLINE = __BAHIA_OUTLINE__;
 const INSUF='Informação insuficiente para verificar.';
 const NAT_LABEL={provavel_honorario_tecnico:'provável honorário técnico',provavel_valor_obra_contrato:'provável obra/contrato',valor_simbolico_ou_taxa:'simbólico/taxa',valor_inconsistente_ou_extremo:'inconsistente/extremo',informacao_insuficiente:'informação insuficiente'};
 const NAT_COLOR={provavel_honorario_tecnico:'var(--honor)',provavel_valor_obra_contrato:'var(--obra)',valor_simbolico_ou_taxa:'var(--simb)',valor_inconsistente_ou_extremo:'var(--inc)',informacao_insuficiente:'var(--insf)'};
@@ -371,6 +419,8 @@ function formatBRL(value){const n=Number(value);if(!Number.isFinite(n))return IN
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 let D=null, SERV,GRP,UNID,MUN,NAT,GTOS,CC,A,AGG,TOTAL,HON;
 let RELIABLE=[], SERVICE_REF={}, HAS_GTOS=false;
+const MAP_W=380, MAP_H=420;
+let MAP_PROJ=null;
 const cache=new Map();
 function unidadeLabel(u){if(typeof u==='string')return u;return UNID[u]||INSUF;}
 function brlUnidade(value,u){return formatBRL(value)+' / '+unidadeLabel(u);}
@@ -611,6 +661,7 @@ function recompute(){
   renderBars('barsGrupoTos',gtItems,gtItems.length?gtItems[0].value:1);
   const munItems=Object.entries(munCnt).map(([k,v])=>({label:MUN[+k]||INSUF,value:v,display:fmt(v)+' ARTs'})).sort((a,b)=>b.value-a.value).slice(0,20);
   renderBars('barsMunicipio',munItems,munItems.length?munItems[0].value:1);
+  renderMapaMunicipios(munCnt);
   const svcCntItems=Object.entries(svcCnt).map(([k,v])=>({label:SERV[+k]||INSUF,value:v,display:fmt(v)+' ARTs'})).sort((a,b)=>b.value-a.value).slice(0,15);
   renderBars('barsServicoTodasClasses',svcCntItems,svcCntItems.length?svcCntItems[0].value:1);
   renderServiceBarsAndTable(bySUnit,blocked);
@@ -635,6 +686,68 @@ function renderBoxplot(id,groups){
   svg+='</svg>';
   el.innerHTML=svg;
 }
+function buildMapProjection(){
+  if(MAP_PROJ||!BAHIA_OUTLINE.length)return MAP_PROJ;
+  let lonMin=Infinity,lonMax=-Infinity,latMin=Infinity,latMax=-Infinity;
+  BAHIA_OUTLINE.forEach(ring=>ring.forEach(([lon,lat])=>{
+    if(lon<lonMin)lonMin=lon;if(lon>lonMax)lonMax=lon;
+    if(lat<latMin)latMin=lat;if(lat>latMax)latMax=lat;
+  }));
+  const latMid=(latMin+latMax)/2*Math.PI/180;
+  const lonScale=Math.cos(latMid);
+  const w=(lonMax-lonMin)*lonScale,h=(latMax-latMin),pad=18;
+  const scale=Math.min((MAP_W-2*pad)/w,(MAP_H-2*pad)/h);
+  MAP_PROJ={lonMin:lonMin,latMax:latMax,lonScale:lonScale,scale:scale,
+    offX:pad+((MAP_W-2*pad)-w*scale)/2,offY:pad+((MAP_H-2*pad)-h*scale)/2};
+  return MAP_PROJ;
+}
+function projectPoint(lat,lon){
+  const p=MAP_PROJ;
+  return [p.offX+(lon-p.lonMin)*p.lonScale*p.scale,p.offY+(p.latMax-lat)*p.scale];
+}
+function outlinePath(){
+  return BAHIA_OUTLINE.map(ring=>{
+    const pts=ring.map(([lon,lat])=>projectPoint(lat,lon).map(v=>v.toFixed(1)).join(','));
+    return 'M'+pts.join('L')+'Z';
+  }).join(' ');
+}
+function renderMapaMunicipios(munCnt){
+  const el=$('mapaMunicipios');
+  if(!BAHIA_OUTLINE.length||!Object.keys(MUN_COORDS).length){
+    el.innerHTML='<div class="small muted">Informação insuficiente para verificar: coordenadas de município não disponíveis.</div>';
+    $('mapaDisclaimerFora').textContent='';
+    return;
+  }
+  const entries=Object.entries(munCnt).map(([k,v])=>({nome:MUN[+k],value:v})).filter(e=>e.value>0);
+  if(!entries.length){
+    el.innerHTML='<div class="small muted">Informação insuficiente para verificar com os filtros atuais.</div>';
+    $('mapaDisclaimerFora').textContent='';
+    return;
+  }
+  buildMapProjection();
+  const comCoord=entries.filter(e=>MUN_COORDS[e.nome]).sort((a,b)=>b.value-a.value);
+  const semCoord=entries.filter(e=>!MUN_COORDS[e.nome]);
+  if(!comCoord.length){
+    el.innerHTML='<div class="small muted">Nenhum município da seleção tem correspondência exata com o cadastro do IBGE. Veja a lista territorial ao lado.</div>';
+    $('mapaDisclaimerFora').textContent='';
+    return;
+  }
+  const maxV=Math.max(...comCoord.map(e=>e.value),1);
+  let svg='<svg viewBox="0 0 '+MAP_W+' '+MAP_H+'" width="100%" height="'+MAP_H+'" xmlns="http://www.w3.org/2000/svg">';
+  svg+='<path d="'+outlinePath()+'" fill="#eaf2fb" stroke="#9fc3e8" stroke-width="1.4"/>';
+  comCoord.forEach(e=>{
+    const [lat,lon]=MUN_COORDS[e.nome];
+    const [x,y]=projectPoint(lat,lon);
+    const r=2.5+8*Math.sqrt(e.value/maxV);
+    svg+='<circle cx="'+x.toFixed(1)+'" cy="'+y.toFixed(1)+'" r="'+r.toFixed(1)+'" fill="rgba(15,104,181,.55)" stroke="#07579f" stroke-width="1"><title>'+esc(e.nome)+': '+fmt(e.value)+' ARTs</title></circle>';
+  });
+  svg+='</svg>';
+  el.innerHTML=svg;
+  const semCoordArts=semCoord.reduce((a,e)=>a+e.value,0);
+  $('mapaDisclaimerFora').textContent=semCoord.length
+    ?('Mapa com coordenadas oficiais do IBGE, só para nomes com correspondência exata. '+fmt(semCoord.length)+' município(s) da seleção ('+fmt(semCoordArts)+' ARTs) sem correspondência exata (distrito, fora da Bahia ou grafia não padronizada) não aparecem no mapa — veja a lista completa ao lado.')
+    :'Mapa com coordenadas oficiais do IBGE; todos os municípios da seleção têm correspondência exata.';
+}
 function renderServiceBarsAndTable(bySUnit,blocked){
   const tb=document.querySelector('#svcTable tbody');tb.innerHTML='';
   if(blocked){tb.innerHTML='<tr><td colspan="9" class="txt muted">Indisponível: a base confiável exige Classe A + natureza provável honorário técnico.</td></tr>';renderBars('barsServicos',[],1);return;}
@@ -656,7 +769,11 @@ loadAno(DEFAULT_ANO);
 </body>
 </html>"""
 
-out = HTML.replace("__ANOS_MANIFEST__", ANOS_MANIFEST_JSON).replace("__DEFAULT_ANO__", DEFAULT_ANO).replace("__DOCS_HTML__", DOCS_HTML)
+out = (HTML.replace("__ANOS_MANIFEST__", ANOS_MANIFEST_JSON)
+    .replace("__DEFAULT_ANO__", DEFAULT_ANO)
+    .replace("__DOCS_HTML__", DOCS_HTML)
+    .replace("__MUN_COORDS__", MUN_COORDS_JSON)
+    .replace("__BAHIA_OUTLINE__", BAHIA_OUTLINE_JSON))
 OUT_PATH.write_text(out, encoding="utf-8")
 INDEX_PATH.write_text(out, encoding="utf-8")
 print(f"HTML gerado: {len(out)} chars -> {OUT_PATH.name}")

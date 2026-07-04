@@ -17,7 +17,7 @@ https://adinailson88.github.io/tabela-honorarios/
 - `AGENTS.md`: regras metodologicas e operacionais do repositorio.
 - `README.md`: este guia de estrutura e execucao.
 - `assets/`: dados agregados publicos do painel.
-- `assets/referencia/`: CSVs e JSONs agregados de referencia, sem linhas individuais de ART.
+- `assets/referencia/`: CSVs e JSONs agregados de referencia, sem linhas individuais de ART. Inclui `municipios_bahia_ibge_centroides.csv` e `bahia_estado_contorno_ibge.geojson` (geometria oficial do IBGE, usada só para posicionar o mapa de municipios do painel).
 - `dados/`: dados auxiliares agregados usados por scripts e painel.
 - `docs/modelos/`: modelos e manifestos tecnicos atuais.
 - `docs/entregaveis/`: arquivos finais entregaveis.
