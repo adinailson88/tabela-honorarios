@@ -745,8 +745,8 @@ function renderMapaMunicipios(munCnt){
   el.innerHTML=svg;
   const semCoordArts=semCoord.reduce((a,e)=>a+e.value,0);
   $('mapaDisclaimerFora').textContent=semCoord.length
-    ?('Mapa com coordenadas oficiais do IBGE, só para nomes com correspondência exata. '+fmt(semCoord.length)+' município(s) da seleção ('+fmt(semCoordArts)+' ARTs) sem correspondência exata (distrito, fora da Bahia ou grafia não padronizada) não aparecem no mapa — veja a lista completa ao lado.')
-    :'Mapa com coordenadas oficiais do IBGE; todos os municípios da seleção têm correspondência exata.';
+    ?('Mapa com coordenadas oficiais do IBGE: '+fmt(comCoord.length)+' nome(s) de município da seleção batem exatamente com o cadastro oficial e aparecem no mapa. Os demais '+fmt(semCoordArts)+' ARTs da seleção estão registrados sob '+fmt(semCoord.length)+' outro(s) texto(s) de município que não batem exatamente com o nome oficial do IBGE — não é o total de municípios da Bahia, e sim variações de grafia, distrito ou cidade de outro estado registradas na base. Esses continuam na lista ao lado, só não aparecem no mapa.')
+    :('Mapa com coordenadas oficiais do IBGE; os '+fmt(comCoord.length)+' nome(s) de município da seleção batem exatamente com o cadastro oficial.');
 }
 function renderServiceBarsAndTable(bySUnit,blocked){
   const tb=document.querySelector('#svcTable tbody');tb.innerHTML='';
