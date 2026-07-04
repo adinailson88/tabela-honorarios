@@ -1,47 +1,35 @@
 # Fontes
 
-Este documento deve registrar as fontes usadas no projeto.
+Este documento descreve, para quem consulta o painel, de onde vêm os dados exibidos e o que ainda não está confirmado por fonte oficial.
 
-## Fontes confirmadas no repositório
+## Fonte primária dos dados
 
-| Fonte | Uso | Situação |
+Os dados que alimentam o painel têm origem nas Anotações de Responsabilidade Técnica (ART) registradas no sistema SITAC do CREA-BA. A ART é o documento pelo qual um profissional registra, junto ao Conselho, a responsabilidade técnica por uma atividade ou serviço de engenharia, e nela consta um valor declarado.
+
+Esse valor declarado não é, por si só, comprovante de honorário: pode representar honorário técnico, valor de obra ou contrato, taxa simbólica, ou até um valor inconsistente. Por isso o painel classifica a natureza do valor antes de qualquer uso estatístico — ver a seção Metodologia desta documentação.
+
+## Cobertura temporal
+
+Os agregados publicados cobrem o período de 2015 a 2022. Para os anos de 2015 a 2021, os totais anuais devem ser lidos como mínimo observado, não necessariamente como o total real de ARTs emitidas naquele ano: as planilhas semestrais de origem desses anos apresentam uma quantidade de linhas muito próxima do limite técnico de formatos antigos de planilha eletrônica, o que sugere possível truncamento na extração original. Apenas o ano de 2022 está fora dessa faixa e pode ser tratado como contagem completa. Detalhes na seção Limitações desta documentação.
+
+## Camada de classificação por tipo de serviço (TOS)
+
+Uma parte da base de 2022 foi classificada por tipo de serviço (TOS), permitindo agrupar as ARTs por atividade de forma mais padronizada. Essa classificação ainda não está disponível para todos os anos: quando o campo TOS não existe na base de um ano, o painel exibe `Informação insuficiente para verificar.` em vez de presumir um agrupamento.
+
+## Fontes complementares ainda não incorporadas
+
+As informações abaixo são relevantes para a metodologia, mas ainda não têm fonte oficial confirmada e incorporada ao painel. Enquanto isso, qualquer leitura que dependeria delas deve ser tratada como `Informação insuficiente para verificar.`
+
+| Informação necessária | Finalidade | Situação |
 |---|---|---|
-| `TABELA TOS - 2.xlsx`, aba `ARTs CREA 2022 (TOS)` | Camada TOS atual do painel agregado | Fonte indicada no JSON publicado |
-| `dados_tos_valor_municipio.json` | Base agregada usada pelo painel | Publicada no repositório |
-| `index.html` | Arquivo publicado pelo GitHub Pages | Publicado na raiz |
-| `scripts/build_dashboard_tos_valor_municipio_layout_crea.py` | Script de geração do painel institucional; publica `index.html` na raiz | Publicado em `scripts/` |
-| `assets/anos/dados_tos_valor_municipio_AAAA.json` | Agregado público por ano, carregado sob demanda pelo painel | Publicado no repositório |
-| `C:\Users\adina\Meu Drive\ARTS Adinailson\arts 2015 1 semestre - feito.xlsx` | Agregação anual pública de ARTs 2015 (1º semestre) | Fonte local bruta, não versionada; 65.534 linhas, mesmo teto suspeito do `.xls` — ver `docs/limitacoes.md` |
-| `C:\Users\adina\Meu Drive\ARTS Adinailson\arts 2015 2 semestre.xls` a `arts 2019 2 semestre.xls` | Agregação anual pública de ARTs 2015 (2º semestre) a 2019 | Fonte local bruta, não versionada; `.xls` no limite do formato (65.535 linhas) |
-| `C:\Users\adina\Meu Drive\ARTS Adinailson\arts 2020 1 semestre.xlsx` a `arts 2021 2 semestre.xlsx` | Agregação anual pública de ARTs 2020-2021 | Fonte local bruta, não versionada; 65.534 linhas, mesmo teto suspeito do `.xls` — ver `docs/limitacoes.md` |
-| `C:\Users\adina\Meu Drive\ARTS Adinailson\ARTs 2022 01022024.csv` | Agregação anual pública de ARTs 2022 | Fonte local bruta, não versionada; 726.028 linhas, fora da faixa suspeita — única base tratável como contagem completa |
-| `C:\Users\adina\Meu Drive\ARTS Adinailson\Análise ARTs.xlsx` e `Análise ARTs Agronomia.xlsx` | Workbooks de análise/limpeza com abas metodológicas e abas 2020-2022 | Inspecionados como material auxiliar; não usados como fonte primária do agregado anual |
-
-## Fontes a verificar antes de uso metodológico
-
-| Fonte necessária | Finalidade | Situação padrão |
-|---|---|---|
-| Planilhas anuais completas de ARTs | Inclusão de outros anos | Processadas localmente em `scripts/agrega_anos_publico.py`; brutos não versionados |
-| Base oficial IBGE de municípios | Padronização municipal e código IBGE | Informação insuficiente para verificar. |
-| De-para oficial CREA-BA município/inspetoria/SUREG | Regionalização institucional | Informação insuficiente para verificar. |
-| Tabela atual do SENGE/BA | Cruzamento de serviços, unidades e lacunas | Informação insuficiente para verificar. |
-| Critério documentado de CUB | Referência de custo quando aplicável | Informação insuficiente para verificar. |
+| Base oficial do IBGE de municípios | Padronização de nomes de município e código IBGE | Informação insuficiente para verificar. |
+| De-para oficial do CREA-BA entre município, inspetoria e SUREG | Leitura regional/institucional | Informação insuficiente para verificar. |
+| Tabela de honorários vigente do SENGE/BA | Cruzamento entre serviço, unidade de medida e eventuais lacunas de tabela | Informação insuficiente para verificar. |
+| Critério técnico documentado de CUB | Referência de custo de construção, quando aplicável | Informação insuficiente para verificar. |
 | Critérios técnicos de esforço profissional | Discussão metodológica de honorários | Informação insuficiente para verificar. |
 
-## Regra de preenchimento
+## Regra de leitura
 
-Não registrar fonte por inferência.
-
-Cada fonte deve conter, quando disponível:
-
-- nome do arquivo ou documento;
-- origem institucional;
-- versão ou data;
-- caminho local ou URL pública, quando permitido;
-- campo ou coluna utilizada;
-- etapa do pipeline em que foi usada;
-- limitação de uso.
-
-Quando qualquer elemento essencial não puder ser verificado, registrar:
+Nenhuma fonte é presumida. Quando uma informação não pode ser confirmada por fonte oficial, o painel e esta documentação registram exatamente:
 
 `Informação insuficiente para verificar.`

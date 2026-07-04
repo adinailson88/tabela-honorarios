@@ -231,7 +231,7 @@ body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;color:var(--gray800);
 .hmeta{min-width:210px;text-align:right;font-size:12px;opacity:.94;line-height:1.45}.hmeta strong{display:block;font-size:13px;color:#fff}
 .status{margin:0 0 14px;padding:10px 14px;border:1px solid var(--gray200);background:rgba(255,255,255,.86);color:var(--gray700);border-radius:12px;font-size:12.5px;box-shadow:var(--soft)}
 .status.warn{border-color:#f59e0b;background:#fffbeb;color:#92400e}
-.kpis{display:grid;grid-template-columns:repeat(6,minmax(140px,1fr));gap:12px;margin-bottom:12px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:12px}
 .kpi{background:var(--card);border:1px solid rgba(148,163,184,.26);border-radius:var(--radius);padding:13px;min-height:104px;box-shadow:var(--soft);display:grid;grid-template-columns:40px 1fr;gap:10px;align-items:center}
 .kicon{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--b900),var(--b600));color:#fff;font-size:15px;font-weight:900;box-shadow:0 6px 14px rgba(7,87,159,.24)}
 .ktitle{margin:0 0 6px;font-size:11.5px;color:var(--gray700);font-weight:700}.kval{margin:0;font-size:clamp(20px,2vw,28px);color:var(--b950);font-weight:900;letter-spacing:0;line-height:1.05}
@@ -257,6 +257,13 @@ td{border-bottom:1px solid var(--gray200);padding:8px;text-align:center;vertical
 td.txt{text-align:left;font-variant-numeric:normal}.muted{color:var(--gray600)}.small{font-size:12px}
 .tag{display:inline-block;font-size:10px;padding:2px 7px;border-radius:20px;border:1px solid var(--gray300);color:var(--gray600);white-space:nowrap}
 .tag.new{color:#8a5a00;border-color:#f3c969;background:#fff7d6}.tag.low{color:#b5543e;border-color:#f0b09d;background:#fff0e8}
+.tag.ok{color:#0f6b48;border-color:#9cd9bd;background:#e8f8f1}
+.checkrow{display:flex;align-items:flex-start;gap:8px;margin-top:10px;font-size:12px;font-weight:700;line-height:1.35}
+.checkrow input{margin-top:2px}
+.disclaimer{margin:0 0 10px;padding:8px 10px;border-radius:10px;background:#eef2f7;color:var(--gray700);font-size:11.5px;line-height:1.4;border:1px solid var(--gray200)}
+.svcname{background:none;border:none;padding:0;font:inherit;color:var(--b600);font-weight:800;cursor:pointer;text-decoration:underline;text-align:left}
+.boxplot-wrap{overflow-x:auto}
+.boxplot-cap{margin:0 0 8px;font-size:11.5px;color:var(--gray600);line-height:1.4}
 details summary{cursor:pointer;font-weight:800;color:var(--b950)}
 .foot{margin-top:12px;border-radius:12px;background:#eaf2fb;border:1px solid #d8e7f7;color:var(--gray700);padding:10px 12px;font-size:11.5px;line-height:1.4}
 .tabs{display:flex;gap:8px;margin-bottom:14px}
@@ -291,11 +298,13 @@ details summary{cursor:pointer;font-weight:800;color:var(--b950)}
   <div class="fcard"><label for="fClasse">Classe de confiabilidade</label><select id="fClasse" multiple><option value="A">A - base de cálculo</option><option value="B">B - secundária</option><option value="C">C - só diagnóstico</option><option value="D">D - excluída</option></select></div>
   <div class="fcard"><label for="fNat">Natureza do valor</label><select id="fNat" multiple></select></div>
   <div class="fcard"><label for="fGrupo">Grupo SENGE</label><select id="fGrupo" multiple></select></div>
-  <div class="fcard"><label for="fServico">Serviço padronizado</label><select id="fServico" multiple></select></div>
+  <div class="fcard"><label for="fServico">Serviço padronizado</label><select id="fServico" multiple></select>
+    <label class="checkrow" for="fSoConfiavel"><input type="checkbox" id="fSoConfiavel"> Somente serviços com referência confiável de preço</label>
+  </div>
   <div class="fcard"><label for="fGrupoTos">Grupo TOS</label><select id="fGrupoTos" multiple></select></div>
   <div class="fcard"><label for="munSearch">Município</label><input id="munSearch" placeholder="filtrar lista"><select id="fMun" multiple></select></div>
   <button class="btn" id="btnLimpar">Limpar filtros</button>
-  <div class="note"><strong>Sobre os dados</strong>Camada TOS com dados agregados. A ART é evidência auxiliar e indireta; valor declarado não é honorário líquido. Mediana e IQR só aparecem para Classe A + provável honorário técnico. Trocar o ano recarrega só o agregado daquele ano.</div>
+  <div class="note"><strong>Sobre os dados</strong>Camada TOS com dados agregados a partir de ARTs registradas no sistema SITAC do CREA-BA. A ART é evidência auxiliar e indireta; valor declarado não é honorário líquido. Mediana e IQR só aparecem para Classe A + provável honorário técnico + n≥5. Trocar o ano recarrega só o agregado daquele ano.</div>
 </aside>
 <main class="main">
   <div class="tabs">
@@ -305,7 +314,7 @@ details summary{cursor:pointer;font-weight:800;color:var(--b950)}
   <div id="viewPainel" class="tabview active">
   <header class="head">
     <div><h2>Painel TOS · Natureza do Valor · Município</h2><p>Subsídio técnico para análise orientativa da Tabela de Honorários do SENGE/BA.</p></div>
-    <div class="hmeta">Gerado em<strong id="gerado"></strong><span id="fonteCurta">dados locais agregados</span></div>
+    <div class="hmeta">Gerado em<strong id="gerado"></strong><span id="fonteCurta">ARTs agregadas (SITAC/CREA-BA)</span></div>
   </header>
   <div id="status" class="status warn"></div>
   <section class="kpis">
@@ -315,13 +324,18 @@ details summary{cursor:pointer;font-weight:800;color:var(--b950)}
     <div class="kpi green"><div class="kicon">Md</div><div><p class="ktitle">Mediana confiável</p><p class="kval" id="kMed">—</p><p class="ksub">valor em R$ por unidade</p></div></div>
     <div class="kpi"><div class="kicon">IQR</div><div><p class="ktitle">Q1-Q3 confiável</p><p class="kval" id="kIqr" style="font-size:18px">—</p><p class="ksub">faixa interquartil</p></div></div>
     <div class="kpi orange"><div class="kicon">Obr</div><div><p class="ktitle">% obra/contrato</p><p class="kval" id="kObra">—</p><p class="ksub">na seleção atual</p></div></div>
+    <div class="kpi green"><div class="kicon">✓</div><div><p class="ktitle">Serviços com referência confiável</p><p class="kval" id="kConfiaveis">0</p><p class="ksub" id="kConfiaveisSub">de 0 serviços mapeados no ano</p></div></div>
   </section>
   <section class="grid">
     <div class="card s4"><h3>Bucket "Não mapeado"</h3><p class="sub">Mesmo subconjunto TOS: comparação antes/depois.</p><div class="bars" id="barsNaoMapeado"></div></div>
     <div class="card s4"><h3>Natureza do valor declarado</h3><p class="sub">Distribuição da seleção atual.</p><div class="barstack" id="natbar"></div><div class="legend" id="natLegend"></div></div>
     <div class="card s4"><h3>Classes de confiabilidade</h3><p class="sub">Distribuição do subconjunto TOS completo.</p><div class="barstack" id="classbar"></div><div class="legend" id="classLegend"></div></div>
     <div class="card s6"><h3>Top serviços/unidades na base confiável</h3><p class="sub">Classe A + provável honorário técnico; cada unidade de medida forma grupo próprio.</p><div class="bars" id="barsServicos"></div></div>
-    <div class="card s6"><h3>Top grupos TOS na seleção</h3><p class="sub">Frequência agregada, independentemente da natureza monetária.</p><div class="bars" id="barsGrupoTos"></div></div>
+    <div class="card s6"><h3>ARTs por serviço (todas as classes) na seleção</h3><p class="sub">Quantidade de ARTs por serviço, independente de haver ou não referência de preço confiável.</p><div class="bars" id="barsServicoTodasClasses"></div></div>
+    <div class="card s6"><h3>Top grupos TOS na seleção</h3><p class="sub">Ranking por quantidade de ARTs (contagem agregada) na seleção atual; não é ranking por valor monetário.</p><div class="bars" id="barsGrupoTos"></div></div>
+    <div class="card s6"><h3>Municípios do serviço/seleção filtrada</h3><p class="sub">Quantidade de ARTs por município, na seleção atual de filtros.</p><p class="disclaimer">Mapa geográfico indisponível; exibindo lista territorial dos municípios encontrados, ordenada por quantidade de ARTs.</p><div class="bars" id="barsMunicipio"></div></div>
+    <div class="card s12"><h3>Serviços com referência confiável de preço</h3><p class="sub">Lista independente dos filtros de serviço/município: reúne todo serviço que atinge Classe A + provável honorário técnico + n≥5 no ano carregado. Use para escolher diretamente o que filtrar, sem testar opção por opção.</p><div class="tablewrap"><table id="reliableTable"><thead><tr><th>Serviço</th><th>Grupo SENGE</th><th>Grupo TOS</th><th>Unidade</th><th>n</th><th>Mediana</th><th>Q1</th><th>Q3</th><th>Municípios</th></tr></thead><tbody></tbody></table></div><p class="disclaimer">A mediana e o IQR são evidência agregada e auxiliar, derivada do valor declarado em ART. Não constituem honorário definitivo, contrato, nota fiscal ou piso obrigatório.</p></div>
+    <div class="card s12"><h3>Boxplot agregado - serviços com referência confiável</h3><p class="boxplot-cap">Boxplot construído a partir de Q1, mediana e Q3 de cada serviço/unidade (base confiável). Não representa valores mínimos, máximos, pontos individuais ou outliers, pois o agregado publicado não contém essas informações. Mostra os serviços selecionados no filtro; sem seleção, mostra os 10 com maior n.</p><div class="boxplot-wrap" id="boxplotConfiaveis"></div></div>
     <div class="card s12"><h3>Serviços - referência confiável observada</h3><p class="sub">Mediana, Q1, Q3 e IQR em R$ por unidade de medida, apenas para Classe A + provável honorário técnico. n&lt;5 = Informação insuficiente para verificar.</p><div class="tablewrap"><table id="svcTable"><thead><tr><th>Serviço</th><th>Unidade</th><th>Grupo</th><th>n</th><th>Mediana</th><th>Q1</th><th>Q3</th><th>IQR</th><th>Obs.</th></tr></thead><tbody></tbody></table></div></div>
     <div class="card s12"><details open><summary>Metodologia e limitações (resumo)</summary><div class="small muted" style="margin-top:8px">
       <p><b>Premissa central.</b> Os dados de ART são evidência auxiliar, indireta e agregada de escopo, atividade, localidade, responsabilidade técnica e valor declarado, não prova isolada de honorário profissional contratado.</p>
@@ -330,7 +344,7 @@ details summary{cursor:pointer;font-weight:800;color:var(--b950)}
       <p><b>Finalidade.</b> Documento de subsídio técnico, orientativo e agregado; não é preço obrigatório, piso, tabela vinculante nem ranking de pessoas ou empresas.</p>
       <p><button type="button" class="linklike" data-goto-docs>Ver documentação completa (metodologia, limitações, fontes, dicionário de dados, auditoria) →</button></p>
     </div></details></div>
-    <div class="foot s12">Painel institucional derivado da metodologia validada do projeto tabela-honorarios. Esta variante não depende de internet externa, exceto para buscar o JSON do ano selecionado no próprio repositório.</div>
+    <div class="foot s12">Painel de subsídio técnico do SENGE/BA com base em ARTs do CREA-BA. Esta variante não depende de internet externa, exceto para buscar o agregado do ano selecionado dentro do próprio painel.</div>
   </section>
   </div>
   <div id="viewDocs" class="tabview">
@@ -355,12 +369,42 @@ const pct=(x,t)=>t?(100*x/t).toFixed(1)+'%':'—';
 function formatBRL(value){const n=Number(value);if(!Number.isFinite(n))return INSUF;return n.toLocaleString('pt-BR',{style:'currency',currency:'BRL',minimumFractionDigits:2,maximumFractionDigits:2});}
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 let D=null, SERV,GRP,UNID,MUN,NAT,GTOS,CC,A,AGG,TOTAL,HON;
+let RELIABLE=[], SERVICE_REF={};
 const cache=new Map();
 function unidadeLabel(u){if(typeof u==='string')return u;return UNID[u]||INSUF;}
 function brlUnidade(value,u){return formatBRL(value)+' / '+unidadeLabel(u);}
 function bindData(){
   SERV=D.servicos;GRP=D.grupo_de_servico;UNID=D.unidades||[INSUF];MUN=D.municipios;NAT=D.naturezas;GTOS=D.grupos_tos;CC=D.classe_count;
   A=D.classeA;AGG=D.agg;TOTAL=D.total_arts;HON=NAT.indexOf('provavel_honorario_tecnico');
+  computeServiceReference();
+}
+function computeServiceReference(){
+  const groups={};
+  for(let i=0;i<A.v.length;i++){
+    if(A.nat[i]!==HON)continue;
+    const s=A.s[i],u=A.u[i];
+    if(/^Nao mapeado/.test(SERV[s]))continue;
+    const key=s+'|'+u;
+    const g=(groups[key]=groups[key]||{s:s,u:u,vals:[],mun:new Set(),gt:{}});
+    g.vals.push(A.v[i]);g.mun.add(A.m[i]);g.gt[A.gt[i]]=(g.gt[A.gt[i]]||0)+1;
+  }
+  const allGroups=Object.values(groups).map(g=>({...g,q:qtiles(g.vals)}));
+  RELIABLE=allGroups.filter(g=>g.q&&g.q.n>=5).sort((a,b)=>b.q.n-a.q.n);
+  SERVICE_REF={};
+  allGroups.forEach(g=>{
+    const rec=(SERVICE_REF[g.s]=SERVICE_REF[g.s]||{groups:[]});
+    rec.groups.push(g);
+  });
+  Object.values(SERVICE_REF).forEach(rec=>{
+    rec.groups.sort((a,b)=>b.q.n-a.q.n);
+    rec.best=rec.groups[0];
+    rec.reliable=rec.groups.some(g=>g.q.n>=5);
+  });
+}
+function dominantGrupoTos(gtCountObj){
+  let bestK=null,bestV=-1;
+  Object.entries(gtCountObj).forEach(([k,v])=>{if(v>bestV){bestV=v;bestK=k;}});
+  return bestK===null?INSUF:(GTOS[+bestK]||INSUF);
 }
 function fill(sel,items,valIsIdx){const el=$(sel);items.forEach((t,i)=>{const o=document.createElement('option');o.value=valIsIdx?i:t;o.textContent=t;el.appendChild(o);});}
 function selected(id){return new Set([...$(id).selectedOptions].map(o=>isNaN(o.value)?o.value:+o.value));}
@@ -370,9 +414,9 @@ function filterState(){return{cl:selected('fClasse'),nt:selected('fNat'),gr:sele
 function matchesAgg(r,f,groupSvc){
   return (!f.cl.size||f.cl.has(CLASSES[r[0]]))&&(!f.sv.size||f.sv.has(r[1]))&&(!groupSvc||groupSvc.has(r[1]))&&(!f.mu.size||f.mu.has(r[4]))&&(!f.nt.size||f.nt.has(r[5]))&&(!f.gt.size||f.gt.has(r[6]));
 }
-function renderBars(id,items,maxVal){
+function renderBars(id,items,maxVal,emptyMsg){
   const el=$(id);el.innerHTML='';
-  if(!items.length){el.innerHTML='<div class="small muted">Nenhum registro para a seleção.</div>';return;}
+  if(!items.length){el.innerHTML='<div class="small muted">'+(emptyMsg||'Informação insuficiente para verificar com os filtros atuais.')+'</div>';return;}
   items.forEach(item=>{
     const row=document.createElement('div');row.className='hbar';
     const width=maxVal?Math.max(2,100*item.value/maxVal):0;
@@ -403,7 +447,7 @@ function renderNaoMapeado(){
 }
 function renderStatic(){
   $('gerado').textContent=D.gerado_em||INSUF;
-  $('fonteCurta').textContent='ARTs locais agregadas';
+  $('fonteCurta').textContent='ARTs agregadas (SITAC/CREA-BA)';
   $('escopoTos').textContent=fmt(TOTAL);
   const universo=D.universo_total_periodo||D.universo_total_2022;
   $('escopoUniverso').textContent=fmt(universo);
@@ -412,17 +456,71 @@ function renderStatic(){
   const classLabels=CLASSES.map(c=>({key:c,label:c+' - '+(c==='A'?'base de cálculo':c==='B'?'secundária':c==='C'?'só diagnóstico':'excluída')}));
   renderStack('classbar',CC,CC.A+CC.B+CC.C+CC.D,classLabels,CLASS_COLOR);
   renderLegend('classLegend',classLabels,CLASS_COLOR);
+  renderReliableSummary();
+}
+function renderReliableSummary(){
+  const servicosConfiaveis=new Set(RELIABLE.map(g=>g.s)).size;
+  $('kConfiaveis').textContent=fmt(servicosConfiaveis);
+  $('kConfiaveisSub').textContent='de '+fmt(SERV.length)+' serviços mapeados no ano';
+  const tb=document.querySelector('#reliableTable tbody');tb.innerHTML='';
+  if(!RELIABLE.length){
+    tb.innerHTML='<tr><td colspan="9" class="txt muted">Nenhum serviço atingiu Classe A + provável honorário técnico + n≥5 no ano carregado. Informação insuficiente para verificar.</td></tr>';
+    return;
+  }
+  RELIABLE.forEach(g=>{
+    const municipiosNomes=[...g.mun].map(m=>MUN[m]||INSUF).sort((a,b)=>a.localeCompare(b,'pt-BR'));
+    const municipiosTxt=municipiosNomes.length>4?(municipiosNomes.slice(0,4).join(', ')+' e mais '+(municipiosNomes.length-4)):municipiosNomes.join(', ');
+    const tr=document.createElement('tr');
+    tr.innerHTML='<td class="txt"><button type="button" class="svcname" data-svc="'+g.s+'">'+esc(SERV[g.s])+'</button></td>'+
+      '<td class="txt muted">'+esc(GRP[g.s]||INSUF)+'</td>'+
+      '<td class="txt muted">'+esc(dominantGrupoTos(g.gt))+'</td>'+
+      '<td class="txt">'+esc(unidadeLabel(g.u))+'</td>'+
+      '<td>'+fmt(g.q.n)+'</td>'+
+      '<td>'+brlUnidade(g.q.med,g.u)+'</td>'+
+      '<td>'+brlUnidade(g.q.q1,g.u)+'</td>'+
+      '<td>'+brlUnidade(g.q.q3,g.u)+'</td>'+
+      '<td class="txt small" title="'+esc(municipiosNomes.join(', '))+'">'+esc(municipiosTxt)+' ('+municipiosNomes.length+')</td>';
+    tb.appendChild(tr);
+  });
+  tb.querySelectorAll('[data-svc]').forEach(btn=>btn.addEventListener('click',()=>selectServico(+btn.dataset.svc)));
 }
 function resetDynamicFilterOptions(){
   ['fNat','fGrupo','fServico','fGrupoTos','fMun'].forEach(id=>{$(id).innerHTML='';});
   const grupos=[...new Set(GRP)].sort((a,b)=>a.localeCompare(b,'pt-BR'));fill('fGrupo',grupos,false);
   NAT.forEach((t,i)=>{const o=document.createElement('option');o.value=i;o.textContent=NAT_LABEL[t]||t;$('fNat').appendChild(o);});
-  SERV.map((s,i)=>[s,i]).sort((a,b)=>a[0].localeCompare(b[0],'pt-BR')).forEach(([s,i])=>{const o=document.createElement('option');o.value=i;o.textContent=s;$('fServico').appendChild(o);});
+  SERV.map((s,i)=>[s,i]).sort((a,b)=>a[0].localeCompare(b[0],'pt-BR')).forEach(([s,i])=>{
+    const o=document.createElement('option');o.value=i;
+    const ref=SERVICE_REF[i];
+    let label=s,reliable=false;
+    if(ref&&ref.reliable){
+      const g=ref.groups.find(x=>x.q.n>=5)||ref.best;
+      label+=' — referência confiável — n='+fmt(g.q.n)+' — mediana '+brlUnidade(g.q.med,g.u);
+      reliable=true;
+    }else if(ref&&ref.best){
+      label+=' — baixa amostra (n='+fmt(ref.best.q.n)+') — sem referência confiável';
+    }else{
+      label+=' — sem referência confiável';
+    }
+    o.textContent=label;o.dataset.reliable=reliable?'1':'0';
+    $('fServico').appendChild(o);
+  });
   GTOS.map((s,i)=>[s,i]).sort((a,b)=>a[0].localeCompare(b[0],'pt-BR')).forEach(([s,i])=>{const o=document.createElement('option');o.value=i;o.textContent=s;$('fGrupoTos').appendChild(o);});
   MUN.map((s,i)=>[s,i]).sort((a,b)=>a[0].localeCompare(b[0],'pt-BR')).forEach(([s,i])=>{const o=document.createElement('option');o.value=i;o.textContent=s;o.dataset.k=s.toLowerCase();$('fMun').appendChild(o);});
   [...$('fClasse').options].forEach(o=>o.selected=false);
   $('munSearch').value='';
   [...$('fMun').options].forEach(o=>o.hidden=false);
+  applyServicoConfiavelFilter();
+}
+function applyServicoConfiavelFilter(){
+  const only=$('fSoConfiavel').checked;
+  [...$('fServico').options].forEach(o=>{o.hidden=only&&o.dataset.reliable!=='1';});
+}
+function selectServico(idx){
+  [...$('fServico').options].forEach(o=>{o.hidden=false;o.selected=(+o.value===idx);});
+  [...$('fMun').options].forEach(o=>o.selected=false);
+  $('fSoConfiavel').checked=false;
+  recompute();
+  $('barsMunicipio').scrollIntoView({behavior:'smooth',block:'center'});
 }
 function setLoading(isLoading,anoValue){
   const overlay=$('loadingOverlay');
@@ -469,13 +567,14 @@ function initStaticUI(){
   selAno.addEventListener('change',e=>loadAno(e.target.value));
   $('munSearch').addEventListener('input',e=>{const q=e.target.value.toLowerCase();[...$('fMun').options].forEach(o=>{o.hidden=q&&!o.dataset.k.includes(q);});});
   ['fClasse','fNat','fGrupo','fServico','fGrupoTos','fMun'].forEach(id=>$(id).addEventListener('change',recompute));
-  $('btnLimpar').addEventListener('click',()=>{['fClasse','fNat','fGrupo','fServico','fGrupoTos','fMun'].forEach(id=>[...$(id).options].forEach(o=>o.selected=false));$('munSearch').value='';[...$('fMun').options].forEach(o=>o.hidden=false);recompute();});
+  $('fSoConfiavel').addEventListener('change',()=>{applyServicoConfiavelFilter();recompute();});
+  $('btnLimpar').addEventListener('click',()=>{['fClasse','fNat','fGrupo','fServico','fGrupoTos','fMun'].forEach(id=>[...$(id).options].forEach(o=>o.selected=false));$('munSearch').value='';[...$('fMun').options].forEach(o=>o.hidden=false);$('fSoConfiavel').checked=false;applyServicoConfiavelFilter();recompute();});
   initTabs();
 }
 function recompute(){
   const f=filterState(), groupSvc=groupServices(f.gr);
-  let nArts=0,baseA=0;const natCnt={},gtCnt={};
-  for(const r of AGG){if(matchesAgg(r,f,groupSvc)){nArts+=r[7];if(r[0]===0)baseA+=r[7];natCnt[r[5]]=(natCnt[r[5]]||0)+r[7];gtCnt[r[6]]=(gtCnt[r[6]]||0)+r[7];}}
+  let nArts=0,baseA=0;const natCnt={},gtCnt={},munCnt={},svcCnt={};
+  for(const r of AGG){if(matchesAgg(r,f,groupSvc)){nArts+=r[7];if(r[0]===0)baseA+=r[7];natCnt[r[5]]=(natCnt[r[5]]||0)+r[7];gtCnt[r[6]]=(gtCnt[r[6]]||0)+r[7];munCnt[r[4]]=(munCnt[r[4]]||0)+r[7];svcCnt[r[1]]=(svcCnt[r[1]]||0)+r[7];}}
   $('kArts').textContent=fmt(nArts);$('kArtsSub').textContent=fmt(TOTAL)+' no subconjunto TOS';$('kBaseA').textContent=fmt(baseA);
   const aAllowed=!f.cl.size||f.cl.has('A'), honAllowed=!f.nt.size||f.nt.has(HON), blocked=!aAllowed||!honAllowed;
   const bySUnit={};
@@ -500,9 +599,33 @@ function recompute(){
   const natLabels=NAT.map((name,i)=>({key:i,label:NAT_LABEL[name]||name}));
   const natColors=Object.fromEntries(NAT.map((name,i)=>[i,NAT_COLOR[name]]));
   renderStack('natbar',natCnt,nArts,natLabels,natColors);renderLegend('natLegend',natLabels,natColors);
-  const gtItems=Object.entries(gtCnt).map(([k,v])=>({label:GTOS[+k]||INSUF,value:v})).sort((a,b)=>b.value-a.value).slice(0,10);
+  const gtItems=Object.entries(gtCnt).map(([k,v])=>({label:GTOS[+k]||INSUF,value:v,display:fmt(v)+' ARTs'})).sort((a,b)=>b.value-a.value).slice(0,10);
   renderBars('barsGrupoTos',gtItems,gtItems.length?gtItems[0].value:1);
+  const munItems=Object.entries(munCnt).map(([k,v])=>({label:MUN[+k]||INSUF,value:v,display:fmt(v)+' ARTs'})).sort((a,b)=>b.value-a.value).slice(0,20);
+  renderBars('barsMunicipio',munItems,munItems.length?munItems[0].value:1);
+  const svcCntItems=Object.entries(svcCnt).map(([k,v])=>({label:SERV[+k]||INSUF,value:v,display:fmt(v)+' ARTs'})).sort((a,b)=>b.value-a.value).slice(0,15);
+  renderBars('barsServicoTodasClasses',svcCntItems,svcCntItems.length?svcCntItems[0].value:1);
   renderServiceBarsAndTable(bySUnit,blocked);
+  const boxGroups=(f.sv.size?RELIABLE.filter(g=>f.sv.has(g.s)):RELIABLE.slice(0,10)).map(g=>({label:SERV[g.s]+' / '+unidadeLabel(g.u),q1:g.q.q1,med:g.q.med,q3:g.q.q3,n:g.q.n}));
+  renderBoxplot('boxplotConfiaveis',boxGroups);
+}
+function renderBoxplot(id,groups){
+  const el=$(id);el.innerHTML='';
+  if(!groups.length){el.innerHTML='<div class="small muted">Informação insuficiente para verificar com os filtros atuais: nenhum serviço selecionado tem referência confiável de preço.</div>';return;}
+  const maxV=Math.max(...groups.map(g=>g.q3))*1.08||1;
+  const rowH=34,padL=230,padR=90,width=760,height=groups.length*rowH+16;
+  const scale=v=>padL+(v/maxV)*(width-padL-padR);
+  let svg='<svg viewBox="0 0 '+width+' '+height+'" width="100%" height="'+height+'" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif">';
+  groups.forEach((g,idx)=>{
+    const y=idx*rowH+16,x1=scale(g.q1),x3=scale(g.q3),xm=scale(g.med);
+    svg+='<text x="6" y="'+(y+4)+'" font-size="11" fill="#334155">'+esc(g.label.length>34?g.label.slice(0,33)+'…':g.label)+'</text>';
+    svg+='<line x1="'+padL+'" y1="'+y+'" x2="'+(width-padR)+'" y2="'+y+'" stroke="#e2e8f0" stroke-width="1"/>';
+    svg+='<rect x="'+Math.min(x1,x3)+'" y="'+(y-8)+'" width="'+Math.max(2,Math.abs(x3-x1))+'" height="16" fill="rgba(15,138,95,.18)" stroke="#0f8a5f" stroke-width="1.2" rx="3"/>';
+    svg+='<line x1="'+xm+'" y1="'+(y-8)+'" x2="'+xm+'" y2="'+(y+8)+'" stroke="#0f8a5f" stroke-width="2"/>';
+    svg+='<text x="'+(width-padR+8)+'" y="'+(y+4)+'" font-size="10" fill="#475569">n='+fmt(g.n)+'</text>';
+  });
+  svg+='</svg>';
+  el.innerHTML=svg;
 }
 function renderServiceBarsAndTable(bySUnit,blocked){
   const tb=document.querySelector('#svcTable tbody');tb.innerHTML='';
@@ -512,7 +635,7 @@ function renderServiceBarsAndTable(bySUnit,blocked){
   if(!rows.length){tb.innerHTML='<tr><td colspan="9" class="txt muted">Nenhum registro confiável para o filtro.</td></tr>';return;}
   rows.forEach(r=>{
     const n=r.vals.length,grp=GRP[r.s],unidade=unidadeLabel(r.u),isNew=/Servi[cç]o novo/.test(grp),low=n<5;
-    const obs=(low?'<span class="tag low">n&lt;5</span> ':'')+(isNew?'<span class="tag new">novo</span>':'');
+    const obs=(low?'<span class="tag low">n&lt;5</span> ':'<span class="tag ok">confiável</span> ')+(isNew?'<span class="tag new">novo</span>':'');
     const tr=document.createElement('tr');
     if(low){tr.innerHTML='<td class="txt">'+esc(SERV[r.s])+'</td><td class="txt">'+esc(unidade)+'</td><td class="txt muted">'+esc(grp)+'</td><td>'+fmt(n)+'</td><td colspan="4" class="muted">'+INSUF+' / '+esc(unidade)+'</td><td>'+obs+'</td>';}
     else{tr.innerHTML='<td class="txt">'+esc(SERV[r.s])+'</td><td class="txt">'+esc(unidade)+'</td><td class="txt muted">'+esc(grp)+'</td><td>'+fmt(n)+'</td><td>'+brlUnidade(r.q.med,r.u)+'</td><td>'+brlUnidade(r.q.q1,r.u)+'</td><td>'+brlUnidade(r.q.q3,r.u)+'</td><td>'+brlUnidade(r.q.q3-r.q.q1,r.u)+'</td><td>'+obs+'</td>';}

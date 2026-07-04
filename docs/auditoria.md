@@ -4,7 +4,7 @@ Este documento define a trilha mínima de auditoria para cada processamento anua
 
 ## Objetivo
 
-Garantir rastreabilidade entre arquivos de entrada, regras de tratamento, bases intermediárias, dados agregados e arquivos publicados no GitHub Pages.
+Garantir rastreabilidade entre arquivos de entrada, regras de tratamento, bases intermediárias, dados agregados e o que é publicado no painel público.
 
 ## Registro mínimo por processamento
 
@@ -86,18 +86,13 @@ Cada processamento deve produzir, quando aplicável:
 
 ## Publicação
 
-Não publicar dados linha a linha de ART no GitHub Pages.
+Não publicar dados linha a linha de ART neste painel.
 
 A publicação deve conter somente dados agregados suficientes para visualização institucional, sem identificação individual de profissional, empresa, contratante ou ART específica.
 
 ## Processamento anual executado em 2026-07-04
 
-O script `scripts/agrega_anos_publico.py` processou as bases locais de 2015-2022 e gerou:
-
-- `assets/dados_tos_valor_municipio.json`;
-- `assets/anos/dados_tos_valor_municipio_2015.json` a `assets/anos/dados_tos_valor_municipio_2022.json`;
-- `docs/modelos/manifesto_bases_anuais_modelo.csv`;
-- `relatorios/auditoria_bases_anuais.md`.
+O processamento mais recente consolidou as bases de ART de 2015 a 2022 e atualizou os agregados públicos consumidos pelo painel, incluindo o agregado combinado do período e um agregado individual por ano.
 
 Totais consolidados observados:
 
