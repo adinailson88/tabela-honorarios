@@ -19,20 +19,47 @@ ART não é contrato, nota fiscal nem prova isolada de honorário profissional. 
 
 Quando a evidência é insuficiente, o material usa: `Informação insuficiente para verificar.`
 
-## Organização documental
+## Estrutura versionada
 
-A estrutura documental do projeto foi organizada sem mover os arquivos que sustentam o GitHub Pages.
+A estrutura do `main` foi enxugada para manter no GitHub apenas o que precisa ser público, metodológico ou reprodutível.
 
-- `AGENTS.md`: instruções para agentes de codificação e regras de segurança metodológica.
-- `docs/metodologia.md`: premissas metodológicas do painel e do uso das ARTs.
-- `docs/auditoria.md`: trilha mínima de auditoria para processamento das bases.
-- `docs/dicionario-dados.md`: campos esperados, campos derivados e regras de publicação.
-- `docs/limitacoes.md`: limitações conhecidas e cautelas interpretativas.
-- `docs/fontes.md`: fontes confirmadas e fontes pendentes de verificação.
-- `docs/checklist-processamento-anual.md`: checklist para inclusão de planilhas de outros anos.
-- `data/`: organização futura dos dados, separando agregados públicos e bases locais.
-- `scripts/`: organização futura dos scripts do pipeline.
-- `outputs/`: organização futura dos artefatos gerados.
+```text
+.
+├── index.html
+├── dados_tos_valor_municipio.json
+├── dashboard_senge_honorarios_tos_valor_municipio_layout_crea.html
+├── build_dashboard_tos_valor_municipio_layout_crea.py
+├── README.md
+├── AGENTS.md
+├── .gitignore
+├── docs/
+│   ├── metodologia.md
+│   ├── auditoria.md
+│   ├── dicionario-dados.md
+│   ├── limitacoes.md
+│   ├── fontes.md
+│   ├── checklist-processamento-anual.md
+│   ├── plano-trabalho-sem-codex.md
+│   └── modelos/
+│       └── manifesto_bases_anuais_modelo.csv
+└── scripts/
+    ├── README.md
+    ├── executar_tudo_sem_codex.ps1
+    ├── rodar_validacoes_locais.ps1
+    ├── 00_inventariar_planilhas_arts.py
+    └── 01_validar_json_publico.py
+```
+
+## Pastas locais não versionadas
+
+As pastas abaixo podem existir no computador, mas não devem aparecer no GitHub:
+
+- `data/local/`
+- `data/public/`
+- `outputs/`
+- `relatorios/`
+
+Elas são criadas pelos scripts quando necessário.
 
 ## Publicação
 
@@ -52,7 +79,7 @@ Os CSVs linha-a-linha derivados das ARTs permanecem no diretório local, mas for
 - `base_servicos_tos_valor_municipio.csv`
 - `base_classe_a_servicos_metodologia.csv`
 
-A pasta `data/local/` também está protegida para evitar publicação acidental de bases brutas, intermediárias ou individualizadas. O repositório publica o painel e dados agregados necessários à reprodução visual, sem ranking de profissionais, empresas ou contratantes.
+O repositório publica o painel e dados agregados necessários à reprodução visual, sem ranking de profissionais, empresas ou contratantes.
 
 ## Regerar o painel principal
 
@@ -61,6 +88,18 @@ python build_dashboard_tos_valor_municipio_layout_crea.py
 Copy-Item .\dashboard_senge_honorarios_tos_valor_municipio_layout_crea.html .\index.html -Force
 ```
 
-## Próxima etapa recomendada
+## Fluxo local sem Codex
 
-A próxima reorganização pode mover `dados_tos_valor_municipio.json`, scripts e HTMLs gerados para subpastas, mas somente depois de ajustar os caminhos do script de build e testar o GitHub Pages localmente.
+A partir da raiz do repositório:
+
+```powershell
+.\scripts\executar_tudo_sem_codex.ps1 -InstalarDependencias
+```
+
+Se houver planilhas locais de outros anos, coloque os arquivos em:
+
+```text
+data\local\entrada\
+```
+
+Essa pasta é local e não versionada.
