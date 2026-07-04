@@ -89,3 +89,21 @@ Cada processamento deve produzir, quando aplicável:
 Não publicar dados linha a linha de ART no GitHub Pages.
 
 A publicação deve conter somente dados agregados suficientes para visualização institucional, sem identificação individual de profissional, empresa, contratante ou ART específica.
+
+## Processamento anual executado em 2026-07-04
+
+O script `scripts/agrega_anos_publico.py` processou as bases locais de 2015-2022 e gerou:
+
+- `assets/dados_tos_valor_municipio.json`;
+- `assets/anos/dados_tos_valor_municipio_2015.json` a `assets/anos/dados_tos_valor_municipio_2022.json`;
+- `docs/modelos/manifesto_bases_anuais_modelo.csv`;
+- `relatorios/auditoria_bases_anuais.md`.
+
+Totais consolidados observados:
+
+- ARTs únicas agregadas no período 2015-2022: 513384;
+- ARTs únicas em 2022 no CSV consolidado: 230928;
+- registros Classe A com valor no vetor público do painel: 194051;
+- anos publicados no seletor do painel: 2015, 2016, 2017, 2018, 2019, 2020, 2021 e 2022.
+
+Limitação registrada: as bases anuais não contêm `codigo_tos`; nesses registros, TOS foi mantido como `Informação insuficiente para verificar.`. Os `.xls` de 2015-2019 atingem o limite técnico do formato e têm possível truncamento na origem.
