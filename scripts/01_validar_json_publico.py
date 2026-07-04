@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 """Valida o JSON agregado publicado pelo painel.
 
 Uso recomendado no PowerShell, a partir da raiz do repositorio:
@@ -129,7 +129,7 @@ def validar(data: Dict[str, Any], texto_json: str) -> List[str]:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Valida JSON agregado publico do painel.")
-    parser.add_argument("--json", default="dados_tos_valor_municipio.json", help="Caminho do JSON agregado.")
+    parser.add_argument("--json", default="assets/dados_tos_valor_municipio.json", help="Caminho do JSON agregado.")
     parser.add_argument("--saida", default="relatorios/validacao_json_publico.md", help="Relatorio Markdown de saida.")
     args = parser.parse_args()
 
@@ -152,3 +152,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

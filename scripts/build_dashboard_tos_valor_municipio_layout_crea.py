@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 """Gera uma variante visual institucional do painel TOS.
 
 Entrada: dados_tos_valor_municipio.json.
@@ -12,11 +12,12 @@ import json
 from pathlib import Path
 
 
-BASE = Path(__file__).resolve().parent
-DATA_PATH = BASE / "dados_tos_valor_municipio.json"
-OUT_PATH = BASE / "dashboard_senge_honorarios_tos_valor_municipio_layout_crea.html"
-INDEX_PATH = BASE / "index.html"
+REPO = Path(__file__).resolve().parents[1]
+DATA_PATH = REPO / "assets" / "dados_tos_valor_municipio.json"
+OUT_PATH = REPO / "outputs" / "dashboard_senge_honorarios_tos_valor_municipio_layout_crea.html"
+INDEX_PATH = REPO / "index.html"
 
+OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
 data = json.loads(DATA_PATH.read_text(encoding="utf-8"))
 DATA_JSON = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
 
@@ -267,4 +268,6 @@ OUT_PATH.write_text(out, encoding="utf-8")
 INDEX_PATH.write_text(out, encoding="utf-8")
 print(f"HTML gerado: {len(out)} chars -> {OUT_PATH.name}")
 print(f"HTML publicado localmente: {INDEX_PATH.name}")
+
+
 

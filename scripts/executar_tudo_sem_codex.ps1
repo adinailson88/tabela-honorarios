@@ -1,4 +1,4 @@
-<#
+﻿<#
 Executa tudo que pode ser feito localmente sem Codex para o projeto tabela-honorarios.
 
 Uso recomendado em qualquer PowerShell:
@@ -201,11 +201,11 @@ if ($AlertasSensiveis.Count -eq 0) {
 
 # 10. Testar build do painel se script existir
 Escrever-Etapa "Verificando build do painel atual"
-if (Test-Path -LiteralPath "build_dashboard_tos_valor_municipio_layout_crea.py") {
+if (Test-Path -LiteralPath "scripts\build_dashboard_tos_valor_municipio_layout_crea.py") {
     try {
-        & $PythonCmd "build_dashboard_tos_valor_municipio_layout_crea.py"
-        if (Test-Path -LiteralPath "dashboard_senge_honorarios_tos_valor_municipio_layout_crea.html") {
-            Write-Host "Build gerou/atualizou dashboard_senge_honorarios_tos_valor_municipio_layout_crea.html" -ForegroundColor Green
+        & $PythonCmd "scripts\build_dashboard_tos_valor_municipio_layout_crea.py"
+        if (Test-Path -LiteralPath "outputs\dashboard_senge_honorarios_tos_valor_municipio_layout_crea.html") {
+            Write-Host "Build gerou/atualizou outputs\dashboard_senge_honorarios_tos_valor_municipio_layout_crea.html" -ForegroundColor Green
         }
     } catch {
         Write-Host "Falha ao executar build do painel: $($_.Exception.Message)" -ForegroundColor Red
@@ -265,3 +265,4 @@ Write-Host "Abra estes arquivos:" -ForegroundColor Green
 Write-Host "- relatorios\relatorio_consolidado_sem_codex.md"
 Write-Host "- relatorios\inventario_planilhas.md"
 Write-Host "- relatorios\validacao_json_publico.md"
+
