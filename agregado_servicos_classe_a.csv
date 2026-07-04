@@ -1,0 +1,18 @@
+servico_padronizado,grupo_servico,n_arts,mediana_valor,q1,q3,iqr,min,max,ano_min,ano_max,municipios_distintos,modalidades_distintas,confiabilidade,observacao
+Nao mapeado,Informacao insuficiente para verificar,19975,2200.0,1000.0,15000.0,14000.0,0.01,819308220.3,2022,2022,898,88,baixa,servico nao mapeado; usar apenas como diagnostico
+Edificacao em Alvenaria,Projetos Civis,5137,1600.0,800.0,10000.0,9200.0,1.0,123130357.21,2022,2022,413,5,alta,"evidencia auxiliar/indireta; valor da ART, nao honorario liquido"
+Estrutura / Calculo Estrutural,Calculo Estrutural,3168,5000.0,1300.0,30434.83,29134.83,1.0,209115427.43,2022,2022,465,18,alta,"evidencia auxiliar/indireta; valor da ART, nao honorario liquido"
+Topografia / Agrimensura,Servico novo - Agrimensura,3142,1000.0,700.0,2200.0,1500.0,1.0,10000000.0,2022,2022,377,18,alta,"evidencia auxiliar/indireta; valor da ART, nao honorario liquido"
+Instalacoes Eletricas,Instalacoes Eletricas e de Comunicacao,2929,2500.0,1000.0,11289.09,10289.09,1.0,261664020.0,2022,2022,379,40,alta,"evidencia auxiliar/indireta; valor da ART, nao honorario liquido"
+Meio Ambiente / Licenciamento,Servico novo - Ambiental,2746,1200.0,750.0,3000.0,2250.0,1.0,203700049.0,2022,2022,378,44,alta,"evidencia auxiliar/indireta; valor da ART, nao honorario liquido"
+Desempenho de Cargo / Funcao,Cargo-Funcao,2597,7272.0,7272.0,10302.0,3030.0,0.01,33846086.16,2022,2022,408,81,alta,"evidencia auxiliar/indireta; valor da ART, nao honorario liquido"
+Laudo Tecnico,Pericias e Laudos,2510,1200.0,500.0,3000.0,2500.0,1.0,54000000.0,2022,2022,378,43,alta,"evidencia auxiliar/indireta; valor da ART, nao honorario liquido"
+Vistoria / Pericia,Pericias e Laudos,2446,1500.0,700.0,4576.45,3876.45,1.0,167943178.71,2022,2022,344,39,alta,"evidencia auxiliar/indireta; valor da ART, nao honorario liquido"
+Consultoria Tecnica,Consultoria,2199,1000.0,500.0,2500.0,2000.0,1.0,70540944.97,2022,2022,467,43,alta,"evidencia auxiliar/indireta; valor da ART, nao honorario liquido"
+Microgeracao / Fotovoltaica,Servico novo - Energia,1645,1000.0,100.0,1500.0,1400.0,1.0,35845000.0,2022,2022,276,13,alta,"evidencia auxiliar/indireta; valor da ART, nao honorario liquido"
+Prevencao de Incendio,Instalacoes,1585,1000.0,500.0,2500.0,2000.0,1.0,33528265.49,2022,2022,197,14,alta,"evidencia auxiliar/indireta; valor da ART, nao honorario liquido"
+Climatizacao / Ventilacao,Instalacoes Mecanicas,956,9465.8,1500.0,58634.32,57134.32,1.0,39286156.73,2022,2022,143,9,alta,"evidencia auxiliar/indireta; valor da ART, nao honorario liquido"
+Pavimentacao / Estradas,Estradas e Ruas,846,1298877.78,41888.29,10000000.0,9958111.71,1.0,142650788.82,2022,2022,247,7,alta,"evidencia auxiliar/indireta; valor da ART, nao honorario liquido"
+Rede Hidrossanitaria / Saneamento,Saneamento e Instalacoes Hidraulicas,667,4000.0,1200.0,39585.79,38385.79,1.0,273867977.91,2022,2022,186,24,alta,"evidencia auxiliar/indireta; valor da ART, nao honorario liquido"
+Receituario Agronomico,Servico novo - Agronomia,549,1.72,1.0,159.98,158.98,0.01,124470.0,2022,2022,82,3,alta,"evidencia auxiliar/indireta; valor da ART, nao honorario liquido"
+Seguranca do Trabalho,Servico novo - Seguranca,93,600.0,500.0,1742.88,1242.88,1.0,5331503.42,2022,2022,31,6,alta,"evidencia auxiliar/indireta; valor da ART, nao honorario liquido"

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Proposta SENGE — Tabela de Honorários · Portal</title>
+<style>
+:root{--bg:#0f1722;--card:#17212e;--ink:#e8eef5;--mut:#9fb0c3;--ac:#2e8bdb;--ac2:#36c692;--line:#243140}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+.wrap{max-width:980px;margin:0 auto;padding:32px 22px 60px}
+h1{font-size:24px;margin:0 0 4px}.sub{color:var(--mut);font-size:14px;margin-bottom:24px}
+h2{font-size:15px;color:var(--ac2);margin:26px 0 10px;text-transform:uppercase;letter-spacing:.5px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+a.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;text-decoration:none;color:var(--ink);transition:.15s}
+a.card:hover{border-color:var(--ac);transform:translateY(-2px)}
+a.card b{display:block;font-size:16px;margin-bottom:4px}a.card span{color:var(--mut);font-size:13px;line-height:1.4}
+.tag{display:inline-block;background:var(--ac);color:#fff;font-size:11px;border-radius:6px;padding:2px 8px;margin-left:6px;vertical-align:middle}
+.note{color:var(--mut);font-size:12px;margin-top:30px;line-height:1.6;border-top:1px solid var(--line);padding-top:16px}
+</style></head><body><div class="wrap">
+<h1>Proposta SENGE/BA — Nova Metodologia da Tabela de Honorários</h1>
+<div class="sub">Portal de acesso rápido · todos os arquivos estão na pasta PROPOSTA CLAUDE · base: ARTs CREA-BA 2022</div>
+
+<h2>Comece por aqui</h2>
+<div class="grid">
+<a class="card" href="dashboard/index.html"><b>📊 Painel interativo <span class="tag">1 clique</span></b><span>Mapa da Bahia, evolução 2015–2022, comparação com CUB, faixas por atividade.</span></a>
+<a class="card" href="00_LEIA_PRIMEIRO.md"><b>📄 Leia primeiro</b><span>Resumo executivo, achados, limitações e índice dos arquivos.</span></a>
+</div>
+
+<h2>Apresentar e propor</h2>
+<div class="grid">
+<a class="card" href="APRESENTACAO_CREA_SENGE.pptx"><b>🖥️ Apresentação (PPTX)</b><span>11 slides para CREA-BA / SENGE-BA / entidades.</span></a>
+<a class="card" href="08_PROPOSTA_INSTITUCIONAL.md"><b>🏛️ Proposta institucional</b><span>Documento apresentável e fundamentado.</span></a>
+<a class="card" href="09_ROTEIRO_APRESENTACAO_CREA_SENGE.md"><b>🗣️ Roteiro de reunião</b><span>Narrativa slide a slide e respostas a objeções.</span></a>
+<a class="card" href="NOTA_TECNICA.md"><b>📑 Nota técnica</b><span>Subsídio com os números verificados.</span></a>
+<a class="card" href="MINUTA_RECOMENDACAO_TECNICA.md"><b>⚖️ Minuta de recomendação</b><span>Texto orientativo (não impositivo).</span></a>
+</div>
+
+<h2>Dados e tabela</h2>
+<div class="grid">
+<a class="card" href="PLANILHA_MODELO_HONORARIOS.xlsx"><b>📗 Planilha-modelo</b><span>1.047 itens (Atividade × Unidade) com faixas observadas.</span></a>
+<a class="card" href="06_MATRIZ_ATIVIDADES_HONORARIOS.csv"><b>🧩 Matriz conceitual</b><span>Esqueleto de atividades e critérios.</span></a>
+<a class="card" href="dados/calibracao_atividade_unidade.csv"><b>🎯 Calibração</b><span>Faixas por atividade × unidade (mediana/IQR).</span></a>
+<a class="card" href="dados/serie_temporal.csv"><b>📈 Série temporal</b><span>Mediana anual 2015–2022.</span></a>
+<a class="card" href="dados/REFERENCIA_CUB.md"><b>🏗️ Referência CUB</b><span>Valores verificados do Sinduscon-BA.</span></a>
+<a class="card" href="dados/tos_honorarios_existente.csv"><b>🗂️ Matriz TOS (prévia)</b><span>Trabalho anterior: valor médio por código CREA.</span></a>
+</div>
+
+<h2>Método e continuidade</h2>
+<div class="grid">
+<a class="card" href="04_MODELO_CONCEITUAL_TABELA_HONORARIOS.md"><b>🧱 Modelo conceitual</b><span>3 camadas + calibração; faixas piso/ref/teto.</span></a>
+<a class="card" href="05_METODOLOGIA_ANALITICA_ARTS.md"><b>🔬 Metodologia analítica</b><span>Pipeline reprodutível das ARTs.</span></a>
+<a class="card" href="03_DIAGNOSTICO_DADOS_ART.md"><b>🔎 Diagnóstico dos dados</b><span>Estrutura, qualidade e limites das ARTs.</span></a>
+<a class="card" href="02_DIAGNOSTICO_METODOLOGIA_EXISTENTE.md"><b>📋 Diagnóstico da metodologia</b><span>Lacunas, riscos e oportunidades.</span></a>
+<a class="card" href="10_BACKLOG_PROXIMOS_PASSOS.md"><b>✅ Backlog</b><span>Tarefas com critérios de aceite.</span></a>
+<a class="card" href="13_CHECKPOINT_CONTINUACAO.md"><b>🔁 Checkpoint</b><span>Estado e prompt para continuar.</span></a>
+</div>
+
+<div class="note">
+⚠️ <b>Ressalvas:</b> a ART não é honorário (evidência indireta — mediana/IQR, nunca média); apenas dados agregados, sem ranking individual (LGPD);
+nenhum valor de honorário foi inventado; normas a confirmar em fonte oficial. O painel requer internet (mapa/gráficos).
+Os arquivos .md e .csv abrem em editor/navegador; o .pptx e .xlsx no Office.
+</div>
+</div></body></html>

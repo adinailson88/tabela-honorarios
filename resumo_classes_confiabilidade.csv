@@ -1,0 +1,5 @@
+classe,quantidade_ARTs,percentual,uso_permitido,uso_proibido,observacao
+A,53190,23.0%,calculo monetario de referencia (base principal),ranking individual; uso de media simples,"uma ART, atividade unica, valor associavel com baixo risco de mistura"
+B,38631,16.7%,analise secundaria/simulacao com regra explicita,base principal de valor sem ressalva,"multi-linha homogenea (mesmo codigo, valor unico replicado)"
+C,62327,27.0%,"frequencia, demanda e deteccao de novos servicos",calculo monetario por servico,multi-linha com multiplas atividades/codigos e valor unico nao decomponivel
+D,76780,33.2%,apenas registro de volume e motivo de exclusao,qualquer calculo monetario,"valor ausente, zerado ou implausivel; ou servico nao mapeavel"

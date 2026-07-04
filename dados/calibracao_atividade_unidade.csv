@@ -1,0 +1,1048 @@
+﻿atividade,unidade,nivel_predominante,n_total,n_apos_poda,piso_P20_R$,referencia_mediana_R$,teto_P80_R$,confiabilidade
+Projeto,metro quadrado,Execução,64896,38938,500.0,1500.0,6000.0,Alta
+ESPECIFICACAO,unidade,Nao selecionado,64661,38797,1.44,100.0,770.0,Média
+Execução de obra técnica,metro quadrado,Execução,46985,28191,800.0,2500.0,417660.72,Baixa (provável mistura valor unitário/total)
+Projeto,quilowatt,Execução,22428,13458,800.0,1500.0,6000.0,Alta
+Projeto,quilowatt(s) pico,Execução,19599,11761,500.0,1000.0,3000.0,Alta
+Execução de instalação,quilowatt(s) pico,Execução,16875,10125,500.0,1000.0,3000.0,Alta
+Execução de instalação,quilowatt,Execução,15204,9124,800.0,1100.0,3500.0,Alta
+Execução de obra,metro quadrado,Execução,14578,8748,800.0,2800.0,456308.34,Baixa (provável mistura valor unitário/total)
+Projeto,unidade,Execução,12987,7793,1000.0,6000.0,4656527.1,Baixa (provável mistura valor unitário/total)
+Execução de serviço técnico,metro quadrado,Execução,7941,4765,750.0,1500.0,17522.1,Média
+Execução de cadastramento,metro quadrado,Execução,6418,3852,310.0,1000.0,1500.0,Alta
+Laudo,unidade,Elaboração,6100,3660,500.0,1500.0,5500.0,Alta
+Execução de obra técnica,unidade,Execução,5531,3319,7800.0,420716.63,6895796.91,Média
+Execução de reforma,metro quadrado,Execução,5406,3244,2000.0,50000.0,425555.8,Média
+Projeto,quilovolt-ampére,Execução,5322,3194,1000.0,4484.56,10000.0,Alta
+Elaboração de orçamento,metro quadrado,Execução,4917,2951,600.0,4000.0,72223.22,Média
+Projeto arquitetônico,metro quadrado,Elaboração,4880,2928,500.0,1500.0,4500.0,Alta
+Execução de instalação,unidade,Execução,4785,2871,300.0,3500.0,163475.0,Baixa (provável mistura valor unitário/total)
+Execução de serviço técnico,unidade,Execução,4587,2753,500.0,2500.0,100000.0,Baixa (provável mistura valor unitário/total)
+Ambiental,unidade,Execução,4530,2718,1000.0,1500.0,5000.0,Alta
+Laudo,metro quadrado,Execução,4371,2623,500.0,1200.0,2500.0,Alta
+Execução de manutenção,unidade,Execução,3976,2386,1000.0,4445.0,700000.0,Baixa (provável mistura valor unitário/total)
+Assistência,hectare,Execução,3883,2331,1212.0,2000.0,7973.18,Alta
+Fiscalização de obra técnica,metro quadrado,Fiscalização,3867,2321,500.0,4500.0,230213.18,Baixa (provável mistura valor unitário/total)
+Execução de obra técnica,metro cúbico,Execução,3700,2220,95732.14,1063321.86,13200000.0,Média
+Execução de instalação,metro quadrado,Execução,3595,2157,500.0,2000.0,300000.0,Baixa (provável mistura valor unitário/total)
+Manutenção de equipamento,unidade,Execução,3485,2091,180.0,512.0,2550.0,Alta
+Execução de obra técnica,metro,Execução,3124,1876,30000.0,914546.16,10917102.17,Média
+Execução de serviço técnico,hectare,Execução,3083,1851,1000.0,2500.0,6000.0,Alta
+Projeto,metro,Execução,2805,1683,1000.0,4000.0,20900.0,Alta
+Vistoria,metro quadrado,Execução,2745,1647,400.0,1000.0,2000.0,Alta
+Elaboração de orçamento,unidade,Execução,2621,1573,500.0,4000.0,388408.83,Baixa (provável mistura valor unitário/total)
+Estudo,unidade,Elaboração,2479,1489,1000.0,3000.0,579484.23,Baixa (provável mistura valor unitário/total)
+Consultoria,unidade,Consultoria,2323,1395,1.0,1200.0,3000.0,Alta
+Execução de montagem,metro quadrado,Execução,2295,1377,1000.0,15000.0,150000.0,Média
+Vistoria,unidade,Execução,2148,1290,400.0,1208.74,6100.0,Alta
+Execução de manutenção,metro quadrado,Execução,2109,1267,300.0,1200.0,224679.05,Baixa (provável mistura valor unitário/total)
+Execução de montagem,unidade,Execução,2091,1255,1000.0,5931.96,137400.0,Baixa (provável mistura valor unitário/total)
+Fiscalização de obra técnica,unidade,Fiscalização,2078,1248,1000.0,198236.85,10565923.5,Baixa (provável mistura valor unitário/total)
+Execução de instalação,quilovolt-ampére,Execução,2046,1228,1000.0,2895.41,8000.0,Alta
+Ensaio,unidade,Execução,1898,1140,1000.0,2000.0,67690.0,Baixa (provável mistura valor unitário/total)
+Execução de desenho técnico,metro quadrado,Execução,1881,1129,500.0,1000.0,2600.0,Alta
+Avaliação,metro quadrado,Execução,1658,996,200.0,600.0,2000.0,Alta
+Supervisão,unidade,Supervisão,1651,991,300.0,1910000.0,10000000.0,Alta
+Projeto,metro cúbico,Execução,1548,930,1500.0,5000.0,246477.24,Baixa (provável mistura valor unitário/total)
+Avaliação,unidade,Execução,1515,909,500.0,3000.0,8000.0,Alta
+Execução de montagem,quilowatt,Execução,1509,907,1000.0,2000.0,6000.0,Alta
+Execução de obra,unidade,Execução,1498,900,5000.0,466818.15,5330956.32,Média
+Ambiental,hectare,Execução,1459,877,600.0,2000.0,5000.0,Alta
+Execução de obra técnica,quilowatt,Execução,1392,836,600.0,1000.0,2000.0,Alta
+Projeto,hectare,Execução,1384,832,1000.0,1500.0,6060.0,Alta
+Execução de obra,metro cúbico,Execução,1383,831,179731.36,2100000.0,14722590.0,Média
+Execução de obra,metro,Execução,1313,789,2500.0,617879.56,9755297.46,Média
+Fabricação,metro quadrado,Execução,1274,766,1260.0,4178.0,50000.0,Média
+Projeto de instalações,metro quadrado,Elaboração,1213,729,1000.0,3000.0,8000.0,Alta
+Execução de obra,quilowatt,Execução,1068,642,700.0,1000.0,5000.0,Alta
+Execução de serviço técnico,metro cúbico,Execução,1058,636,1500.0,78270.45,4266541.26,Baixa (provável mistura valor unitário/total)
+Demolição,metro quadrado,Execução,1058,636,600.0,3000.0,582735.17,Baixa (provável mistura valor unitário/total)
+Execução de reforma,unidade,Execução,1034,622,6080.77,176168.94,1128595.4,Média
+Levantamento,metro quadrado,Execução,965,579,400.0,1000.0,1900.0,Alta
+Desempenho de função técnica,hora por semana,Nao selecionado,938,564,6651.41,7272.0,9000.0,Alta
+Fiscalização de obra,metro quadrado,Fiscalização,929,559,1000.0,4000.0,220497.5,Baixa (provável mistura valor unitário/total)
+Assessoria,unidade,Assessoria,921,553,1000.0,2396.0,6500.0,Alta
+Mensuração,metro quadrado,Execução,920,552,88.87,700.0,1500.0,Alta
+Consultoria,hectare,Consultoria,876,526,500.0,2000.0,6000.0,Alta
+Execução de serviço técnico,metro,Execução,872,524,3338.96,23546.2,2003432.34,Baixa (provável mistura valor unitário/total)
+Assessoria,hectare,Execução,870,522,1000.0,3000.0,10000.0,Alta
+Execução de ampliação,metro quadrado,Execução,868,522,1200.0,7000.0,1500000.0,Baixa (provável mistura valor unitário/total)
+Execução de manutenção,quilowatt,Execução,840,504,12558601.08,29404128.0,46638000.0,Alta
+Execução de serviço técnico,quilowatt,Execução,819,493,6000.0,8000.0,8000.0,Alta
+Mensuração,hectare,Execução,810,486,20.0,1000.0,4500.0,Alta
+Condução de equipe de instalação,quilowatt,Execução,803,483,800.0,1000.0,4500.0,Alta
+Projeto,watt,Elaboração,785,471,500.0,800.0,2800.0,Alta
+Direção de obras,metro quadrado,Execução,739,445,3000.0,286500.0,1432500.0,Alta
+Condução de equipe de manutenção,unidade,Execução,726,436,1200.0,3713.28,260754.03,Baixa (provável mistura valor unitário/total)
+Coleta de dados,metro quadrado,Execução,711,427,100.0,920.0,1500.0,Alta
+Desempenho de cargo técnico,hora por semana,Nao selecionado,700,420,6600.0,7272.0,10000.0,Alta
+Execução de obra,quilowatt(s) pico,Execução,681,409,800.0,1000.0,2000.0,Alta
+Estudo,quilowatt,Elaboração,677,407,1000.0,1000.0,5000.0,Alta
+Ambiental,ano,Elaboração,625,375,1.0,1000.0,2000.0,Alta
+Projeto,quilômetro,Elaboração,610,366,4500.0,70000.0,10000000.0,Baixa (provável mistura valor unitário/total)
+Pesquisa,hectare,Execução,596,358,500.0,1000.0,2500.0,Alta
+Projeto,mega-volt-ampére,Execução,594,358,2800.0,2800.0,2800.0,Alta
+Análise,unidade,Execução,590,354,1000.0,5000.0,29920.86,Alta
+Parecer técnico,unidade,Execução,572,344,600.0,1500.0,6000.0,Alta
+Técnica,hectare,Assistência,559,337,1000.0,1000.0,1000.0,Alta
+Execução de montagem,quilowatt(s) pico,Execução,557,335,900.0,1500.0,4280.5,Alta
+Fiscalização de obra,unidade,Fiscalização,551,331,1000.0,5000.0,1001527.97,Baixa (provável mistura valor unitário/total)
+Estudo,quilovolt-ampére,Elaboração,547,329,5000.0,10000.0,21847.16,Alta
+Projeto,hora,Execução,540,324,1.0,4927.86,252064.13,Baixa (provável mistura valor unitário/total)
+Fiscalização de serviço técnico,unidade,Execução,527,317,2000.0,1962898.1,29391303.64,Média
+Manutenção de instalação,unidade,Execução,525,315,1.0,1200.0,8000.0,Média
+Execução de instalação,metro,Execução,514,310,1500.0,12568.0,931640.13,Baixa (provável mistura valor unitário/total)
+Projeto de instalações,quilowatt(s) pico,Execução,511,307,800.0,1000.0,2000.0,Alta
+Coordenação,metro quadrado,Coordenação,508,306,1000.0,14040.64,2441272.96,Baixa (provável mistura valor unitário/total)
+Execução de montagem,metro,Execução,505,303,1920.0,8000.0,94000.0,Média
+Manutenção de instalação,metro quadrado,Execução,492,296,300.0,625.0,2000.0,Alta
+Fiscalização de obra técnica,metro cúbico,Fiscalização,491,295,250.0,6000.0,772421.94,Baixa (provável mistura valor unitário/total)
+Execução de obra técnica,quilograma,Execução,483,291,260754.28,1812696.8,23001609.6,Média
+Condução de equipe de instalação,unidade,Execução,477,287,80.0,1750.0,64980.0,Baixa (provável mistura valor unitário/total)
+Execução de obra técnica,quilômetro,Execução,475,285,991000.0,5809913.27,28094414.02,Alta
+Execução de obra técnica,quilowatt(s) pico,Execução,465,279,600.0,1212.0,3000.0,Alta
+Projeto,quilovolt,Elaboração,460,276,408.87,7778.44,10250006.68,Baixa (provável mistura valor unitário/total)
+Supervisão,metro quadrado,Execução,435,261,1200.0,6000.0,433315.81,Baixa (provável mistura valor unitário/total)
+Técnica,unidade,Consultoria,428,258,400.0,1200.0,4000.0,Alta
+Condução de equipe de montagem,metro quadrado,Execução,419,253,8000.0,14000.0,32000.0,Alta
+Planejamento,unidade,Elaboração,413,249,1093.0,3500.0,6520432.25,Baixa (provável mistura valor unitário/total)
+Fiscalização de obra técnica,metro,Fiscalização,407,245,500.0,6000.0,1003648.75,Baixa (provável mistura valor unitário/total)
+Execução de montagem,quilovolt-ampére,Execução,405,243,300.0,3000.0,25000.0,Média
+Parecer técnico,metro quadrado,Execução,401,241,500.0,1200.0,2500.0,Alta
+Ambiental,metro quadrado,Execução,400,240,1000.0,2000.0,7500.0,Alta
+Execução de manutenção,dia,Supervisão,395,237,3561898.94,30599998.98,30599998.98,Alta
+Laudo,metro,Execução,391,235,900.0,2000.0,3907.6,Alta
+Produção técnica especializada,unidade,Execução,383,231,350.0,500.0,1000.0,Alta
+Elaboração de orçamento,metro,Execução,382,230,1000.0,5000.0,31500.52,Média
+Execução de manutenção,quilovolt-ampére,Execução,374,226,3784.5,14000.0,332004.12,Baixa (provável mistura valor unitário/total)
+Coordenação,unidade,Coordenação,367,221,5000.0,199225.5,3952951.01,Média
+Desempenho de função técnica,unidade,Execução,356,214,600.0,600.0,4500.0,Média
+Execução de manutenção,tonelada refrigeração,Execução,355,213,5000.0,26000.0,144293.28,Alta
+Execução de obra técnica,quilovolt-ampére,Execução,353,213,1000.0,5000.0,25000.0,Alta
+Elaboração de orçamento,metro cúbico,Execução,353,213,1000.0,4200.0,79705.61,Média
+Execução de serviço técnico,quilovolt,Elaboração,352,212,408.48,408.48,408.48,Alta
+Treinamento,unidade,Execução,345,207,1.11,1500.0,2500.0,Alta
+Execução de instalação,watt,Execução,344,208,600.0,700.0,14300.0,Baixa (provável mistura valor unitário/total)
+Projeto,mes,Execução,328,198,15000.0,64186.5,8741628.22,Baixa (provável mistura valor unitário/total)
+Coleta de dados,hectare,Execução,327,197,1000.0,3000.0,5000.0,Alta
+Produção técnica especializada,metro quadrado,Execução,319,193,600.0,1000.0,2000.0,Alta
+Estudo,hectare,Elaboração,313,189,2000.0,4000.0,12000.0,Alta
+Condução de equipe de instalação,quilowatt(s) pico,Execução,312,188,1000.0,2000.0,6500.0,Alta
+Execução de cadastramento,hectare,Execução,309,187,1000.0,2500.0,4482.0,Alta
+Análise,metro quadrado,Execução,307,185,100.0,1000.0,4000.0,Alta
+Fabricação,unidade,Execução,307,185,100.0,8000.0,744792.35,Baixa (provável mistura valor unitário/total)
+Condução de serviço técnico,unidade,Execução,304,184,2000.0,7250.0,314599.92,Baixa (provável mistura valor unitário/total)
+Ensaio,metro,Execução,296,178,1300.0,2500.0,6000.0,Alta
+Inspeção,unidade,Execução,292,176,300.0,1000.0,4000.0,Alta
+Consultoria,ano,Consultoria,288,174,1000.0,1440.0,2500.0,Alta
+Assistência,unidade,Assistência,287,173,1212.0,5000.0,8000.0,Alta
+Consultoria,metro quadrado,Consultoria,285,171,800.0,2300.0,6000.0,Alta
+Manutenção de equipamento,metro quadrado,Execução,275,165,100.0,600.0,1500.0,Alta
+Projeto de instalações,quilovolt-ampére,Elaboração,274,166,2000.0,4000.0,14800.0,Alta
+Técnica,dia,Supervisão,273,165,200.0,200.0,300.0,Alta
+Mensuração,unidade,Execução,273,165,201.69,2214.0,8000.0,Alta
+Execução de fabricação,metro quadrado,Execução,270,162,1000.0,4831.74,124100.0,Baixa (provável mistura valor unitário/total)
+Projeto de instalações,quilowatt,Elaboração,268,162,10.0,1000.0,3000.0,Alta
+Projeto,pontos,Elaboração,264,160,6700.0,42000.0,949027.0,Baixa (provável mistura valor unitário/total)
+Fiscalização de serviço técnico,metro quadrado,Fiscalização,263,159,500.0,3500.0,30000.0,Média
+Execução de obra técnica,tonelada,Execução,262,158,1713929.07,8901917.0,30781878.0,Alta
+Laudo,dia,Elaboração,261,157,350.0,1000.0,7140.0,Média
+Avaliação,hectare,Execução,259,157,1000.0,1212.0,4500.0,Alta
+Desempenho de função técnica,metro quadrado,Execução,258,156,1500.0,28000.0,968503.35,Baixa (provável mistura valor unitário/total)
+Coordenação,quilovolt-ampére,Execução,247,149,2700.0,5020.0,7900.0,Alta
+Demolição,metro cúbico,Execução,246,148,13451.4,343071.95,5198572.9,Média
+Condução de serviço técnico,hectare,Execução,246,148,1000.0,2000.0,8000.0,Alta
+Técnica,metro quadrado,Execução,240,144,250.0,1470.0,5000.0,Alta
+Vistoria,quilograma-força,Execução,240,144,280.0,300.0,330.0,Alta
+Execução de serviço técnico,ano,Execução,238,144,900.0,6060.0,316681.92,Baixa (provável mistura valor unitário/total)
+Execução de obra técnica,watt,Execução,237,143,300.0,500.0,1000.0,Alta
+Execução de reparo,metro quadrado,Execução,236,142,6600.0,64157.81,666634.73,Média
+Instalação de equipamento,quilowatt,Execução,236,142,2000.0,3500.0,3500.0,Alta
+Execução de cadastramento,unidade,Execução,228,138,699.0,2000.0,8000.0,Alta
+Coordenação,hectare,Execução,226,136,3000.0,5000.0,12000.0,Alta
+Fiscalização de obra técnica,quilômetro,Fiscalização,221,133,4440900.0,10565923.5,18852207.74,Alta
+Projeto,quilograma,Execução,219,133,1000.0,4888.04,45930.01,Média
+Orientação técnica,unidade,Consultoria,219,133,1300.0,1300.0,1300.0,Alta
+Execução de instalação,tonelada refrigeração,Execução,218,132,11611.69,115275.39,845000.0,Média
+Ambiental,dia,Consultoria,217,131,1000.0,2500.0,8000.0,Alta
+Laudo,hora,Elaboração,215,129,600.0,1500.0,4250.0,Alta
+Ambiental,hora,Elaboração,214,130,367.6,1000.0,3000.0,Alta
+Projeto,tonelada refrigeração,Execução,213,129,1000.0,2000.0,6800.0,Alta
+Execução de instalação,volt,Execução,212,128,600.0,8000.0,395956.96,Baixa (provável mistura valor unitário/total)
+Execução de montagem,quilograma,Execução,211,127,1880.0,56866.35,514625.0,Média
+Condução de equipe de instalação,metro quadrado,Execução,210,126,1400.0,10000.0,500000.0,Baixa (provável mistura valor unitário/total)
+Condução de serviço técnico,metro quadrado,Execução,209,127,500.0,2000.0,150000.0,Baixa (provável mistura valor unitário/total)
+Desempenho de função técnica,hora por dia,Nao selecionado,205,123,7272.0,7272.0,10302.0,Alta
+Execução de obra,quilovolt-ampére,Execução,200,120,1000.0,1000.0,8000.0,Média
+Produção técnica e especializada,unidade,Execução,197,119,350.0,550.0,1100.0,Alta
+Como construído,metro quadrado,Execução,195,117,300.0,1000.0,4000.0,Alta
+Gestão,metro quadrado,Gestão,192,116,1000.0,270482.0,7707493.54,Baixa (provável mistura valor unitário/total)
+Instalação de equipamento,quilowatt(s) pico,Execução,190,114,783.0,2400.0,15000.0,Média
+Estudo,metro quadrado,Elaboração,185,111,500.0,1500.0,8000.0,Alta
+Execução de serviço técnico,dia,Execução,185,111,3945.0,185000.0,3804364.74,Baixa (provável mistura valor unitário/total)
+Coleta de dados,unidade,Execução,181,109,500.0,3900.0,314599.92,Baixa (provável mistura valor unitário/total)
+Desempenho de cargo técnico,hora por dia,Nao selecionado,180,108,7200.0,7272.0,10000.0,Alta
+Execução de obra técnica,mes,Execução,180,108,14999.99,292000.0,1972074.96,Média
+Execução de serviço técnico,hora,Execução,178,108,2000.0,7862.5,240078.93,Baixa (provável mistura valor unitário/total)
+Execução de reforma,metro,Execução,178,108,5000.0,173907.2,1267473.64,Média
+ESPECIFICACAO,metro quadrado,Execução,177,107,100.0,2000.0,5500.0,Alta
+Orientação técnica,hectare,Assistência,177,107,1000.0,1000.0,3500.0,Alta
+Execução de operação,unidade,Execução,174,106,6000.0,1137800.0,22500000.0,Média
+Execução de desenho técnico,hectare,Execução,172,104,500.0,1000.0,3100.0,Alta
+Manutenção de equipamento,ano,Execução,171,103,792.0,2487.5,4719.6,Alta
+Perícia,metro quadrado,Execução,168,102,200.0,1000.0,2000.0,Alta
+Supervisão,hectare,Coordenação,167,101,1500.0,15980274.41,15980274.41,Alta
+Execução de serviço técnico,mes,Execução,164,100,2000.0,42592.4,1742671.58,Baixa (provável mistura valor unitário/total)
+Laudo,hectare,Elaboração,164,100,1000.0,2000.0,5000.0,Alta
+Condução de equipe de montagem,unidade,Execução,161,97,1250.0,7000.0,405000.0,Baixa (provável mistura valor unitário/total)
+Execução de manutenção,ano,Execução,160,96,6060.0,744849.6,21879822.22,Baixa (provável mistura valor unitário/total)
+Execução de serviço técnico,quilovolt-ampére,Execução,159,97,4000.0,8000.0,65000.0,Média
+Execução de montagem,watt,Execução,158,96,5000.0,5000.0,127378723.92,Baixa (provável mistura valor unitário/total)
+Execução de montagem,quilovolt,Execução,157,95,100000.0,7085468.79,17594446.05,Alta
+Execução de serviço técnico,tonelada,Execução,154,94,7272.0,1254442.11,23915419.51,Média
+Execução de instalação,pontos,Execução,154,94,8550.0,47655.94,683031.39,Média
+Execução de desenho técnico,unidade,Execução,154,94,570.0,2000.0,7000.0,Alta
+Condução de equipe de manutenção,metro quadrado,Execução,152,92,1400.0,4000.0,66246.36,Média
+Pesquisa,unidade,Execução,152,92,1250.0,3000.0,5000.0,Alta
+Execução de instalação,quilovolt,Execução,151,91,96892.0,5272045.66,106190784.97,Baixa (provável mistura valor unitário/total)
+Execução de obra,watt,Execução,151,91,400.0,900.0,1000.0,Alta
+Execução de serviço técnico,quilograma,Execução,150,90,500.0,278918.26,12103483.13,Baixa (provável mistura valor unitário/total)
+Gestão,unidade,Gestão,149,91,1.11,1000.0,24911765.31,Baixa (provável mistura valor unitário/total)
+Execução de reparo,unidade,Execução,149,91,3000.0,24690.5,824323.1,Baixa (provável mistura valor unitário/total)
+Assessoria,ano,Assessoria,147,89,70.0,600.0,1500.0,Alta
+Direção de obras,unidade,Direção,146,88,250000.0,10557163.27,31561941.67,Alta
+Execução de reforma,metro cúbico,Execução,145,87,98640.0,311655.21,1040238.46,Alta
+Supervisão,metro cúbico,Supervisão,143,87,609068.53,19639082.66,31561941.67,Alta
+Execução de manutenção,volt,Execução,143,87,700.0,42265.0,321000.0,Média
+Assessoria,metro quadrado,Execução,143,87,800.0,2000.0,11900.0,Alta
+Execução de serviço técnico,quilômetro,Execução,142,86,67600.0,3491050.1,22170240.0,Média
+Fiscalização de obra,metro,Fiscalização,140,84,1000.0,32393.8,1032371.93,Baixa (provável mistura valor unitário/total)
+Execução de montagem,dia,Execução,139,85,1500.0,115712.39,631031.25,Alta
+Execução de obra,quilograma,Execução,137,83,248000.0,2039788.15,20765968.56,Média
+Como construído,unidade,Condução de serviço técnico,136,82,600.0,600.0,700.0,Alta
+Fiscalização de obra,metro cúbico,Fiscalização,135,81,1600.0,6000.0,567180.45,Baixa (provável mistura valor unitário/total)
+Assistência,ano,Execução,134,82,4000.0,6060.0,6060.0,Alta
+Execução de ampliação,unidade,Execução,133,81,6500.0,193746.93,1559736.15,Média
+Execução de manutenção,mes,Execução,129,79,40200.0,555067.22,2844406.06,Alta
+Fiscalização de obra técnica,mes,Execução,129,79,1.0,41400.0,113400.0,Alta
+Elaboração de orçamento,quilômetro,Elaboração,129,79,800.0,67600.0,2376522.62,Baixa (provável mistura valor unitário/total)
+Estudo,hora,Elaboração,128,78,1800.0,3000.0,6000.0,Alta
+Execução de operação,metro quadrado,Execução,127,77,800.0,168669.84,2112877.58,Média
+Projeto,megawatt,Elaboração,127,77,6000000.0,6000000.0,6000000.0,Alta
+Operação de equipamento,unidade,Assessoria,126,76,800.0,7628.8,22500000.0,Baixa (provável mistura valor unitário/total)
+Direção de obra,metro quadrado,Execução,126,76,500.0,5000.0,115000.0,Baixa (provável mistura valor unitário/total)
+Desempenho de cargo técnico,metro quadrado,Execução,125,75,500.0,4000.0,100000.0,Baixa (provável mistura valor unitário/total)
+Execução de obra técnica,pontos,Execução,123,75,5000.0,200000.0,1771630.49,Média
+Direção de serviço técnico,metro quadrado,Gestão,123,75,2000.0,15000.0,320000.0,Baixa (provável mistura valor unitário/total)
+Monitoramento,unidade,Execução,123,75,2000.0,10320.0,314599.92,Baixa (provável mistura valor unitário/total)
+Execução de operação,hectare,Execução,122,74,990.0,2258.5,6000.0,Alta
+Coleta de dados,hora,Elaboração,122,74,6500.0,6500.0,6500.0,Alta
+Laudo,metro cúbico,Elaboração,121,73,1000.0,1500.0,5000.0,Alta
+Projeto arquitetônico,unidade,Elaboração,120,72,600.0,2000.0,8000.0,Alta
+Execução de manutenção,metro,Execução,118,72,4000.0,163700.0,4800126.92,Baixa (provável mistura valor unitário/total)
+Ambiental,mes,Consultoria,117,71,2700.0,5373.6,120000.0,Baixa (provável mistura valor unitário/total)
+Consultoria,mes,Execução,116,70,6500.0,41400.0,113400.0,Alta
+Execução de serviço técnico,quilowatt(s) pico,Execução,116,70,607.0,924.0,1500.0,Alta
+Projeto,dia,Elaboração,113,69,1000.0,84860.0,1203057.08,Média
+Execução de obra técnica,quilovolt,Execução,112,68,1000.0,6711766.6,75865541.0,Média
+Ensaio,quilovolt,Execução,112,68,72285.71,100000.0,48087607.63,Baixa (provável mistura valor unitário/total)
+Produção técnica e especializada,metro quadrado,Execução,112,68,500.0,900.0,2000.0,Alta
+Perícia,unidade,Execução,111,67,1000.0,4000.0,15390.0,Alta
+Levantamento,hectare,Execução,111,67,1000.0,2500.0,7500.0,Alta
+Projeto,homem hora,Execução,108,66,3000.0,126900.0,3906222.5,Baixa (provável mistura valor unitário/total)
+Vistoria,quilowatt,Fiscalização,107,65,3500.0,3500.0,3500.0,Alta
+Projeto,metros cúbicos por hora,Elaboração,106,64,2000.0,8500.0,99980.0,Média
+Fabricação,metro cúbico,Execução,105,63,8755.0,100000.0,1867200.0,Média
+Execução de obra,quilômetro,Execução,104,64,1663357.91,18578132.54,37430813.47,Alta
+Projeto,volt,Elaboração,102,62,1000.0,5000.0,2729769.3,Baixa (provável mistura valor unitário/total)
+Fiscalização de obra técnica,quilowatt,Fiscalização,101,61,393356.7,629370.72,1094246.82,Alta
+Supervisão,quilômetro,Supervisão,98,60,4163799.04,11852367.3,67680426.1,Alta
+Projeto de instalações,unidade,Elaboração,98,60,2000.0,6500.0,15000.0,Alta
+Desempenho de cargo técnico,hora por mês,Nao selecionado,97,59,7272.0,10362.01,14686.42,Alta
+Planejamento,metro quadrado,Execução,97,59,3000.0,50000.0,20598613.35,Baixa (provável mistura valor unitário/total)
+Fabricação,metro,Execução,96,58,580.99,1483.2,5000.0,Alta
+Condução de equipe de montagem,watt,Execução,96,58,14000.0,14000.0,14000.0,Alta
+Produção técnica especializada,metro cúbico,Execução,95,57,4600.0,6650.0,11865.0,Alta
+Inspeção,dia,Supervisão,95,57,120.0,200.0,200.0,Alta
+Estudo de viabilidade ambiental,unidade,Elaboração,95,57,3000.0,3000.0,5000.0,Alta
+Execução de montagem,volt,Execução,94,58,1000.0,5000.0,695587.0,Baixa (provável mistura valor unitário/total)
+Execução de reforma,mes,Execução,93,57,1000.0,12000.0,359974.63,Baixa (provável mistura valor unitário/total)
+Técnica,ano,Assistência,93,57,350.0,10000.0,10000.0,Alta
+Execução de instalação,quilômetro,Execução,93,57,1.0,3784681.01,48087607.63,Média
+Projeto,hora por mês,Elaboração,92,56,4381769.17,4381769.17,4381769.17,Alta
+Condução de equipe de manutenção,dia,Execução,91,55,1000.0,1500.0,450000.0,Baixa (provável mistura valor unitário/total)
+Condução de equipe de operação,unidade,Execução,90,54,600.0,6750.0,222819.41,Baixa (provável mistura valor unitário/total)
+Execução de manutenção,quilovolt,Execução,90,54,12750.0,100000.0,102000.0,Alta
+Elaboração de orçamento,hora,Execução,90,54,1.0,4750.0,68591.83,Média
+Direção de obras,metro cúbico,Direção,89,55,380000.0,20016393.3,31561941.67,Alta
+Execução de obra técnica,hectare,Execução,88,54,1000.0,5500.0,1032574.08,Baixa (provável mistura valor unitário/total)
+Ensaio,quilowatt(s) pico,Direção,88,54,1000.0,2000.0,2000.0,Alta
+Execução de instalação,dia,Execução,87,53,5000.0,100000.0,631031.25,Média
+Laudo,quilowatt,Execução,87,53,950.0,5000.0,10000.0,Alta
+Ensaio,quilowatt,Execução,86,52,500.0,6000.0,5000000.0,Baixa (provável mistura valor unitário/total)
+Fiscalização de serviço técnico,hectare,Fiscalização,86,52,105184.38,413224.35,754322.34,Alta
+Execução de fabricação,unidade,Execução,86,52,4400.0,39360.0,133448937.15,Baixa (provável mistura valor unitário/total)
+Controle de qualidade,ano,Execução,85,51,3000.0,4000.0,9400.0,Alta
+Orientação técnica,metro quadrado,Execução,85,51,1000.0,2500.0,8000.0,Alta
+Controle de qualidade,unidade,Execução,85,51,4000.0,14535.0,331080.0,Baixa (provável mistura valor unitário/total)
+Vistoria,hora,Execução,84,52,850.0,2700.0,12000.0,Alta
+Consultoria,dia,Consultoria,83,51,500.0,1000.0,2800.0,Alta
+Execução de manutenção,hectare,Execução,82,50,25000.0,82250.0,500000.0,Média
+Assessoria,dia,Assessoria,82,50,100.0,500.0,500.0,Alta
+Supervisão,metro,Supervisão,81,49,13100.0,14100000.0,22921618.72,Alta
+Laudo,quilovolt-ampére,Execução,81,49,650.0,2000.0,10791.0,Alta
+Projeto,ohm,Execução,79,49,1500.0,5000.0,8000.0,Alta
+Execução de serviço técnico,litro,Execução,78,48,50.0,570.0,7000.0,Média
+Coordenação,metro,Coordenação,78,48,17850.0,2020813.87,29857921.81,Média
+Ambiental,homem hora,Elaboração,78,48,3000.0,10000.0,10000.0,Alta
+Desempenho de função técnica,hora por mês,Nao selecionado,77,47,1.0,10000.0,12064.8,Alta
+Elaboração de orçamento,mes,Elaboração,77,47,6500.0,36000.0,120000.0,Alta
+Laudo,homem hora,Execução,77,47,400.0,400.0,3000.0,Média
+Controle de qualidade,metro quadrado,Execução,76,46,600.0,2000.0,50000.0,Baixa (provável mistura valor unitário/total)
+Assistência,metro quadrado,Execução,76,46,1000.0,2000.0,10000.0,Alta
+Condução de equipe de instalação,quilovolt-ampére,Execução,76,46,3000.0,5000.0,35000.0,Média
+Coordenação,dia,Coordenação,75,45,83731.87,750000.0,5467000.59,Média
+Execução de operação,quilowatt,Execução,75,45,13038145.77,21929837.47,45285593.62,Alta
+Fiscalização de obra,mes,Fiscalização,75,45,15000.0,36000.0,60000.0,Alta
+Treinamento,hora,Direção,74,46,700.0,8000.0,10000.0,Alta
+Consultoria,hora por dia,Consultoria,72,44,1200.0,1350.0,7654.7,Alta
+Projeto,tonelada,Execução,72,44,1000.0,5000.0,34417.2,Média
+Execução de serviço técnico,homem hora,Execução,72,44,5000.0,1000000.0,1000000.0,Alta
+Parecer técnico,hora,Elaboração,72,44,1000.0,1000.0,1300.0,Alta
+Coordenação,metro cúbico,Coordenação,70,42,45617.9,2020813.87,29857921.81,Média
+Demolição,unidade,Execução,69,43,1380.0,26006.56,329520.46,Média
+Estudo,mes,Elaboração,69,43,1000.0,4000.0,623658.37,Baixa (provável mistura valor unitário/total)
+Condução de equipe de operação,metro,Coordenação,68,42,6500.0,6500.0,6500.0,Alta
+Projeto,ano,Execução,68,42,1000.0,8000.0,1423200.9,Baixa (provável mistura valor unitário/total)
+Execução de manutenção,bar,Execução,68,42,240.0,865.0,1800.0,Alta
+Projeto,cavalo-vapor,Execução,65,39,500.0,4500.0,7800.0,Alta
+Execução de montagem,metro cúbico,Execução,65,39,100000.0,473443.59,4298700.0,Média
+Desempenho de função técnica,hectare,Assistência,65,39,1000.0,5000.0,5000.0,Alta
+Execução de manutenção,pontos,Execução,65,39,4467.0,20952.0,1164631.2,Baixa (provável mistura valor unitário/total)
+Manutenção de equipamento,quilovolt-ampére,Execução,65,39,1800.0,16273.92,38250.0,Alta
+Execução de manutenção,ohm,Consultoria,63,39,800.0,1436.16,3424.0,Alta
+Direção de obras,metro,Direção,63,39,295800.0,7684050.52,31163658.68,Alta
+Manutenção de equipamento,dia,Execução,63,39,77200.0,38943297.66,38943297.66,Alta
+Execução de obra,tonelada,Execução,63,39,3341063.13,8511103.75,23745695.76,Alta
+Manutenção de instalação,metro,Execução,62,38,2000.0,2000.0,2000.0,Alta
+Gestão,hectare,Coordenação,62,38,12280.0,12280.0,20000.0,Alta
+Laudo,quilowatt(s) pico,Elaboração,62,38,1000.0,1000.0,10000.0,Média
+Desenvolvimento,unidade,Elaboração,62,38,350.0,1331.0,22170240.0,Baixa (provável mistura valor unitário/total)
+Parecer técnico,hectare,Assessoria,60,36,1000.0,1500.0,2000.0,Alta
+Levantamento,unidade,Execução,60,36,1500.0,2000.0,7000.0,Alta
+Execução de manutenção,metro cúbico,Execução,59,37,75000.0,528000.0,4000000.0,Média
+Manutenção de equipamento,semestre,Execução,59,37,60000.0,60000.0,95000.0,Alta
+Execução de obra técnica,dia,Execução,59,37,12000.0,492362.74,12586482.02,Baixa (provável mistura valor unitário/total)
+Assistência,tonelada,Assistência,59,37,1600.0,2000.0,5000.0,Alta
+Manutenção de equipamento,quilograma,Execução,58,36,200.0,200.0,200.0,Alta
+Estudo de viabilidade,unidade,Elaboração,58,36,1000.0,3250.0,352161.3,Baixa (provável mistura valor unitário/total)
+Especificação,metro quadrado,Execução,58,36,850.0,1350.0,9834.74,Média
+Execução de obra técnica,hora,Execução,57,35,7280.0,184801.2,1463479.63,Média
+Projeto de restauração,unidade,Supervisão,57,35,1.0,2000.0,10000000.0,Baixa (provável mistura valor unitário/total)
+Direção de serviço técnico,unidade,Coordenação,57,35,4800.0,34348.0,14594651.12,Baixa (provável mistura valor unitário/total)
+Execução de manutenção,homem hora,Execução,56,34,3760.4,12737.31,349787.04,Baixa (provável mistura valor unitário/total)
+Execução de reforma,dia,Execução,56,34,2000.0,59500.0,258000.0,Alta
+Desempenho de cargo técnico,unidade,Atuação,55,33,1.0,5000.0,7200.0,Alta
+Coordenação,ano,Coordenação,55,33,2800.0,5538907.83,33364929.89,Média
+Execução de serviço técnico,quilômetro quadrado,Coordenação,55,33,237500.0,2610421.0,6032590.0,Alta
+Coleta de dados,dia,Elaboração,54,34,60.0,100.0,3470.0,Baixa (provável mistura valor unitário/total)
+Ambiental,quilômetro,Elaboração,54,34,8000.0,8000.0,12234964.98,Baixa (provável mistura valor unitário/total)
+Projeto,quilômetro quadrado,Elaboração,54,34,13625.0,13625.0,13625.0,Alta
+Instalação de equipamento,metro quadrado,Execução,54,34,350.0,1800.0,260000.0,Baixa (provável mistura valor unitário/total)
+Execução de instalação,ampére,Execução,53,33,3000.0,40000.0,4074247.2,Baixa (provável mistura valor unitário/total)
+Ambiental,hora por dia,Elaboração,53,33,1300.0,1700.0,5000.0,Alta
+Condução de equipe de reforma,metro quadrado,Execução,53,33,5000.0,50000.0,176000.0,Alta
+Controle de qualidade,mes,Execução,52,32,3000.0,122150.0,4749147.0,Baixa (provável mistura valor unitário/total)
+Ambiental,metro cúbico,Execução,52,32,500.0,4500.0,2148254.64,Baixa (provável mistura valor unitário/total)
+Direção de serviço técnico,quilowatt,Elaboração,51,31,500.0,500.0,500.0,Alta
+Laudo,ano,Execução,51,31,600.0,1500.0,5000.0,Alta
+Execução de montagem,pontos,Execução,51,31,10000.0,26042.0,47811.88,Alta
+Análise,hora,Execução,50,30,2400.0,7000.0,17000.0,Alta
+Execução de serviço técnico,tonelada por mês,Execução,50,30,5000.0,2134398.55,11052731.52,Alta
+Ensino,hora,Execução,50,30,500.0,1600.0,2400.0,Alta
+Manutenção de equipamento,tonelada refrigeração,Execução,50,30,2400.0,15869.59,167400.0,Média
+Execução de instalação,metro cúbico,Execução,50,30,1660.0,17000.0,328716.57,Média
+Projeto de restauração,metro quadrado,Execução,50,30,1.0,2200.0,233205.61,Baixa (provável mistura valor unitário/total)
+Orientação técnica,metro,Assessoria,50,30,3000.0,3000.0,3000.0,Alta
+Vistoria,dia,Consultoria,48,30,500.0,3776.0,9770.0,Média
+Assessoria,hora,Assessoria,48,30,2000.0,8000.0,48805.0,Média
+Vistoria,hectare,Supervisão,48,30,1500.0,1500.0,2000.0,Média
+Laudo,ohm,Elaboração,48,30,700.0,3500.0,7800.0,Média
+Assessoria,tonelada,Assessoria,48,30,1500.0,1500.0,1500.0,Média
+Manutenção de equipamento,homem hora,Execução,47,29,5400.0,30000.0,91250.0,Média
+Condução de equipe de operação,hectare,Assistência,47,29,1212.0,1212.0,22636198.66,Baixa (provável mistura valor unitário/total)
+Projeto arquitetônico,metro,Execução,47,29,1.0,1000.0,1700.0,Média
+Condução de equipe de instalação,tonelada refrigeração,Supervisão,46,28,9867.48,20714.77,43227.2,Média
+Inspeção,metro quadrado,Execução,46,28,750.0,1106.0,4000.0,Média
+Condução de equipe de montagem,quilowatt(s) pico,Execução,45,27,500.0,1000.0,2000.0,Média
+Assessoria,mes,Execução,45,27,25000.0,41400.0,72000.0,Média
+Estudo de viabilidade,hectare,Execução,44,28,300.0,1000.0,2000.0,Média
+Condução de equipe de manutenção,ano,Gestão,44,28,10000.0,12500.0,178999.95,Média
+Condução de equipe de instalação,watt,Execução,44,28,1.0,1.0,2080.0,Baixa (provável mistura valor unitário/total)
+Consultoria,hora,Consultoria,44,28,1500.0,2800.0,5000.0,Média
+Produção técnica e especializada,metro cúbico,Execução,44,28,4500.0,7400.0,12400.0,Média
+Condução de equipe de instalação,metro,Execução,43,27,3980.0,8000.0,141000.0,Média
+Avaliação,dia,Elaboração,43,27,1800.0,5000.0,10980.0,Média
+Ensaio,metro quadrado,Execução,43,27,5102.0,38000.0,65000.0,Média
+Execução de serviço técnico,pontos,Execução,43,27,7000.0,57000.0,523440.0,Média
+Desenvolvimento,metro quadrado,Execução,43,27,1450.0,9000.0,250000.0,Baixa (provável mistura valor unitário/total)
+Condução de equipe de instalação,quilovolt,Gestão,43,27,10250006.68,13853805.78,15956487.76,Média
+Vistoria,quilowatt(s) pico,Execução,42,26,1750.0,2000.0,2600.0,Média
+Assessoria,bar,Assessoria,42,26,230.0,871.0,1582.22,Média
+Condução de serviço técnico,metro,Execução,42,26,6500.0,8500.0,110000.0,Média
+Assistência,dia,Assistência,42,26,2570.0,4696.69,44380.0,Média
+Fiscalização de obra técnica,quilovolt,Fiscalização,42,26,1.0,480915.3,4149843.99,Média
+Execução de obra,quilovolt,Execução,42,26,5237982.31,6537622.58,15956487.76,Média
+Desempenho de função técnica,metro cúbico,Execução,41,25,9360.0,650000.0,2475000.0,Média
+Projeto,volt-ampére,Execução,41,25,1000.0,2364.15,4824.48,Média
+Execução de montagem,hectare,Execução,41,25,31342.56,36200.0,181065.74,Média
+Execução de operação,quilovolt,Execução,41,25,100000.0,100000.0,100000.0,Média
+Consultoria,homem hora,Consultoria,40,24,2000.0,5250.0,15600.0,Média
+Projeto,litro por hora,Elaboração,40,24,3800.0,6000.0,6000.0,Média
+Vistoria,metro,Execução,40,24,900.0,1760.0,2900.0,Média
+Monitoramento,watt,Gestão,40,24,2610000.0,2610000.0,3480000.0,Média
+Operação de instalação,unidade,Execução,39,25,1200.0,13002.65,25000.0,Média
+Ambiental,metro,Execução,39,25,1000.0,15000.0,6874848.09,Baixa (provável mistura valor unitário/total)
+Condução de equipe de montagem,quilovolt,Execução,39,25,10250006.68,13853805.78,13853805.78,Média
+Execução de obra,mes,Execução,39,25,12000.0,30000.0,2298985.0,Baixa (provável mistura valor unitário/total)
+Fiscalização de obra,quilômetro,Fiscalização,39,25,800.0,4163799.04,6416645.2,Média
+Condução de equipe de montagem,dia,Execução,38,24,1000.0,1500.0,153250.0,Baixa (provável mistura valor unitário/total)
+Assessoria,metro,Assessoria,38,24,250.0,6500.0,37775.0,Média
+Condução de equipe de manutenção,hora,Execução,38,24,1300.0,1850.0,5680.0,Média
+Manutenção de instalação,quilovolt-ampére,Execução,38,24,2530.0,10985.0,60000.0,Média
+Execução de instalação,mes,Execução,38,24,35000.0,189804.98,24907897.79,Baixa (provável mistura valor unitário/total)
+Produção técnica especializada,hectare,Supervisão,38,24,2000.0,5000.0,5000.0,Média
+Fiscalização de obra técnica,quilograma,Fiscalização,38,24,50.0,7850.0,1267473.64,Baixa (provável mistura valor unitário/total)
+Execução de fabricação,metro,Execução,38,24,685.44,1574.07,3605.09,Média
+Extensão,unidade,Execução,37,23,1.0,1.0,1.0,Média
+Condução de equipe de manutenção,tonelada refrigeração,Condução,37,23,2310.0,8800.0,75000.0,Média
+Laudo,pontos,Execução,37,23,2000.0,4500.0,8075.0,Média
+Execução de ampliação,metro cúbico,Execução,37,23,8000.0,200000.0,2938101.66,Média
+Estudo,quilômetro,Elaboração,37,23,12000.0,47905.69,252350.0,Média
+Coleta de dados,metro,Consultoria,37,23,500.0,500.0,6400.0,Média
+Especificação,unidade,Consultoria,37,23,1908.2,2987.42,9382.69,Média
+Execução de manutenção,quilômetro,Execução,36,22,201161.17,7613321.94,16797527.34,Média
+Controle de qualidade,metro cúbico,Execução,36,22,3000.0,3475.0,12200.0,Média
+Laudo,volt,Execução,36,22,1000.0,2000.0,4600.0,Média
+Laudo,hora por dia,Elaboração,36,22,1500.0,4940.82,9978.32,Média
+Mensuração,ohm,Execução,36,22,1000.0,1700.0,3600.0,Média
+Execução de obra técnica,metros cúbicos por hora,Execução,35,21,3000.0,1419998.36,11468126.54,Média
+Laudo,mes,Execução,35,21,1000.0,10000.0,15200.0,Média
+Execução de instalação,ohm,Execução,35,21,2800.0,5000.0,315000.0,Baixa (provável mistura valor unitário/total)
+Execução de manutenção,watt,Coordenação,35,21,2610000.0,2610000.0,3480000.0,Média
+Operação,unidade,Assessoria,35,21,1.0,800.0,7628.8,Média
+Orientação técnica,dia,Orientação,34,22,3800.0,9750.0,46000.0,Média
+Gestão,metro cúbico,Execução,34,22,1.0,1.0,3668358.65,Baixa (provável mistura valor unitário/total)
+Fabricação,quilograma,Execução,34,22,8000.0,151183.7,684785.63,Média
+Análise,dia,Assessoria,34,22,800.0,1561.0,84000.0,Baixa (provável mistura valor unitário/total)
+Execução de reforma,pontos,Execução,34,22,11400.0,177000.0,285000.0,Média
+Execução de operação,metro cúbico,Execução,34,22,98503.19,1441572.34,12989286.67,Média
+Execução de obra técnica,hora por mês,Execução,34,22,300000.0,300000.0,8741628.22,Baixa (provável mistura valor unitário/total)
+Planejamento,ano,Atuação,34,22,1000.0,1000.0,5000.0,Média
+Execução de serviço técnico,tonelada refrigeração,Execução,34,22,18112.68,58230.0,360000.0,Média
+Condução de equipe de operação,metro quadrado,Supervisão,34,22,149089.43,250000.0,250000.0,Média
+Análise,hectare,Assistência,34,22,2000.0,5104.34,15001.0,Média
+Operação de equipamento,watt,Execução,34,22,2610000.0,2610000.0,3480000.0,Média
+Produção técnica e especializada,hectare,Assistência,34,22,10000.0,10000.0,10000.0,Média
+Execução de operação,metro,Execução,33,21,295500.0,1652901.74,4047838.77,Média
+Ambiental,homem / dia,Consultoria,33,21,12000.0,25000.0,45000.0,Média
+Execução de instalação,homem hora,Execução,33,21,3500.0,6200.0,12000.0,Média
+Gestão,quilovolt,Gestão,33,21,170960.74,427505.82,6711766.6,Média
+Execução de obra,dia,Execução,33,21,30000.0,76928.2,378446.17,Média
+Projeto,ampére,Elaboração,32,20,500.0,1000.0,2275.0,Média
+Condução de equipe de reparo,metro quadrado,Execução,32,20,1875.44,6000.0,79680.0,Média
+Monitoramento,hora,Direção,32,20,10000.0,10000.0,10000.0,Média
+Demolição,metro,Execução,32,20,800.0,167424.87,3838513.38,Baixa (provável mistura valor unitário/total)
+Planejamento,metro,Execução,32,20,24000.0,33793161.03,36250000.0,Média
+Condução de equipe de reparo,quilovolt,Gestão,32,20,10250006.68,13488321.77,13853805.78,Média
+Projeto de instalações,watt,Elaboração,32,20,1.0,1650.0,2500.0,Média
+Execução de manutenção,hora,Execução,31,19,2000.0,49300.0,482250.0,Média
+Estudo,metro,Execução,31,19,3000.0,11231.1,120000.0,Média
+Laudo,bar,Execução,31,19,600.0,1500.0,4888.0,Média
+Gestão,hora,Gestão,31,19,345000.0,1589867.75,5079483.59,Média
+Detalhamento,metro quadrado,Execução,31,19,800.0,1400.0,1500.0,Média
+Inspeção,ano,Execução,31,19,4000.0,339619.89,374400.0,Média
+Supervisão,mes,Coordenação,30,18,45000.0,8720948.37,8720948.37,Média
+Execução de cadastramento,metro,Execução,30,18,800.0,1000.0,6480.0,Média
+Avaliação,ampére,Execução,30,18,1000.0,1000.0,1000.0,Média
+Condução de equipe de manutenção,quilovolt-ampére,Execução,30,18,6795.37,13205.91,28900.0,Média
+Fiscalização de serviço técnico,mes,Fiscalização,30,18,1.0,2000.0,3350000.0,Baixa (provável mistura valor unitário/total)
+Execução de reforma,quilograma,Execução,30,18,97000.0,534962.16,2292944.99,Média
+Execução de serviço técnico,hora por dia,Execução,30,18,1200.0,1200.0,4000.0,Média
+Desempenho de cargo,unidade,Coordenação,30,18,26894626.12,26894626.12,26894626.12,Média
+Condução de equipe de reparo,unidade,Coordenação,29,19,1.0,57427.56,11439472.7,Baixa (provável mistura valor unitário/total)
+Execução de reparo,metro,Execução,29,19,1500.0,9800.0,472274.99,Baixa (provável mistura valor unitário/total)
+Execução de manutenção,hora por dia,Execução,29,19,84800.0,110400.0,110400.0,Média
+Condução de serviço técnico,hora,Execução,29,19,8000.0,2342903.5,2342903.5,Média
+Execução de manutenção,quilograma,Execução,29,19,200.0,1262.0,2139572.61,Baixa (provável mistura valor unitário/total)
+Execução de instalação,quilograma,Execução,29,19,75000.0,259000.0,1441538.23,Média
+Execução de manutenção,ampére,Execução,29,19,6000.0,6000.0,10713.0,Média
+Fiscalização de serviço técnico,quilômetro,Fiscalização,29,19,8786067.6,18115495.05,70540944.97,Média
+Execução de instalação,megawatt,Execução,29,19,6000000.0,6000000.0,6000000.0,Média
+Execução de reparo,metro cúbico,Execução,28,18,65000.0,269007.75,3026636.05,Média
+Fiscalização de obra técnica,volt,Fiscalização,28,18,6000.0,4149343.99,4149843.99,Média
+Desempenho de função técnica,ano,Execução,28,18,500.0,8000.0,8000.0,Média
+Análise,ano,Consultoria,28,18,1000.0,1000.0,1000.0,Média
+Execução de obra,pontos,Execução,28,18,90000.0,321734.98,830000.0,Média
+Execução de ampliação,metro,Execução,27,17,55489.46,295457.69,4119842.27,Média
+Vistoria,metro cúbico,Execução,27,17,1000.0,1250.0,5000.0,Média
+Execução de instalação,metros cúbicos por hora,Execução,27,17,239781.0,875000.0,2900000.0,Média
+Execução de montagem,quilômetro,Atuação,27,17,27340547.5,48087607.63,106190784.97,Média
+Coordenação,quilowatt(s) pico,Execução,27,17,600.0,600.0,1000.0,Média
+Instalação de equipamento,unidade,Execução,27,17,1454.0,10546.58,314599.92,Baixa (provável mistura valor unitário/total)
+Fiscalização de serviço técnico,metro,Fiscalização,26,16,1200.0,9628.0,85947.78,Média
+Manutenção de instalação,ano,Execução,26,16,1000.0,669575.1,804208.92,Média
+Estudo,dia,Elaboração,26,16,1000.0,2600.0,8000.0,Média
+Avaliação,metro,Execução,26,16,500.0,1049.87,1835703.08,Baixa (provável mistura valor unitário/total)
+Detalhamento arquitetônico,metro quadrado,Execução,26,16,1200.0,3250.0,7000.0,Média
+Execução de obra,hectare,Execução,26,16,1200.0,7000.0,8000.0,Média
+Desempenho de função técnica,mes,Execução,25,15,6800.0,204924.0,905486.69,Média
+Parecer técnico,dia,Elaboração,25,15,695.0,2500.0,8200.0,Média
+Execução de desenho técnico,hora,Execução,25,15,1800.0,2500.0,12000.0,Média
+Ambiental,tonelada,Execução,25,15,2000.0,744000.0,4668153.6,Média
+Execução de ampliação,quilovolt,Execução,25,15,100000.0,100000.0,6412615.28,Baixa (provável mistura valor unitário/total)
+Vistoria,quilograma,Execução,25,15,290.0,300.0,330.0,Média
+Produção técnica especializada,tonelada,Execução,24,16,1000.0,2000.0,6060.0,Média
+Condução de equipe de instalação,dia,Execução,24,16,1700.0,11887.5,402782.55,Baixa (provável mistura valor unitário/total)
+Manutenção de instalação,mes,Execução,24,16,22800.0,49059.14,320000.0,Média
+Execução de operação,quilovolt-ampére,Execução,24,16,117400.58,1125655.56,1125655.56,Média
+Direção de obras,quilômetro,Execução,24,16,10529894.8,44920578.94,273867977.91,Média
+Manutenção de instalação,dia,Execução,24,16,3470.0,64000.0,100000.0,Média
+Monitoramento,mes,Execução,24,16,106922.0,3887944.19,10150236.68,Média
+Assistência,hora por dia,Consultoria,24,16,1.0,1.0,7272.0,Baixa (provável mistura valor unitário/total)
+Gestão,quilowatt,Gestão,24,16,10500.0,12400.0,12400.0,Média
+Execução de obra,volt,Execução,24,16,500000.0,5000000.0,5000000.0,Média
+Dimensionamento,metro quadrado,Execução,24,16,100.0,100.0,2700.0,Baixa (provável mistura valor unitário/total)
+Gestão,ano,Gestão,23,15,100.0,370000.0,6864000.0,Média
+Execução de manutenção,btu/hora,Execução,23,15,1500.0,8400.0,17250.0,Média
+Laudo,hora por mês,Elaboração,23,15,2764.0,3730.24,5286.24,Média
+Ensaio,quilovolt-ampére,Execução,23,15,1000.0,4200.0,29500.0,Média
+Condução de serviço técnico,volt,Coordenação,23,15,1650.0,241805.63,290151.77,Média
+Gestão,metro,Gestão,23,15,1000.0,340964.0,7707493.54,Baixa (provável mistura valor unitário/total)
+Execução de montagem,ohm,Execução,23,15,3000.0,5000.0,10580.0,Média
+Vistoria,mes,Elaboração,23,15,2399.0,3228.32,9000.0,Média
+Execução de montagem,homem hora,Execução,23,15,3500.0,209185.42,1280000.0,Média
+Laudo,quilômetro,Execução,23,15,700.0,1500.0,19666826.8,Baixa (provável mistura valor unitário/total)
+Execução de montagem,ano,Execução,23,15,276840.0,460791.8,1802700.0,Média
+Consultoria,quilômetro,Execução,23,15,158507.3,158507.3,60318532.36,Baixa (provável mistura valor unitário/total)
+Execução de cadastramento,metro cúbico,Execução,22,14,700.0,1200.0,1800.0,Média
+Planejamento,tonelada refrigeração,Orientação,22,14,100.0,1100.0,1500.0,Média
+Manutenção de equipamento,hora por semana,Execução,22,14,600.0,1634.75,3600.0,Média
+Condução de equipe de instalação,pontos,Execução,22,14,5680.0,40021.37,194037.9,Média
+Fiscalização de serviço técnico,metro cúbico,Execução,22,14,2000.0,2500.0,378761.6,Baixa (provável mistura valor unitário/total)
+Execução de obra técnica,litro,Execução,22,14,4890.0,84000.0,3921884.24,Baixa (provável mistura valor unitário/total)
+Ambiental,hora por mês,Atuação,22,14,1.0,3000.0,8517159.31,Baixa (provável mistura valor unitário/total)
+Condução de equipe de instalação,volt,Execução,22,14,200.0,1000.0,3000.0,Média
+Estudo,ano,Elaboração,22,14,1000.0,3300.0,11273.11,Média
+Manutenção de instalação,volt,Execução,22,14,500.0,500.0,9696.0,Média
+Ensaio,quilômetro,Elaboração,22,14,62985.6,233525.0,67659597.71,Baixa (provável mistura valor unitário/total)
+Vistoria,quilovolt-ampére,Execução,22,14,650.0,1000.0,1300.0,Média
+Anteprojeto,metro quadrado,Elaboração,22,14,1000.0,2500.0,4000.0,Média
+Estudo arquitetônico,metro,Elaboração,22,14,3500.0,3500.0,3500.0,Média
+Execução de montagem,tonelada,Execução,21,13,20000.0,167991.32,1460407.57,Média
+Técnica,metro,Execução,21,13,3000.0,8000.0,890265.94,Baixa (provável mistura valor unitário/total)
+Auditoria,unidade,Consultoria,21,13,1350.0,3150.0,20800.0,Média
+Ensaio,metro cúbico,Execução,21,13,36323.61,36323.61,60693.19,Média
+Execução de instalação,btu/hora,Execução,21,13,1000.0,5000.0,142789.0,Baixa (provável mistura valor unitário/total)
+Laudo,quilovolt,Elaboração,21,13,1500.0,8970.0,60000.0,Média
+Laudo,tonelada refrigeração,Execução,21,13,800.0,1000.0,4000.0,Média
+Execução de instalação,ano,Execução,21,13,2000.0,3704018.56,37361846.69,Média
+Vistoria,volt,Execução,21,13,889.2,2206.6,5000.0,Média
+Levantamento,metro,Execução,21,13,500.0,1500.0,2200.0,Média
+Execução de manutenção,contratos,Execução,21,13,2980.0,12000.0,28270.0,Média
+Coordenação,quilômetro,Coordenação,20,12,12134569.78,18115495.05,27340547.5,Média
+Planejamento,hectare,Execução,20,12,1000.0,1106.0,2000.0,Média
+Execução de desenho técnico,metro,Execução,20,12,600.0,3000.0,90000.0,Baixa (provável mistura valor unitário/total)
+Monitoramento,metro quadrado,Execução,20,12,500.0,500.0,1000.0,Média
+Condução de equipe de montagem,metro,Execução,20,12,8000.0,47381.77,250000.0,Média
+Supervisão,semestre,Fiscalização,20,12,12000.0,12000.0,12000.0,Média
+Execução de serviço técnico,volt,Fiscalização,20,12,6380.65,215249.0,215249.0,Média
+Coordenação,hora,Coordenação,20,12,1000.0,1000.0,42720.15,Baixa (provável mistura valor unitário/total)
+Vistoria,watt,Execução,20,12,600.0,625.0,1500.0,Média
+Projeto,hora por dia,Execução,20,12,1000.0,1500.0,3275.5,Média
+Ensaio,pontos,Execução,20,12,6713.0,10099.5,14426.0,Média
+Inspeção,quilograma-força,Execução,20,12,280.0,295.0,300.0,Média
+Calibração,contratos,Execução,20,12,12000.0,12000.0,28270.0,Média
+Desempenho de cargo,metro cúbico,Coordenação,20,12,26894626.12,26894626.12,26894626.12,Média
+Supervisão,quilovolt-ampére,Execução,19,13,1500.0,4000.0,32500.0,Média
+Laudo,tonelada,Execução,19,13,350.0,1500.0,3000.0,Média
+Condução de serviço técnico,quilovolt-ampére,Execução,19,13,100.0,53980.0,2110000.0,Baixa (provável mistura valor unitário/total)
+Planejamento,metro cúbico,Execução,19,13,1.0,7544.36,24000.0,Média
+Coordenação,mes,Fiscalização,19,13,1.0,1.0,1.0,Média
+Manutenção de equipamento,mes,Execução,19,13,860.0,150000.0,441893.52,Média
+Planejamento,hora,Elaboração,19,13,2000.0,3400.0,5000.0,Média
+Condução de equipe de instalação,btu/hora,Execução,19,13,1410.0,2000.0,27122.85,Média
+Técnica,hora por mês,Assessoria,19,13,32619752.0,32619752.0,43973072.06,Média
+Vistoria,ano,Execução,19,13,1600.0,1780.0,3000.0,Média
+Condução de equipe de manutenção,hectare,Execução,19,13,22636198.66,22636198.66,25436198.66,Média
+Direção de obras,ano,Direção,19,13,5000000.0,5000000.0,7000000.0,Média
+Execução de manutenção,hora por mês,Execução,19,13,456600.0,1155553.44,2638500.0,Média
+Execução de obra técnica,ohm,Execução,18,12,500.0,1250.0,5000.0,Média
+Coordenação,homem hora,Coordenação,18,12,2900.0,168000.0,951093.83,Média
+Avaliação,hora,Consultoria,18,12,1000.0,4500.0,12000.0,Média
+Condução de equipe de manutenção,mes,Execução,18,12,6800.0,39286156.73,43970600.6,Média
+Operação de equipamento,ano,Execução,18,12,105150.96,147374.28,333886.68,Média
+Mensuração,quilômetro,Fiscalização,18,12,67246.0,252640.0,1749914.04,Média
+Análise,quilômetro,Execução,18,12,158507.3,158507.3,67659597.33,Baixa (provável mistura valor unitário/total)
+Avaliação,ano,Elaboração,18,12,1.0,1.0,1.0,Média
+Direção de obra,metro cúbico,Direção de obra,18,12,1474807.1,33471078.31,53819095.43,Média
+Estudo de viabilidade técnico,unidade,Execução,18,12,2500.0,56162.64,720000.0,Média
+Projeto,litros por segundo,Elaboração,18,12,4000.0,11850.0,15000.0,Média
+Fiscalização de serviço técnico,dia,Fiscalização,17,11,8500.0,34554860.44,34554860.44,Média
+Ambiental,hora por semana,Execução,17,11,300.0,600.0,5000.0,Média
+Desempenho de cargo técnico,metro,Execução,17,11,57000.0,94000.0,300000.0,Média
+Execução de instalação,volt-ampére,Execução,17,11,100.0,5000.0,192229.95,Baixa (provável mistura valor unitário/total)
+Desempenho de função técnica,homem / dia,Execução,17,11,400.0,400.0,880.0,Média
+Fiscalização de obra técnica,quilovolt-ampére,Fiscalização,17,11,1.0,1600.0,1115156.59,Baixa (provável mistura valor unitário/total)
+Manutenção de equipamento,metro,Execução,17,11,400.0,600.0,22500000.0,Baixa (provável mistura valor unitário/total)
+Execução de cadastramento,dia,Execução,17,11,2000.0,2500.0,3000.0,Média
+Assistência,mes,Assistência,17,11,88.78,457.0,5000.0,Média
+Condução de serviço técnico,mes,Execução,17,11,15000.0,2709000.0,15000000.0,Média
+Ambiental,tonelada por mês,Execução,17,11,1473120.0,5033460.07,94471779.63,Média
+Fiscalização de obra técnica,hora por semana,Consultoria,17,11,3000.0,3000.0,3000.0,Média
+Projeto,metro cúbico por segundo,Coordenação,17,11,6082.2,34200.0,43550.0,Média
+Laudo,ampére,Execução,17,11,1.0,1.0,936.0,Baixa (provável mistura valor unitário/total)
+Desempenho de função técnica,dia,Elaboração,17,11,1300.0,2000.0,13500.0,Média
+Assistência,hora por mês,Assistência,17,11,2000.0,460800.0,1152000.0,Média
+Orientação técnica,ano,Assistência,17,11,10000.0,10000.0,10000.0,Média
+Condução de equipe de montagem,quilovolt-ampére,Execução,17,11,1000.0,3500.0,5300.0,Média
+Fiscalização de obra técnica,hora,Fiscalização,17,11,2500.0,2500.0,7700.0,Média
+Desenvolvimento,dia,Elaboração,17,11,209723.73,5467000.59,5467000.59,Média
+Técnica,mes,Consultoria,17,11,82800.0,158507.3,158507.3,Média
+Ensaio,watt,Execução,17,11,1000.0,1145.8,2512.0,Média
+Direção de obra,unidade,Direção de obra,17,11,1000.0,639537.26,38724777.07,Baixa (provável mistura valor unitário/total)
+Especificação arquitetônica,metro quadrado,Elaboração,17,11,1000.0,1500.0,3200.0,Média
+Direção de obra,quilowatt(s) pico,Execução,17,11,7000.0,10000.0,12450.0,Média
+Execução de produção,hectare,Assistência,17,11,1500.0,1500.0,1500.0,Média
+Execução de operação,ano,Execução,16,10,68449.8,390193.2,6669256.8,Média
+Planejamento,quilômetro,Execução,16,10,1.0,10565923.5,83741053.98,Média
+Direção de serviço técnico,quilowatt(s) pico,Execução,16,10,500.0,2750.0,10000.0,Média
+Execução de obra técnica,ano,Execução,16,10,3000.0,72903799.12,72903799.12,Média
+Parecer técnico,quilowatt,Execução,16,10,650.0,850.0,1500.0,Média
+Assessoria,hora por semana,Assessoria,16,10,1212.0,283086.0,564960.0,Média
+Execução de montagem,mes,Execução,16,10,5000.0,90000.0,15250000.0,Baixa (provável mistura valor unitário/total)
+Condução de equipe de operação,metro cúbico,Supervisão,16,10,295800.0,5402246.0,5402246.0,Média
+Execução de operação,hora por dia,Execução,16,10,24000000.0,59980000.0,104043300.61,Média
+Fiscalização de obra,quilograma,Fiscalização,16,10,1.0,4500.0,1032371.93,Baixa (provável mistura valor unitário/total)
+Direção de obra,hectare,Execução,16,10,1500000.0,1500000.0,1500000.0,Média
+Execução de manutenção,tonelada,Execução,15,9,217735.22,14719334.55,18361719.33,Média
+Assistência,quilograma,Execução,15,9,88.78,1212.0,5000.0,Média
+Condução de equipe de manutenção,homem hora,Consultoria,15,9,1200.0,4500.0,486098.4,Baixa (provável mistura valor unitário/total)
+Execução de operação,tonelada,Execução,15,9,225000.0,2330644.4,12989286.67,Média
+Assistência,metro,Assistência,15,9,6500.0,6500.0,6500.0,Média
+Ensaio,volt,Execução,15,9,5000000.0,5000000.0,5000000.0,Média
+Manutenção de instalação,homem hora,Execução,15,9,4500.0,5000.0,5000.0,Média
+Execução de reparo,dia,Fiscalização,15,9,1000.0,9500.0,46200.0,Média
+Supervisão,tonelada,Supervisão,15,9,600.0,700.0,91415.8,Baixa (provável mistura valor unitário/total)
+Condução de equipe de manutenção,metro cúbico,Supervisão,15,9,5402246.0,5402246.0,5402246.0,Média
+Condução de serviço técnico,homem hora,Assistência,15,9,4500.0,5000.0,5000.0,Média
+Assessoria,sacas,Execução,15,9,2500.0,3500.0,5050.0,Média
+Análise,quilovolt-ampére,Execução,15,9,1500.0,13000.0,60000.0,Média
+Anteprojeto arquitetônico,metro quadrado,Elaboração,15,9,600.0,2000.0,3500.0,Média
+Projeto de instalações,pontos,Execução,15,9,1500.0,2000.0,18578.0,Média
+Direção de serviço técnico,dia,Direção de serviço técnico,15,9,5467000.59,5467000.59,5467000.59,Média
+Manutenção de equipamento,contratos,Execução,15,9,8275.0,8275.0,12000.0,Média
+Levantamento,quilowatt,Consultoria,15,9,1000.0,1500.0,1500.0,Média
+Projeto,pessoa(s),Atuação,14,10,5000.0,8000.0,15000.0,Média
+Extensão,metro quadrado,Supervisão,14,10,2000.0,8000.0,8000.0,Média
+Direção de obras,quilograma,Execução,14,10,89250.0,304093.67,7684050.52,Baixa (provável mistura valor unitário/total)
+Vistoria,ampére,Execução,14,10,850.0,1146.6,1930.5,Média
+Manutenção de equipamento,btu/hora,Execução,14,10,400.0,1945.0,12000.0,Média
+Coordenação,quilovolt,Coordenação,14,10,368696.65,442542.23,590233.39,Média
+Supervisão,dia,Supervisão,14,10,200.0,65170.0,84000.0,Média
+Execução de manutenção,mega-volt-ampére,Execução,14,10,22120.0,59100.0,77940.0,Média
+Desempenho de função técnica,hora,Execução,14,10,8000.0,8000.0,8000.0,Média
+Projeto,quilograma-força,Execução,14,10,200.0,1000.0,2000.0,Média
+Execução de instalação,kilovolt ampere reativo,Execução,14,10,1800.0,4000.0,4000.0,Média
+Execução de obra técnica,volt,Execução,14,10,8750.0,69000.0,1020899.16,Média
+Assessoria,quilômetro,Supervisão,14,10,24298872.46,42382893.39,67659597.71,Média
+Monitoramento,decibel,Execução,14,10,1300.0,1500.0,2000.0,Média
+Condução de equipe de operação,metros cúbicos por hora,Execução,14,10,22636198.66,22636198.66,25436198.66,Média
+Fiscalização de serviço técnico,quilovolt-ampére,Fiscalização,14,10,250.0,8735.0,49300.0,Média
+Consultoria,metro,Consultoria,14,10,250.0,1470.0,17070.74,Média
+Ensaio,dia,Execução,14,10,7500.0,4559455.0,4559455.0,Média
+Planejamento,dia,Coordenação,14,10,4559455.0,4559455.0,34554860.44,Média
+Manutenção de equipamento,hora por dia,Execução,14,10,1200.0,2023.3,18438.2,Média
+Condução de equipe de instalação,homem / dia,Execução,14,10,275000.0,275000.0,275000.0,Média
+Dimensionamento,quilowatt(s) pico,Elaboração,14,10,1000.0,9750.0,29711.0,Média
+Execução de obra,ano,Execução,14,10,2500.0,2500.0,5774238.0,Baixa (provável mistura valor unitário/total)
+Operação,ano,Execução,14,10,3700.0,50484.0,1222584.0,Baixa (provável mistura valor unitário/total)
+Condução de equipe de instalação,hora por dia,Execução,14,10,850.0,1275.0,3000.0,Média
+Técnica,pessoa(s),Execução,13,9,57459.06,342295.08,1034961.0,Média
+Laudo,quilograma-força,Elaboração,13,9,500.0,1000.0,2510.0,Média
+Ambiental,semestre,Assistência,13,9,2000.0,2500.0,2500.0,Média
+Execução de reforma,quilovolt-ampére,Execução,13,9,500.0,2419.6,7000.0,Média
+Condução de equipe de montagem,mes,Execução,13,9,410000.0,534700.0,1474185.5,Média
+Estudo de viabilidade,metro quadrado,Elaboração,13,9,800.0,2000.0,4000.0,Média
+Ambiental,metros cúbicos por hora,Consultoria,13,9,100.0,1000.0,8000.0,Média
+Fiscalização de obra técnica,tonelada,Fiscalização,13,9,100.0,41184.39,6895796.91,Baixa (provável mistura valor unitário/total)
+Elaboração de orçamento,quilograma,Execução,13,9,2000.0,4000.0,60000.0,Média
+Condução de equipe de manutenção,quilômetro,Execução,13,9,22636198.66,25436198.66,25436198.66,Média
+Manutenção de equipamento,volt,Execução,13,9,2100.0,5000.0,9950.0,Média
+Análise,ampére,Execução,13,9,850.0,936.0,1000.0,Média
+Condução de equipe de operação,quilovolt-ampére,Execução,13,9,4000.0,4000.0,5500.0,Média
+Condução de serviço técnico,dia,Execução,13,9,30890.0,125400.0,190175.02,Média
+Técnica,metro cúbico,Orientação,13,9,2910.0,24000.0,120000.0,Média
+Condução de serviço técnico,quilowatt,Execução,13,9,1800.0,7000.0,8000.0,Média
+Execução de manutenção,quilowatt(s) pico,Execução,13,9,500.0,1000.0,8000.0,Média
+Consultoria,semestre,Execução,13,9,72000.0,72000.0,72000.0,Média
+Condução de equipe de montagem,hora por dia,Execução,13,9,3500.0,3500.0,4500.0,Média
+Condução de equipe de fabricação,unidade,Execução,13,9,1000.0,1500.0,1261512.33,Baixa (provável mistura valor unitário/total)
+Condução de equipe de reforma,unidade,Execução,13,9,32000.0,155756.04,959780.17,Média
+Fiscalização de obra,hora por semana,Fiscalização,13,9,5680.0,5680.0,5680.0,Média
+Projeto,metro cúbico por hora,Elaboração,13,9,3500.0,8000.0,63405.0,Média
+Controle de qualidade,hectare,Supervisão,13,9,1500.0,1500.0,1500.0,Média
+Condução de equipe de montagem,quilowatt,Execução,12,8,2300.0,5000.0,5000.0,Média
+Análise,quilowatt(s) pico,Execução,12,8,300.0,500.0,1000.0,Média
+Parecer técnico,homem hora,Elaboração,12,8,400.0,1150.0,2900.0,Média
+Técnica,quilograma,Assistência,12,8,1000.0,1000.0,1000.0,Média
+Treinamento,ano,Execução,12,8,680.0,1000.0,1984.91,Média
+Projeto arquitetônico,hora,Elaboração,12,8,1600.0,2280.0,7000.0,Média
+Desenvolvimento,ano,Consultoria,12,8,1000.0,8000.0,8000.0,Média
+Estudo,homem hora,Elaboração,12,8,1547.0,7500.0,7500.0,Média
+Fabricação,tonelada,Execução,12,8,10.0,575005.0,9857920.0,Média
+Laudo,quilograma,Execução,12,8,606.0,2500.0,5000.0,Média
+Manutenção de equipamento,hectare,Execução,12,8,500.0,1250.0,1500.0,Média
+Laudo,blocos,Execução,12,8,1000.0,1000.0,1000.0,Média
+Execução de instalação,mega-volt-ampére,Execução,12,8,24643.88,26048.0,5893732.15,Baixa (provável mistura valor unitário/total)
+Estudo,quilômetro quadrado,Execução,12,8,8000.0,11500.0,16500.0,Média
+Gestão,mes,Gestão,12,8,1.0,41500.0,120000.0,Média
+Assistência,mudas,Assistência,12,8,600.0,1000.0,1200.0,Média
+Técnica,homem hora,Elaboração,12,8,600.0,600.0,36856.16,Baixa (provável mistura valor unitário/total)
+Coordenação,bar,Coordenação,12,8,6621.5,77815.0,77815.0,Média
+Elaboração de orçamento,semestre,Execução,12,8,72000.0,72000.0,72000.0,Média
+Projeto,unidade por hora,Atuação,12,8,10000.0,10000.0,10000.0,Média
+Controle de qualidade,metro,Execução,12,8,15770189.24,15770189.24,69743487.42,Média
+Condução de equipe de operação,cavalo-vapor,Execução,12,8,22636198.66,24036198.66,25436198.66,Média
+Gestão,dia,Gestão,12,8,10908.0,38400.0,1100000.0,Baixa (provável mistura valor unitário/total)
+Ambiental,quilograma,Execução,12,8,480.0,1140.0,10416.96,Média
+Condução de equipe de manutenção,hora por dia,Execução,12,8,3500.0,3500.0,4500.0,Média
+Consultoria,quilovolt-ampére,Execução,12,8,58000.0,58000.0,76800.0,Média
+Dimensionamento,quilowatt,Execução,12,8,1200.0,2000.0,3000.0,Média
+Execução de fabricação,metro cúbico,Execução,12,8,28000.0,125000.0,380340.0,Média
+Projeto de instalações,metro,Elaboração em BIM,12,8,1000.0,4800.0,15000.0,Média
+Execução de produção,metro quadrado,Execução,12,8,5000.0,5000.0,5000.0,Média
+Gestão,quilowatt(s) pico,Gestão,12,8,12400.0,12400.0,12400.0,Média
+Condução de equipe de fabricação,metro quadrado,Execução,12,8,1000.0,2948.13,8738.0,Média
+Desempenho de função técnica,quilômetro,Execução,12,8,115023265.9,115023265.9,115023265.9,Média
+Parecer técnico,metro,Consultoria,11,7,1500.0,1500.0,5250.0,Média
+Projeto,litro,Execução,11,7,3000.0,4838.78,84000.0,Média
+Supervisão,ano,Execução,11,7,800.0,3000.0,26359.9,Média
+Desempenho de função técnica,litro,Execução,11,7,1.0,2100.0,6600.0,Média
+Fiscalização de obra técnica,mega-volt-ampére,Atuação,11,7,1.0,17122.0,17122.0,Média
+Desempenho de cargo técnico,hectare,Execução,11,7,1000.0,1500.0,2000.0,Média
+Laudo,volt-ampére,Atuação,11,7,4800.0,4800.0,4800.0,Média
+Execução de operação,dia,Execução,11,7,38400.0,5033403.45,63272000.0,Média
+Assessoria,decibel,Assessoria,11,7,500.0,500.0,500.0,Média
+Supervisão,homem hora,Supervisão,11,7,2500.0,7500.0,7500.0,Média
+Manutenção de instalação,quilovolt,Gestão,11,7,54000.0,2187982.0,4192066.21,Média
+Execução de reforma,volt,Execução,11,7,144454.72,177000.0,177000.0,Média
+Gestão,quilômetro,Gestão,11,7,6711766.6,15904649.58,107001449.9,Média
+Manutenção de instalação,pontos,Execução,11,7,9000.0,3134474.88,6920129.05,Média
+Fiscalização de obra técnica,watt,Fiscalização,11,7,1500.0,2000.0,4500.0,Média
+Manutenção de equipamento,hora,Execução,11,7,3500.0,25480.68,232000.0,Média
+Projeto,semestre,Elaboração,11,7,72000.0,72000.0,72000.0,Média
+Assessoria,semestre,Execução,11,7,72000.0,72000.0,72000.0,Média
+Execução de obra técnica,tonelada refrigeração,Execução,11,7,142865.0,2136398.0,45072950.17,Baixa (provável mistura valor unitário/total)
+Coordenação,quilograma,Coordenação,11,7,77650.0,295686.81,29857921.81,Baixa (provável mistura valor unitário/total)
+Treinamento,mes,Orientação,11,7,1600.0,3000.0,3000.0,Média
+Análise,quilowatt,Assessoria,11,7,500.0,1000.0,1000.0,Média
+Condução de equipe de manutenção,metro,Execução,11,7,7000.0,158951.86,190000.0,Média
+Estudo,quilovolt,Execução,11,7,9900.0,9900.0,47000.0,Média
+Assistência,hora por semana,Execução,11,7,2587310.23,2587310.23,2587310.23,Média
+Fiscalização de obra técnica,dia,Atuação,10,6,2500.0,5000.0,602000.0,Baixa (provável mistura valor unitário/total)
+Monitoramento,ano,Execução,10,6,4000.0,5000.0,5796902.75,Baixa (provável mistura valor unitário/total)
+Fiscalização de serviço técnico,hora,Fiscalização,10,6,1500.0,1500.0,2000.0,Média
+ESPECIFICACAO,quilovolt-ampére,Execução,10,6,5000.0,5000.0,6000.0,Média
+Estudo de viabilidade,metro cúbico,Elaboração,10,6,500.0,800.0,800.0,Média
+Execução de serviço técnico,hora por semana,Execução,10,6,7272.0,70000.0,147274.11,Média
+Manutenção de instalação,metro cúbico,Execução,10,6,2000.0,2000.0,164835.18,Baixa (provável mistura valor unitário/total)
+Manutenção de instalação,tonelada refrigeração,Execução,10,6,20000.0,106653.25,167400.0,Média
+Execução de manutenção,cavalo-vapor,Execução,10,6,26000.0,292581.0,335129.16,Média
+Avaliação,homem hora,Consultoria,10,6,4000.0,8600.0,15300.0,Média
+Condução de serviço técnico,quilômetro,Execução,10,6,27340547.5,27340547.5,27340547.5,Média
+Consultoria,metro cúbico,Consultoria,10,6,1500.0,1750.0,17070.74,Média
+Manutenção de equipamento,pontos,Execução,10,6,2712442.2,5402976.04,6920129.05,Média
+Execução de instalação,quilômetro quadrado,Execução,10,6,30000.0,30000.0,120000.0,Média
+Gestão,hora por mês,Gestão,10,6,5000.0,5000.0,6000.0,Média
+Condução de equipe de montagem,metro cúbico,Orientação,10,6,100.0,100.0,264443.68,Baixa (provável mistura valor unitário/total)
+Coordenação,hora por mês,Assessoria,10,6,1000.0,1372294.5,24000000.0,Média
+Execução de instalação,ohm-metro,Execução,10,6,2500.0,18000.0,119000.0,Média
+Condução de serviço técnico,quilovolt,Condução,10,6,6541132.78,15372035.58,117781126.32,Média
+Execução de operação,tonelada por mês,Execução,10,6,16945173.43,16945173.43,26801032.7,Média
+Execução de obra,litro,Execução,10,6,135646.55,3697605.72,23188390.61,Média
+Operação,tonelada,Execução,10,6,6891600.0,6891600.0,6891600.0,Média
+Inspeção,megawatt,Execução,10,6,269140.0,269140.0,269140.0,Média
+Inspeção,quilowatt,Execução,10,6,700.0,952.0,1344.0,Média
+Inspeção,metro,Execução,10,6,600.0,3000.0,3000.0,Média
+Desempenho de cargo,metro quadrado,Direção de obra,10,6,26894626.12,26894626.12,26894626.12,Média
+Instalação de equipamento,metro,Execução,10,6,2000.0,2000.0,2000.0,Média
+Execução de instalação,contratos,Execução,10,6,2980.0,7490.0,12000.0,Média
+Supervisão,hora por mês,Coordenação,9,7,11415.0,8517159.31,8517159.31,Média
+Perícia,hora,Execução,9,7,1.0,2400.0,3294.59,Média
+Desempenho de função técnica,quilograma,Execução,9,7,1.0,2100.0,6600.0,Média
+Perícia,hectare,Execução,9,7,1000.0,3000.0,3500.0,Média
+Projeto,homem / dia,Elaboração,9,7,800.0,2000.0,20000.0,Média
+Monitoramento,quilômetro,Execução,9,7,5000.0,67659597.71,75455809.32,Média
+Produção técnica especializada,quilograma,Execução,9,7,88.78,200.0,8483.0,Baixa (provável mistura valor unitário/total)
+Condução de equipe de montagem,quilograma,Execução,9,7,7000.0,72000.0,344658.6,Média
+Vistoria,litro,Execução,9,7,1.0,1000.0,3200.0,Média
+Execução de cadastramento,mes,Execução,9,7,2000.0,5000.0,5000.0,Média
+ESPECIFICACAO,metro,Elaboração,9,7,1.0,10.0,11000.0,Baixa (provável mistura valor unitário/total)
+Elaboração de orçamento,quilovolt,Execução,9,7,1.0,1.0,15904649.58,Baixa (provável mistura valor unitário/total)
+Execução de reforma,tonelada,Execução,9,7,100000.0,560000.0,599944112.1,Baixa (provável mistura valor unitário/total)
+Execução de ampliação,quilovolt-ampére,Atuação,9,7,10.0,42000000.0,42000000.0,Média
+Planejamento,quilowatt(s) pico,Execução,9,7,400.0,1500.0,2000.0,Média
+Execução de montagem,tonelada refrigeração,Execução,9,7,35000.0,1099600.0,24100000.0,Baixa (provável mistura valor unitário/total)
+Desempenho de cargo técnico,mes,Atuação,9,7,7272.0,24480.0,4230236.41,Baixa (provável mistura valor unitário/total)
+Mensuração,metro,Execução,9,7,500.0,500.0,4000.0,Média
+Execução de obra técnica,quilômetro quadrado,Execução,9,7,44355.85,1846416.24,71981278.2,Baixa (provável mistura valor unitário/total)
+Ambiental,mudas,Execução,9,7,1200.0,1250.0,8483.0,Média
+Execução de manutenção,unidade por hora,Execução,9,7,150.0,180.0,200.0,Média
+Condução de equipe de instalação,metro cúbico,Execução,9,7,500.0,6800.0,24993717.91,Baixa (provável mistura valor unitário/total)
+Assessoria,quilograma,Execução,9,7,2000.0,4500.0,20000.0,Média
+Treinamento,dia,Execução,9,7,335.0,1000.0,1000.0,Média
+Parecer técnico,volt,Elaboração,9,7,1212.0,2200.0,2200.0,Média
+Coleta de dados,quilovolt-ampére,Execução,9,7,600.0,650.0,8958.0,Média
+Consultoria,ohm-metro,Consultoria,9,7,100.0,100.0,100.0,Média
+Execução de montagem,decibel,Execução,9,7,4800.0,5300.0,14700.0,Média
+Execução de montagem,lux,Execução,9,7,5300.0,5300.0,14700.0,Média
+Ambiental,metro cúbico por segundo,Execução,9,7,15000.0,5895066.56,5895066.56,Média
+Execução de reparo,quilovolt,Elaboração,9,7,408.48,408.48,408.87,Média
+Direção de obra,quilômetro,Direção de obra,9,7,29907395.03,30081679.16,302932536.84,Média
+Estudo arquitetônico,metro quadrado,Execução,9,7,300.0,700.0,3000.0,Média
+Anteprojeto,unidade,Elaboração,9,7,2000.0,4000.0,3090790.81,Baixa (provável mistura valor unitário/total)
+Interpretação,unidade,Elaboração,9,7,3000.0,12000.0,15000.0,Média
+Execução de fabricação,homem hora,Execução,9,7,402900.0,402900.0,2062222.5,Média
+Direção de serviço técnico,metro cúbico,Direção,8,6,34400.0,1419410.0,32104124.15,Baixa (provável mistura valor unitário/total)
+Manutenção de equipamento,quilowatt,Execução,8,6,1.0,1200.0,5000.0,Média
+Execução de reparo,quilômetro,Execução,8,6,9811753.47,11713967.71,21755000.0,Média
+Condução de serviço técnico,metro cúbico,Execução,8,6,1200.0,150000.0,2476905.97,Média
+Fiscalização de obra técnica,hectare,Fiscalização,8,6,1.0,250.5,1000.0,Média
+Coordenação,tonelada refrigeração,Execução,8,6,5300.0,19750.0,972000.0,Baixa (provável mistura valor unitário/total)
+Gestão,tonelada,Execução,8,6,1.0,4000.5,9200.0,Média
+Ensaio,ohm,Execução,8,6,2850.0,8750.0,30000.0,Média
+Projeto arquitetônico,mes,Execução,8,6,4450.0,4725.0,189483.7,Baixa (provável mistura valor unitário/total)
+Condução de equipe de instalação,homem hora,Execução,8,6,1.0,190000.0,190000.0,Média
+Avaliação,quilowatt,Execução,8,6,600.0,3000.0,8000.0,Média
+Execução de obra técnica,unidade por hora,Execução,8,6,8000.0,176497.73,22137556.36,Baixa (provável mistura valor unitário/total)
+Perícia,dia,Consultoria,8,6,2500.0,3400.0,4890.0,Média
+Elaboração de orçamento,hectare,Elaboração,8,6,805097.69,805097.69,1203057.08,Média
+Condução de serviço técnico,quilograma,Execução,8,6,50.0,4500.0,6700.0,Média
+Fiscalização de serviço técnico,hora por mês,Fiscalização,8,6,11250000.0,11250000.0,11250000.0,Média
+Direção de obras,mes,Execução,8,6,160000.0,1974635.21,1974635.21,Média
+Projeto,btu/hora,Elaboração,8,6,1.0,806.0,1500.0,Média
+Execução de ampliação,quilograma,Execução,8,6,8000.0,1499675.94,2338919.4,Média
+Coordenação,hora por dia,Coordenação,8,6,14397.44,17922.71,16554131.41,Baixa (provável mistura valor unitário/total)
+ESPECIFICACAO,metro cúbico,Execução,8,6,2671.0,41431.25,117500.0,Média
+Assistência,hora,Execução,8,6,1000.0,46400.0,720000.0,Média
+Laudo,litro,Execução,8,6,650.0,2000.0,3200.0,Média
+Vistoria,ohm,Consultoria,8,6,300.0,3328.75,11496.04,Média
+Fiscalização de serviço técnico,volt,Execução,8,6,3000.0,3000.0,3000.0,Média
+Análise,metro,Execução,8,6,2000.0,253210.92,1203057.08,Média
+Execução de ampliação,quilowatt,Execução,8,6,800.0,1650.0,398333.0,Baixa (provável mistura valor unitário/total)
+Condução de equipe de montagem,ano,Execução,8,6,10000.0,480460.9,380144941.47,Baixa (provável mistura valor unitário/total)
+Assessoria,homem hora,Assessoria,8,6,257600.0,257600.0,257600.0,Média
+Consultoria,quilograma,Consultoria,8,6,800.0,1150.0,1621.0,Média
+Execução de operação,metros cúbicos por hora,Execução,8,6,48000.0,212455.29,12919519.44,Baixa (provável mistura valor unitário/total)
+Execução de instalação,litro,Execução,8,6,2000.0,1236633.56,3877840.59,Média
+Execução de serviço técnico,unidade por hora,Execução,8,6,1.0,6000.0,7200.0,Média
+Condução de serviço técnico,tonelada refrigeração,Coordenação,8,6,500.0,1422.52,22140.48,Média
+Experimentação,quilowatt(s) pico,Execução,8,6,24779.54,29766.5,33000.0,Média
+Projeto,tonelada por mês,Elaboração,8,6,16269418.44,16269418.44,16269418.44,Média
+Coleta de dados,tonelada por mês,Elaboração,8,6,16269418.44,16269418.44,16269418.44,Média
+Elaboração de orçamento,tonelada por mês,Elaboração,8,6,16269418.44,16269418.44,16269418.44,Média
+Execução de manutenção,hora por semana,Execução,8,6,54979.44,684517.97,781200.0,Média
+Planejamento,quilômetro quadrado,Consultoria,8,6,168431.28,168431.28,168431.28,Média
+Execução de obra,ohm,Execução,8,6,5000.0,8000.0,8000.0,Média
+Estudo de viabilidade ambiental,hectare,Consultoria,8,6,1000.0,1750.0,2000.0,Média
+Projeto de instalações,volt-ampére,Elaboração,8,6,1.0,1.0,1.0,Média
+Ensaio,megawatt,Execução,8,6,269140.0,269140.0,269140.0,Média
+Execução de obra,hora por dia,Direção de obra,8,6,20000.0,20000.0,20000.0,Média
+Especificação,watt,Elaboração,8,6,1.0,1.0,300.0,Baixa (provável mistura valor unitário/total)
+Estudo de viabilidade técnico,pontos,Elaboração,8,6,75000.0,281451.55,756712.7,Média
+Mensuração,pontos,Execução,8,6,75000.0,281451.55,756712.7,Média
+Condução de equipe de montagem,hora por mês,Coordenação,7,5,650000.0,1047885.92,1548060.31,Média
+Execução de reparo,pontos,Execução,7,5,8813.94,42740.14,321961.55,Média
+Projeto,quilocaloria por hora,Execução,7,5,427489.36,3161000.0,4176814.47,Média
+Consultoria,quilômetro quadrado,Execução,7,5,7200.0,14400.0,15000.0,Média
+Parecer técnico,quilovolt-ampére,Execução,7,5,3000.0,3000.0,4500.0,Média
+Execução de reparo,quilograma,Execução,7,5,32100.0,616420.85,2867979.05,Média
+Operação de instalação,metro quadrado,Execução,7,5,750.0,1000.0,8586.86,Média
+Planejamento,tonelada,Elaboração,7,5,1.0,1.0,1000.0,Baixa (provável mistura valor unitário/total)
+Laudo,watt,Elaboração,7,5,700.0,750.0,1000.0,Média
+Desempenho de cargo técnico,quilômetro,Elaboração,7,5,100.0,100.0,100.0,Média
+Condução de equipe de manutenção,metros cúbicos por hora,Atuação,7,5,4300.0,5530.0,6750.0,Média
+Desenvolvimento,hectare,Elaboração,7,5,500.0,800.0,5000.0,Média
+Ambiental,grama,Consultoria,7,5,1.0,100.0,100.0,Média
+Ensaio,quilograma-força,Execução,7,5,45000.0,100000.0,120000.0,Média
+Projeto arquitetônico,metro cúbico,Execução,7,5,1000.0,1500.0,90000.0,Baixa (provável mistura valor unitário/total)
+Planejamento,hora por semana,Elaboração,7,5,12000.0,20500.0,22500.0,Média
+Assistência,grama,Assistência,7,5,1.0,1.0,1.0,Média
+Execução de instalação,horse-power,Execução,7,5,133940.0,169803.11,259000.0,Média
+Condução de equipe de operação,dia,Execução,7,5,15000.0,42573.29,295262.77,Média
+Ambiental,atmosfera,Execução,7,5,20.0,900.0,1000.0,Média
+Projeto,ohm-metro,Execução,7,5,1200.0,5000.0,5000.0,Média
+Execução de operação,hora,Execução,7,5,123999.96,123999.96,123999.96,Média
+Desempenho de cargo técnico,dia,Elaboração,7,5,1300.0,1300.0,36360.0,Baixa (provável mistura valor unitário/total)
+Execução de manutenção,metros cúbicos por hora,Execução,7,5,51952.34,276372.0,1620000.0,Média
+Execução de instalação,tonelada,Execução,7,5,400000.0,1500000.0,2930000.0,Média
+Execução de obra técnica,ampére,Execução,7,5,5000.0,6000.0,6500.0,Média
+Execução de montagem,hora,Orientação,7,5,100.0,100.0,92000.38,Baixa (provável mistura valor unitário/total)
+Estudo de viabilidade,ano,Execução,7,5,53949382.72,53949382.72,53949382.72,Média
+Coleta de dados,quilômetro,Execução,7,5,16996.0,22000.0,584000.0,Baixa (provável mistura valor unitário/total)
+Projeto,volt por metro,Execução,7,5,1000.0,1000.0,1000.0,Média
+Treinamento,hora por dia,Consultoria,7,5,450.0,450.0,450.0,Média
+Orientação técnica,tonelada,Orientação,7,5,3980.0,8000.0,750000.0,Baixa (provável mistura valor unitário/total)
+Condução de equipe de manutenção,volt,Direção,7,5,200.0,24000.0,845000.0,Baixa (provável mistura valor unitário/total)
+Manutenção de equipamento,quilovolt,Execução,7,5,60000.0,60000.0,448628.16,Média
+Execução de serviço técnico,hora por mês,Execução,7,5,2000.0,2000.0,3455155.04,Baixa (provável mistura valor unitário/total)
+Parecer técnico,mes,Execução,7,5,1000.0,9393.35,1000000.0,Baixa (provável mistura valor unitário/total)
+Condução de equipe de operação,hora por mês,Execução,7,5,4000.0,4000.0,4000.0,Média
+Direção de obras,quilovolt,Coordenação,7,5,7044485.65,108033398.78,158085117.87,Média
+Laudo,ohm-metro,Execução,7,5,300.0,1500.0,1513.79,Média
+Extensão,metro,Execução,7,5,4800.0,4800.0,15000.0,Média
+Monitoramento,dia,Execução,7,5,2000.0,10650.0,13000.0,Média
+Execução de operação,mes,Execução,7,5,65520.0,160466.91,12919519.44,Baixa (provável mistura valor unitário/total)
+Pesquisa,mes,Consultoria,7,5,3000.0,3000.0,3000.0,Média
+Análise,homem hora,Elaboração,7,5,1400.0,2500.0,951093.83,Baixa (provável mistura valor unitário/total)
+Condução de equipe de manutenção,btu/hora,Execução,7,5,8435.0,13890.01,70866.12,Média
+Assessoria,hora por dia,Assessoria,7,5,12000.0,12000.0,15000.0,Média
+Assistência,volt-ampére,Assistência,7,5,3000.0,3000.0,28350.72,Média
+Parecer técnico,metro cúbico,Elaboração,7,5,400.0,1000.0,3600.0,Média
+Fabricação,ano,Atuação,7,5,6000.0,6600.0,6600.0,Média
+Direção de serviço técnico,mes,Execução,7,5,85000.0,2177824.86,7737521.92,Média
+Execução de reparo,ano,Execução,7,5,4500000.0,8257382.0,50000000.0,Média
+Condução de equipe de operação,ano,Coordenação,7,5,2500.0,2500.0,17039.76,Média
+Execução de fabricação,quilograma,Execução,7,5,38772.0,737368.0,2660721.53,Média
+Estudo de viabilidade técnico,hectare,Elaboração,7,5,800.0,2500.0,5000.0,Média
+Execução de restauração,ano,Execução,7,5,2500.0,2500.0,2500.0,Média
+Calibração,unidade,Execução,7,5,2700.0,12200.0,36900.0,Média
+Dimensionamento,unidade,Elaboração,7,5,500.0,2000.0,3600.0,Média
+Execução de obra,quilômetro quadrado,Execução,7,5,1.0,1.0,1000.0,Baixa (provável mistura valor unitário/total)
+Projeto de instalações,tonelada refrigeração,Elaboração,7,5,2000.0,4000.0,260476.09,Baixa (provável mistura valor unitário/total)
+Calibração,hora,Execução,7,5,482250.0,482250.0,482250.0,Média
+Consultoria,volt,Execução,7,5,58000.0,58000.0,58000.0,Média
+Fiscalização de obra,dia,Fiscalização,7,5,2500.0,5000.0,716025.78,Baixa (provável mistura valor unitário/total)
+Condução de equipe de fabricação,metro cúbico,Execução,7,5,6532.48,10000.0,39040.0,Média
+Supervisão,quilowatt,Gestão,7,5,5600.0,5600.0,5600.0,Média
+Ambiental,litro,Elaboração,6,4,1000.0,1000.0,3000.0,Média
+Coleta de dados,quilowatt(s) pico,Elaboração,6,4,400.0,400.0,400.0,Média
+Execução de serviço técnico,semestre,Execução,6,4,88.98,3300.0,6270.0,Média
+Condução de equipe de montagem,volt,Execução,6,4,200.0,425000.0,845000.0,Média
+Avaliação,hora por dia,Assessoria,6,4,1212.0,1504.0,4400.0,Média
+Auditoria,metro quadrado,Execução,6,4,2000.0,2000.0,2000.0,Média
+Vistoria,volt-ampére,Execução,6,4,936.0,936.0,1000.0,Média
+Pesquisa,dia,Execução,6,4,1300.0,1650.0,2800.0,Média
+Coordenação,tonelada,Execução,6,4,10000.0,1015406.94,2020813.87,Média
+Estudo,hora por semana,Elaboração,6,4,8500.0,20500.0,22500.0,Média
+Laudo,quilocaloria,Execução,6,4,450.0,1000.0,6000.0,Média
+Operação de equipamento,metro,Direção,6,4,82500.0,22500000.0,22500000.0,Média
+Execução de cadastramento,quilômetro quadrado,Execução,6,4,2800.0,3400.0,120000.0,Baixa (provável mistura valor unitário/total)
+Ensaio,bar,Execução,6,4,1000.0,1150.0,1300.0,Média
+Técnica,hora por dia,Atuação,6,4,1.0,2750.5,5500.0,Média
+Execução de operação,quilômetro,Execução,6,4,3005759.76,5664582.93,7344000.0,Média
+Mensuração,decibel,Execução,6,4,1500.0,1500.0,1500.0,Média
+Elaboração de orçamento,quilovolt-ampére,Execução,6,4,1.0,1000.5,68833.31,Baixa (provável mistura valor unitário/total)
+Execução de serviço técnico,mega-volt-ampére,Execução,6,4,17122.0,17122.0,17122.0,Média
+Supervisão,mega-volt-ampére,Fiscalização,6,4,17122.0,17122.0,17122.0,Média
+Vistoria,unidade por hora,Execução,6,4,200.0,500.0,1000.0,Média
+Ensaio,hora,Execução,6,4,600.0,600.0,600.0,Média
+Coleta de dados,ohm,Execução,6,4,2800.0,4050.0,7800.0,Média
+Execução de serviço técnico,homem / dia,Execução,6,4,1000.0,1000.0,4500.0,Média
+Execução de instalação,hora por semana,Execução,6,4,484000.0,535000.0,688000.0,Média
+Estudo,volt-ampére,Consultoria,6,4,12700.0,18350.0,24000.0,Média
+Execução de serviço técnico,ohm-metro,Execução,6,4,2100.0,3550.0,5000.0,Média
+Vistoria,quilômetro,Execução,6,4,9464.58,52909.04,96000.0,Média
+Fiscalização de obra técnica,pontos,Fiscalização,6,4,2500.0,197462.17,408254.55,Média
+Produção técnica especializada,tonelada refrigeração,Consultoria,6,4,400.0,400.0,400.0,Média
+Auditoria,hora,Consultoria,6,4,1200.0,4940.0,9000.0,Média
+Assessoria,metro cúbico,Assessoria,6,4,1000.0,1000.0,9500.0,Média
+Ensaio,ohm-metro,Execução,6,4,1500.0,2000.0,2500.0,Média
+Condução de equipe de instalação,quilocaloria por hora,Supervisão,6,4,488218.74,560768.11,744167.99,Média
+Execução de desenho técnico,volt,Elaboração,6,4,533545.0,616772.5,700000.0,Média
+Execução de serviço técnico,volt por metro,Execução,6,4,1000.0,1000.0,1000.0,Média
+Condução de serviço técnico,watt,Coordenação,6,4,600.0,2800.0,5000.0,Média
+Execução de desenho técnico,metro cúbico,Execução,6,4,1000.0,1106.0,867059.02,Baixa (provável mistura valor unitário/total)
+Demolição,quilowatt,Execução,6,4,119000.0,126500.0,134000.0,Média
+Gestão,hora por dia,Gestão,6,4,5000.0,345600.0,345600.0,Média
+Condução de equipe de instalação,hora,Execução,6,4,2000.0,2000.0,5000.0,Média
+Execução de reforma,homem hora,Execução,6,4,1.0,218676.38,394881.26,Média
+Coleta de dados,quilovolt,Execução,6,4,100000.0,100000.0,100000.0,Média
+Planejamento,quilovolt,Execução,6,4,100000.0,100000.0,100000.0,Média
+Execução de serviço técnico,watt,Execução,6,4,10000.0,13000.0,16000.0,Média
+Operação,tonelada por mês,Execução,6,4,6891600.0,6891600.0,6891600.0,Média
+Execução de restauração,unidade,Consultoria,6,4,400.0,5000.0,5000.0,Média
+Execução de fabricação,tonelada,Execução,6,4,10.0,10.0,167991.32,Baixa (provável mistura valor unitário/total)
+Inspeção,quilovolt-ampére,Execução,6,4,1275.3,2750.0,4000.0,Média
+Execução de obra,ampére,Execução,6,4,500.0,1250.0,6000.0,Média
+Exploração,hectare,Elaboração,6,4,1000.0,1250.0,2000.0,Média
+Execução de instalação,metro cúbico por hora,Execução,6,4,35000.0,152125.0,1525156.62,Média
+Fiscalização de serviço técnico,gramas por metro quadrado,Assessoria,6,4,300000.0,300000.0,300000.0,Média
+Consultoria,quilovolt,Execução,6,4,58000.0,58000.0,58000.0,Média
+Inspeção,hectare,Supervisão,6,4,1500.0,1500.0,1500.0,Média
+Execução de produção,mudas,Execução,6,4,1212.0,1212.0,1212.0,Média
+Condução de serviço técnico,hora por semana,Gestão,5,3,970419.94,1047885.92,1047885.92,Média
+Execução de serviço técnico,metro cúbico por segundo,Execução,5,3,2258514.33,17545000.0,259000000.0,Média
+Orientação técnica,tonelada refrigeração,Orientação,5,3,7700.0,9501.6,12500.0,Média
+Execução de reparo,quilowatt,Execução,5,3,5000.0,5500.0,5500.0,Média
+Desempenho de função técnica,metro,Execução,5,3,230986.0,268265.56,4216066.13,Média
+Manutenção de instalação,quilowatt(s) pico,Execução,5,3,500.0,800.0,8000.0,Média
+Fiscalização de obra técnica,ohm,Execução,5,3,1.0,1.0,1.0,Média
+Execução de reforma,watt,Execução,5,3,65000.0,65000.0,82463.28,Média
+Condução de equipe de operação,hora,Orientação,5,3,10816.0,10816.0,16725.3,Média
+Controle de qualidade,hora,Supervisão,5,3,10816.0,10816.0,10816.0,Média
+Laudo,quilocaloria por hora,Execução,5,3,1100.0,1100.0,1300.0,Média
+Pesquisa,metro,Execução,5,3,19300.0,19600.0,3767720.0,Baixa (provável mistura valor unitário/total)
+Econômica,unidade,Consultoria,5,3,5400.0,5400.0,5400.0,Média
+Condução de serviço técnico,litro,Execução,5,3,50.0,50.0,50.0,Média
+Execução de montagem,hora por semana,Execução,5,3,293000.0,1138101.21,4146815.36,Média
+Projeto arquitetônico,dia,Elaboração,5,3,2500.0,3500.0,4000.0,Média
+Laudo,mega-volt-ampére,Elaboração,5,3,37384.07,37384.07,37384.07,Média
+Estudo de viabilidade,quilowatt,Elaboração,5,3,5000.0,7530.0,7890.0,Média
+Operação de equipamento,metro quadrado,Execução,5,3,1600.0,1900.0,10000.0,Média
+Manutenção de equipamento,watt,Execução,5,3,3000.0,3000.0,3000.0,Média
+Monitoramento,quilowatt,Execução,5,3,1000.0,1000.0,8000.0,Média
+Direção de serviço técnico,ano,Coordenação,5,3,3660000.0,3660000.0,3660000.0,Média
+Execução de instalação,quilograma-força,Execução,5,3,3000.0,4500.0,8000.0,Média
+Assistência,litro,Execução,5,3,88.78,350.0,600.0,Média
+ESPECIFICACAO,quilovolt,Elaboração,5,3,6711766.6,6711766.6,6711766.6,Média
+Execução de reforma,tonelada refrigeração,Execução,5,3,7000.0,7847.0,154312.73,Média
+Análise,ohm,Atuação,5,3,1900.0,4200.0,5300.0,Média
+Fiscalização de serviço técnico,hora por semana,Fiscalização,5,3,3000.0,8000.0,8000.0,Média
+Elaboração de orçamento,watt,Execução,5,3,1500.0,4000.0,5000.0,Média
+Execução de operação,hora por semana,Execução,5,3,1138101.21,2214256.0,4146815.36,Média
+Mensuração,hora,Elaboração,5,3,1.0,1.0,1.0,Média
+Manutenção de instalação,ohm,Execução,5,3,1000.0,2850.0,2850.0,Média
+Operação de equipamento,mes,Execução,5,3,200970.04,200970.04,441893.52,Média
+Planejamento,mes,Execução,5,3,90000.0,3781943.86,24331828.85,Média
+Execução de serviço técnico,bar,Execução,5,3,1000.0,2500.0,5200.0,Média
+Mensuração,semestre,Execução,5,3,14000.0,800000.0,800000.0,Média
+Consultoria,tonelada,Assessoria,5,3,500.0,700.0,900.0,Média
+Padronização,metro quadrado,Execução,5,3,5000.0,6000.0,6000.0,Média
+Coleta de dados,quilowatt,Execução,5,3,1000.0,1000.0,3200.0,Média
+Consultoria,quilowatt,Elaboração,5,3,1500.0,1500.0,1500.0,Média
+ESPECIFICACAO,mes,Elaboração,5,3,3581026.17,3581026.17,3581026.17,Média
+Projeto,lux,Elaboração,5,3,296041.98,4450000.0,4450000.0,Média
+Condução de equipe de instalação,mes,Execução,5,3,410000.0,410000.0,1380000.0,Média
+Parecer técnico,ano,Elaboração,5,3,1.0,500.0,585.0,Média
+Manutenção de instalação,ampére,Execução,5,3,39563.7,39563.7,40000.0,Média
+Operação de instalação,tonelada,Execução,5,3,1500.0,1500.0,1500.0,Média
+Direção de obras,tonelada,Execução,5,3,10529894.8,10529894.8,20016393.3,Média
+Execução de instalação,hora por dia,Execução,5,3,7659.05,2508556.67,4064909.2,Média
+Assessoria,hora por mês,Orientação,5,3,3644.16,3644.16,3644.16,Média
+Execução de instalação,hora,Elaboração,5,3,2000.0,2000.0,2000.0,Média
+Elaboração de orçamento,dia,Elaboração,5,3,8000.0,1434642.93,1434642.93,Média
+Padronização,unidade,Supervisão,5,3,8550.65,8550.65,8550.65,Média
+Fiscalização de obra,hora,Fiscalização,5,3,139260.0,139260.0,139260.0,Média
+Direção de obra,metro,Direção de obra,5,3,3520503.61,40002025.85,40002025.85,Média
+Inspeção,volt,Execução,5,3,889.2,1000.0,4500.0,Média
+Estudo,volt,Execução,5,3,6000.0,9000.0,130500.0,Média
+Aferição,unidade,Execução,5,3,1048.0,1500.0,3750.0,Média
+Execução de restauração,metro quadrado,Execução,5,3,66000.0,120000.0,274426.39,Média
+Inspeção,pontos,Fiscalização,5,3,1200.0,1200.0,1200.0,Média
+Inspeção,ohm,Execução,5,3,170960.74,170960.74,199688.23,Média
+Estudo de viabilidade ambiental,hora por semana,Execução,5,3,600.0,600.0,600.0,Média
+Inspeção,quilovolt,Execução,5,3,6700.0,6700.0,8970.0,Média
+Estudo,quilograma,Elaboração,5,3,2000.0,2500.0,2500.0,Média
+Direção de serviço técnico,hora por semana,Direção de serviço técnico,5,3,23118459.39,23118459.39,23118459.39,Média
