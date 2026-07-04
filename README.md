@@ -2,6 +2,10 @@
 
 Repositorio de publicacao do painel e dos artefatos tecnicos da proposta de metodologia orientativa para a Tabela de Honorarios do SENGE/BA.
 
+## Painel publicado
+
+https://adinailson88.github.io/tabela-honorarios/
+
 ## Publicacao
 
 - `index.html`: pagina publicada pelo GitHub Pages na raiz do repositorio.
