@@ -11,10 +11,11 @@ from collections import defaultdict, Counter
 from pathlib import Path
 import openpyxl
 
-BASE = Path(__file__).resolve().parent
+REPO = Path(__file__).resolve().parents[1]
+REF = REPO / "assets" / "referencia"
 TOS_XLSX = Path(r"C:\Users\adina\Meu Drive\SENGE\NOVO ARQUIVO\TABELA TOS - 2.xlsx")
 CIDADES_XLSX = Path(r"C:\Users\adina\Meu Drive\SENGE\CidadessCalculo atualizado 07.11.2024.xlsx")
-DIM_MUN = BASE / "dim_municipios_bahia.csv"
+DIM_MUN = REF / "dim_municipios_bahia.csv"
 INSUF = "Informação insuficiente para verificar"
 INSUF_UNIDADE = "Informação insuficiente para verificar."
 ABSURDO = 1_000_000_000.0  # > R$ 1 bilhao = implausivel
@@ -335,7 +336,7 @@ def main():
         "valor_art","natureza_valor","confiabilidade_natureza_valor","motivo_natureza_valor",
         "qtd_linhas_art","qtd_atividades_art","qtd_codigos_atividade_art","valor_replicado_linhas",
         "classe_confiabilidade","usar_calculo_monetario","motivo_exclusao_calculo"]
-    with open(BASE / "base_servicos_tos_valor_municipio.csv", "w", encoding="utf-8", newline="") as f:
+    with open(REPO / "base_servicos_tos_valor_municipio.csv", "w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=base_fields, extrasaction="ignore")
         w.writeheader()
         for r in rows: w.writerow(r)
@@ -355,7 +356,8 @@ def main():
             g["mods"].add(r["modalidade"]); g["grupo_tos"].add(r["grupo_tos"]); g["sub_tos"].add(r["subgrupo_tos"])
             g["serv_tos"].add(r["servico_tos"]); g["grupo_hon"] = r["grupo_servico_honorarios"]
     serv_ok = serv_insuf = 0
-    with open(BASE / "agregado_servicos_tos_classe_a_valor_confiavel.csv", "w", encoding="utf-8", newline="") as f:
+    REF.mkdir(parents=True, exist_ok=True)
+    with open(REF / "agregado_servicos_tos_classe_a_valor_confiavel.csv", "w", encoding="utf-8", newline="") as f:
         w = csv.writer(f)
         w.writerow(["servico_honorarios_padronizado","unidade_medida","grupo_servico_honorarios","grupo_tos","subgrupo_tos",
                     "servico_tos","n_arts","mediana_valor","q1","q3","iqr","min","max","ano_min","ano_max",
@@ -390,7 +392,7 @@ def main():
         else:
             nat_agg[r["natureza_valor"]]  # garante chave
     nat_count = Counter(r["natureza_valor"] for r in rows)
-    with open(BASE / "resumo_natureza_valor.csv", "w", encoding="utf-8", newline="") as f:
+    with open(REF / "resumo_natureza_valor.csv", "w", encoding="utf-8", newline="") as f:
         w = csv.writer(f)
         w.writerow(["natureza_valor","quantidade_ARTs","percentual","mediana","q1","q3","observacao"])
         OBS = {
@@ -415,7 +417,7 @@ def main():
         k = r["municipio_key"] or "(vazio)"
         d = mun_diag[k]; d["orig"].add(r["municipio_original"]); d["n"] += 1
         d["uf"].add(r["uf"]); d["conf"] = r["confiabilidade_municipio"]
-    with open(BASE / "diagnostico_padronizacao_municipios.csv", "w", encoding="utf-8", newline="") as f:
+    with open(REF / "diagnostico_padronizacao_municipios.csv", "w", encoding="utf-8", newline="") as f:
         w = csv.writer(f)
         w.writerow(["municipio_key","municipio_label","codigo_ibge","grafias_distintas","n_arts","uf",
                     "confiabilidade_municipio","exemplos_grafias"])
@@ -463,10 +465,10 @@ def main():
         "municipios": mun_list, "anos": ano_list, "naturezas": nat_list, "grupos_tos": grptos_list,
         "classeA": cA, "agg": [[k[0],k[1],k[2],k[3],k[4],k[5],k[6],v[0],v[1]] for k,v in agg2.items()],
     }
-    assets_dir = BASE / "assets"
+    assets_dir = REPO / "assets"
     assets_dir.mkdir(exist_ok=True)
     (assets_dir / "dados_tos_valor_municipio.json").write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
-    legacy_json = BASE / "dados_tos_valor_municipio.json"
+    legacy_json = REPO / "dados_tos_valor_municipio.json"
     if legacy_json.exists():
         legacy_json.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
 

@@ -3,7 +3,7 @@
 
 Uso recomendado no PowerShell, a partir da raiz do repositorio:
 
-    python scripts/01_validar_json_publico.py --json dados_tos_valor_municipio.json --saida relatorios/validacao_json_publico.md
+    python scripts/01_validar_json_publico.py --json assets/dados_tos_valor_municipio.json --saida relatorios/validacao_json_publico.md
 
 O objetivo e detectar inconsistencias estruturais sem acessar dados linha a linha.
 """

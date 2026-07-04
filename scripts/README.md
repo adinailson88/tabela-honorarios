@@ -28,11 +28,9 @@ O executor único:
 - testa o build atual do painel;
 - gera relatório consolidado em `relatorios/relatorio_consolidado_sem_codex.md`.
 
-## Situação atual
+## Situacao atual
 
-O script `build_dashboard_tos_valor_municipio_layout_crea.py` ainda permanece na raiz por compatibilidade com a estrutura atual do projeto.
-
-Uma migração futura para `scripts/` deve atualizar os caminhos de entrada e saída e validar o GitHub Pages antes de publicar.
+Os scripts ativos ficam nesta pasta. O arquivo publicado pelo GitHub Pages continua sendo `index.html` na raiz do repositorio.
 
 ## Scripts já disponíveis
 
@@ -68,7 +66,7 @@ Valida o JSON público agregado usado pelo painel.
 Uso isolado:
 
 ```powershell
-python .\scripts\01_validar_json_publico.py --json .\dados_tos_valor_municipio.json --saida .\relatorios\validacao_json_publico.md
+python .\scripts\01_validar_json_publico.py --json .\assets\dados_tos_valor_municipio.json --saida .\relatorios\validacao_json_publico.md
 ```
 
 Saída:

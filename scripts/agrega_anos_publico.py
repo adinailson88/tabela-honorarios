@@ -21,7 +21,7 @@ import openpyxl
 import xlrd
 
 REPO = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(REPO))
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from gerar_metodologia_servicos_tos_valor_municipio import (  # noqa: E402
     ABSURDO,
@@ -531,7 +531,7 @@ def main() -> int:
         data = build_public_json(year_rows, fonte_texto, year)
         (anos_dir / f"dados_tos_valor_municipio_{year}.json").write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
-    write_service_csv(rows, REPO / "agregado_servicos_tos_classe_a_valor_confiavel.csv")
+    write_service_csv(rows, REPO / "assets" / "referencia" / "agregado_servicos_tos_classe_a_valor_confiavel.csv")
     write_csv(
         REPO / "docs" / "modelos" / "manifesto_bases_anuais_modelo.csv",
         ["ano", "arquivo_origem", "aba_ou_planilha", "caminho_local", "total_linhas", "total_arts_unicas", "campo_art", "campo_municipio", "campo_valor", "campo_tos", "campo_servico", "status_processamento", "observacao"],

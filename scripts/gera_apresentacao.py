@@ -205,6 +205,7 @@ box(s,0.92,4.5,11.5,0.6,"Valorização da engenharia baiana com segurança técn
     size=17,color=RGBColor(0xCA,0xDC,0xFC))
 box(s,0.92,6.6,11.5,0.5,"SENGE/BA · Proposta de subsídio técnico · 2026",size=12,color=RGBColor(0x9F,0xB0,0xC3))
 
-outp=os.path.join(BASE,'APRESENTACAO_CREA_SENGE.pptx')
+outp=os.path.join(BASE,'docs','entregaveis','APRESENTACAO_CREA_SENGE.pptx')
+os.makedirs(os.path.dirname(outp), exist_ok=True)
 prs.save(outp); print('WROTE',outp,'| slides:',len(prs.slides._sldIdLst))
 
