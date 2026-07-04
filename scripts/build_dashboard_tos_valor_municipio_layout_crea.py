@@ -264,6 +264,7 @@ td.txt{text-align:left;font-variant-numeric:normal}.muted{color:var(--gray600)}.
 .svcname{background:none;border:none;padding:0;font:inherit;color:var(--b600);font-weight:800;cursor:pointer;text-decoration:underline;text-align:left}
 .boxplot-wrap{overflow-x:auto}
 .boxplot-cap{margin:0 0 8px;font-size:11.5px;color:var(--gray600);line-height:1.4}
+.no-tos .colGrupoTos{display:none}
 details summary{cursor:pointer;font-weight:800;color:var(--b950)}
 .foot{margin-top:12px;border-radius:12px;background:#eaf2fb;border:1px solid #d8e7f7;color:var(--gray700);padding:10px 12px;font-size:11.5px;line-height:1.4}
 .tabs{display:flex;gap:8px;margin-bottom:14px}
@@ -301,10 +302,10 @@ details summary{cursor:pointer;font-weight:800;color:var(--b950)}
   <div class="fcard"><label for="fServico">Serviço padronizado</label><select id="fServico" multiple></select>
     <label class="checkrow" for="fSoConfiavel"><input type="checkbox" id="fSoConfiavel"> Somente serviços com referência confiável de preço</label>
   </div>
-  <div class="fcard"><label for="fGrupoTos">Grupo TOS</label><select id="fGrupoTos" multiple></select></div>
+  <div class="fcard" id="fcardGrupoTos"><label for="fGrupoTos">Grupo TOS</label><select id="fGrupoTos" multiple></select></div>
   <div class="fcard"><label for="munSearch">Município</label><input id="munSearch" placeholder="filtrar lista"><select id="fMun" multiple></select></div>
   <button class="btn" id="btnLimpar">Limpar filtros</button>
-  <div class="note"><strong>Sobre os dados</strong>Camada TOS com dados agregados a partir de ARTs registradas no sistema SITAC do CREA-BA. A ART é evidência auxiliar e indireta; valor declarado não é honorário líquido. Mediana e IQR só aparecem para Classe A + provável honorário técnico + n≥5. Trocar o ano recarrega só o agregado daquele ano.</div>
+  <div class="note"><strong>Sobre os dados</strong>Camada TOS com dados agregados a partir de ARTs registradas no sistema SITAC do CREA-BA. A ART é evidência auxiliar e indireta; valor declarado não é honorário líquido. Mediana e IQR só aparecem para Classe A + provável honorário técnico + n≥5. Trocar o ano recarrega só o agregado daquele ano. Passe o mouse sobre um serviço para ver n e mediana; ✓ indica referência confiável. Quando a base não tiver mais de um grupo TOS identificado, o filtro e o gráfico de grupo TOS ficam ocultos.</div>
 </aside>
 <main class="main">
   <div class="tabs">
@@ -332,9 +333,9 @@ details summary{cursor:pointer;font-weight:800;color:var(--b950)}
     <div class="card s4"><h3>Classes de confiabilidade</h3><p class="sub">Distribuição do subconjunto TOS completo.</p><div class="barstack" id="classbar"></div><div class="legend" id="classLegend"></div></div>
     <div class="card s6"><h3>Top serviços/unidades na base confiável</h3><p class="sub">Classe A + provável honorário técnico; cada unidade de medida forma grupo próprio.</p><div class="bars" id="barsServicos"></div></div>
     <div class="card s6"><h3>ARTs por serviço (todas as classes) na seleção</h3><p class="sub">Quantidade de ARTs por serviço, independente de haver ou não referência de preço confiável.</p><div class="bars" id="barsServicoTodasClasses"></div></div>
-    <div class="card s6"><h3>Top grupos TOS na seleção</h3><p class="sub">Ranking por quantidade de ARTs (contagem agregada) na seleção atual; não é ranking por valor monetário.</p><div class="bars" id="barsGrupoTos"></div></div>
+    <div class="card s6" id="cardGrupoTos"><h3>Top grupos TOS na seleção</h3><p class="sub">Ranking por quantidade de ARTs (contagem agregada) na seleção atual; não é ranking por valor monetário.</p><div class="bars" id="barsGrupoTos"></div></div>
     <div class="card s6"><h3>Municípios do serviço/seleção filtrada</h3><p class="sub">Quantidade de ARTs por município, na seleção atual de filtros.</p><p class="disclaimer">Mapa geográfico indisponível; exibindo lista territorial dos municípios encontrados, ordenada por quantidade de ARTs.</p><div class="bars" id="barsMunicipio"></div></div>
-    <div class="card s12"><h3>Serviços com referência confiável de preço</h3><p class="sub">Lista independente dos filtros de serviço/município: reúne todo serviço que atinge Classe A + provável honorário técnico + n≥5 no ano carregado. Use para escolher diretamente o que filtrar, sem testar opção por opção.</p><div class="tablewrap"><table id="reliableTable"><thead><tr><th>Serviço</th><th>Grupo SENGE</th><th>Grupo TOS</th><th>Unidade</th><th>n</th><th>Mediana</th><th>Q1</th><th>Q3</th><th>Municípios</th></tr></thead><tbody></tbody></table></div><p class="disclaimer">A mediana e o IQR são evidência agregada e auxiliar, derivada do valor declarado em ART. Não constituem honorário definitivo, contrato, nota fiscal ou piso obrigatório.</p></div>
+    <div class="card s12"><h3>Serviços com referência confiável de preço</h3><p class="sub">Lista independente dos filtros de serviço/município: reúne todo serviço que atinge Classe A + provável honorário técnico + n≥5 no ano carregado. Use para escolher diretamente o que filtrar, sem testar opção por opção.</p><div class="tablewrap" id="reliableTableWrap"><table id="reliableTable"><thead><tr><th>Serviço</th><th>Grupo SENGE</th><th class="colGrupoTos">Grupo TOS</th><th>Unidade</th><th>n</th><th>Mediana</th><th>Q1</th><th>Q3</th><th>Municípios</th></tr></thead><tbody></tbody></table></div><p class="disclaimer">A mediana e o IQR são evidência agregada e auxiliar, derivada do valor declarado em ART. Não constituem honorário definitivo, contrato, nota fiscal ou piso obrigatório.</p></div>
     <div class="card s12"><h3>Boxplot agregado - serviços com referência confiável</h3><p class="boxplot-cap">Boxplot construído a partir de Q1, mediana e Q3 de cada serviço/unidade (base confiável). Não representa valores mínimos, máximos, pontos individuais ou outliers, pois o agregado publicado não contém essas informações. Mostra os serviços selecionados no filtro; sem seleção, mostra os 10 com maior n.</p><div class="boxplot-wrap" id="boxplotConfiaveis"></div></div>
     <div class="card s12"><h3>Serviços - referência confiável observada</h3><p class="sub">Mediana, Q1, Q3 e IQR em R$ por unidade de medida, apenas para Classe A + provável honorário técnico. n&lt;5 = Informação insuficiente para verificar.</p><div class="tablewrap"><table id="svcTable"><thead><tr><th>Serviço</th><th>Unidade</th><th>Grupo</th><th>n</th><th>Mediana</th><th>Q1</th><th>Q3</th><th>IQR</th><th>Obs.</th></tr></thead><tbody></tbody></table></div></div>
     <div class="card s12"><details open><summary>Metodologia e limitações (resumo)</summary><div class="small muted" style="margin-top:8px">
@@ -369,13 +370,14 @@ const pct=(x,t)=>t?(100*x/t).toFixed(1)+'%':'—';
 function formatBRL(value){const n=Number(value);if(!Number.isFinite(n))return INSUF;return n.toLocaleString('pt-BR',{style:'currency',currency:'BRL',minimumFractionDigits:2,maximumFractionDigits:2});}
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 let D=null, SERV,GRP,UNID,MUN,NAT,GTOS,CC,A,AGG,TOTAL,HON;
-let RELIABLE=[], SERVICE_REF={};
+let RELIABLE=[], SERVICE_REF={}, HAS_GTOS=false;
 const cache=new Map();
 function unidadeLabel(u){if(typeof u==='string')return u;return UNID[u]||INSUF;}
 function brlUnidade(value,u){return formatBRL(value)+' / '+unidadeLabel(u);}
 function bindData(){
   SERV=D.servicos;GRP=D.grupo_de_servico;UNID=D.unidades||[INSUF];MUN=D.municipios;NAT=D.naturezas;GTOS=D.grupos_tos;CC=D.classe_count;
   A=D.classeA;AGG=D.agg;TOTAL=D.total_arts;HON=NAT.indexOf('provavel_honorario_tecnico');
+  HAS_GTOS=GTOS.length>1;
   computeServiceReference();
 }
 function computeServiceReference(){
@@ -473,7 +475,7 @@ function renderReliableSummary(){
     const tr=document.createElement('tr');
     tr.innerHTML='<td class="txt"><button type="button" class="svcname" data-svc="'+g.s+'">'+esc(SERV[g.s])+'</button></td>'+
       '<td class="txt muted">'+esc(GRP[g.s]||INSUF)+'</td>'+
-      '<td class="txt muted">'+esc(dominantGrupoTos(g.gt))+'</td>'+
+      '<td class="txt muted colGrupoTos">'+esc(dominantGrupoTos(g.gt))+'</td>'+
       '<td class="txt">'+esc(unidadeLabel(g.u))+'</td>'+
       '<td>'+fmt(g.q.n)+'</td>'+
       '<td>'+brlUnidade(g.q.med,g.u)+'</td>'+
@@ -491,17 +493,20 @@ function resetDynamicFilterOptions(){
   SERV.map((s,i)=>[s,i]).sort((a,b)=>a[0].localeCompare(b[0],'pt-BR')).forEach(([s,i])=>{
     const o=document.createElement('option');o.value=i;
     const ref=SERVICE_REF[i];
-    let label=s,reliable=false;
+    let reliable=false,title;
     if(ref&&ref.reliable){
       const g=ref.groups.find(x=>x.q.n>=5)||ref.best;
-      label+=' — referência confiável — n='+fmt(g.q.n)+' — mediana '+brlUnidade(g.q.med,g.u);
       reliable=true;
+      title='Referência confiável — n='+fmt(g.q.n)+' — mediana '+brlUnidade(g.q.med,g.u);
+      o.textContent='✓ '+s;
     }else if(ref&&ref.best){
-      label+=' — baixa amostra (n='+fmt(ref.best.q.n)+') — sem referência confiável';
+      title='Baixa amostra (n='+fmt(ref.best.q.n)+') — sem referência confiável';
+      o.textContent=s;
     }else{
-      label+=' — sem referência confiável';
+      title='Sem referência confiável de preço';
+      o.textContent=s;
     }
-    o.textContent=label;o.dataset.reliable=reliable?'1':'0';
+    o.title=title;o.dataset.reliable=reliable?'1':'0';
     $('fServico').appendChild(o);
   });
   GTOS.map((s,i)=>[s,i]).sort((a,b)=>a[0].localeCompare(b[0],'pt-BR')).forEach(([s,i])=>{const o=document.createElement('option');o.value=i;o.textContent=s;$('fGrupoTos').appendChild(o);});
@@ -510,6 +515,9 @@ function resetDynamicFilterOptions(){
   $('munSearch').value='';
   [...$('fMun').options].forEach(o=>o.hidden=false);
   applyServicoConfiavelFilter();
+  $('fcardGrupoTos').style.display=HAS_GTOS?'':'none';
+  $('cardGrupoTos').style.display=HAS_GTOS?'':'none';
+  document.getElementById('reliableTableWrap').classList.toggle('no-tos',!HAS_GTOS);
 }
 function applyServicoConfiavelFilter(){
   const only=$('fSoConfiavel').checked;
