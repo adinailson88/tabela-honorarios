@@ -12,6 +12,7 @@ data/public/
 # Artefatos locais gerados.
 outputs/
 relatorios/
+dashboard_senge_honorarios_tos_valor_municipio_layout_crea.html
 
 # Backups operacionais locais
 BACKUP_*/
