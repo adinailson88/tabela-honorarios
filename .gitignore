@@ -5,11 +5,12 @@ base_servicos_tos_valor_municipio.csv
 base_classe_a_servicos_metodologia.csv
 
 # Dados locais, brutos ou individualizados.
-# Mantem somente o README explicativo versionado.
-data/local/*
-!data/local/README.md
+# Essas pastas podem existir localmente, mas nao devem ser versionadas.
+data/local/
+data/public/
 
-# Relatorios locais gerados por validacoes e inventarios.
+# Artefatos locais gerados.
+outputs/
 relatorios/
 
 # Backups operacionais locais
