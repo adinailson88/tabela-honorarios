@@ -1,5 +1,7 @@
-﻿base_servicos_tos_valor_municipio.csv
+base_servicos_tos_valor_municipio.csv
 base_classe_a_servicos_metodologia.csv
+dados_tos_valor_municipio.json
+dashboard_senge_honorarios*.html
 
 data/local/
 data/public/

@@ -158,7 +158,7 @@ if (-not $OpenpyxlOk) {
 # 7. Validar JSON publico
 Escrever-Etapa "Validando JSON publico agregado"
 if (Test-Path -LiteralPath "scripts\01_validar_json_publico.py") {
-    & $PythonCmd "scripts\01_validar_json_publico.py" --json "dados_tos_valor_municipio.json" --saida "relatorios\validacao_json_publico.md"
+    & $PythonCmd "scripts\01_validar_json_publico.py" --json "assets\dados_tos_valor_municipio.json" --saida "relatorios\validacao_json_publico.md"
 } else {
     Write-Host "Script scripts\01_validar_json_publico.py nao encontrado." -ForegroundColor Red
 }

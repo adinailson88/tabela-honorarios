@@ -104,7 +104,8 @@ for i,(k,v) in enumerate(res,3):
     ws.cell(i,1,k).font=Font(bold=True); ws.cell(i,2,v)
 ws.column_dimensions['A'].width=42; ws.column_dimensions['B'].width=48
 
-outp=os.path.join(BASE,'PLANILHA_MODELO_HONORARIOS.xlsx')
+outp=os.path.join(BASE,'docs','entregaveis','PLANILHA_MODELO_HONORARIOS.xlsx')
+os.makedirs(os.path.dirname(outp), exist_ok=True)
 wb.save(outp)
 print('WROTE',outp,'| itens:',len(rows),'| tipos precificabilidade:',len(pr))
 

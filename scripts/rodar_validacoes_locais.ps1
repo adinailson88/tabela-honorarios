@@ -33,7 +33,7 @@ foreach ($p in $Pastas) {
 }
 
 Write-Host "`n1) Validando JSON publico agregado..." -ForegroundColor Yellow
-python .\scripts\01_validar_json_publico.py --json .\dados_tos_valor_municipio.json --saida .\relatorios\validacao_json_publico.md
+python .\scripts\01_validar_json_publico.py --json .\assets\dados_tos_valor_municipio.json --saida .\relatorios\validacao_json_publico.md
 
 Write-Host "`n2) Inventariando planilhas locais de ARTs..." -ForegroundColor Yellow
 python .\scripts\00_inventariar_planilhas_arts.py --entrada .\data\local --saida .\relatorios\inventario_planilhas

@@ -5,7 +5,7 @@ import re
 import unicodedata
 from pathlib import Path
 
-BASE = Path(__file__).resolve().parent
+REPO = Path(__file__).resolve().parents[1]
 
 def normalize_key(value):
     text = "" if value is None else str(value)
@@ -36,7 +36,7 @@ def count(flat, ano=(), municipio=(), modalidade=(), unidade=(), tipo=()):
     return sum(r[5] for r in rows), len(rows)
 
 if __name__ == "__main__":
-    flat = json.loads((BASE / "dados" / "flat_counts.json").read_text(encoding="utf-8"))
+    flat = json.loads((REPO / "dados" / "flat_counts.json").read_text(encoding="utf-8"))
     tests = {
         "Itabuna": count(flat, municipio=["Itabuna"]),
         "Ilhéus": count(flat, municipio=["Ilhéus"]),
