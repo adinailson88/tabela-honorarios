@@ -36,6 +36,12 @@ from gerar_metodologia_servicos_tos_valor_municipio import (  # noqa: E402
 
 DEFAULT_FONTE = Path(r"C:\Users\adina\Meu Drive\ARTS Adinailson")
 MIN_N = 5
+LIMITE_LEGADO_LINHAS_MIN = 65534
+LIMITE_LEGADO_LINHAS_MAX = 65536
+LIMITACAO_TRUNCAMENTO = (
+    "linhas lidas proximas do teto legado de exportacao (65534-65536); "
+    "possivel truncamento na fonte original, independente do formato do arquivo (.xls ou .xlsx)"
+)
 NAT_ORDER = [
     "provavel_honorario_tecnico",
     "provavel_valor_obra_contrato",
@@ -500,7 +506,8 @@ def main() -> int:
             rows_lidas += 1
             add_art(arts, row, fallback_ano, path.name)
         after = len(arts)
-        limitacao = "linhas lidas == limite .xls 65536; possivel truncamento" if meta["xls_65536"] else ""
+        suspeita_truncamento = meta["xls_65536"] or LIMITE_LEGADO_LINHAS_MIN <= rows_lidas <= LIMITE_LEGADO_LINHAS_MAX
+        limitacao = LIMITACAO_TRUNCAMENTO if suspeita_truncamento else ""
         manifest.append(
             {
                 "ano": fallback_ano or INSUF_PUBLICO,

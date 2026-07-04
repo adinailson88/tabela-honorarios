@@ -9,11 +9,12 @@ Este documento deve registrar as fontes usadas no projeto.
 | `TABELA TOS - 2.xlsx`, aba `ARTs CREA 2022 (TOS)` | Camada TOS atual do painel agregado | Fonte indicada no JSON publicado |
 | `dados_tos_valor_municipio.json` | Base agregada usada pelo painel | Publicada no repositório |
 | `index.html` | Arquivo publicado pelo GitHub Pages | Publicado na raiz |
-| `build_dashboard_tos_valor_municipio_layout_crea.py` | Script de geração do painel institucional | Publicado na raiz |
-| `C:\Users\adina\Meu Drive\ARTS Adinailson\arts 2015 1 semestre - feito.xlsx` | Agregação anual pública de ARTs 2015 | Fonte local bruta, não versionada |
-| `C:\Users\adina\Meu Drive\ARTS Adinailson\arts 2015 2 semestre.xls` a `arts 2019 2 semestre.xls` | Agregação anual pública de ARTs 2015-2019 | Fonte local bruta, não versionada; `.xls` no limite do formato |
-| `C:\Users\adina\Meu Drive\ARTS Adinailson\arts 2020 1 semestre.xlsx` a `arts 2021 2 semestre.xlsx` | Agregação anual pública de ARTs 2020-2021 | Fonte local bruta, não versionada |
-| `C:\Users\adina\Meu Drive\ARTS Adinailson\ARTs 2022 01022024.csv` | Agregação anual pública de ARTs 2022 | Fonte local bruta, não versionada |
+| `scripts/build_dashboard_tos_valor_municipio_layout_crea.py` | Script de geração do painel institucional; publica `index.html` na raiz | Publicado em `scripts/` |
+| `assets/anos/dados_tos_valor_municipio_AAAA.json` | Agregado público por ano, carregado sob demanda pelo painel | Publicado no repositório |
+| `C:\Users\adina\Meu Drive\ARTS Adinailson\arts 2015 1 semestre - feito.xlsx` | Agregação anual pública de ARTs 2015 (1º semestre) | Fonte local bruta, não versionada; 65.534 linhas, mesmo teto suspeito do `.xls` — ver `docs/limitacoes.md` |
+| `C:\Users\adina\Meu Drive\ARTS Adinailson\arts 2015 2 semestre.xls` a `arts 2019 2 semestre.xls` | Agregação anual pública de ARTs 2015 (2º semestre) a 2019 | Fonte local bruta, não versionada; `.xls` no limite do formato (65.535 linhas) |
+| `C:\Users\adina\Meu Drive\ARTS Adinailson\arts 2020 1 semestre.xlsx` a `arts 2021 2 semestre.xlsx` | Agregação anual pública de ARTs 2020-2021 | Fonte local bruta, não versionada; 65.534 linhas, mesmo teto suspeito do `.xls` — ver `docs/limitacoes.md` |
+| `C:\Users\adina\Meu Drive\ARTS Adinailson\ARTs 2022 01022024.csv` | Agregação anual pública de ARTs 2022 | Fonte local bruta, não versionada; 726.028 linhas, fora da faixa suspeita — única base tratável como contagem completa |
 | `C:\Users\adina\Meu Drive\ARTS Adinailson\Análise ARTs.xlsx` e `Análise ARTs Agronomia.xlsx` | Workbooks de análise/limpeza com abas metodológicas e abas 2020-2022 | Inspecionados como material auxiliar; não usados como fonte primária do agregado anual |
 
 ## Fontes a verificar antes de uso metodológico
