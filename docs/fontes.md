@@ -16,13 +16,18 @@ Os agregados publicados cobrem o período de 2015 a 2022. Para os anos de 2015 a
 
 Uma parte da base de 2022 foi classificada por tipo de serviço (TOS), permitindo agrupar as ARTs por atividade de forma mais padronizada. Essa classificação ainda não está disponível para todos os anos: quando o campo TOS não existe na base de um ano, o painel exibe `Informação insuficiente para verificar.` em vez de presumir um agrupamento.
 
+## Coordenadas municipais usadas no mapa
+
+O mapa de municípios exibido no painel usa a localização oficial de cada município da Bahia, obtida a partir da divisão territorial do IBGE (limites municipais e limite estadual). A partir dessa geometria oficial foi calculado o ponto central de cada município, apenas para posicionar o círculo correspondente no mapa — essa coordenada não altera nem reinterpreta nenhum dado de ART.
+
+Essa correspondência só é aplicada quando o nome do município na base de ARTs é idêntico ao nome oficial do IBGE. Registros com distrito, grafia não padronizada ou localidade fora da Bahia não recebem coordenada e não aparecem no mapa; eles continuam visíveis na lista/ranking de municípios ao lado do mapa.
+
 ## Fontes complementares ainda não incorporadas
 
 As informações abaixo são relevantes para a metodologia, mas ainda não têm fonte oficial confirmada e incorporada ao painel. Enquanto isso, qualquer leitura que dependeria delas deve ser tratada como `Informação insuficiente para verificar.`
 
 | Informação necessária | Finalidade | Situação |
 |---|---|---|
-| Base oficial do IBGE de municípios | Padronização de nomes de município e código IBGE | Informação insuficiente para verificar. |
 | De-para oficial do CREA-BA entre município, inspetoria e SUREG | Leitura regional/institucional | Informação insuficiente para verificar. |
 | Tabela de honorários vigente do SENGE/BA | Cruzamento entre serviço, unidade de medida e eventuais lacunas de tabela | Informação insuficiente para verificar. |
 | Critério técnico documentado de CUB | Referência de custo de construção, quando aplicável | Informação insuficiente para verificar. |
