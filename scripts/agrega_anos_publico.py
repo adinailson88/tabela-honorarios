@@ -53,6 +53,22 @@ NAT_ORDER = [
 INSUF_PUBLICO = "Informação insuficiente para verificar."
 RE_NIVEL = re.compile(r"Nivel\s*-\s*([^;]+?)\s*(?:Atividade|$)", re.I)
 RE_ATIVIDADE = re.compile(r"Atividade\s*-\s*([^-;]+)", re.I)
+CSV_FIELD_ALIASES = {
+    "id": {"id", "idart", "numeroart", "numero"},
+    "tipo_art": {"tipoart", "tipo"},
+    "formaderegistro": {"formaderegistro", "formaregistro"},
+    "emissao": {"emissao", "dataemissao"},
+    "cidade_obra": {"cidadeobra", "cidade", "municipioobra", "municipio"},
+    "uf": {"uf"},
+    "titulos": {"titulos", "titulo", "modalidade"},
+    "entidade": {"entidade"},
+    "codigo": {"codigo", "codigoatividade", "codatividade"},
+    "atividade": {"atividade", "descricaodaatividade", "descricaoatividade"},
+    "quantidade": {"quantidade", "qtd"},
+    "unidade": {"unidade", "unidadedemedida"},
+    "valor_contrato": {"valorcontrato", "valor", "valorart"},
+    "ano_registro_profissional": {"anoregistroprofissional", "anoregistro"},
+}
 
 
 def parse_args() -> argparse.Namespace:
@@ -64,6 +80,31 @@ def parse_args() -> argparse.Namespace:
         help="Diretorio intermediario local de saida para posterior publicacao.",
     )
     return parser.parse_args()
+
+
+def normalize_header_name(value: Any) -> str:
+    text = norm_key(value)
+    return re.sub(r"[^A-Z0-9]", "", text)
+
+
+def resolve_csv_indices(header: list[str]) -> Dict[str, int]:
+    normalized: Dict[str, int] = {}
+    for idx, value in enumerate(header):
+        key = normalize_header_name(value)
+        if key and key not in normalized:
+            normalized[key] = idx
+    resolved: Dict[str, int] = {}
+    missing: list[str] = []
+    for canonical, aliases in CSV_FIELD_ALIASES.items():
+        normalized_aliases = [normalize_header_name(alias) for alias in aliases]
+        found = next((normalized[alias] for alias in normalized_aliases if alias in normalized), None)
+        if found is None:
+            missing.append(canonical)
+        else:
+            resolved[canonical] = found
+    if missing:
+        raise ValueError(f"cabecalho CSV incompleto ou desconhecido; campos ausentes: {', '.join(missing)}")
+    return resolved
 
 
 def parse_valor(value: Any) -> float | None:
@@ -179,49 +220,24 @@ def iter_xls(path: Path) -> Tuple[Iterator[Dict[str, Any]], Dict[str, Any]]:
 
 def iter_csv(path: Path) -> Tuple[Iterator[Dict[str, Any]], Dict[str, Any]]:
     fh = path.open("r", encoding="utf-8", errors="replace", newline="")
-    header = fh.readline().rstrip("\n").split(";")
+    reader = csv.reader(fh, delimiter=";", quotechar='"')
+    header = next(reader, [])
+    idx = resolve_csv_indices([str(value or "").strip() for value in header])
     meta = {"arquivo": path.name, "aba": path.name, "ext": path.suffix.lower(), "xls_65536": False, "header": header}
+    max_idx = max(idx.values()) if idx else -1
 
     def gen() -> Iterator[Dict[str, Any]]:
         try:
-            for line in fh:
-                parts = line.rstrip("\n").split(";")
-                while parts and parts[-1].strip() == "":
-                    parts.pop()
-                if len(parts) < 13:
-                    yield {
-                        "id": parts[0] if len(parts) > 0 else "",
-                        "tipo_art": parts[1] if len(parts) > 1 else "",
-                        "formaderegistro": parts[2] if len(parts) > 2 else "",
-                        "emissao": parts[3] if len(parts) > 3 else "",
-                        "cidade_obra": parts[4] if len(parts) > 4 else "",
-                        "uf": parts[5] if len(parts) > 5 else "",
-                        "titulos": parts[6] if len(parts) > 6 else "",
-                        "entidade": "",
-                        "codigo": "",
-                        "atividade": "",
-                        "quantidade": "",
-                        "unidade": "",
-                        "valor_contrato": "",
-                        "ano_registro_profissional": "",
-                    }
+            for row_no, row in enumerate(reader, start=2):
+                while row and str(row[-1]).strip() == "":
+                    row.pop()
+                if not row or not any(str(cell).strip() for cell in row):
                     continue
-                yield {
-                    "id": parts[0] if len(parts) > 0 else "",
-                    "tipo_art": parts[1] if len(parts) > 1 else "",
-                    "formaderegistro": parts[2] if len(parts) > 2 else "",
-                    "emissao": parts[3] if len(parts) > 3 else "",
-                    "cidade_obra": parts[4] if len(parts) > 4 else "",
-                    "uf": parts[5] if len(parts) > 5 else "",
-                    "titulos": parts[6] if len(parts) > 6 else "",
-                    "entidade": parts[7] if len(parts) > 7 else "",
-                    "codigo": parts[8] if len(parts) > 8 else "",
-                    "atividade": " ".join(parts[9 : len(parts) - 4]).strip(),
-                    "quantidade": parts[-4],
-                    "unidade": parts[-3],
-                    "valor_contrato": parts[-2],
-                    "ano_registro_profissional": parts[-1],
-                }
+                if len(row) <= max_idx:
+                    raise ValueError(
+                        f"linha {row_no} do CSV `{path.name}` tem {len(row)} colunas; esperado minimo {max_idx + 1}"
+                    )
+                yield {key: row[pos].strip() for key, pos in idx.items()}
         finally:
             fh.close()
 

@@ -42,13 +42,21 @@ Quando a evidencia e insuficiente, usar exatamente: `Informação insuficiente p
 Quando houver fontes privadas disponiveis, gere primeiro os agregados intermediarios locais em `data/local/processado/publicacao_intermediaria/` e depois publique os datasets saneados:
 
 ```powershell
+python .\scripts\agrega_anos_publico.py --fonte-arts "C:\caminho\para\ARTS"
 python .\scripts\publicar_datasets_publicos.py
 python .\scripts\build_dashboard_publico.py
 python .\scripts\01_validar_json_publico.py --root .\assets --saida .\relatorios\validacao_json_publico.md
+python -m unittest discover -s .\tests -p "test_*.py" -v
 ```
 
 ## Fluxo local sem Codex
 
 ```powershell
 .\scripts\executar_tudo_sem_codex.ps1 -SomenteValidar
+```
+
+Exemplo com geracao local e publicacao:
+
+```powershell
+.\scripts\executar_tudo_sem_codex.ps1 -FonteArtsAnuais "C:\caminho\para\ARTS" -GerarAgregadosHistoricos -PublicarDatasets -RegenerarDashboard -ExecutarInventario
 ```

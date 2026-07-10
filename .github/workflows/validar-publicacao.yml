@@ -1,0 +1,42 @@
+name: validar-publicacao
+
+on:
+  push:
+    branches:
+      - main
+      - codex/**
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Configurar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Instalar dependencias
+        run: python -m pip install -r requirements.txt
+
+      - name: Compilar scripts Python
+        run: python -m py_compile scripts/publicar_datasets_publicos.py scripts/agrega_anos_publico.py scripts/gerar_metodologia_servicos_tos_valor_municipio.py scripts/01_validar_json_publico.py scripts/build_dashboard_publico.py scripts/build_dashboard_tos_valor_municipio_layout_crea.py
+
+      - name: Executar testes
+        run: python -m unittest discover -s tests -p "test_*.py" -v
+
+      - name: Regenerar dashboard
+        run: python scripts/build_dashboard_publico.py
+
+      - name: Validar JSONs publicos
+        run: python scripts/01_validar_json_publico.py --root assets --saida relatorios/validacao_json_publico.md
