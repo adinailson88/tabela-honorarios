@@ -102,10 +102,9 @@ Separar:
 
 ## Como ler o painel
 
-- **Serviços com referência confiável de preço**: lista, de forma independente dos demais filtros, todo serviço que atinge Classe A + provável honorário técnico + n≥5 no ano carregado, com mediana, Q1, Q3 e os municípios em que aparece. Use essa lista para escolher diretamente o que investigar, em vez de testar filtro por filtro.
-- **Filtro "Somente serviços com referência confiável de preço"**: restringe a lista de serviços do filtro lateral apenas aos que têm preço confiável. Os demais serviços permanecem visíveis nas opções normais, identificados como "sem referência confiável" ou "baixa amostra".
-- **Boxplot agregado**: representa graficamente a caixa entre Q1 e Q3, com uma linha na mediana, para os serviços com referência confiável. Por ser construído a partir de quartis já agregados, ele não mostra valores mínimos, máximos, pontos individuais nem outliers — apenas a faixa central da distribuição.
-- **Municípios do serviço/seleção filtrada**: mostra, em lista ordenada por quantidade de ARTs, os municípios em que o serviço ou a combinação de filtros escolhida aparece.
-- **Mapa dos municípios**: ao lado da lista, um mapa da Bahia com um círculo por município — quanto maior e mais escuro o círculo, mais ARTs naquele município para a seleção atual. O mapa usa a localização oficial do IBGE e só posiciona municípios cujo nome bate exatamente com o cadastro oficial; distritos, grafias não padronizadas ou localidades fora da Bahia não aparecem no mapa, mas continuam na lista ao lado.
-- **Top grupos TOS**: ranking por quantidade de ARTs (contagem), não por valor monetário. Quando não há ARTs suficientes para os filtros aplicados, o painel explica isso em vez de exibir uma seção vazia.
-- **Tabela "Serviços - referência confiável observada"**: mostra todo serviço/unidade dentro da seleção atual de filtros, indicando explicitamente quando o resultado é `Informação insuficiente para verificar.` por baixa amostra.
+- **Visão geral**: resume o ano carregado, o volume agregado de ARTs, a composição por classe, o percentual de serviços mapeados e a cobertura territorial oficial observável no recorte ativo.
+- **Demanda e serviços**: apresenta ARTs e atividades agregadas por serviço sem impor um único serviço “verdadeiro” a ART composta. Classes B, C e D permanecem como volume e diagnóstico, não como base monetária.
+- **Evidência monetária observada elegível**: usa exclusivamente `precos_resumo`. Se o filtro pedido não tiver agregado monetário pré-calculado, o painel mostra `Informação insuficiente para verificar.`.
+- **Faixa interquartil**: substitui o boxplot antigo por uma leitura semântica correta da faixa Q1–Q3 dos agregados monetários publicados.
+- **Territorial**: lista todos os textos de município presentes no recorte e usa o mapa apenas para nomes com correspondência oficial exata na base territorial de referência.
+- **Camada TOS**: permanece desabilitada na publicação atual. Sem a fonte local verificável necessária para regeneração, o painel não afirma ter TOS e registra `Informação insuficiente para verificar.`.

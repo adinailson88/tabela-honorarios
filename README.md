@@ -1,59 +1,52 @@
 # tabela-honorarios
 
-Repositorio de publicacao do painel e dos artefatos tecnicos da proposta de metodologia orientativa para a Tabela de Honorarios do SENGE/BA.
+Repositorio de publicacao do painel e dos artefatos tecnicos da proposta metodologica orientativa para a Tabela de Honorarios do SENGE/BA.
 
 ## Painel publicado
 
 https://adinailson88.github.io/tabela-honorarios/
 
-## Publicacao
+## Publicacao atual
 
 - `index.html`: pagina publicada pelo GitHub Pages na raiz do repositorio.
-- `assets/dados_tos_valor_municipio.json`: agregado publico consumido pelo painel.
-- `assets/anos/`: agregados publicos por ano.
+- `assets/datasets/historico/manifest.json`: manifesto dos datasets historicos publicados.
+- `assets/datasets/historico/combinado.json`: agregado historico 2015-2022 saneado.
+- `assets/datasets/historico/anos/*.json`: agregados historicos anuais saneados.
+- `assets/datasets/precos/resumos.json`: evidencia monetaria agregada elegivel.
+- `assets/datasets/tos-2022/manifest.json`: camada TOS explicitamente desabilitada enquanto a fonte local verificavel nao estiver disponivel.
+- `assets/datasets/qualidade/manifest.json`: manifesto de qualidade, privacidade e cobertura.
 
 ## Estrutura versionada
 
 - `AGENTS.md`: regras metodologicas e operacionais do repositorio.
-- `README.md`: este guia de estrutura e execucao.
-- `assets/`: dados agregados publicos do painel.
-- `assets/referencia/`: CSVs e JSONs agregados de referencia, sem linhas individuais de ART. Inclui `municipios_bahia_ibge_centroides.csv` e `bahia_estado_contorno_ibge.geojson` (geometria oficial do IBGE, usada só para posicionar o mapa de municipios do painel).
-- `dados/`: dados auxiliares agregados usados por scripts e painel.
-- `docs/modelos/`: modelos e manifestos tecnicos atuais.
-- `docs/entregaveis/`: arquivos finais entregaveis.
-- `docs/historico/`: documentacao, dashboards e scripts anteriores preservados como historico.
+- `README.md`: este guia.
+- `assets/datasets/`: datasets publicos efetivamente consumidos pelo painel.
+- `assets/referencia/`: arquivos agregados de referencia para mapa e apoio metodologico, sem vetores por ART.
+- `dados/`: insumos auxiliares e historicos ainda em revisao.
+- `docs/`: documentacao metodologica, limitacoes, fontes, auditoria e historico.
 - `scripts/`: pipeline, validadores e scripts operacionais ativos.
 
-## Scripts principais
+## Regra metodologica minima
 
-- `scripts/agrega_anos_publico.py`: agrega bases anuais locais em JSON/CSV publico, preservando unidade de medida.
-- `scripts/build_dashboard_tos_valor_municipio_layout_crea.py`: regenera o `index.html`.
-- `scripts/01_validar_json_publico.py`: valida o JSON publico.
-- `scripts/rodar_validacoes_locais.ps1`: executa validacoes locais basicas.
-- `scripts/executar_tudo_sem_codex.ps1`: fluxo operacional local sem Codex.
+ART nao e contrato, nota fiscal, recibo nem prova isolada de honorario profissional. A evidencia monetaria publicada usa somente agregados com:
 
-## Regra metodologica
-
-ART nao e contrato, nota fiscal nem prova isolada de honorario profissional. O painel so exibe mediana e IQR monetarios para a base confiavel: Classe A + provavel honorario tecnico + n >= 5. A unidade de medida deve ser preservada no agrupamento estatistico.
+- Classe A;
+- natureza `provavel_honorario_tecnico`;
+- `n >= 5`;
+- unidade preservada sem mistura.
 
 Quando a evidencia e insuficiente, usar exatamente: `Informação insuficiente para verificar.`
 
-## Pastas locais nao versionadas
-
-- `data/local/`
-- `data/public/`
-- `outputs/`
-- `relatorios/`
-
-## Regerar painel
+## Regerar publicacao
 
 ```powershell
-python .\scripts\build_dashboard_tos_valor_municipio_layout_crea.py
-python .\scripts\01_validar_json_publico.py --json .\assets\dados_tos_valor_municipio.json --saida .\relatorios\validacao_json_publico.md
+python .\scripts\publicar_datasets_publicos.py
+python .\scripts\build_dashboard_publico.py
+python .\scripts\01_validar_json_publico.py --root .\assets --saida .\relatorios\validacao_json_publico.md
 ```
 
 ## Fluxo local sem Codex
 
 ```powershell
-.\scripts\executar_tudo_sem_codex.ps1 -InstalarDependencias
+.\scripts\executar_tudo_sem_codex.ps1 -SomenteValidar
 ```
