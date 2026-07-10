@@ -21,10 +21,10 @@ https://adinailson88.github.io/tabela-honorarios/
 - `AGENTS.md`: regras metodologicas e operacionais do repositorio.
 - `README.md`: este guia.
 - `assets/datasets/`: datasets publicos efetivamente consumidos pelo painel.
-- `assets/referencia/`: arquivos agregados de referencia para mapa e apoio metodologico, sem vetores por ART.
-- `dados/`: insumos auxiliares e historicos ainda em revisao.
+- `assets/referencia/`: referencias auxiliares para mapa, apoio metodologico e matrizes preservadas. Nem todo arquivo dessa pasta faz parte do contrato publico consumido pelo painel.
+- `dados/`: agregados e insumos legados do dashboard anterior, preservados como historico tecnico e fora do contrato publico atual.
 - `docs/`: documentacao metodologica, limitacoes, fontes, auditoria e historico.
-- `scripts/`: pipeline, validadores e scripts operacionais ativos.
+- `scripts/`: pipeline publico atual e scripts legados ainda retidos na raiz por preservacao controlada.
 
 ## Regra metodologica minima
 
@@ -60,3 +60,9 @@ Exemplo com geracao local e publicacao:
 ```powershell
 .\scripts\executar_tudo_sem_codex.ps1 -FonteArtsAnuais "C:\caminho\para\ARTS" -GerarAgregadosHistoricos -PublicarDatasets -RegenerarDashboard -ExecutarInventario
 ```
+
+## Inventario de artefatos
+
+- `docs/inventario_artefatos.md`: classificacao verificavel entre artefatos ativos, historicos retidos e itens de cautela.
+- Verificacao feita em 2026-07-10: o repositorio atual nao contem `assets/referencia/dados_metodologia_servicos.json`.
+- Nenhum arquivo historico ou de referencia incerto foi removido automaticamente nesta rodada.
