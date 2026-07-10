@@ -13,6 +13,8 @@ import openpyxl
 
 REPO = Path(__file__).resolve().parents[1]
 REF = REPO / "assets" / "referencia"
+PROCESSADO = REPO / "data" / "local" / "processado"
+CAMADA_TOS_DIR = PROCESSADO / "camada_tos_2022"
 TOS_XLSX = Path(r"C:\Users\adina\Meu Drive\SENGE\NOVO ARQUIVO\TABELA TOS - 2.xlsx")
 CIDADES_XLSX = Path(r"C:\Users\adina\Meu Drive\SENGE\CidadessCalculo atualizado 07.11.2024.xlsx")
 DIM_MUN = REF / "dim_municipios_bahia.csv"
@@ -465,12 +467,11 @@ def main():
         "municipios": mun_list, "anos": ano_list, "naturezas": nat_list, "grupos_tos": grptos_list,
         "classeA": cA, "agg": [[k[0],k[1],k[2],k[3],k[4],k[5],k[6],v[0],v[1]] for k,v in agg2.items()],
     }
-    assets_dir = REPO / "assets"
-    assets_dir.mkdir(exist_ok=True)
-    (assets_dir / "dados_tos_valor_municipio.json").write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
-    legacy_json = REPO / "dados_tos_valor_municipio.json"
-    if legacy_json.exists():
-        legacy_json.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+    CAMADA_TOS_DIR.mkdir(parents=True, exist_ok=True)
+    (CAMADA_TOS_DIR / "dados_tos_valor_municipio_2022_tos_local.json").write_text(
+        json.dumps(data, ensure_ascii=False),
+        encoding="utf-8",
+    )
 
     # ---------- STATS para relatorios ----------
     stats = {

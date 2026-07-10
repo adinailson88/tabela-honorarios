@@ -39,6 +39,8 @@ Quando a evidencia e insuficiente, usar exatamente: `Informação insuficiente p
 
 ## Regerar publicacao
 
+Quando houver fontes privadas disponiveis, gere primeiro os agregados intermediarios locais em `data/local/processado/publicacao_intermediaria/` e depois publique os datasets saneados:
+
 ```powershell
 python .\scripts\publicar_datasets_publicos.py
 python .\scripts\build_dashboard_publico.py

@@ -58,8 +58,11 @@ if ($InstalarDependencias) {
     Run-Step "Instalando dependencias Python usadas no build publico" $PythonCmd @('-m','pip','install','openpyxl')
 }
 
-if (-not $SomenteValidar -and (Test-Path -LiteralPath 'assets\dados_tos_valor_municipio.json')) {
-    Run-Step "Migrando artefatos legados para assets/datasets" $PythonCmd @('scripts\publicar_datasets_publicos.py')
+$PublicacaoIntermediaria = 'data\local\processado\publicacao_intermediaria\dados_tos_valor_municipio.json'
+$PublicacaoLegada = 'assets\dados_tos_valor_municipio.json'
+
+if (-not $SomenteValidar -and ((Test-Path -LiteralPath $PublicacaoIntermediaria) -or (Test-Path -LiteralPath $PublicacaoLegada))) {
+    Run-Step "Publicando datasets saneados em assets/datasets" $PythonCmd @('scripts\publicar_datasets_publicos.py')
 }
 
 Run-Step "Regenerando dashboard publico" $PythonCmd @('scripts\build_dashboard_publico.py')

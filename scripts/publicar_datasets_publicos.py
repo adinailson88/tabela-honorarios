@@ -1,7 +1,11 @@
 # -*- coding: utf-8 -*-
-"""Migra artefatos publicos legados para datasets saneados e separados.
+"""Migra agregados intermediarios para datasets publicos saneados e separados.
 
-Entrada esperada:
+Entrada preferencial:
+- data/local/processado/publicacao_intermediaria/dados_tos_valor_municipio.json
+- data/local/processado/publicacao_intermediaria/anos/dados_tos_valor_municipio_*.json
+
+Compatibilidade legada:
 - assets/dados_tos_valor_municipio.json
 - assets/anos/dados_tos_valor_municipio_*.json
 
@@ -25,6 +29,10 @@ from typing import Any
 
 REPO = Path(__file__).resolve().parents[1]
 ASSETS = REPO / "assets"
+PROCESSADO = REPO / "data" / "local" / "processado"
+INTERMEDIATE_PUBLIC_DIR = PROCESSADO / "publicacao_intermediaria"
+INTERMEDIATE_COMBINED = INTERMEDIATE_PUBLIC_DIR / "dados_tos_valor_municipio.json"
+INTERMEDIATE_ANOS = INTERMEDIATE_PUBLIC_DIR / "anos"
 LEGACY_COMBINED = ASSETS / "dados_tos_valor_municipio.json"
 LEGACY_ANOS = ASSETS / "anos"
 DATASETS = ASSETS / "datasets"
@@ -392,12 +400,22 @@ def remove_legacy_public_files() -> list[str]:
     return removed
 
 
+def resolve_input_paths() -> tuple[Path, Path]:
+    if INTERMEDIATE_COMBINED.exists():
+        return INTERMEDIATE_COMBINED, INTERMEDIATE_ANOS
+    return LEGACY_COMBINED, LEGACY_ANOS
+
+
 def main() -> int:
-    if not LEGACY_COMBINED.exists():
-        print(f"Insumo legado nao encontrado: {LEGACY_COMBINED}")
+    combined_path, anos_dir = resolve_input_paths()
+    if not combined_path.exists():
+        print(
+            "Insumo intermediario nao encontrado: "
+            f"{INTERMEDIATE_COMBINED} | fallback legado ausente: {LEGACY_COMBINED}"
+        )
         return 1
-    legacy_files = [LegacyDataset(LEGACY_COMBINED, read_json(LEGACY_COMBINED))]
-    for path in sorted(LEGACY_ANOS.glob("dados_tos_valor_municipio_*.json")):
+    legacy_files = [LegacyDataset(combined_path, read_json(combined_path))]
+    for path in sorted(anos_dir.glob("dados_tos_valor_municipio_*.json")):
         legacy_files.append(LegacyDataset(path, read_json(path)))
     oficiais = load_official_municipios()
 
@@ -423,6 +441,7 @@ def main() -> int:
 
     removed = remove_legacy_public_files()
     print("Datasets publicados em assets/datasets.")
+    print(f"Origem intermediaria utilizada: {combined_path.as_posix()}")
     print(f"Arquivos legados removidos: {len(removed)}")
     for item in removed:
         print(f"- {item}")

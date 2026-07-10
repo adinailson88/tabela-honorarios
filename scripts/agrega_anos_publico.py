@@ -35,6 +35,7 @@ from gerar_metodologia_servicos_tos_valor_municipio import (  # noqa: E402
 )
 
 DEFAULT_FONTE = Path(r"C:\Users\adina\Meu Drive\ARTS Adinailson")
+DEFAULT_SAIDA = REPO / "data" / "local" / "processado" / "publicacao_intermediaria"
 MIN_N = 5
 LIMITE_LEGADO_LINHAS_MIN = 65534
 LIMITE_LEGADO_LINHAS_MAX = 65536
@@ -57,7 +58,11 @@ RE_ATIVIDADE = re.compile(r"Atividade\s*-\s*([^-;]+)", re.I)
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Agrega bases anuais de ARTs sem publicar linhas.")
     parser.add_argument("--fonte-arts", default=str(DEFAULT_FONTE), help="Diretorio local com planilhas/CSV de ARTs.")
-    parser.add_argument("--saida-assets", default=str(REPO / "assets"), help="Diretorio publico de saida.")
+    parser.add_argument(
+        "--saida-assets",
+        default=str(DEFAULT_SAIDA),
+        help="Diretorio intermediario local de saida para posterior publicacao.",
+    )
     return parser.parse_args()
 
 
@@ -541,7 +546,7 @@ def main() -> int:
     write_service_csv(rows, REPO / "assets" / "referencia" / "agregado_servicos_tos_classe_a_valor_confiavel.csv")
     write_csv(
         REPO / "docs" / "modelos" / "manifesto_bases_anuais_modelo.csv",
-        ["ano", "arquivo_origem", "aba_ou_planilha", "caminho_local", "total_linhas", "total_arts_unicas", "campo_art", "campo_municipio", "campo_valor", "campo_tos", "campo_servico", "status_processamento", "observacao"],
+        ["ano", "arquivo_origem", "aba_ou_planilha", "arquivo_origem_local", "total_linhas", "total_arts_unicas", "campo_art", "campo_municipio", "campo_valor", "campo_tos", "campo_servico", "status_processamento", "observacao"],
         (
             [
                 m["ano"],
@@ -576,7 +581,10 @@ def main() -> int:
     for m in manifest:
         rel.append(f"| {m['ano']} | {m['arquivo']} | {m['linhas']} | {m['arts_incrementais']} | {m['limitacao'] or 'TOS direto ausente nas bases anuais.'} |")
     rel.append("")
-    rel.append("Os arquivos publicos gerados estao em `assets/dados_tos_valor_municipio.json` e `assets/anos/`. Nenhuma base linha a linha foi gravada.")
+    rel.append(
+        "Os agregados intermediarios foram gerados em `data/local/processado/publicacao_intermediaria/` "
+        "e devem ser publicados por `scripts/publicar_datasets_publicos.py`. Nenhuma base linha a linha foi gravada."
+    )
     (REPO / "relatorios").mkdir(exist_ok=True)
     (REPO / "relatorios" / "auditoria_bases_anuais.md").write_text("\n".join(rel) + "\n", encoding="utf-8")
 

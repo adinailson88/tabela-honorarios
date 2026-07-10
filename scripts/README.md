@@ -12,7 +12,7 @@ powershell -ExecutionPolicy Bypass -File .\scripts\executar_tudo_sem_codex.ps1 -
 
 ### `publicar_datasets_publicos.py`
 
-Migra os JSONs legados para a arquitetura publica saneada em `assets/datasets/`, removendo da arvore rastreada os vetores alinhados por ART antes publicados.
+Migra os agregados intermediarios locais para a arquitetura publica saneada em `assets/datasets/`, com fallback de compatibilidade para o contrato legado quando esses insumos ainda existirem.
 
 ### `build_dashboard_publico.py`
 
@@ -32,4 +32,4 @@ Executa build e validacoes locais basicas sem alterar a publicacao.
 
 ### `executar_tudo_sem_codex.ps1`
 
-Executor operacional local em modo seguro, sem `git pull` automatico e com parada em erro.
+Executor operacional local em modo seguro, sem `git pull` automatico e com parada em erro. Publica datasets apenas quando encontra agregados intermediarios locais ou insumos legados.
